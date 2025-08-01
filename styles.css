@@ -202,7 +202,7 @@
       header {
         top: 0;
         left: 0;
-        padding: 0rem 1% 0rem;
+        padding: 0rem 2% 0rem;
         width: 100%;
         background: var(--bg-color);
         display: flex;
@@ -222,7 +222,7 @@
               
       section {
         /*min-height: 100vh;*/
-        padding: 5rem 1% 5rem;
+        padding: 5rem 2% 5rem;
       }
 
       /*------------------------------ Home section design CSS ---------------------------- */
@@ -949,27 +949,6 @@
         }
       }
 
-      /*@media (max-width: 1244px) {
-        header {
-          padding-top: 1.6rem;
-        }
-        .style-switcher {
-          top: 140px;
-        }
-      }*/
-
-     /* @media (max-width: 992px) {
-        body {
-          margin: 3px 0 0 0 !important;
-        }
-        header {
-          padding-top: 2rem;
-        }
-        section {
-          padding: 10rem 2.2% 15rem;
-        }
-      }*/
-
       @media (max-width: 842px) {
         .visit-counter figure img {
           width: 70px; /* Adjust to your desired size */
@@ -978,9 +957,6 @@
       }
 
       @media (max-width: 768px) {
-        /*section {
-          padding: 3rem 1% 2rem;
-        }*/
         .home {
           flex-direction: column;
         }
@@ -1068,15 +1044,6 @@
       }
 
       @media (max-width: 575px) {
-        /*body {
-          margin: 0 !important;
-        }*/
-        /*.style-switcher {
-          top: 120px;
-        }*/
-        /*header {
-          padding-top: 1.2rem;
-        }*/
         .research h2 {
           margin-bottom: 2.5rem;
         }
@@ -1167,9 +1134,6 @@
       }
 
       @media (max-width: 390px) {
-        /*section {
-            padding: 5rem 3.5% 15rem;
-        }*/
         .style-switcher {
           top: 25px;
         }
@@ -1196,15 +1160,6 @@
       }
 
       @media (max-width: 377px) {
-        /*body {
-          margin: 0 !important;
-        }*/
-        /*.style-switcher {
-          top: 150px;
-        }*/
-        /*header {
-          padding-top: 2rem;
-        }*/
         .scroll-arrow.visible {
           right: 20px;
         }
@@ -1223,15 +1178,6 @@
           max-height: 600px;
           top: 58%;
         }
-      }
-
-      @media (max-width: 334px) {
-        /*body {
-          margin: 0 !important;
-        }*/
-        /*header {
-          padding-top: 3rem;
-        }*/
       }
 
       @media screen and (max-width: 300px) {

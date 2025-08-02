@@ -236,7 +236,7 @@
       .lang-menu button {
         padding: clamp(0.5625rem, 0.2918rem + 0.5639vw, 0.75rem);
         border: 1px solid var(--bg-black-50);
-        background: #fafafa;
+        background: var(--bg-black-100);
         border-radius: 4px;
         cursor: pointer;
         font-size: clamp(0.75rem, 0.6947rem + 0.2526vw, 0.9rem);
@@ -244,6 +244,7 @@
         width: 100%; /* Match parent width */
         text-align: center; /* Optional: align text to the left */
         box-sizing: border-box;
+        color: var(--text-black-700);
       }
 
       .lang-options {
@@ -251,7 +252,6 @@
         position: absolute;
         top: clamp(2.375rem, 2.0972rem + 1.1111vw, 3rem);
         right: 0;
-        background: white;
         border: 1px solid var(--bg-black-50);
         border-radius: 4px;
         width: 100%; /* Match .lang-menu width */
@@ -274,11 +274,13 @@
         display: block;
         padding: 5px 10px;
         text-decoration: none;
-        color: black;
+        color: var(--text-black-700);
+        background: var(--bg-black-100);
       }
 
       .lang-options a:hover {
-        background: #ececec;
+        background: var(--text-black-700);
+        color:var(--bg-black-100);
       }
 
       section {

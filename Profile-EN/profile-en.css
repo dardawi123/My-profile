@@ -62,8 +62,9 @@ nav {
   padding-left: clamp(1.25rem, 0.9722rem + 1.1111vw, 1.875rem);
   padding-right: clamp(1.25rem, 0.9722rem + 1.1111vw, 1.875rem);
   background-color: var(--bg-nav-color);
-  font-size: clamp(0.85rem, -0.1579rem + 2.4772vw, 1.7rem);
-	color: var(--text-nav-color);
+  /*font-size: clamp(0.85rem, -0.1579rem + 2.4772vw, 1.7rem);*/
+  font-size: clamp(0.875rem, 0.1667rem + 1.5111vw, 1.3rem);
+  color: var(--text-nav-color);
 }
 
 .right-section {

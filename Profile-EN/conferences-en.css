@@ -249,12 +249,12 @@ li {
   padding-left: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
   padding-right: 0px;
   text-align: justify;
+  line-height: 1;
 }
 
 /*ul li::marker {
 	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
   line-height: 1;
-
 }*/
 
 .container1 {

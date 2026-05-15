@@ -253,6 +253,8 @@ li {
 
 ul li::marker {
 	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
+	line-height: 1;
+
 }
 
 .container1 {

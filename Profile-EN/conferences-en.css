@@ -249,7 +249,7 @@ li {
   padding-left: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
   padding-right: 0px;
   text-align: justify;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 /*ul li::marker {

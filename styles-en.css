@@ -225,18 +225,18 @@ nav {
   transition: width 0.3s ease;
 }
 
-/*.nav-links a:hover::after {
-  width: 100%;
-}*/
-
-/*.nav-links a.active::after {
-  width: 100%; /* Keep the underline visible
-} */
-
-.nav-links a:hover::after,
-.nav-links a.active::after {
+.nav-links a:hover::after {
   width: 100%;
 }
+
+.nav-links a.active::after {
+  width: 100%; /* Keep the underline visible */
+}
+
+/*.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}*/
 
 .lang-switcher {
   display: flex;

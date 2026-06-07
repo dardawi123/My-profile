@@ -107,14 +107,10 @@ section {
 
 /*------------------------------ Header section design CSS ---------------------------- */
 header {
-position: fixed;
-display: flex;
-flex-direction: column;
-top: 0;
-left: 0;
-right: 0;
-z-index: 999;
-background: red !important;;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: var(--bg-nav-color);
 }
 
 nav {

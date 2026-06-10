@@ -522,19 +522,16 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
 }
 
 .multiple-text {
+  display: inline-block;
+  direction: rtl;
+  unicode-bidi: isolate;
+  min-width: 14em;
   padding: 0.25em 0.75em;
   /*padding: 5px 12px;*/
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
   line-height: 1.7;
 }
-
-/*.multiple-text::before {
-  /*content: "—";
-  margin-inline-end: clamp(8px, 1.2vw, 20px);
-  font-size: clamp(1.175rem, calc(1.175rem + ((1vw - 0.34rem) * 1.657)), 2.6rem);
-  color: currentColor;
-}*/
 
 .home-content h3:nth-of-type(2) {
   margin-bottom: clamp(1rem, calc(1rem + ((1vw - 0.34rem) * 0.5814)), 1.5rem);

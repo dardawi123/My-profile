@@ -527,10 +527,10 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
 }
 
 .multiple-text {
-  /*display: inline-block;*/
-  /*white-space: nowrap;
+  display: inline-block;
+  white-space: nowrap;
   direction: rtl;
-  unicode-bidi: isolate;*/
+  unicode-bidi: isolate;
   padding: 0.25em 0.75em;
   /*padding: 5px 12px;*/
   border-radius: 6px;

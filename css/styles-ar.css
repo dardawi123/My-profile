@@ -521,11 +521,15 @@ body.dark .multiple-text {
 background: color-mix(in srgb, var(--main-color) 35%, transparent);
 }
 
+.home-content h3:nth-of-type(2) {
+    text-align: right;
+    min-height: 2.2em; /* adjust as needed */
+}
+
 .multiple-text {
   display: inline-block;
   direction: rtl;
   unicode-bidi: isolate;
-  min-width: 14em;
   padding: 0.25em 0.75em;
   /*padding: 5px 12px;*/
   border-radius: 6px;

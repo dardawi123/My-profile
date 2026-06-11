@@ -358,7 +358,7 @@ nav {
 .style-switcher {
   position: fixed;
   left: 0;
-  top: clamp(6.9rem, 6.0645rem + 3.6129vw, 9rem);
+  top: clamp(7.6rem, 7.3421rem + 1.1789vw, 8.3rem);
   padding: clamp(0.625rem, 0.4861rem + 0.5556vw, 0.9375rem);
   width: clamp(9.375rem, 7.9861rem + 5.5556vw, 12.5rem);
   border: 1px solid var(--bg-switcher-color);

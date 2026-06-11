@@ -42,7 +42,6 @@ body.dark {
 body {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
   background: var(--bg-color) !important;
   color: var(--text-black-color);
   overflow-x: hidden;
@@ -150,8 +149,7 @@ section {
 header {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);

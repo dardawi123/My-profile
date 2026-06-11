@@ -173,7 +173,7 @@ nav {
 .right-section {
 	display: flex;
 	align-items: center;
-  gap: clamp(0.12rem, -0.5086rem + 2.7183vw, 1.7rem);
+  gap: clamp(1rem, 0.8011rem + 0.8602vw, 1.5rem);
 }
  
 .left-section {
@@ -674,9 +674,6 @@ ul li::marker {
     height: auto;
     object-fit: cover;
   }
-  .right-section {
-    gap: clamp(1rem, 0.52rem + 1.92vw, 1.3rem);
-  }
   body.dark .nav-links a {
     color: var(--text-white-color) !important;
   }
@@ -702,7 +699,7 @@ ul li::marker {
     background: color-mix(in srgb, var(--main-color) 14%, transparent);
     transform: translateX(1px);
   }
-    body.dark .nav-links a:not(:last-child) {
+  body.dark .nav-links a:not(:last-child) {
     border-bottom: 1px solid rgba(217, 212, 212, 0.1);
   }
   .nav-links a:not(:last-child) {
@@ -717,7 +714,7 @@ ul li::marker {
     color: inherit;
     flex-shrink: 0;
   }
-    .nav-links span:hover {
+  .nav-links span:hover {
     background: none;
   }
   .nav-links a::after {

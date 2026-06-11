@@ -42,6 +42,7 @@ body.dark {
 body {
   margin: 0;
   padding: 0;
+  padding-top: 60px;
   background: var(--bg-color) !important;
   color: var(--text-black-color);
   overflow-x: hidden;
@@ -49,16 +50,6 @@ body {
   transition:
     opacity 0.2s ease,
     filter 0.2s ease;
-}
-
-html, body {
-  background: var(--bg-color) !important;
-}
-
-body::before {
-  content: "";
-  display: block;
-  background: var(--bg-color) !important;
 }
 
 body.fade-out {
@@ -157,8 +148,10 @@ section {
 }
 
 header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);

@@ -361,15 +361,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if (lang === "ar") {
         strings = [
             "أستاذ مساعد",
-            "متخصصة في الدراما ودراسات الأفلام",
+            "باحثة أكاديمية",
+            "متخصصة في الدراسات الدرامية والسينمائية",
             "ناقدة درامية وسينمائية"
         ];
+        
     } else {
 
         strings = [
             "Assistant Professor",
-            "Specialist in Drama and Film Studies",
-            "Dramatic and Cinematic Critic"
+            "Academic Researcher",
+            "Scholar of Drama and Film Studies",
+            "Drama and Film Critic"
         ];
     }
 

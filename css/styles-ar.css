@@ -557,7 +557,8 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
 
 .home-content p {
   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
-  font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);
+  /*font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);*/
+  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
   text-align: justify;
 }
 
@@ -789,7 +790,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 .research-highlights .section-header p {
   color: var(--text-color);
   opacity: 0.8;
-  font-size: clamp(0.85rem, 0.8rem + 0.5vw, 1.3rem);
+  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
 }
 
 .stats-grid {
@@ -833,7 +834,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   color: var(--white-color);
 }
 
-@media (hover: hover) {
+/*@media (hover: hover) {
   .stat-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
@@ -841,7 +842,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   .stat-card:hover i {
     transform: scale(1.1);
   }
-}
+}*/
 
 /*------------------------------ Research section design CSS ---------------------------- */
 .field-intro {
@@ -852,14 +853,15 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 
 .field-intro .lead {
   /*font-size: 18px;*/
-  font-size: clamp(0.9rem, 0.7rem + 0.4923vw, 1.1rem);
+  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
   line-height: 1.4;
   margin-bottom: 15px;
   opacity: 0.90;
 }
 
 .field-intro .text {
-  font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem);
+  /*font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem);*/
+  font-size: clamp(1rem, 0.9602rem + 0.172vw, 1.1rem);
   line-height: 1.4;
   opacity: 0.80;
 }

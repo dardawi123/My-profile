@@ -558,7 +558,8 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
 .home-content p {
   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
   /*font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);*/
-  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  opacity: 0.95;
   text-align: justify;
 }
 
@@ -767,30 +768,31 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 .highlights-container {
-  max-width: 1200px;
+  max-width: clamp(20.3125rem, -1.4449rem + 94.086vw, 75rem);
   margin: 0 auto;
 }
 
-.research-highlights .section-header {
+.section-header {
   text-align: center;
   margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
 }
 
-.research-highlights .section-header h2 {
-  margin-bottom: 1rem;
+.section-header h2 {
+  margin-bottom: clamp(2.5rem, 1.7044rem + 2.2099vw, 3.5rem);
   font-size: clamp(1.75rem, 2vw + 1rem, 3.2rem);
   font-weight: 700;
   color: var(--main-color);
 }
 
-.research-highlights .section-header span {
+.section-header span {
   color: var(--main-color);
 }
 
-.research-highlights .section-header p {
+.section-header p {
   color: var(--text-color);
-  opacity: 0.8;
-  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
+  margin-bottom: 15px;
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  opacity: 0.95;
 }
 
 .stats-grid {
@@ -834,38 +836,37 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   color: var(--white-color);
 }
 
-/*@media (hover: hover) {
-  .stat-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
-  }
-  .stat-card:hover i {
-    transform: scale(1.1);
-  }
-}*/
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
+}
+
+.stat-card:hover i {
+  transform: scale(1.1);
+}
 
 /*------------------------------ Research section design CSS ---------------------------- */
 .field-intro {
-  max-width: 800px;
-  margin: 0 auto 20px;
-  text-align: justify;
+  max-width: clamp(20.3125rem, -1.4449rem + 94.086vw, 75rem);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .field-intro .lead {
-  /*font-size: 18px;*/
-  font-size: clamp(0.9rem, 0.7409rem + 0.6882vw, 1.3rem);
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
   line-height: 1.4;
   margin-bottom: 15px;
-  opacity: 0.90;
+  opacity: 0.95;
 }
 
-.field-intro .text {
-  /*font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem);*/
+/*.field-intro .text {
+  /*font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem)
   font-size: clamp(1rem, 0.9602rem + 0.172vw, 1.1rem);
   line-height: 1.4;
   opacity: 0.80;
-}
-/* KEYWORDS (clean academic style) */
+}*/
+
+/* KEYWORDS (clean academic style)
 .keywords {
   display: flex;
   flex-wrap: wrap;
@@ -881,7 +882,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   border-bottom: 1px solid color-mix(in srgb, var(--text-black-color) 20%, transparent);
   padding-bottom: 2px;
   margin-right: 5px;
-}
+}*/
 
 .research {
   background: var(--bg-color);
@@ -904,7 +905,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   align-items: center;
   flex-wrap: wrap;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 40px;
   gap: 14px;
   text-align: center;
 }
@@ -1128,6 +1129,7 @@ body.no-scroll {
   font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.34rem) * 1.686)), 3.2rem);
   font-weight: 700;
   text-align: center;
+  color: var(--main-color);
 }
 
 .project span {
@@ -1231,6 +1233,7 @@ body.no-scroll {
   font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.34rem) * 1.686)), 3.2rem);
   font-weight: 700;
   text-align: center;
+  color: var(--main-color);
 }   
 
 .container span {

@@ -5,6 +5,8 @@
   --bg-style-switcher-color: #F5F5F5;
   --bg-color: #F5F5F5;
   --bg-white-color: #F5F5F5;
+  --card-bg-color: #FCFCFC;
+  --card-shadow-color: rgba(0, 0, 0, 0.06);
   --header-shadow:0 1px 2px rgba(0, 0, 0, 0.18), 0 8px 24px rgba(0, 0, 0, 0.26);
   --text-black-color: #0B1215;
   --text-white-color: #F5F5F5;
@@ -37,6 +39,8 @@ body.dark {
   --bg-nav-menu-color: #1A252B;
   --bg-nav-menu-hover-color: #2A3942;
   --bg-style-switcher-color: #E2E8F0;
+  --card-bg-color: #1E2A2F;
+  --card-shadow-color: rgba(0, 0, 0, 0.18);
   --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 24px rgba(0, 0, 0, 0.35);
   --text-black-color: #F5F5F5;
   --text-nav-menu-color: #F5F5F5;
@@ -756,13 +760,133 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   display: block;  /* Show the night counter */
 }
 
+/*------------------------------ Research Highlights Section CSS ---------------------------- */
+.research-highlights {
+  background: var(--bg-color);
+}
+
+.highlights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.research-highlights .section-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+}
+
+.research-highlights .section-header h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.75rem, 2vw + 1rem, 3.2rem);
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.research-highlights .section-header span {
+  color: var(--main-color);
+}
+
+.research-highlights .section-header p {
+  color: var(--text-color);
+  opacity: 0.8;
+  font-size: clamp(0.85rem, 0.8rem + 0.5vw, 1.3rem);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: clamp(1.2rem, 2vw, 2.5rem);
+  justify-items: center;
+  align-items: stretch;
+}
+
+.stat-card {
+  width: 100%;
+  background: var(--card-bg-color);
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  border: 0.1rem solid var(--main-color);
+  border-top: 0.5rem solid var(--main-color);
+  box-shadow: 0 8px 30px var(--card-shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card i {
+  font-size: clamp(2rem, 1.5rem + 1.5vw, 3rem);
+  color: var(--main-color);
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.stat-card h3 {
+  font-size: clamp(2rem, 1.6rem + 1.5vw, 3rem);
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.stat-card p {
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.4rem);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--white-color);
+}
+
+@media (hover: hover) {
+  .stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.12);
+  }
+  .stat-card:hover i {
+    transform: scale(1.1);
+  }
+}
+
 /*------------------------------ Research section design CSS ---------------------------- */
+.field-intro {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  text-align: justify;
+}
+
+.field-intro .lead {
+  /*font-size: 18px;*/
+  font-size: clamp(0.9rem, 0.7rem + 0.4923vw, 1.1rem);
+  line-height: 1.4;
+  margin-bottom: 15px;
+  opacity: 0.90;
+}
+
+.field-intro .text {
+  font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem);
+  line-height: 1.4;
+  opacity: 0.80;
+}
+/* KEYWORDS (clean academic style) */
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6.5px;
+  margin: 18px auto 0;
+  max-width: 900px;
+}
+
+.keywords span {
+  font-size: clamp(0.75rem, 0.6875rem + 0.1538vw, 0.8125rem);
+  color: var(--main-color);
+  border-bottom: 1px solid color-mix(in srgb, var(--text-black-color) 20%, transparent);
+  padding-bottom: 2px;
+  margin-right: 5px;
+}
+
 .research {
   background: var(--bg-color);
 }
 
 .research h2 {
-  margin-bottom: 3.5rem;
+  margin-bottom: clamp(2.5rem, 1.7044rem + 2.2099vw, 3.5rem);
   font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.34rem) * 1.686)), 3.2rem);
   font-weight: 700;
   text-align: center;
@@ -998,7 +1122,7 @@ body.no-scroll {
 }
 
 .project h2 {
-  margin-bottom: 3.5rem;
+  margin-bottom: clamp(2.5rem, 1.7044rem + 2.2099vw, 3.5rem);
   font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.34rem) * 1.686)), 3.2rem);
   font-weight: 700;
   text-align: center;
@@ -1101,7 +1225,7 @@ body.no-scroll {
 }
 
 .container h2 {
-  margin-bottom: 3.5rem;
+  margin-bottom: clamp(2.5rem, 1.7044rem + 2.2099vw, 3.5rem);
   font-size: clamp(1.75rem, calc(1.75rem + ((1vw - 0.34rem) * 1.686)), 3.2rem);
   font-weight: 700;
   text-align: center;
@@ -1210,6 +1334,16 @@ border: none;
   }
 }
 
+/* Tablet */
+@media (max-width: 992px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .stat-card:nth-child(4) {
+    grid-column: 2 / 3;
+  }
+}
+
 @media (max-width: 842px) {
   .visit-counter figure img {
     width: 70px; /* Adjust to your desired size */
@@ -1233,6 +1367,12 @@ border: none;
   .visit-counter figure img {
     width: 60px; /* Adjust to your desired size */
     height: 30px; /* Adjust to your desired size */
+  }
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .stat-card:nth-child(4) {
+    grid-column: auto; 
   }
   .team_list  .team_member img {
     display: block;
@@ -1274,6 +1414,7 @@ border: none;
     left: 30px;
   }
 }
+
 
 /* Mobile menu: tablets and phones */
 @media (max-width: 650px) {
@@ -1413,12 +1554,14 @@ border: none;
 }
 
 @media (max-width: 575px) {
-  .research h2 {
-    margin-bottom: 2.5rem;
+  .stats-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
   }
-  .project h2 {
-    margin-bottom: 2.5rem;
-  }
+  .stat-card {
+    width: 100%;
+    max-width: 320px;
+  }  
   .popup_box {
     max-width: 500px;
     max-height: 600px;
@@ -1433,6 +1576,14 @@ border: none;
   .scroll-arrow.visible {
     left: 30px;
   }
+  .stats-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .stat-card {
+    width: 100%;
+    max-width: 320px;
+  }  
   .team_list .text h2 {
     font-size: 20px;
   }

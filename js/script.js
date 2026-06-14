@@ -389,7 +389,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // ------------------------------ Popup modal handling ------------------------------
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('click', (e) => {
+
+  // OPEN POPUP
+  const link = e.target.closest('a[data-tab]');
+  if (link) {
+    e.preventDefault();
+
+    const modal = document.getElementById(link.dataset.tab);
+
+    if (modal) {
+      modal.classList.add('show');
+      document.body.classList.add('no-scroll');
+    }
+  }
+
+  // CLOSE BUTTON
+  const closeBtn = e.target.closest('.close_btn');
+  if (closeBtn) {
+    const modal = closeBtn.closest('.popup_wrap');
+
+    if (modal) {
+      modal.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  // CLICK OUTSIDE
+  if (e.target.classList.contains('popup_wrap')) {
+    e.target.classList.remove('show');
+    document.body.classList.remove('no-scroll');
+  }
+});
+
+/*document.addEventListener('DOMContentLoaded', () => {
     // Open modal when clicking team links
     document.querySelectorAll('.team_list a').forEach((link) => {
         link.addEventListener('click', (e) => {
@@ -425,6 +458,38 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+})*/
+
+// ------------------ Team member filter (show/hide by category) ------------------
+document.addEventListener('click', (e) => {
+
+  const btn = e.target.closest('[data-filter]');
+  if (!btn) return;
+
+  const filter = btn.dataset.filter;
+
+  // remove active state
+  document.querySelectorAll('[data-filter]')
+    .forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.team_member');
+
+  cards.forEach(card => {
+
+    if (filter === 'all') {
+      card.style.display = 'block';
+      return;
+    }
+
+    card.style.display =
+      card.classList.contains(filter)
+        ? 'block'
+        : 'none';
+
+  });
+
 });
 
 // ----------------------- SWIPER NEW -----------------------
@@ -539,3 +604,4 @@ if (scrollToTopButton) {
         requestAnimationFrame(smoothScroll);
     });
 }
+

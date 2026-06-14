@@ -534,7 +534,6 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   direction: rtl;
   unicode-bidi: isolate;
   padding: 0.25em 0.75em;
-  /*padding: 5px 12px;*/
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
   line-height: 1.7;
@@ -559,7 +558,7 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
   /*font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);*/
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  opacity: 0.95;
+  opacity: 0.65;
   text-align: justify;
 }
 
@@ -654,7 +653,7 @@ a:focus, .btn:focus {
   line-height: 1;
   font-size: clamp(1rem, 0.7rem + 0.7385vw, 1.3rem);
   font-weight: 600;
-  color: var(--text-black-color);
+  opacity: 0.65;
   width: clamp(8.35rem, 7.1946rem + 4.9297vw, 11.2rem);
   flex-shrink: 0;
     text-shadow:
@@ -789,10 +788,11 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 .section-header p {
-  color: var(--text-color);
   margin-bottom: 15px;
+  margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);  
+  margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  opacity: 0.95;
+  opacity: 0.65;
 }
 
 .stats-grid {
@@ -846,44 +846,6 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 /*------------------------------ Research section design CSS ---------------------------- */
-.field-intro {
-  max-width: clamp(20.3125rem, -1.4449rem + 94.086vw, 75rem);
-  margin: 0 auto;
-  text-align: center;
-}
-
-.field-intro .lead {
-  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  line-height: 1.4;
-  margin-bottom: 15px;
-  opacity: 0.95;
-}
-
-/*.field-intro .text {
-  /*font-size: clamp(0.775rem, 0.65rem + 0.3077vw, 0.9rem)
-  font-size: clamp(1rem, 0.9602rem + 0.172vw, 1.1rem);
-  line-height: 1.4;
-  opacity: 0.80;
-}*/
-
-/* KEYWORDS (clean academic style)
-.keywords {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6.5px;
-  margin: 18px auto 0;
-  max-width: 900px;
-}
-
-.keywords span {
-  font-size: clamp(0.75rem, 0.6875rem + 0.1538vw, 0.8125rem);
-  color: var(--main-color);
-  border-bottom: 1px solid color-mix(in srgb, var(--text-black-color) 20%, transparent);
-  padding-bottom: 2px;
-  margin-right: 5px;
-}*/
-
 .research {
   background: var(--bg-color);
 }
@@ -897,6 +859,49 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 
 .research span {
   color: var(--main-color);
+}
+
+.field-intro {
+  max-width: clamp(20.3125rem, -1.4449rem + 94.086vw, 75rem);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lead {
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
+  margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
+  line-height: 1.4;
+  margin-bottom: 15px;
+  opacity: 0.65;
+}
+
+/* Research Filters */
+.research-filter{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
+  margin:30px 0 40px;
+}
+
+.research-filter button{
+  border:none;
+  background:var(--bg-white-color);
+  color:var(--main-color);
+  padding:8px 18px;
+  border-radius:30px;
+  cursor:pointer;
+  font-size:15px;
+  font-weight:500;
+  transition:.25s ease;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);
+}
+
+.research-filter button:hover,
+.research-filter button.active{
+  background:var(--main-color);
+  color:var(--text-white-color);
 }
 
 .team_list {
@@ -1008,8 +1013,9 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   background-color: var(--bg-white-color);
   color: var(--text-popup-color);
   max-width: 700px;
-  width: 90%; /* Ensure modal is responsive */
-  height: 500px;  /* Set a fixed height for the modal */
+  width: 90%;
+  height: 500px;   
+  overflow-y: auto;
   margin: 0 auto;
   z-index: 100;
   position: absolute;
@@ -1019,9 +1025,8 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   transform: translateY(-50%);
   border-radius: 6px;
   display: flex;
-  flex-direction: column;  /* Use column layout to stack the header and body */
-  overflow: hidden;  /* Hide overflow by default */
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+  flex-direction: column;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .model_header {
@@ -1061,46 +1066,83 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 .model_body {
-  padding: 12px 20px 12px 25px;
-  overflow-y: auto;  /* Allow scrolling of content */
-  flex-grow: 1;  /* Allow the body to grow and take remaining space */
-  max-height: calc(100vh - 200px); /* Prevent modal body from exceeding screen size */
+  padding: 16px;
+  line-height: 1.4;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.model_body h3 {
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 4px 0 4px;
+  color: var(--main-color);
+  border-right: 4px solid #60a5fa;
+  padding-right: 8px;
+  text-align: right;
 }
 
 .model_body p {
-  font-size: 16px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin: 0 0 12px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 0.7vw, 1rem);
   text-align: justify;
-  line-height: 1.4;
 }
 
-.model_reference h3 {
-  padding: 5px 0px 10px 25px;
-  color: var(--text-white-color);
-  margin: 0px;
-  font-size: 20px;
+.model_body ul {
+  margin: 4px 0 8px;
+  padding-right: 30px;
+}
+
+.model_body li {
+  list-style-type: disc;
+  font-size: clamp(0.9rem, 0.7vw, 1rem);
+  margin-bottom: 2px;
+  padding-left: 2px;
   text-align: right;
-  font-weight: 700;
 }
 
-.reference_body ul {
-  direction: ltr;
-  padding: 0 3px 0 0 !important;
+.model_body li:last-child {
+  margin-bottom: 0;
 }
 
-/*.reference_body li {
-  list-style-type: disc; 
-}*/
+.model_body li::marker {
+  color: #60a5fa;
+}
 
-.reference_body ul h4 {
-  text-indent: -25px;
-  padding-left: 25px;
-  font-size: 14px;
-  margin-bottom: 15px;
-  text-align: justify;
-  font-weight: normal;
+.model_body h4 {
+  margin: 12px 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: clamp(0.8rem, 0.9vw, 0.95rem);
+  font-weight: 600;
+  text-align: right;
+  padding-right: 8px;
+}
+
+.reference-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+
+.reference-list li {
+  padding-left: 2px;
+  margin-left: 0px;
+  margin-bottom: 6px;
   line-height: 1.4;
+  font-size: clamp(0.75rem, 0.8vw, 0.85rem);
+  text-align: right;
+}
+
+.reference-list li::marker {
+  color: #60a5fa;
+}
+
+.reference-list li:last-child {
+  margin-bottom: 18px;
 }
 
 body.no-scroll {

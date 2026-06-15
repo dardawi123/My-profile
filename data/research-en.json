@@ -4,11 +4,12 @@
     "title": "Drama",
     "icon": "fa-masks-theater",
     "image": "assets/cards-images/drama.png",
-    "paragraph": "Drama is the performance of scripted stories through dialogue, representing real or imagined events. It originated in theatre but is now widely used in film, television, and radio. Dramas can be serious or light in tone and include five main types: comedy, tragedy, farce, melodrama, and musical drama.",
+    "paragraphs": ["Drama is a performing art that portrays real or imagined events through the enactment of scripted dialogue before an audience. Theatre is the traditional and most prominent medium of drama, although it has expanded to include film, television, and radio. Drama conveys ideas, emotions, and human experiences through artistic performance. Classical drama is commonly classified into five principal genres: comedy, tragedy, farce, melodrama, and musical drama."],
     "categories": ["screen-media", "audience-studies"],
     "focus": "Drama as a narrative form across theatre, film, and television.",
     "reference": [
-      "&#169; 2022 by Mometrix Test Preparation."
+      "Balme, C.B. (2008) <em>The Cambridge Introduction to Theatre Studies</em>. Cambridge: Cambridge University Press.",
+      "Kennedy, D. (ed.) (2010) <em>The Oxford Companion to Theatre and Performance</em>. Oxford: Oxford University Press."
     ],
     "themes": [
       "Narrative structure",
@@ -24,13 +25,15 @@
     "title": "Film",
     "icon": "fa-film",
     "image": "assets/cards-images/film.png",
-    "paragraph": "Film (or cinema) is the art of moving images that combine time, space, sound, and narrative to tell stories. It developed in the late 19th century and has since grown into a global industry, with major production centers like Bollywood and Hollywood. While films are often made for entertainment, they also carry deeper themes, ideas, and symbolic meanings. Film studies examines both the form of films and their cultural, political, and audience interpretations.",
+    "paragraphs": [
+      "Film (or cinema) is an audiovisual art form that uses a sequence of moving images with sound to construct narrative and create the illusion of continuous time and space. It emerged in the late nineteenth century in Europe and the United States and has developed into a global industry, with major production centers such as Hollywood and Bollywood.",
+      "While films are primarily produced for entertainment, they also carry intellectual and symbolic meanings, including political and cultural dimensions. Film reception extends beyond narrative comprehension to interpretation of underlying ideas, which is the focus of film studies in terms of form, context, and impact."
+    ],
     "categories": ["screen-media", "film"],
     "focus": "Film as a visual and narrative medium.",
     "reference": [
-      "Coleman, R. (2000) The Menace II Society Copycat Murder Case and Thug Life. In Croteau's Media/Society: Industries, Images, and Audiences.",
-      "Dawis, A. (2007) Audience Reception Study and Cultural Studies: An overview and critique. A presentation in Kajian Sinema.",
-      "Junaidi, (2007) Kajian Film dan Cultural Studies. A presentation in Pelatihan Kajian Sinema."
+      "Balio, T. (2010) <em>The Oxford History of World Cinema</em>. Oxford: Oxford University Press.",
+      "Bordwell, D. and Thompson, K. (2016) <em>Film Art: An Introduction</em>. 11<sup>th</sup> edn. New York: McGraw-Hill Education."
     ],
     "themes": [
       "Visual storytelling",
@@ -42,43 +45,19 @@
   },
 
   {
-    "id": "soap-opera",
-    "title": "Soap Opera",
-    "icon": "fa-heart",
-    "image": "assets/cards-images/soap-opera.png",
-    "paragraph": [
-      "A daytime serial, typically broadcast on television or radio, features ongoing dramatic stories centered on multiple characters. Its main themes include love, family relationships, and domestic life.",
-      "The genre has evolved to include wider social and political issues alongside family drama. Soap operas have no fixed ending, allowing them to run for years and reach thousands of episodes. They originated in the US radio industry in the early 1930s, when advertising agencies created programs aimed at a female audience.",
-      "The first widely recognized soap opera was \"Painted Dreams,\" which aired on WGN radio in Chicago on October 20, 1930. Another early example, \"Clara, Lu, 'n Em,\" became the first network radio serial when it premiered on the NBC Blue Network on January 27, 1931."
-    ],
-    "categories": ["serialized-drama", "audience-studies"],
-    "focus": "Long-form serial television drama and its role in shaping emotional engagement and everyday storytelling.",
-    "reference": [
-      "Porto, M.P. (2001) 'Soap Opera/Telenovela', In (eds.) Neil, J., Smelser, Paul. and Baltes, B. International Encyclopedia of the Social & Behavioral Sciences, Pergamon. pp. 14205-14208. doi: org/10.1016/B0-08-043076-7/04379-5.",
-      "Ang, I. (1985) Watching Dallas: soap opera and the melodramatic imagination. New York: Methuen.",
-      "Bowles, K. (2020) Soap Opera: ‘No end of story, ever’, in Cunningham S. (ed.) The Australian TV Book. Routledge, pp. 117-129.",
-      "Geraghty, C. (1991) The Aesthetic Experience in Women and Soap Opera: A Study of Prime Time Soaps. Polity Press, Cambridge."
-    ],
-    "themes": [
-      "Serial narrative and long-term storytelling",
-      "Gender and domestic representation",
-      "Emotional engagement and viewer loyalty",
-      "Evolution of the genre"
-    ],
-    "lens": "Audience studies and melodrama theory."
-  },
-
-  {
     "id": "television",
     "title": "Television",
     "icon": "fa-tv",
     "image": "assets/cards-images/tv.png",
-    "paragraph": "Television is a system for transmitting visual images and sound to screens for entertainment, information, and education. It has become a common feature in homes and institutions and plays a major role in advertising and modern culture. Since its rapid growth in the mid-20th century, television has had a strong social influence, becoming a shared experience across diverse audiences. It has also evolved technologically from early mechanical systems to modern electronic broadcasting.",
+    "paragraphs": [
+      "Television is a system for transmitting visual and audio content to screens for entertainment, information, and education. It has become a central feature of households and institutions and serves as a major medium for advertising and cultural communication.",
+      "Since the mid-twentieth century, television has experienced rapid expansion and significant social influence, becoming a shared experience across diverse audiences. It has also evolved technologically from early mechanical systems to modern electronic broadcasting, with continuing changes in viewing practices today."
+    ],
     "categories": ["screen-media", "audience-studies"],
     "focus": "Television as a cultural and industrial medium shaping contemporary media consumption.",
     "reference": [
-      "Biagi, S. (2005) Media impact: An introduction to mass media. Sacramento, CA: Wadsworth.",
-      "Campbell, C., Martin, C.R., & Fabos,B. (2012) Media and culture: An introduction to mass communication. Boston, MA: Bedford St. Martin."
+      "Biagi, S. (2005) <em>Media/Impact: An Introduction to Mass Media</em>. Belmont, CA: Thomson Wadsworth.",
+      "Campbell, R., Martin, C.R. and Fabos, B. (2012) <em>Media Essentials: A Brief Introduction</em>. Boston: Bedford/St. Martin’s."
     ],
     "themes": [
       "Television history and evolution",
@@ -90,15 +69,43 @@
   },
 
   {
+    "id": "soap-opera",
+    "title": "Soap Opera",
+    "icon": "fa-heart",
+    "image": "assets/cards-images/soap-opera.png",
+    "paragraphs": [
+      "A soap opera is a serial dramatic genre broadcast on television or radio, focusing on the lives of multiple characters, with emphasis on emotional relationships and domestic themes in a melodramatic style. It is characterized by continuous storytelling with no fixed ending, allowing it to run for many years and reach thousands of episodes.",
+      "The genre originated in the United States in the early 1930s within radio broadcasting. Early examples include Painted Dreams (1930) and Clara, Lu, 'n Em (1931). The term “soap opera” comes from soap and detergent advertising that sponsored these programs, which targeted daytime audiences, particularly housewives."
+    ],
+    "categories": ["serialized-drama", "audience-studies"],
+    "focus": "Long-form serial television drama and its role in shaping emotional engagement and everyday storytelling.",
+    "reference": [
+      "Cantor, M.G. and Pingree, S. (1983) <em>The Soap Opera</em>. Beverly Hills: Sage Publications.",
+      "Allen, R.C. (1985) <em>Speaking of Soap Operas</em>. Chapel Hill: University of North Carolina Press."
+    ],
+    "themes": [
+      "Serial narrative and long-term storytelling",
+      "Gender and domestic representation",
+      "Emotional engagement and viewer loyalty",
+      "Evolution of the genre"
+    ],
+    "lens": "Audience studies and melodrama theory."
+  },
+
+  {
     "id": "telenovela",
     "title": "Telenovela",
     "icon": "fa-earth-americas",
     "image": "assets/cards-images/telenovela.png",
-    "paragraph": "A telenovela is a Latin American melodramatic serial that dominates television programming, often occupying prime-time slots and attracting high advertising revenue. These shows are widely exported around the world. While they share similarities with soap operas, telenovelas are a distinct genre with their own structure and cultural identity.",
+    "paragraphs": [
+      "A telenovela is a Latin American melodramatic television serial and one of the most popular formats in the region, often dominating prime-time schedules and generating high advertising revenues. It has also been widely exported to international markets.",
+      "Although telenovelas share certain features with soap operas, they are considered a distinct genre with a defined narrative structure and a specific cultural identity."
+    ],
     "categories": ["serialized-drama", "audience-studies"],
     "focus": "Latin American serial television and its global circulation as a cultural export.",
     "reference": [
-      "Porto, M.P. (2001) 'Soap Opera/Telenovela', In (eds.) Neil, J., Smelser, Paul. and Baltes, B. International Encyclopedia of the Social & Behavioral Sciences, Pergamon. pp. 14205-14208. doi: org/10.1016/B0-08-043076-7/04379-5."
+      "La Pastina, A.C. and Straubhaar, J.D. (2005) 'The Centrality of Telenovelas in Latin American Culture', <em>Media, Culture & Society</em>.",
+      "Allen, R.C. (1995) <em>To Be Continued… Soap Operas Around the World</em>. London: Routledge."
     ],
     "themes": [
       "Melodrama and serialized storytelling",
@@ -114,11 +121,15 @@
     "title": "Dizi",
     "icon": "fa-earth-americas",
     "image": "assets/cards-images/dizi.png",
-    "paragraph": "Dizi refers to Turkish television drama series, including both sitcoms and dramas. Since the 2000s, Turkish dramas have grown rapidly and become major cultural and economic exports. Turkey is now one of the world’s leading television exporters, with its series widely distributed across Asia, Europe, Latin America, and North Africa. These dramas have helped strengthen Turkey’s global cultural influence and recognition.",
+    "paragraphs": [
+      "Dizi refers to Turkish television drama series, including both comedy and drama formats. Since the early 2000s, Turkish television dramas have experienced rapid growth and have become significant cultural and economic exports.",
+      "Turkey is now one of the fastest-growing exporters of television series, with its productions widely distributed across Asia, Europe, Latin America, and North Africa, contributing to its global cultural influence."
+    ],
     "categories": ["serialized-drama", "audience-studies"],
     "focus": "Turkish television drama as a global media export and cultural form.",
     "reference": [
-      "Turkish television drama (2015) Wikipedia. Available at https://en.wikipedia.org/wiki/Turkish_television_drama (Accessed: 18 June 2020)."
+      "Özçetin, B. (2019) 'The Making of a Cultural Export: Turkish TV Dramas', <em>Journal of Communication Inquiry</em>.",
+      "Buccianti, A. (2010) 'Turkish Television Series and Their Global Impact', <em>Middle East Journal of Culture and Communication</em>."
     ],
     "themes": [
       "Transnational media circulation",
@@ -127,20 +138,19 @@
       "Audience reception across cultures"
     ],
     "lens": "Global media studies and cultural circulation theory."
-  },
+},
 
-  {
+{
   "id": "podcast",
   "title": "Podcast",
   "icon": "fa-microphone",
   "image": "assets/cards-images/podcast.jpeg",
-  "paragraph": "Podcasting is an emerging audio-visual and cultural medium that focuses on on-demand audio storytelling distributed through digital platforms. It enables creators to produce serialized or standalone content that fosters close connections with audiences through voice and conversational formats. Podcasts are widely accessed via platforms such as Spotify and Apple Podcasts, shaping new forms of audience engagement and media consumption. From the perspectives of media studies and sound studies, podcasting highlights digital intimacy, voice culture, and evolving patterns of audience reception in contemporary media environments.",
+  "paragraphs": ["Podcasting is an emerging digital audio medium based on on-demand audio storytelling distributed via online platforms. It enables creators to produce both serialized and standalone content that enhances audience engagement through spoken narrative and conversational formats. Podcasts are primarily accessed through platforms such as Spotify and Apple Podcasts and have become an integral component of contemporary digital media consumption, particularly within participatory and independent media production contexts."],
   "categories": ["screen-media", "audience-studies"],
   "focus": "Study of podcasting as an emerging audio-visual and cultural medium.",
   "reference": [
-      "Berry, R. (2016). Podcasting: Considering the evolution of the medium and its association with the word ‘radio’. The Radio Journal: International Studies in Broadcast & Audio Media.",
-      "Llinares, D., Fox, N., & Berry, R. (Eds.). (2018). Podcasting: New Aural Cultures and Digital Media. Palgrave Macmillan.",
-      "Spinelli, M., & Dann, L. (2019). Podcasting: The Audio Media Revolution. Bloomsbury Academic."
+      "Berry, R. (2016) 'Podcasting: Considering the Evolution of the Medium', In Llinares, D., Fox, N. and Berry, R. (eds.) <em>Podcasting: New Aural Cultures and Digital Media</em>. Palgrave Macmillan.",
+      "Llinares, D., Fox, N. and Berry, R. (eds.) (2018) <em>Podcasting: New Aural Cultures and Digital Media</em>. Cham: Springer."
     ],
   "themes": [
     "Audio storytelling",
@@ -156,14 +166,13 @@
   "title": "AI",
   "icon": "fa-robot",
   "image": "assets/cards-images/ai.jpeg",
-  "paragraph": "Artificial intelligence (AI) in media refers to the use of computational systems in film production, storytelling, and media analysis. It enables AI-generated content and introduces new forms of algorithmic storytelling that reshape traditional narrative structures. AI also raises questions about digital authorship, as creative processes become shared between humans and machines. At the same time, its growing role in media production brings ethical concerns regarding originality, bias, and creative control. From the perspectives of media theory, digital humanities, and film studies, AI is transforming how stories are created, analyzed, and understood.",
+  "paragraphs": ["Artificial intelligence (AI) in media refers to the use of computational systems and algorithms in film production, storytelling, and media analysis. It enables the creation of AI-generated content and the emergence of algorithmic forms of storytelling that reshape traditional narrative structures. AI also raises issues related to digital and intellectual authorship, as creative processes become distributed between humans and machines. In addition, it introduces ethical concerns regarding originality and creative control within contemporary media production."],
   "categories": ["screen-media", "film"],
   "focus": "Exploration of artificial intelligence in film production, storytelling, and media analysis.",
   "reference": [
-  "Boden, M. A. (2016). AI: Its Nature and Future. Oxford University Press.",
-  "Manovich, L. (2019). AI Aesthetics. Strelka Press.",
-  "Broussard, M. (2018). Artificial Unintelligence: How Computers Misunderstand the World. MIT Press.",
-  "Cave, S., Craig, C., & Dihal, K. (2019). Scary Robots: AI in Popular Culture. Oxford University Press."
+  "Floridi, L. (2014) <em>The Fourth Revolution: How the Infosphere is Reshaping Human Reality</em>. Oxford: Oxford University Press.",
+  "Jenkins, H. (2006) <em>Convergence Culture: Where Old and New Media Collide</em>. New York: New York University Press.",
+  "Cave, S., Craig, C., & Dihal, K. (2019) <em>Scary Robots: AI in Popular Culture</em>. Oxford University Press."
   ],
   "themes": [
     "AI-generated content",

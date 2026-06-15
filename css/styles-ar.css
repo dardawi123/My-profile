@@ -1073,12 +1073,12 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 .model_body h3 {
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  font-size: clamp(1.2rem, 1.2vw, 1.5rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin: 4px 0 4px;
   color: var(--main-color);
-  border-right: 4px solid #60a5fa;
+  border-right: 4px solid var(--main-color);
   padding-right: 8px;
   text-align: right;
 }
@@ -1087,7 +1087,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   margin: 0 0 12px;
   padding: 0 8px;
   border-radius: 8px;
-  font-size: clamp(0.9rem, 0.7vw, 1rem);
+  font-size: clamp(0.9rem, 0.7vw, 1.1rem);
   text-align: justify;
 }
 
@@ -1109,23 +1109,26 @@ body.dark .visit-counter figure img:nth-of-type(2) {
 }
 
 .model_body li::marker {
-  color: #60a5fa;
+  color: var(--main-color);
 }
 
 .model_body h4 {
-  margin: 12px 0 6px;
+  margin: 18px 0 6px;
+  padding-top: 8px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-size: clamp(0.8rem, 0.9vw, 0.95rem);
+  font-size: clamp(0.9rem, 0.9vw, 1.05rem);
+  border-top: 1px solid var(--main-color);
   font-weight: 600;
-  text-align: right;
-  padding-right: 8px;
+  text-align: left;
+  padding-left: 6px;
 }
 
 .reference-list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 15px;
   margin-top: 4px;
+  direction: ltr;
 }
 
 .reference-list li {
@@ -1134,7 +1137,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   margin-bottom: 6px;
   line-height: 1.4;
   font-size: clamp(0.75rem, 0.8vw, 0.85rem);
-  text-align: right;
+  text-align: left;
 }
 
 .reference-list li::marker {

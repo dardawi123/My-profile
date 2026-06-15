@@ -60,12 +60,7 @@ async function loadResearch() {
             <div class="model_body">
 
               <h3>Overview:</h3>
-              <p>${item.paragraph}</p>
-
-              <h4>Reference:</h4>
-              <ul class="reference-list">
-                ${reference}
-              </ul>
+              ${(item.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
 
               <h3>Research Focus:</h3>
               <p>${item.focus}</p>
@@ -77,6 +72,11 @@ async function loadResearch() {
 
               <h3>Analytical Lens:</h3>
               <p>${item.lens}</p>
+
+              <h4>References:</h4>
+              <ul class="reference-list">
+                ${reference}
+              </ul>
 
             </div>
           </div>

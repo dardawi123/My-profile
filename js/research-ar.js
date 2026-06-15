@@ -38,7 +38,7 @@ async function loadResearch() {
 
           <div class="btn2">
             <a href="#" data-tab="${item.id}">
-              View details
+              عرض التفاصيل
             </a>
           </div>
 
@@ -60,12 +60,7 @@ async function loadResearch() {
             <div class="model_body">
 
               <h3>نبذة:</h3>
-              <p>${item.paragraph}</p>
-
-              <h4>المراجع:</h4>
-              <ul class="reference-list">
-                ${reference}
-              </ul>
+              ${(item.paragraphs || []).map(p => `<p>${p}</p>`).join('')}
 
               <h3>محور البحث:</h3>
               <p>${item.focus}</p>
@@ -77,6 +72,11 @@ async function loadResearch() {
 
               <h3>الإطار التحليلي:</h3>
               <p>${item.lens}</p>
+
+              <h4>المراجع:</h4>
+              <ul class="reference-list">
+                ${reference}
+              </ul>
 
             </div>
           </div>

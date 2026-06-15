@@ -605,3 +605,126 @@ if (scrollToTopButton) {
     });
 }
 
+document.addEventListener("DOMContentLoaded", () => {
+
+});
+
+/* -------------------- PUBLICATIONS FILTER-------------------- */
+const pubButtons = document.querySelectorAll(".publication-filter button");
+const pubRows = document.querySelectorAll(".publication-table tr[data-type]");
+const pubHeading = document.getElementById("publication-heading");
+const pubNoResults = document.getElementById("no-results");
+
+const lang = document.documentElement.lang || "en";
+
+const pubLabels = {
+  en: {
+    all: "All Publications",
+    "journal-article": "Journal Articles",
+    "online-publication": "Online Publications",
+    book: "Books",
+    "book-chapter": "Book Chapters",
+    "phd-thesis": "PhD Theses"
+  },
+  ar: {
+    all: "جميع المنشورات",
+    "journal-article": "المقالات العلمية",
+    "online-publication": "المجلات الإلكترونية",
+    book: "الكتب",
+    "book-chapter": "فصول الكتب",
+    "phd-thesis": "رسائل الدكتوراه"
+  }
+};
+
+const currentLabels = pubLabels[lang] || pubLabels.en;
+
+function filterPublications(filter) {
+  let count = 0;
+
+  pubRows.forEach(row => {
+    const type = row.dataset.type;
+    const show = filter === "all" || type === filter;
+
+    row.style.display = show ? "table-row" : "none";
+    if (show) count++;
+  });
+
+  if (pubHeading) {
+    pubHeading.textContent = `${currentLabels[filter]} (${count})`;
+  }
+
+  if (pubNoResults) {
+    pubNoResults.style.display = count === 0 ? "block" : "none";
+  }
+}
+
+pubButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    pubButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    filterPublications(btn.dataset.filter);
+  });
+});
+
+filterPublications("all");
+
+/* -------------------- ACTIVITIES FILTER-------------------- */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const lang = document.documentElement.lang || "en";
+
+  const labels = {
+    en: {
+      all: "All Activities",
+      conference: "Conference",
+      workshop: "Workshop",
+      seminar: "Seminar",
+      festival: "Festival",
+      "forum-events": "Forum Events"
+    },
+    ar: {
+      all: "جميع الأنشطة",
+      conference: "المؤتمرات",
+      workshop: "ورش العمل",
+      seminar: "الندوات",
+      festival: "المهرجانات",
+      "forum-events": "فعاليات المنتدى"
+    }
+  };
+
+  const currentLabels = labels[lang] || labels.en;
+
+  const buttons = document.querySelectorAll(".activities-filter button");
+  const rows = document.querySelectorAll("table tr[data-type]");
+  const heading = document.getElementById("activity-heading");
+  const noResults = document.getElementById("act-no-results");
+
+  function filterActivities(filter) {
+    let count = 0;
+
+    rows.forEach(row => {
+      const show = filter === "all" || row.dataset.type === filter;
+      row.style.display = show ? "table-row" : "none";
+      if (show) count++;
+    });
+
+    if (heading) {
+      heading.textContent = `${currentLabels[filter]} (${count})`;
+    }
+
+    if (noResults) {
+      noResults.style.display = count === 0 ? "block" : "none";
+    }
+  }
+
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      filterActivities(btn.dataset.filter);
+    });
+  });
+
+  filterActivities("all");
+});

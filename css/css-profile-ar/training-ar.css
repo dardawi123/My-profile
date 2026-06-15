@@ -395,8 +395,10 @@ nav {
 .style-switcher .color-4 { background: #8C6A12; }
 .style-switcher .color-5 { background: #C84B68; }
 
+/* GLOBAL LAYOUT */
 section {
   padding: 4rem 2.2% 5rem;
+  margin: 0 auto;
 }
 
 table th:first-child,
@@ -492,7 +494,7 @@ ul li::marker {
 .container1 h1 {
   padding-bottom: 1.4rem;
 	font-weight: bold;
-	line-height: 2rem;
+	line-height: 1.2;
 	color: var(--main-color);
   font-size:clamp(1.5rem, 0.3rem + 2.9538vw, 2.7rem);
 }
@@ -500,13 +502,20 @@ ul li::marker {
 .container1 h2 {
 	font-weight: 500;
 	color: var(--text-h2-color);     
-	line-height: 1.65em;
+	line-height: 1.65;
 	font-size: clamp(1rem, 0.7778rem + 0.8889vw, 1.5rem);
 }
 
+/* Email link */
 .container1 a {
 	font-size: clamp(0.9rem, 0.7222rem + 0.7111vw, 1.3rem);
-  text-decoration: underline;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.container1 a:hover {
+  opacity: 0.7;
 }
 
 .container2 {

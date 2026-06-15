@@ -395,8 +395,21 @@ nav {
 .style-switcher .color-4 { background: #8C6A12; }
 .style-switcher .color-5 { background: #C84B68; }
 
+/* GLOBAL LAYOUT */
 section {
   padding: 4rem 2.2% 5rem;
+  margin: 0 auto;
+}
+
+/* LINKS */
+a:link,
+a:visited {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 table th:first-child,
@@ -409,35 +422,33 @@ table td:nth-child(2) {
   text-align: justify;
 }
 
+/* TABLE LAYOUT */
 table {
-	width: 100%;
-  margin: 0 auto;
-	border-collapse: collapse;
-  margin-top: 10px;
-  border: none;
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  align-items: center;
+  overflow: hidden;
 }
 
-td {
-  padding-top: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-bottom: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: center;
-  font-size: clamp(0.875rem, 0.8194rem + 0.2222vw, 1rem);
-  line-height: 1.5rem;
-  color: var(--td-text-color);
-}
-
+/* Header */
 th {
-  padding-top: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-bottom: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-right: 15px;
-  padding-left: 15px;
-	text-align: left;
-  font-size: clamp(1rem, 0.5rem + 1.2308vw, 1.5rem);
-	font-weight: 700;
-	background-color: var(--main-color);
-	color: var(--th-text-color);
+  padding: 1rem;
+  text-align: left;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  font-weight: 700;
+  background-color: var(--main-color);
+  color: var(--th-text-color);
+}
+
+/* Cells */
+td {
+  padding: 0.9rem 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  text-align: center;
+  color: var(--td-text-color);
 }
 
 tr:nth-of-type(even) {
@@ -453,14 +464,9 @@ tr {
   border-top: 1px solid var(--table-border-color);
 }
 
-a:link {
-	color: var(--link-color);
-	text-decoration: none;
-}
-
-a:visited {
-	color: var(--link-color);
-	text-decoration: none;
+tr:hover {
+  background-color: var(--bg-white-color);
+  transition: background-color 0.2s ease;
 }
 
 .container1 {
@@ -470,8 +476,8 @@ a:visited {
 
 .container1 h1 {
   padding-bottom: 1.4rem;
-	font-weight: bold;
-	line-height: 2rem;
+	font-weight: 700;
+	line-height: 1.2;
 	color: var(--main-color);
   font-size:clamp(1.5rem, 0.3rem + 2.9538vw, 2.7rem);
 }
@@ -479,26 +485,93 @@ a:visited {
 .container1 h2 {
 	font-weight: 500;
 	color: var(--text-black-color);     
-	line-height: 1.65em;
+	line-height: 1.65;
 	font-size: clamp(1rem, 0.7778rem + 0.8889vw, 1.5rem);
 }
 
 .container1 a {
 	font-size: clamp(0.9rem, 0.7222rem + 0.7111vw, 1.3rem);
-  text-decoration: underline;
+  color: var(--main-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+  
+.container1 a:hover {
+  opacity: 0.7;
+}
+
+.container1 a:hover {
+  opacity: 0.7;
 }
 
 .container2 {
 	margin: 50px auto 0 auto;
 }
 
+/* TITLE */
 .container2 h2 {
-	padding: 0 0 5px 10px;
-	font-weight: bold;
-	color: var(--main-color);
+  padding: 0 0 5px 10px;
+  font-weight: bold;
+  color: var(--main-color);
 	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
   border-bottom: 0.3rem solid var(--main-color);
 }
+
+ /* PUBLICATION FILTER BUTTONS */
+.activities-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 1rem 0 2rem;
+}
+
+.activities-filter button {
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--main-color);
+  background: transparent;
+  color: var(--main-color);
+  cursor: pointer;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.activities-filter button:hover {
+  background: var(--main-color);
+  color: var(--text-white-color);
+}
+
+.activities-filter button.active {
+  background: var(--main-color);
+  color: var(--text-white-color);
+}
+
+.zero {
+  font-size: 20px;
+  margin-top: 25px;
+  text-align: center;
+  display: none;
+  font-weight: 700;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  /*table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }*/
+
+  .container1 {
+    padding: 1rem;
+  }
+
+  .publication-filter {
+    justify-content: center;
+  }
+}
+
 
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {

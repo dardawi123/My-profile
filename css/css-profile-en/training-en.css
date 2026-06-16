@@ -405,10 +405,6 @@ section {
   padding: 20px 20px;
 }
 
-.container2 {
-	margin: 50px auto 0 auto;
-}
-
 .container1 h1 {
   padding-bottom: 1.4rem;
 	font-weight: 700;
@@ -433,9 +429,15 @@ section {
 }
 
 .container1 a:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+  text-decoration: underline;
 }
 
+.container2 {
+	margin: 50px auto 0 auto;
+}
+
+/* TITLE */
 .container2 h2 {
 	padding: 0 0 5px 10px;
 	font-weight: bold;
@@ -446,65 +448,6 @@ section {
 
 .container2 ul {
   border-bottom: 0.3rem solid var(--main-color);
-}
-
-/* TABLE LAYOUT */
-table {
-  width: 100%;
-  margin: 1rem auto;
-  border-collapse: collapse;
-  border-radius: 10px;
-  align-items: center;
-  overflow: hidden;
-}
-
-/* Header */
-th {
-  padding: 1rem;
-  text-align: left;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
-  font-weight: 700;
-  background-color: var(--main-color);
-  color: var(--th-text-color);
-}
-
-table th:first-child,
-table td:first-child {
-  text-align: justify;
-}
-
-table th:nth-child(2),
-table td:nth-child(2) {
-  text-align: justify;
-}
-
-/* ROW STYLING */
-tr:nth-of-type(even) {
-	background-color: var(--tr-light-color);
-}
-
-tr:nth-of-type(odd) {
-	background-color: var(--tr-dark-color);
-}
-
-tr {
-  border-bottom: 1px solid var(--table-border-color);
-}
-
-tr:hover {
-  background-color: var(--bg-white-color);
-  transition: background-color 0.2s ease;
-}
-
-/* LINKS */
-a:link,
-a:visited {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 ul {
@@ -526,7 +469,6 @@ li {
 ul li::marker {
 	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
 }
-
 
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {

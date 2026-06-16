@@ -305,7 +305,40 @@ window.addEventListener('load', updateArrowVisibility);
 updateArrowVisibility();
 
 }
-   
+
+// ------------------ Scroll-to-Top functionality ------------------
+const scrollToTopButton = document.querySelector('.footer-iconTop a');
+
+if (scrollToTopButton) {
+    scrollToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const start = window.scrollY;
+        const distance = start;
+        const duration = 500;
+        let startTime = null;
+
+        function smoothScroll(timestamp) {
+            if (!startTime) startTime = timestamp;
+
+            const progress = timestamp - startTime;
+            const scrollAmount = Math.min(progress / duration, 1);
+
+            window.scrollTo(0, start - distance * scrollAmount);
+
+            if (scrollAmount < 1) {
+                requestAnimationFrame(smoothScroll);
+            }
+        }
+
+        requestAnimationFrame(smoothScroll);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+
+});
+
 // <-------------------- Open/download a PDF one button ---------------->  
 function openPDF() {
     const path = window.location.pathname.toLowerCase();
@@ -318,6 +351,225 @@ function openPDF() {
 
     window.open(pdfPath, '_blank');
 } 
+
+// ------------------------------ Popup modal handling ------------------------------
+document.addEventListener('click', (e) => {
+
+  // OPEN POPUP
+  const link = e.target.closest('a[data-tab]');
+  if (link) {
+    e.preventDefault();
+
+    const modal = document.getElementById(link.dataset.tab);
+
+    if (modal) {
+      modal.classList.add('show');
+      document.body.classList.add('no-scroll');
+    }
+  }
+
+  // CLOSE BUTTON
+  const closeBtn = e.target.closest('.close_btn');
+  if (closeBtn) {
+    const modal = closeBtn.closest('.popup_wrap');
+
+    if (modal) {
+      modal.classList.remove('show');
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  // CLICK OUTSIDE
+  if (e.target.classList.contains('popup_wrap')) {
+    e.target.classList.remove('show');
+    document.body.classList.remove('no-scroll');
+  }
+});
+
+/* -------------------- PUBLICATIONS FILTER -------------------- */
+const pubButtons = document.querySelectorAll(".publication-filter button");
+const pubRows = document.querySelectorAll(".publication-table tr[data-type]");
+const pubHeading = document.getElementById("publication-heading");
+const pubNoResults = document.getElementById("publication-no-results");
+const pubTable = document.querySelector(".publication-table");
+
+const lang = document.documentElement.lang || "en";
+
+const pubLabels = {
+  en: {
+    all: "All Publications",
+    "journal-article": "Journal Articles",
+    "online-publication": "Online Publications",
+    book: "Books",
+    "book-chapter": "Book Chapters",
+    "phd-thesis": "PhD Theses"
+  },
+  ar: {
+    all: "جميع المنشورات",
+    "journal-article": "المقالات العلمية",
+    "online-publication": "المجلات الإلكترونية",
+    book: "الكتب",
+    "book-chapter": "فصول الكتب",
+    "phd-thesis": "رسائل الدكتوراه"
+  }
+};
+
+const currentLabels = pubLabels[lang] || pubLabels.en;
+
+function filterPublications(filter) {
+  let count = 0;
+
+  pubRows.forEach(row => {
+    const type = row.dataset.type;
+    const show = filter === "all" || type === filter;
+
+    row.style.display = show ? "table-row" : "none";
+
+    if (show) {
+      count++;
+    }
+  });
+
+  // Update heading (UPDATED)
+  if (pubHeading) {
+    const locale = document.documentElement.lang === "ar" ? "ar-EG" : "en";
+    const formattedCount = new Intl.NumberFormat(locale).format(count);
+
+    pubHeading.textContent = `${currentLabels[filter]} (${formattedCount})`;
+  }
+
+  // Show/hide table
+  if (pubTable) {
+    pubTable.style.display = count === 0 ? "none" : "table";
+  }
+
+  // Show/hide "No Results" message
+  if (pubNoResults) {
+    pubNoResults.style.display = count === 0 ? "block" : "none";
+  }
+}
+
+// Filter button clicks
+pubButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    pubButtons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    filterPublications(btn.dataset.filter);
+  });
+});
+
+// Initial load
+filterPublications("all");
+
+/* -------------------- ACTIVITIES FILTER -------------------- */
+document.addEventListener("DOMContentLoaded", () => {
+
+  const lang = document.documentElement.lang || "en";
+
+  const labels = {
+    en: {
+      all: "All Activities",
+      conference: "Conference",
+      workshop: "Workshop",
+      seminar: "Seminar",
+      festival: "Festival",
+      "forum-events": "Forum Events"
+    },
+    ar: {
+      all: "جميع الأنشطة",
+      conference: "المؤتمرات",
+      workshop: "ورش العمل",
+      seminar: "الندوات",
+      festival: "المهرجانات",
+      "forum-events": "فعاليات المنتدى"
+    }
+  };
+
+  const currentLabels = labels[lang] || labels.en;
+
+  const buttons = document.querySelectorAll(".activities-filter button");
+  const rows = document.querySelectorAll(".activity-table tr[data-type]");
+  const heading = document.getElementById("activity-heading");
+  const noResults = document.getElementById("activity-no-results");
+  const activityTable = document.querySelector(".activity-table");
+
+  function filterActivities(filter) {
+    let count = 0;
+
+    rows.forEach(row => {
+      const show = filter === "all" || row.dataset.type === filter;
+      row.style.display = show ? "table-row" : "none";
+
+      if (show) {
+        count++;
+      }
+    });
+
+    // Update heading (FIXED: language-aware numbers)
+    if (heading) {
+      const locale = document.documentElement.lang === "ar" ? "ar-EG" : "en";
+      const formattedCount = new Intl.NumberFormat(locale).format(count);
+
+      heading.textContent = `${currentLabels[filter]} (${formattedCount})`;
+    }
+
+    // Show/hide table
+    if (activityTable) {
+      activityTable.style.display = count === 0 ? "none" : "table";
+    }
+
+    // Show/hide "No results" message
+    if (noResults) {
+      noResults.style.display = count === 0 ? "block" : "none";
+    }
+  }
+
+  // Button click events
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      filterActivities(btn.dataset.filter);
+    });
+  });
+
+  // Initial load
+  filterActivities("all");
+});
+
+// ------------------ Team member filter (show/hide by category) ------------------
+document.addEventListener('click', (e) => {
+
+  const btn = e.target.closest('[data-filter]');
+  if (!btn) return;
+
+  const filter = btn.dataset.filter;
+
+  // remove active state
+  document.querySelectorAll('[data-filter]')
+    .forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+
+  const cards = document.querySelectorAll('.team_member');
+
+  cards.forEach(card => {
+
+    if (filter === 'all') {
+      card.style.display = 'block';
+      return;
+    }
+
+    card.style.display =
+      card.classList.contains(filter)
+        ? 'block'
+        : 'none';
+
+  });
+
+});
 
 // <-------------------- ScrollReveal Initialization ---------------->
 document.addEventListener('DOMContentLoaded', () => {
@@ -388,109 +640,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// ------------------------------ Popup modal handling ------------------------------
-document.addEventListener('click', (e) => {
-
-  // OPEN POPUP
-  const link = e.target.closest('a[data-tab]');
-  if (link) {
-    e.preventDefault();
-
-    const modal = document.getElementById(link.dataset.tab);
-
-    if (modal) {
-      modal.classList.add('show');
-      document.body.classList.add('no-scroll');
-    }
-  }
-
-  // CLOSE BUTTON
-  const closeBtn = e.target.closest('.close_btn');
-  if (closeBtn) {
-    const modal = closeBtn.closest('.popup_wrap');
-
-    if (modal) {
-      modal.classList.remove('show');
-      document.body.classList.remove('no-scroll');
-    }
-  }
-
-  // CLICK OUTSIDE
-  if (e.target.classList.contains('popup_wrap')) {
-    e.target.classList.remove('show');
-    document.body.classList.remove('no-scroll');
-  }
-});
-
-/*document.addEventListener('DOMContentLoaded', () => {
-    // Open modal when clicking team links
-    document.querySelectorAll('.team_list a').forEach((link) => {
-        link.addEventListener('click', (e) => {
-            e.preventDefault();
-
-            const popupId = link.getAttribute('data-tab');
-            const modal = document.getElementById(popupId);
-
-            if (!modal) return;
-
-            modal.classList.add('show');
-            document.body.classList.add('no-scroll');
-        });
-    });
-
-    // Close modal via close button
-    document.querySelectorAll('.close_btn').forEach((closeBtn) => {
-        closeBtn.addEventListener('click', () => {
-            const modal = closeBtn.closest('.popup_wrap');
-            if (!modal) return;
-
-            modal.classList.remove('show');
-            document.body.classList.remove('no-scroll');
-        });
-    });
-
-    // Close modal when clicking outside content (overlay)
-    document.querySelectorAll('.popup_wrap').forEach((modal) => {
-        modal.addEventListener('click', (e) => {
-            if (e.target === modal) {
-                modal.classList.remove('show');
-                document.body.classList.remove('no-scroll');
-            }
-        });
-    });
-})*/
-
-// ------------------ Team member filter (show/hide by category) ------------------
-document.addEventListener('click', (e) => {
-
-  const btn = e.target.closest('[data-filter]');
-  if (!btn) return;
-
-  const filter = btn.dataset.filter;
-
-  // remove active state
-  document.querySelectorAll('[data-filter]')
-    .forEach(b => b.classList.remove('active'));
-
-  btn.classList.add('active');
-
-  const cards = document.querySelectorAll('.team_member');
-
-  cards.forEach(card => {
-
-    if (filter === 'all') {
-      card.style.display = 'block';
-      return;
-    }
-
-    card.style.display =
-      card.classList.contains(filter)
-        ? 'block'
-        : 'none';
-
-  });
-
-});
 
 // ----------------------- SWIPER NEW -----------------------
 document.addEventListener('DOMContentLoaded', () => {
@@ -576,155 +725,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// ------------------ Scroll-to-Top functionality ------------------
-const scrollToTopButton = document.querySelector('.footer-iconTop a');
-
-if (scrollToTopButton) {
-    scrollToTopButton.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const start = window.scrollY;
-        const distance = start;
-        const duration = 500;
-        let startTime = null;
-
-        function smoothScroll(timestamp) {
-            if (!startTime) startTime = timestamp;
-
-            const progress = timestamp - startTime;
-            const scrollAmount = Math.min(progress / duration, 1);
-
-            window.scrollTo(0, start - distance * scrollAmount);
-
-            if (scrollAmount < 1) {
-                requestAnimationFrame(smoothScroll);
-            }
-        }
-
-        requestAnimationFrame(smoothScroll);
-    });
-}
-
-document.addEventListener("DOMContentLoaded", () => {
-
-});
-
-/* -------------------- PUBLICATIONS FILTER-------------------- */
-const pubButtons = document.querySelectorAll(".publication-filter button");
-const pubRows = document.querySelectorAll(".publication-table tr[data-type]");
-const pubHeading = document.getElementById("publication-heading");
-const pubNoResults = document.getElementById("no-results");
-
-const lang = document.documentElement.lang || "en";
-
-const pubLabels = {
-  en: {
-    all: "All Publications",
-    "journal-article": "Journal Articles",
-    "online-publication": "Online Publications",
-    book: "Books",
-    "book-chapter": "Book Chapters",
-    "phd-thesis": "PhD Theses"
-  },
-  ar: {
-    all: "جميع المنشورات",
-    "journal-article": "المقالات العلمية",
-    "online-publication": "المجلات الإلكترونية",
-    book: "الكتب",
-    "book-chapter": "فصول الكتب",
-    "phd-thesis": "رسائل الدكتوراه"
-  }
-};
-
-const currentLabels = pubLabels[lang] || pubLabels.en;
-
-function filterPublications(filter) {
-  let count = 0;
-
-  pubRows.forEach(row => {
-    const type = row.dataset.type;
-    const show = filter === "all" || type === filter;
-
-    row.style.display = show ? "table-row" : "none";
-    if (show) count++;
-  });
-
-  if (pubHeading) {
-    pubHeading.textContent = `${currentLabels[filter]} (${count})`;
-  }
-
-  if (pubNoResults) {
-    pubNoResults.style.display = count === 0 ? "block" : "none";
-  }
-}
-
-pubButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    pubButtons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
-
-    filterPublications(btn.dataset.filter);
-  });
-});
-
-filterPublications("all");
-
-/* -------------------- ACTIVITIES FILTER-------------------- */
-document.addEventListener("DOMContentLoaded", () => {
-
-  const lang = document.documentElement.lang || "en";
-
-  const labels = {
-    en: {
-      all: "All Activities",
-      conference: "Conference",
-      workshop: "Workshop",
-      seminar: "Seminar",
-      festival: "Festival",
-      "forum-events": "Forum Events"
-    },
-    ar: {
-      all: "جميع الأنشطة",
-      conference: "المؤتمرات",
-      workshop: "ورش العمل",
-      seminar: "الندوات",
-      festival: "المهرجانات",
-      "forum-events": "فعاليات المنتدى"
-    }
-  };
-
-  const currentLabels = labels[lang] || labels.en;
-
-  const buttons = document.querySelectorAll(".activities-filter button");
-  const rows = document.querySelectorAll("table tr[data-type]");
-  const heading = document.getElementById("activity-heading");
-  const noResults = document.getElementById("act-no-results");
-
-  function filterActivities(filter) {
-    let count = 0;
-
-    rows.forEach(row => {
-      const show = filter === "all" || row.dataset.type === filter;
-      row.style.display = show ? "table-row" : "none";
-      if (show) count++;
-    });
-
-    if (heading) {
-      heading.textContent = `${currentLabels[filter]} (${count})`;
-    }
-
-    if (noResults) {
-      noResults.style.display = count === 0 ? "block" : "none";
-    }
-  }
-
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
-      filterActivities(btn.dataset.filter);
-    });
-  });
-
-  filterActivities("all");
-});

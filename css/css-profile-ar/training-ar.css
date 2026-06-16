@@ -401,91 +401,7 @@ section {
   margin: 0 auto;
 }
 
-table th:first-child,
-table td:first-child {
-  text-align: center;
-}
-
-table th:nth-child(2),
-table td:nth-child(2) {
-  text-align: justify;
-}
-
-table {
-	width: 100%;
-  align-items: center;
-  margin: 0 auto;
-	border-collapse: collapse;
-  margin-top: 10px;
-  border: none;
-}
-
-td {
-  padding-top: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-bottom: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: justify;
-  font-size: clamp(0.875rem, 0.8194rem + 0.2222vw, 1rem);
-  line-height: 1.5rem;
-  color: var(--td-text-color);
-}
-
-th {
-  padding-top: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-bottom: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: left;
-  font-size: clamp(1rem, 0.5rem + 1.2308vw, 1.5rem);
-	font-weight: 700;
-	background-color: var(--main-color);
-	color: var(--th-text-color);
-}
-
-tr:nth-of-type(even) {
-	background-color: var(--tr-light-color);
-}
-
-tr:nth-of-type(odd) {
-	background-color: var(--tr-dark-color);
-}
-
-tr {
-	border-bottom: 1px solid var(--table-border-color);
-  border-top: 1px solid var(--table-border-color);
-}
-
-a:link {
-	color: var(--link-color);
-	text-decoration: none;
-}
-
-a:visited {
-	color: var(--link-color);
-	text-decoration: none;
-}
-
-ul {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: clamp(1.875rem, 1.5972rem + 1.1111vw, 2.5rem);
-  padding-left: 10px;
-	list-style-type: disc;
-}
-
-li {
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-right: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
-  padding-left: 0px;
-  text-align: justify;
-}
-
-ul li::marker {
-	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
-}
-
+/* CONTAINERS */
 .container1 {
 	margin: 0 auto 20px auto;
   padding: 20px 20px;
@@ -515,7 +431,8 @@ ul li::marker {
 }
 
 .container1 a:hover {
-  opacity: 0.7;
+  opacity: 0.85;
+  text-decoration: underline;
 }
 
 .container2 {
@@ -532,6 +449,26 @@ ul li::marker {
 
 .container2 ul {
   border-bottom: 0.3rem solid var(--main-color);
+}
+
+ul {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: clamp(1.875rem, 1.5972rem + 1.1111vw, 2.5rem);
+  padding-left: 10px;
+	list-style-type: disc;
+}
+
+li {
+  padding-top: 0;
+  padding-bottom: 10px;
+  padding-right: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
+  padding-left: 0px;
+  text-align: justify;
+}
+
+ul li::marker {
+	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

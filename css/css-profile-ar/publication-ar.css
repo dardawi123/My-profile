@@ -100,12 +100,11 @@ body.dark.theme-4 {--main-color: #987214; --bg-nav-color: #987214; --bg-switcher
 body.dark.theme-5 {--main-color: #CF5671; --bg-nav-color: #CF5671; --bg-switcher-color: #CF5671; --bg-nav-hover-color: #CF5671; --link-color: #CF5671;}
 
 /*------------------------------ Header section design CSS ---------------------------- */
-.top-header {
+/*.top-header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0.55rem;
-  /*padding: clamp(0.1875rem, 0.033rem + 0.5747vw, 0.5rem);*/
   background: var(--bg-color);
   color: var(--text-black-color);
   font-size: clamp(0.95rem, 0.8505rem + 0.4301vw, 1.2rem);
@@ -128,7 +127,6 @@ body.dark.theme-5 {--main-color: #CF5671; --bg-nav-color: #CF5671; --bg-switcher
 
 .dash {
   margin: 0 clamp(0.375rem, 0.2755rem + 0.4301vw, 0.625rem);
-  /*margin: 0 10px;*/
 }
 
 .icon1 {
@@ -145,7 +143,7 @@ body.dark.theme-5 {--main-color: #CF5671; --bg-nav-color: #CF5671; --bg-switcher
   object-fit: contain;
   transform: rotate(-10deg);
   margin-right: clamp(0.125rem, 0.0255rem + 0.4301vw, 0.375rem);
-}
+}*/
 
 header {
   position: sticky;
@@ -395,6 +393,7 @@ nav {
 .style-switcher .color-4 { background: #8C6A12; }
 .style-switcher .color-5 { background: #C84B68; }
 
+/* GLOBAL LAYOUT */
 section {
   padding: 4rem 2.2% 5rem;
   margin: 0 auto;
@@ -424,36 +423,33 @@ table td:nth-child(2) {
 /* TABLE LAYOUT */
 table {
   width: 100%;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
   border-collapse: collapse;
   border-radius: 10px;
   align-items: center;
   overflow: hidden;
 }
 
+/* Header */
+th {
+  padding: 1rem;
+  text-align: left;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  font-weight: 700;
+  background-color: var(--main-color);
+  color: var(--th-text-color);
+}
+
+/* Cells */
 td {
-  padding-top: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-bottom: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: justify;
+  padding: 0.9rem 1rem;
   font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: center;
   color: var(--td-text-color);
 }
 
-th {
-  padding-top: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-bottom: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: left;
-  font-size: clamp(1rem, 0.5rem + 1.2308vw, 1.5rem);
-	font-weight: 700;
-	background-color: var(--main-color);
-	color: var(--th-text-color);
-}
-
+/* ROW STYLING */
 tr:nth-of-type(even) {
 	background-color: var(--tr-light-color);
 }
@@ -472,42 +468,13 @@ tr:hover {
   transition: background-color 0.2s ease;
 }
 
-/* LINKS */
-a:link,
-a:visited {
-  color: var(--link-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  padding-right: clamp(1.875rem, 1.5972rem + 1.1111vw, 2.5rem);
-  padding-left: 10px;
-	list-style-type: disc;
-}
-
-li {
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-right: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
-  padding-left: 0px;
-  text-align: justify;
-}
-
-ul li::marker {
-	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
-}
-
+/* CONTAINERS */
 .container1 {
 	margin: 0 auto 20px auto;
   padding: 20px 20px;
 }
 
+/* HEADINGS (PROFILE SECTION) */
 .container1 h1 {
   padding-bottom: 1.4rem;
 	font-weight: 700;
@@ -518,7 +485,7 @@ ul li::marker {
 
 .container1 h2 {
 	font-weight: 500;
-	color: var(--text-h2-color);     
+	color: var(--text-black-color);     
 	line-height: 1.65;
 	font-size: clamp(1rem, 0.7778rem + 0.8889vw, 1.5rem);
 }
@@ -531,10 +498,16 @@ ul li::marker {
   transition: opacity 0.2s ease;
 }
 
+.container1 a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
 .container2 {
 	margin: 50px auto 0 auto;
 }
 
+/* TITLE */
 .container2 h2 {
 	padding: 0 0 5px 10px;
 	font-weight: bold;
@@ -542,6 +515,15 @@ ul li::marker {
 	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
   border-bottom: 0.3rem solid var(--main-color);
 }
+
+/* SUBTITLE */
+.container2 h3 {
+  padding: 0 10px 0 0;
+  font-weight: bold;
+  color: var(--text-black-color);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+}
+
  /* PUBLICATION FILTER BUTTONS */
 .publication-filter {
   display: flex;
@@ -551,13 +533,16 @@ ul li::marker {
 }
 
 .publication-filter button {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.125rem;
   border: 1px solid var(--main-color);
-  background: transparent;
+  background:var(--bg-white-color);
   color: var(--main-color);
-  cursor: pointer;
   border-radius: 25px;
-  font-size: 0.9rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.25s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,.08);
   transition: all 0.2s ease;
 }
 
@@ -571,19 +556,32 @@ ul li::marker {
   color: var(--text-white-color);
 }
 
-.zero {
-  font-size: 20px;
-  margin-top: 25px;
+.no-data-filter {
+  display: none; /* show when needed */
+  margin: 0.5rem auto;
+  padding: 16px 20px;
   text-align: center;
-  display: none;
-  font-weight: 700;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  font-weight: 500;
+  color: var(--th-text-color);
+  background-color: var(--main-color);
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
-.sub-title {
-	margin: 0;
-	padding: 25px 10px 0 10px;
-	text-align: right;
-	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  /*table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }*/
+  .container1 {
+    padding: 1rem;
+  }
+  .publication-filter {
+    justify-content: center;
+  }
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

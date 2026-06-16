@@ -401,17 +401,114 @@ section {
   margin: 0 auto;
 }
 
-table th:first-child,
-table td:first-child {
-  text-align: justify;
+/* Containers */
+.container1 {
+  margin: 0 auto 20px auto;
+  padding: 20px 20px;
 }
 
-table th:nth-child(2),
-table td:nth-child(2) {
-  text-align: justify;
+.container2 {
+  margin: 50px auto 0 auto;
 }
 
-/* TABLE LAYOUT */
+.container3 {
+  width: 100%;
+  margin: 20px auto 0 auto;
+}
+
+/* Headings */
+.container1 h1 {
+  padding-bottom: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--main-color);
+  font-size:clamp(1.5rem, 0.3rem + 2.9538vw, 2.7rem);
+}
+
+.container1 h2 {
+  font-weight: 500;
+  color: var(--text-black-color);
+  line-height: 1.65;
+	font-size: clamp(1rem, 0.7778rem + 0.8889vw, 1.5rem);
+}
+
+/* Email */
+.container1 a {
+	font-size: clamp(0.9rem, 0.7222rem + 0.7111vw, 1.3rem);
+  color: var(--main-color);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.container1 a:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+/* Section Titles */
+.container2 h2 {
+  padding: 0 0 5px 10px;
+  font-weight: bold;
+  color: var(--main-color);
+	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
+  border-bottom: 0.3rem solid var(--main-color);
+}
+
+.title {
+	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
+  padding: 0 0 5px 10px;
+  font-weight: 900;
+  color: var(--main-color);
+  text-align: right;
+  border-bottom: 0.3rem solid var(--main-color);
+  width: 100%;
+}
+
+.container2 p,
+.container3 p {
+  padding: 10px 15px 0 10px;
+  font-size: clamp(1.05rem, 0.98rem + 0.3vw, 1.25rem);
+  line-height: clamp(1.7rem, 1.5vw, 2rem);
+  text-align: justify;
+  color: var(--text-black-color);
+}
+
+/* Links inside text */
+.container2 a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.container2 a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  padding-right: clamp(1.875rem, 2vw, 2.5rem);
+  padding-left: 10px;
+  list-style-type: disc;
+}
+
+li {
+  padding-bottom: clamp(0.6rem, 1vw, 0.9rem);
+  padding-right: clamp(0.5rem, 1vw, 0.75rem);
+  text-align: justify;
+  font-size: clamp(1.05rem, 0.98rem + 0.3vw, 1.25rem);
+  line-height: clamp(1.6rem, 1.4vw, 1.9rem);
+}
+
+ul li::marker {
+  font-size: 1.5rem;
+}
+
+.year {
+  font-weight: 600;
+  color: var(--text-black-color);
+}
+
+/* Table */
 table {
   width: 100%;
   margin: 1rem auto;
@@ -421,43 +518,55 @@ table {
   overflow: hidden;
 }
 
+/* Header */
+th {
+  padding: 1rem;
+  text-align: left;
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  font-weight: 700;
+  background-color: var(--main-color);
+  color: var(--th-text-color);
+}
+
+/* Cells */
 td {
-  padding-top: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-bottom: clamp(0.3125rem, -0.125rem + 1.0769vw, 0.75rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: justify;
-  font-size: clamp(0.875rem, 0.8194rem + 0.2222vw, 1rem);
-  line-height: 1.5;
+  padding: 0.9rem 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  text-align: left;
   color: var(--td-text-color);
 }
 
-th {
-  padding-top: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-bottom: clamp(0.75rem, 0.5625rem + 0.4615vw, 0.9375rem);
-  padding-right: 10px;
-  padding-left: 10px;
-	text-align: left;
-  font-size: clamp(1rem, 0.5rem + 1.2308vw, 1.5rem);
-	font-weight: 700;
-	background-color: var(--main-color);
-	color: var(--th-text-color);
+/* Alignment */
+table th:first-child,
+table td:first-child {
+  text-align: left;
 }
 
+table th:nth-child(2),
+table td:nth-child(2) {
+  text-align: left;
+}
+
+/* Rows */
 tr:nth-of-type(even) {
-	background-color: var(--tr-light-color);
+  background-color: var(--tr-light-color);
 }
 
 tr:nth-of-type(odd) {
-	background-color: var(--tr-dark-color);
+  background-color: var(--tr-dark-color);
 }
 
 tr {
-	border-bottom: 1px solid var(--table-border-color);
-  border-top: 1px solid var(--table-border-color);
+  border-bottom: 1px solid var(--table-border-color);
 }
 
-/* LINKS */
+tr:hover {
+  background-color: var(--bg-white-color);
+  transition: background-color 0.2s ease;
+}
+
+/* GLOBAL LINKS */
 a:link,
 a:visited {
   color: var(--link-color);
@@ -466,116 +575,6 @@ a:visited {
 
 a:hover {
   text-decoration: underline;
-}
-
-ul {
-  padding-top: 15px;
-  padding-bottom: 0px;
-  padding-right: clamp(1.875rem, 1.5972rem + 1.1111vw, 2.5rem);
-  padding-left: 10px;
-	list-style-type: disc;
-}
-
-li {
-  padding-top: 0;
-  padding-bottom: 10px;
-  padding-right: clamp(0.5rem, 0.3889rem + 0.4444vw, 0.75rem);
-  padding-left: 0px;
-  text-align: justify;
-}
-
-ul li::marker {
-	font-size: clamp(1.3rem, 1.2111rem + 0.3556vw, 1.5rem);
-}
-
-.container1 {
-	margin: 0 auto 20px auto;
-  padding: 20px 20px;
-}
-
-.container1 h1 {
-  padding-bottom: 1.4rem;
-	font-weight: 700;
-	line-height: 1.2;
-	color: var(--main-color);
-  font-size:clamp(1.5rem, 0.3rem + 2.9538vw, 2.7rem);
-}
-
-.container1 h2 {
-	font-weight: 500;
-	color: var(--text-black-color);     
-	line-height: 1.65;
-	font-size: clamp(1rem, 0.7778rem + 0.8889vw, 1.5rem);
-}
-
-/* Email link */
-.container1 a {
-	font-size: clamp(0.9rem, 0.7222rem + 0.7111vw, 1.3rem);
-  color: var(--main-color);
-  text-decoration: none;
-  transition: opacity 0.2s ease;
-}
-
-.container1 a:hover {
-  opacity: 0.7;
-}
-
-.container2 {
-	margin: 50px auto 0 auto;
-}
-
-.container2 h2 {
-	padding: 0 0 5px 10px;
-	font-weight: bold;
-	color: var(--main-color);
-	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
-  border-bottom: 0.3rem solid var(--main-color);
-}
-
-.container2 p {
-	padding: 10px 15px 10px 10px;
-	line-height: 1.5rem;
-	font-size: clamp(1rem, 0.9444rem + 0.2222vw, 1.125rem);
-	text-align: justify;
-}
-
-.container2 a {
-	text-decoration: none;	
-	color: var(--link-color);
-}
-
-.container2 a:hover {
-	color: var(--link-color);
-	text-decoration: underline;
-	background-color: transparent;
-	font-size: clamp(1rem, 0.9444rem + 0.2222vw, 1.125rem);
-}
-
-.container3 {
-  width: 100%;
-	margin: 20px auto 0 auto;
-}
-
-.year {
-  font-weight: 600;
-  color: var(--text-black-color);
-}
-
-.title {
-	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
-	padding: 0 0 0 10px;
-	font-weight: 900;
-	color: var(--main-color);
-	text-align: right;
-  border-bottom: 0.3rem solid var(--main-color);
-  width: 100%;
-}
-
-.container3 p {
-	padding: 10px 15px 10px 10px;
-	line-height: 1.5rem;
-	font-size: clamp(1rem, 0.9444rem + 0.2222vw, 1.125rem);
-	text-align: justify;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

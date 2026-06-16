@@ -507,7 +507,7 @@ nav {
 }
 
 body.dark .multiple-text {
-background: color-mix(in srgb, var(--main-color) 35%, transparent);
+  background: color-mix(in srgb, var(--main-color) 35%, transparent);
 }
 
 .multiple-text {
@@ -537,7 +537,7 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
   /*font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);*/
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  opacity: 0.65;
+  opacity: 0.75;
   text-align: justify;
   line-height: 1.4;
 }
@@ -558,7 +558,8 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   width: clamp(9.2rem, 5.818vw + 7.018rem, 14rem);
   height: 100%;
   border: 2px solid var(--main-color); /* Consistent thinner border */
-  background: var(--bg-color);
+  /*background: var(--bg-color);*/
+  background:var(--bg-white-color);
   color: var(--main-color);
   border-radius: 0.4rem;
   box-shadow: 0 0 .8rem var(--main-color);
@@ -635,7 +636,7 @@ a:focus, .btn:focus {
   font-weight: 600;
   color: var(--text-black-color);
   width: clamp(8.04rem, 7.4356rem + 2.5786vw, 10.53rem);
-  opacity: 0.65;
+  opacity: 0.75;
   flex-shrink: 0;
   text-shadow:
     0 1px 0 rgba(255,255,255,0.18),
@@ -658,7 +659,8 @@ a:focus, .btn:focus {
   height: var(--size);
   border-radius: 50%;
   border: 0.1rem solid var(--main-color);
-  background-color: var(--bg-color);
+  /*background: var(--bg-color);*/
+  background:var(--bg-white-color);
   color: var(--main-color);
   font-size: clamp(1.2rem, 1.0665rem + 0.5696vw, 1.75rem);
   text-decoration: none;
@@ -772,7 +774,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);  
   margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 .stats-grid {
@@ -852,7 +854,7 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
   line-height: 1.4;
   margin-bottom: 15px;
-  opacity: 0.65;
+  opacity: 0.75;
 }
 
 /* Research Filters */
@@ -860,18 +862,18 @@ body.dark .visit-counter figure img:nth-of-type(2) {
   display:flex;
   justify-content:center;
   flex-wrap:wrap;
-  gap:12px;
-  margin:30px 0 40px;
+  gap: 12px;
+  margin: 1rem 0 2rem;
 }
 
-.research-filter button{
-  border:none;
+.research-filter button {
+  padding: 0.5rem 1.125rem;
+  border: 1px solid var(--main-color);
   background:var(--bg-white-color);
   color:var(--main-color);
-  padding:8px 18px;
-  border-radius:30px;
+  border-radius:25px;
   cursor:pointer;
-  font-size:15px;
+  font-size:1rem;
   font-weight:500;
   transition:.25s ease;
   box-shadow:0 2px 6px rgba(0,0,0,.08);

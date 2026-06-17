@@ -92,7 +92,8 @@ async function loadResearch() {
 
   });
 
-  initializePopups();
+  initPopupModal();
+  initTeamMemberFilter();
 }
 
 loadResearch();

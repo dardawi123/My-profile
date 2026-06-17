@@ -1,11 +1,10 @@
-
+// ======================================================
 // Theme & Dark Mode Initialization
+// ======================================================
 function initTheme() {
-    // Get saved values
     const savedTheme = localStorage.getItem("themeColor") || "theme-1";
     const isDark = localStorage.getItem("darkMode") === "true";
 
-    // Remove all theme classes
     document.body.classList.remove(
         "theme-1",
         "theme-2",
@@ -13,18 +12,14 @@ function initTheme() {
         "theme-4",
         "theme-5"
     );
-
-    // Apply saved theme
     document.body.classList.add(savedTheme);
-
-    // Apply dark mode
     document.body.classList.toggle("dark", isDark);
-
-    // Update day/night icon
     updateDayNightIcon();
 }
 
+// ======================================================
 // Theme Color Switcher
+// ======================================================
 function setActiveStyle(theme) {
     document.body.classList.remove(
         "theme-1",
@@ -35,35 +30,34 @@ function setActiveStyle(theme) {
     );
 
     document.body.classList.add(theme);
-
     localStorage.setItem("themeColor", theme);
-
-    // Close style switcher after selection
     const styleSwitcher = document.querySelector(".style-switcher");
+
     if (styleSwitcher) {
         styleSwitcher.classList.remove("open");
     }
 }
 
+// ======================================================
 // Dark Mode
+// ======================================================
 function toggleDarkMode() {
     document.body.classList.toggle("dark");
-
     const isDark = document.body.classList.contains("dark");
-
     localStorage.setItem("darkMode", isDark);
 
     updateDayNightIcon();
 }
 
-// Day/Night Icon
+// ======================================================
+// Day / Night Icon
+// ======================================================
 function updateDayNightIcon() {
-    const dayNight = document.querySelector(".day-night");
 
+    const dayNight = document.querySelector(".day-night");
     if (!dayNight) return;
 
     const icon = dayNight.querySelector("span");
-
     if (!icon) return;
 
     icon.classList.remove("fa-sun", "fa-moon");
@@ -75,13 +69,23 @@ function updateDayNightIcon() {
     }
 }
 
-// DOM Ready
-document.addEventListener("DOMContentLoaded", () => {
+// ======================================================
+// Theme & Navigation
+// ======================================================
+function initThemeAndNavigation() {
 
-    // Initialize theme and dark mode
+    // Always initialize theme
     initTheme();
 
-    // Style Switcher Toggle
+    const pageNeedsIt =
+        document.querySelector(".style-switcher") ||
+        document.querySelector(".nav-links");
+
+    if (!pageNeedsIt) {
+        console.log("Theme & Navigation skipped");
+        return;
+    }
+
     const styleSwitcher = document.querySelector(".style-switcher");
     const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
 
@@ -96,91 +100,118 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // Dark Mode Toggle Button
     const darkToggle = document.querySelector(".dark-mode-toggle");
 
     if (darkToggle) {
-        darkToggle.addEventListener("click", toggleDarkMode);
+        darkToggle.addEventListener(
+            "click",
+            toggleDarkMode
+        );
     }
 
-    // Day/Night Toggle Button
     const dayNight = document.querySelector(".day-night");
 
-    if (dayNight) {
-        dayNight.addEventListener("click", toggleDarkMode);
+    if (dayNight) {dayNight.addEventListener(
+            "click",
+            toggleDarkMode
+        );
     }
 
-    // Active Navigation Link
-    const currentPage =
-        window.location.pathname.split("/").pop() || "index.html";
-
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
     const navLinks = document.querySelectorAll(".nav-links a");
 
     navLinks.forEach(link => {
+
         const href = link.getAttribute("href");
 
         if (href === currentPage) {
             link.classList.add("active");
         }
+
     });
-});
-
-// <-------------------- Menu elements ---------------->
-const menuToggle = document.getElementById('menuToggle');
-const navLinks = document.getElementById('navLinks');
-const menuClose = document.getElementById('menuClose');
-const menuOverlay = document.getElementById('menuOverlay');
-const body = document.body;
-
-// Safety check (prevents crashes if any element is missing)
-if (menuToggle && navLinks && menuClose && menuOverlay) {
-
-  function openMenu() {
-    navLinks.classList.add('show');
-    menuOverlay.classList.add('show');
-    body.classList.add('no-scroll');
-  }
-
-  function closeMenu() {
-    navLinks.classList.remove('show');
-    menuOverlay.classList.remove('show');
-    body.classList.remove('no-scroll');
-  }
-
-  menuToggle.addEventListener('click', openMenu);
-  menuClose.addEventListener('click', closeMenu);
-
-  // Close when clicking outside menu (overlay)
-  /*menuOverlay.addEventListener('click', closeMenu);*/
-
-  // Optional: close menu when clicking a nav link (good UX)
-  navLinks.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', closeMenu);
-  });
-
-  // Optional: ESC key closes menu
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeMenu();
-  });
-
-} else {
-  console.warn("Menu elements missing in DOM");
 }
 
-// ========== LANGUAGE SWITCH ==========
-document.addEventListener("DOMContentLoaded", () => {
+// ======================================================
+// Menu
+// ======================================================
+function initMenu() {
+    const pageNeedsIt = document.getElementById("menuToggle") !== null;
+
+    if (!pageNeedsIt) {
+        console.log("Menu skipped");
+        return;
+    }
+
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const menuClose = document.getElementById("menuClose");
+    const menuOverlay = document.getElementById("menuOverlay");
+    const body = document.body;
+
+    if (
+        !menuToggle ||
+        !navLinks ||
+        !menuClose ||
+        !menuOverlay
+    ) {
+        return;
+    }
+
+    function openMenu() {
+        navLinks.classList.add("show");
+        menuOverlay.classList.add("show");
+        body.classList.add("no-scroll");
+    }
+
+    function closeMenu() {
+        navLinks.classList.remove("show");
+        menuOverlay.classList.remove("show");
+        body.classList.remove("no-scroll");
+    }
+
+    menuToggle.addEventListener("click", openMenu);
+    menuClose.addEventListener("click", closeMenu);
+
+    navLinks.querySelectorAll("a").forEach(link => {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+            closeMenu();
+        }
+    });
+}
+
+// ======================================================
+// Language Switch
+// ======================================================
+function initLanguageSwitch() {
+    const pageNeedsIt = document.getElementById("langSwitch") !== null;
+
+    if (!pageNeedsIt) {
+        console.log("Language switch skipped");
+        return;
+    }
 
     const langSwitch = document.getElementById("langSwitch");
-    if (!langSwitch) return;
 
     langSwitch.addEventListener("click", function (e) {
+
         e.preventDefault();
 
-        if (this.classList.contains("animating")) return;
-        this.classList.add("animating", "animate");
+        if (this.classList.contains("animating")) {
+            return;
+        }
 
-        // Compute target at click time (more robust)
-        let path = window.location.pathname.toLowerCase();
+        this.classList.add(
+            "animating",
+            "animate"
+        );
+
+        let path =
+            window.location.pathname.toLowerCase();
+
         let target = null;
 
         const isHome =
@@ -194,27 +225,39 @@ document.addEventListener("DOMContentLoaded", () => {
             path === "/ar/index";
 
         if (isHome) {
+
             target = "/ar/index.html";
-        }
-        else if (isArabicHome) {
+
+        } else if (isArabicHome) {
+
             target = "/index.html";
-        }
-        else if (path.includes("/profile-en/")) {
+
+        } else if (path.includes("/profile-en/")) {
+
             target = path
                 .replace("/profile-en/", "/profile-ar/")
                 .replace("-en.html", "-ar.html");
-        }
-        else if (path.includes("/profile-ar/")) {
+
+        } else if (path.includes("/profile-ar/")) {
+
             target = path
                 .replace("/profile-ar/", "/profile-en/")
                 .replace("-ar.html", "-en.html");
-        }
-        else {
+
+        } else {
+
             if (path.includes("/ar/")) {
-                target = path.replace("/ar/", "/");
-                target = target.replace("-ar.html", ".html");
+
+                target =
+                    path.replace("/ar/", "/");
+
+                target =
+                    target.replace("-ar.html", ".html");
+
             } else {
-                target = path.replace(".html", "-ar.html");
+
+                target =
+                    path.replace(".html", "-ar.html");
             }
         }
 
@@ -222,362 +265,584 @@ document.addEventListener("DOMContentLoaded", () => {
 
         document.body.classList.add("fade-out");
 
-        // Force browser paint before redirect (IMPORTANT)
         requestAnimationFrame(() => {
             setTimeout(() => {
                 window.location.href = target;
             }, 200);
         });
+
     });
-});
-
-// <-------------------- Scroll down arrow ---------------->
-const scrollArrow = document.getElementById('scrollArrow');
-const sections = document.querySelectorAll('section');
-
-if (scrollArrow && sections.length) {
-
-let lastScrollY = window.scrollY;
-let isScrollingDown = true;
-
-function getCurrentSectionIndex() {
-    const mid = window.innerHeight / 2;
-    let index = 0;
-
-    sections.forEach((section, i) => {
-    const rect = section.getBoundingClientRect();
-
-    if (rect.top <= mid && rect.bottom >= mid) {
-        index = i;
-    }
-    });
-
-    return index;
 }
 
-function updateArrowVisibility() {
+// ======================================================
+// Scroll Arrow
+// ======================================================
+function initScrollArrow() {
+    const scrollArrow = document.getElementById("scrollArrow");
+    const sections = document.querySelectorAll("section");
+    const pageNeedsIt =
+        scrollArrow !== null &&
+        sections.length > 0;
 
-    const scrollTop = window.scrollY;
-    const scrollBottom = scrollTop + window.innerHeight;
-    const pageHeight = document.documentElement.scrollHeight;
-
-    const atTop = scrollTop <= 10;
-    const atBottom = scrollBottom >= pageHeight - 2;
-
-    isScrollingDown = scrollTop > lastScrollY;
-    lastScrollY = scrollTop;
-
-    scrollArrow.classList.remove('visible', 'up', 'down');
-
-    // ❌ Bottom = always hidden
-    if (atBottom) return;
-
-    // ✔ Top = always visible
-    if (atTop) {
-    scrollArrow.classList.add('visible', 'down');
-    return;
+    if (!pageNeedsIt) {
+        console.log("Scroll Arrow skipped");
+        return;
     }
 
-    // ✔ Middle logic depends on direction
-    if (isScrollingDown) {
-    scrollArrow.classList.add('visible', 'down');
-    } else {
-    scrollArrow.classList.remove('visible');
-    }
-}
+    let lastScrollY = window.scrollY;
+    let isScrollingDown = true;
 
-function scrollToNextSection() {
-    const index = getCurrentSectionIndex();
+    function getCurrentSectionIndex() {
 
-    if (index < sections.length - 1) {
-    sections[index + 1].scrollIntoView({ behavior: 'smooth' });
-    }
-}
+        const mid = window.innerHeight / 2;
 
-// click always goes down only
-scrollArrow.addEventListener('click', scrollToNextSection);
+        let index = 0;
 
-// events
-window.addEventListener('scroll', updateArrowVisibility);
-window.addEventListener('resize', updateArrowVisibility);
-window.addEventListener('load', updateArrowVisibility);
+        sections.forEach((section, i) => {
 
-updateArrowVisibility();
+            const rect = section.getBoundingClientRect();
 
-}
-
-// ------------------ Scroll-to-Top functionality ------------------
-const scrollToTopButton = document.querySelector('.footer-iconTop a');
-
-if (scrollToTopButton) {
-    scrollToTopButton.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        const start = window.scrollY;
-        const distance = start;
-        const duration = 500;
-        let startTime = null;
-
-        function smoothScroll(timestamp) {
-            if (!startTime) startTime = timestamp;
-
-            const progress = timestamp - startTime;
-            const scrollAmount = Math.min(progress / duration, 1);
-
-            window.scrollTo(0, start - distance * scrollAmount);
-
-            if (scrollAmount < 1) {
-                requestAnimationFrame(smoothScroll);
+            if (
+                rect.top <= mid &&
+                rect.bottom >= mid
+            ) {
+                index = i;
             }
+
+        });
+
+        return index;
+    }
+
+    function updateArrowVisibility() {
+        const scrollTop = window.scrollY;
+        const scrollBottom = scrollTop + window.innerHeight;
+        const pageHeight = document.documentElement.scrollHeight;
+        const atTop =
+            scrollTop <= 10;
+        const atBottom =
+            scrollBottom >= pageHeight - 2;
+
+        isScrollingDown =
+            scrollTop > lastScrollY;
+
+        lastScrollY = scrollTop;
+
+        scrollArrow.classList.remove(
+            "visible",
+            "up",
+            "down"
+        );
+
+        if (atBottom) return;
+
+        if (atTop) {
+            scrollArrow.classList.add(
+                "visible",
+                "down"
+            );
+            return;
         }
 
-        requestAnimationFrame(smoothScroll);
-    });
+        if (isScrollingDown) {
+            scrollArrow.classList.add(
+                "visible",
+                "down"
+            );
+        } else {
+            scrollArrow.classList.remove(
+                "visible"
+            );
+        }
+    }
+
+    function scrollToNextSection() {
+        const index = getCurrentSectionIndex();
+
+        if (index < sections.length - 1) {
+
+            sections[index + 1].scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+    }
+
+    scrollArrow.addEventListener(
+        "click",
+        scrollToNextSection
+    );
+
+    window.addEventListener(
+        "scroll",
+        updateArrowVisibility
+    );
+
+    window.addEventListener(
+        "resize",
+        updateArrowVisibility
+    );
+
+    updateArrowVisibility();
 }
+// ======================================================
+// Scroll To Top
+// ======================================================
+function initScrollToTop() {
+    const scrollToTopButton =
+        document.querySelector(
+            ".footer-iconTop a"
+        );
 
-document.addEventListener("DOMContentLoaded", () => {
+    const pageNeedsIt =
+        scrollToTopButton !== null;
 
-});
+    if (!pageNeedsIt) {
+        console.log("Scroll To Top skipped");
+        return;
+    }
 
-// <-------------------- Open/download a PDF one button ---------------->  
+    scrollToTopButton.addEventListener(
+        "click",
+        (e) => {
+
+            e.preventDefault();
+
+            const start = window.scrollY;
+            const distance = start;
+            const duration = 500;
+
+            let startTime = null;
+
+            function smoothScroll(timestamp) {
+
+                if (!startTime) {
+                    startTime = timestamp;
+                }
+
+                const progress = timestamp - startTime;
+                const scrollAmount =
+                    Math.min(
+                        progress / duration,
+                        1
+                    );
+
+                window.scrollTo(
+                    0,
+                    start - distance * scrollAmount
+                );
+
+                if (scrollAmount < 1) {
+                    requestAnimationFrame(
+                        smoothScroll
+                    );
+                }
+            }
+
+            requestAnimationFrame(
+                smoothScroll
+            );
+        }
+    );
+}
+// ======================================================
+// Open / Download PDF
+// ======================================================
 function openPDF() {
     const path = window.location.pathname.toLowerCase();
 
-    const isArabicPage = path.includes("/ar/") || path.includes("-ar.html");
+    const isArabicPage =
+        path.includes("/ar/")
+        || path.includes("-ar.html");
 
     const pdfPath = isArabicPage
-        ? '/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf'
-        : '/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf';
+        ? "/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf"
+        : "/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf";
 
-    window.open(pdfPath, '_blank');
-} 
-
-// ------------------------------ Popup modal handling ------------------------------
-document.addEventListener('click', (e) => {
-
-  // OPEN POPUP
-  const link = e.target.closest('a[data-tab]');
-  if (link) {
-    e.preventDefault();
-
-    const modal = document.getElementById(link.dataset.tab);
-
-    if (modal) {
-      modal.classList.add('show');
-      document.body.classList.add('no-scroll');
-    }
-  }
-
-  // CLOSE BUTTON
-  const closeBtn = e.target.closest('.close_btn');
-  if (closeBtn) {
-    const modal = closeBtn.closest('.popup_wrap');
-
-    if (modal) {
-      modal.classList.remove('show');
-      document.body.classList.remove('no-scroll');
-    }
-  }
-
-  // CLICK OUTSIDE
-  if (e.target.classList.contains('popup_wrap')) {
-    e.target.classList.remove('show');
-    document.body.classList.remove('no-scroll');
-  }
-});
-
-/* -------------------- PUBLICATIONS FILTER -------------------- */
-const pubButtons = document.querySelectorAll(".publication-filter button");
-const pubRows = document.querySelectorAll(".publication-table tr[data-type]");
-const pubHeading = document.getElementById("publication-heading");
-const pubNoResults = document.getElementById("publication-no-results");
-const pubTable = document.querySelector(".publication-table");
-
-const lang = document.documentElement.lang || "en";
-
-const pubLabels = {
-  en: {
-    all: "All Publications",
-    "journal-article": "Journal Articles",
-    "online-publication": "Online Publications",
-    book: "Books",
-    "book-chapter": "Book Chapters",
-    "phd-thesis": "PhD Theses"
-  },
-  ar: {
-    all: "جميع المنشورات",
-    "journal-article": "المقالات العلمية",
-    "online-publication": "المجلات الإلكترونية",
-    book: "الكتب",
-    "book-chapter": "فصول الكتب",
-    "phd-thesis": "رسائل الدكتوراه"
-  }
-};
-
-const currentLabels = pubLabels[lang] || pubLabels.en;
-
-function filterPublications(filter) {
-  let count = 0;
-
-  pubRows.forEach(row => {
-    const type = row.dataset.type;
-    const show = filter === "all" || type === filter;
-
-    row.style.display = show ? "table-row" : "none";
-
-    if (show) {
-      count++;
-    }
-  });
-
-  // Update heading (UPDATED)
-  if (pubHeading) {
-    const locale = document.documentElement.lang === "ar" ? "ar-EG" : "en";
-    const formattedCount = new Intl.NumberFormat(locale).format(count);
-
-    pubHeading.textContent = `${currentLabels[filter]} (${formattedCount})`;
-  }
-
-  // Show/hide table
-  if (pubTable) {
-    pubTable.style.display = count === 0 ? "none" : "table";
-  }
-
-  // Show/hide "No Results" message
-  if (pubNoResults) {
-    pubNoResults.style.display = count === 0 ? "block" : "none";
-  }
+    window.open(pdfPath, "_blank");
 }
 
-// Filter button clicks
-pubButtons.forEach(btn => {
-  btn.addEventListener("click", () => {
-    pubButtons.forEach(b => b.classList.remove("active"));
-    btn.classList.add("active");
+// ======================================================
+// Popup Modal
+// ======================================================
+function initPopupModal() {
+    const pageNeedsIt =
+        document.querySelector("[data-tab]") !== null ||
+        document.querySelector(".popup_wrap") !== null;
 
-    filterPublications(btn.dataset.filter);
-  });
-});
-
-// Initial load
-filterPublications("all");
-
-/* -------------------- ACTIVITIES FILTER -------------------- */
-document.addEventListener("DOMContentLoaded", () => {
-
-  const lang = document.documentElement.lang || "en";
-
-  const labels = {
-    en: {
-      all: "All Activities",
-      conference: "Conference",
-      workshop: "Workshop",
-      seminar: "Seminar",
-      festival: "Festival",
-      "forum-events": "Forum Events"
-    },
-    ar: {
-      all: "جميع الأنشطة",
-      conference: "المؤتمرات",
-      workshop: "ورش العمل",
-      seminar: "الندوات",
-      festival: "المهرجانات",
-      "forum-events": "فعاليات المنتدى"
+    if (!pageNeedsIt) {
+        console.log("Popup modal skipped");
+        return;
     }
-  };
 
-  const currentLabels = labels[lang] || labels.en;
+    document.addEventListener("click", (e) => {
 
-  const buttons = document.querySelectorAll(".activities-filter button");
-  const rows = document.querySelectorAll(".activity-table tr[data-type]");
-  const heading = document.getElementById("activity-heading");
-  const noResults = document.getElementById("activity-no-results");
-  const activityTable = document.querySelector(".activity-table");
+        // OPEN POPUP
+        const link = e.target.closest("a[data-tab]");
 
-  function filterActivities(filter) {
-    let count = 0;
+        if (link) {
 
-    rows.forEach(row => {
-      const show = filter === "all" || row.dataset.type === filter;
-      row.style.display = show ? "table-row" : "none";
+            e.preventDefault();
 
-      if (show) {
-        count++;
-      }
+            const modal =
+                document.getElementById(
+                    link.dataset.tab
+                );
+
+            if (modal) {
+                modal.classList.add("show");
+                document.body.classList.add("no-scroll");
+            }
+        }
+
+        // CLOSE BUTTON
+        const closeBtn =
+            e.target.closest(".close_btn");
+
+        if (closeBtn) {
+
+            const modal = closeBtn.closest(".popup_wrap");
+
+            if (modal) {
+                modal.classList.remove("show");
+                document.body.classList.remove("no-scroll");
+            }
+        }
+
+        // CLICK OUTSIDE
+        if (e.target.classList.contains("popup_wrap")) {
+
+            e.target.classList.remove("show");
+            document.body.classList.remove("no-scroll");
+
+        }
+
+    });
+}
+
+// ======================================================
+// Publications Filter
+// ======================================================
+function initPublicationsFilter() {
+    const pageNeedsIt = document.querySelector(".publication-filter") !== null;
+
+    if (!pageNeedsIt) {
+        console.log("Publications filter skipped");
+        return;
+    }
+
+    const pubButtons =
+        document.querySelectorAll(
+            ".publication-filter button"
+        );
+
+    const pubRows =
+        document.querySelectorAll(
+            ".publication-table tr[data-type]"
+        );
+
+    const pubHeading =
+        document.getElementById(
+            "publication-heading"
+        );
+
+    const pubNoResults =
+        document.getElementById(
+            "publication-no-results"
+        );
+
+    const pubTable =
+        document.querySelector(
+            ".publication-table"
+        );
+
+    const lang =
+        document.documentElement.lang || "en";
+
+    const pubLabels = {
+
+        en: {
+            all: "All Publications",
+            "journal-article": "Journal Articles",
+            "conference-proceeding": "Conference Proceedings",
+            "online-publication": "Online Publications",
+            book: "Books",
+            "book-chapter": "Book Chapters",
+            "phd-thesis": "PhD Theses"
+        },
+
+        ar: {
+            all: "جميع المنشورات",
+            "journal-article": "المقالات العلمية",
+            "conference-proceeding": "وقائع المؤتمرات",
+            "online-publication": "المجلات الإلكترونية",
+            book: "الكتب",
+            "book-chapter": "فصول الكتب",
+            "phd-thesis": "رسائل الدكتوراه"
+        }
+
+    };
+
+    const currentLabels = pubLabels[lang] || pubLabels.en;
+
+    function filterPublications(filter) {
+
+        let count = 0;
+
+        pubRows.forEach(row => {
+
+            const type = row.dataset.type;
+
+            const show =
+                filter === "all" ||
+                type === filter;
+
+            row.style.display =
+                show ? "table-row" : "none";
+
+            if (show) {
+                count++;
+            }
+
+        });
+
+        if (pubHeading) {
+
+            const locale =
+                document.documentElement.lang === "ar"
+                    ? "ar-EG"
+                    : "en";
+
+            const formattedCount =
+                new Intl.NumberFormat(locale)
+                    .format(count);
+
+            pubHeading.textContent =
+                `${currentLabels[filter]} (${formattedCount})`;
+        }
+
+        if (pubTable) {
+            pubTable.style.display =
+                count === 0
+                    ? "none"
+                    : "table";
+        }
+
+        if (pubNoResults) {
+            pubNoResults.style.display =
+                count === 0
+                    ? "block"
+                    : "none";
+        }
+    }
+
+    pubButtons.forEach(btn => {
+
+        btn.addEventListener("click", () => {
+
+            pubButtons.forEach(b =>
+                b.classList.remove("active")
+            );
+
+            btn.classList.add("active");
+
+            filterPublications(
+                btn.dataset.filter
+            );
+
+        });
+
     });
 
-    // Update heading (FIXED: language-aware numbers)
-    if (heading) {
-      const locale = document.documentElement.lang === "ar" ? "ar-EG" : "en";
-      const formattedCount = new Intl.NumberFormat(locale).format(count);
+    filterPublications("all");
+}
 
-      heading.textContent = `${currentLabels[filter]} (${formattedCount})`;
+// ======================================================
+// Activities Filter
+// ======================================================
+function initActivitiesFilter() {
+    const pageNeedsIt = document.querySelector(".activities-filter") !== null;
+
+    if (!pageNeedsIt) {
+        console.log("Activities filter skipped");
+        return;
     }
 
-    // Show/hide table
-    if (activityTable) {
-      activityTable.style.display = count === 0 ? "none" : "table";
+    const lang = document.documentElement.lang || "en";
+    const labels = {
+
+        en: {
+            all: "All Activities",
+            conference: "Conference",
+            workshop: "Workshop",
+            seminar: "Seminar",
+            festival: "Festival",
+            "forum-events": "Forum Events"
+        },
+
+        ar: {
+            all: "جميع الأنشطة",
+            conference: "المؤتمرات",
+            workshop: "ورش العمل",
+            seminar: "الندوات",
+            festival: "المهرجانات",
+            "forum-events": "فعاليات المنتدى"
+        }
+
+    };
+
+    const currentLabels = labels[lang] || labels.en;
+    
+    const buttons =
+        document.querySelectorAll(
+            ".activities-filter button"
+        );
+
+    const rows =
+        document.querySelectorAll(
+            ".activity-table tr[data-type]"
+        );
+
+    const heading =
+        document.getElementById(
+            "activity-heading"
+        );
+
+    const noResults =
+        document.getElementById(
+            "activity-no-results"
+        );
+
+    const activityTable =
+        document.querySelector(
+            ".activity-table"
+        );
+
+    function filterActivities(filter) {
+
+        let count = 0;
+
+        rows.forEach(row => {
+
+            const show =
+                filter === "all" ||
+                row.dataset.type === filter;
+
+            row.style.display =
+                show ? "table-row" : "none";
+
+            if (show) {
+                count++;
+            }
+
+        });
+
+        if (heading) {
+
+            const locale =
+                document.documentElement.lang === "ar"
+                    ? "ar-EG"
+                    : "en";
+
+            const formattedCount =
+                new Intl.NumberFormat(locale)
+                    .format(count);
+
+            heading.textContent =
+                `${currentLabels[filter]} (${formattedCount})`;
+        }
+
+        if (activityTable) {
+            activityTable.style.display =
+                count === 0
+                    ? "none"
+                    : "table";
+        }
+
+        if (noResults) {
+            noResults.style.display =
+                count === 0
+                    ? "block"
+                    : "none";
+        }
     }
 
-    // Show/hide "No results" message
-    if (noResults) {
-      noResults.style.display = count === 0 ? "block" : "none";
-    }
-  }
+    buttons.forEach(btn => {
 
-  // Button click events
-  buttons.forEach(btn => {
-    btn.addEventListener("click", () => {
-      buttons.forEach(b => b.classList.remove("active"));
-      btn.classList.add("active");
+        btn.addEventListener("click", () => {
 
-      filterActivities(btn.dataset.filter);
+            buttons.forEach(b =>
+                b.classList.remove("active")
+            );
+
+            btn.classList.add("active");
+
+            filterActivities(
+                btn.dataset.filter
+            );
+
+        });
+
     });
-  });
 
-  // Initial load
-  filterActivities("all");
-});
+    filterActivities("all");
+}
 
-// ------------------ Team member filter (show/hide by category) ------------------
-document.addEventListener('click', (e) => {
+// ======================================================
+// Team Member Filter
+// ======================================================
+function initTeamMemberFilter() {
+    const pageNeedsIt = document.querySelector(".team_member") !== null;
 
-  const btn = e.target.closest('[data-filter]');
-  if (!btn) return;
-
-  const filter = btn.dataset.filter;
-
-  // remove active state
-  document.querySelectorAll('[data-filter]')
-    .forEach(b => b.classList.remove('active'));
-
-  btn.classList.add('active');
-
-  const cards = document.querySelectorAll('.team_member');
-
-  cards.forEach(card => {
-
-    if (filter === 'all') {
-      card.style.display = 'block';
-      return;
+    if (!pageNeedsIt) {
+        console.log("Team member filter skipped");
+        return;
     }
 
-    card.style.display =
-      card.classList.contains(filter)
-        ? 'block'
-        : 'none';
+    document.addEventListener("click", (e) => {
 
-  });
+        const btn = e.target.closest("[data-filter]");
 
-});
+        if (!btn) return;
 
-// <-------------------- ScrollReveal Initialization ---------------->
-document.addEventListener('DOMContentLoaded', () => {
+        const filter = btn.dataset.filter;
 
+        document
+            .querySelectorAll("[data-filter]")
+            .forEach(b =>
+                b.classList.remove("active")
+            );
+
+        btn.classList.add("active");
+
+        const cards =
+            document.querySelectorAll(
+                ".team_member"
+            );
+
+        cards.forEach(card => {
+
+            if (filter === "all") {
+                card.style.display = "block";
+                return;
+            }
+
+            card.style.display =
+                card.classList.contains(filter)
+                    ? "block"
+                    : "none";
+
+        });
+
+    });
+}
+
+// ======================================================
+// ScrollReveal
+// ======================================================
+function initScrollReveal() {
     const featureExists = typeof ScrollReveal !== "undefined";
-    const pageNeedsIt = document.querySelector(
-        '.heading, .project'
-    ) !== null;
+    const pageNeedsIt = document.querySelector(".heading, .project") !== null;
 
     if (!(featureExists && pageNeedsIt)) {
         console.log("ScrollReveal skipped");
@@ -585,39 +850,47 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const sr = ScrollReveal({
-        distance: '30px',
+        distance: "30px",
         duration: 600,
         delay: 0,
         viewFactor: 0.2
     });
 
-    // Bottom Animations
-    sr.reveal('.heading, .project', {
-        origin: 'bottom'
+    sr.reveal(".heading, .project", {
+        origin: "bottom"
     });
-});
+}
 
-// <-------------------- Typed.js Initialization -------------------->
-document.addEventListener('DOMContentLoaded', () => {
+// ======================================================
+// Typed.js
+// ======================================================
+function initTypedText() {
+    const featureExists = typeof Typed !== "undefined";
+    const pageNeedsIt = document.querySelector(".multiple-text") !== null;
 
-    if (typeof Typed === 'undefined') {
-        console.log("Typed.js not loaded - skipped");
+    if (!(featureExists && pageNeedsIt)) {
+        console.log("Typed.js skipped");
         return;
     }
 
-    const lang = sessionStorage.getItem("lang")
-        || (window.location.pathname.startsWith("/ar/") ? "ar" : "en");
+    const lang = sessionStorage.getItem("lang") ||
+        (
+            window.location.pathname.startsWith("/ar/")
+                ? "ar"
+                : "en"
+        );
 
     let strings;
 
     if (lang === "ar") {
+
         strings = [
             "أستاذ مساعد",
             "باحثة أكاديمية",
             "متخصصة في الدراسات الدرامية والسينمائية",
             "ناقدة درامية وسينمائية"
         ];
-        
+
     } else {
 
         strings = [
@@ -626,9 +899,10 @@ document.addEventListener('DOMContentLoaded', () => {
             "Scholar of Drama and Film Studies",
             "Drama and Film Critic"
         ];
+
     }
 
-    new Typed('.multiple-text', {
+    new Typed(".multiple-text", {
         strings: strings,
         typeSpeed: 45,
         backSpeed: 25,
@@ -638,21 +912,22 @@ document.addEventListener('DOMContentLoaded', () => {
         smartBackspace: true,
         showCursor: false
     });
-});
+}
 
-
-// ----------------------- SWIPER NEW -----------------------
-document.addEventListener('DOMContentLoaded', () => {
-
+// ======================================================
+// Swiper
+// ======================================================
+function initSwiperNew() {
     const featureExists = typeof Swiper !== "undefined";
-    const pageNeedsIt = document.querySelector('.new-swiper') !== null;
+    const pageNeedsIt = document.querySelector(".new-swiper") !== null;
 
     if (!(featureExists && pageNeedsIt)) {
-        console.log("Swiper skipped (not needed or missing)");
+        console.log("Swiper skipped");
         return;
     }
 
-    window.swiperNew = new Swiper('.new-swiper', {
+    window.swiperNew = new Swiper(".new-swiper", {
+
         loop: true,
         grabCursor: true,
         centeredSlides: true,
@@ -661,67 +936,107 @@ document.addEventListener('DOMContentLoaded', () => {
 
         autoplay: {
             delay: 3000,
-            disableOnInteraction: false,
+            disableOnInteraction: false
         },
 
         pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
+            el: ".swiper-pagination",
+            clickable: true
         },
 
         navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
         },
 
         breakpoints: {
+
             320: {
                 slidesPerView: 1,
                 centeredSlides: true,
-                spaceBetween: 10,
+                spaceBetween: 10
             },
+
             375: {
                 slidesPerView: 1,
                 centeredSlides: true,
-                spaceBetween: 15,
+                spaceBetween: 15
             },
+
             414: {
                 slidesPerView: 1.4,
                 centeredSlides: true,
-                spaceBetween: 10,
+                spaceBetween: 10
             },
+
             480: {
                 slidesPerView: 1.75,
                 centeredSlides: true,
-                spaceBetween: 20,
+                spaceBetween: 20
             },
+
             600: {
                 slidesPerView: 2,
                 centeredSlides: false,
-                spaceBetween: 20,
+                spaceBetween: 20
             },
+
             768: {
                 slidesPerView: 2.5,
                 centeredSlides: true,
-                spaceBetween: 30,
+                spaceBetween: 30
             },
+
             1024: {
                 slidesPerView: 3,
                 centeredSlides: true,
-                spaceBetween: 30,
+                spaceBetween: 30
             },
+
             1280: {
                 slidesPerView: 4,
                 centeredSlides: false,
-                spaceBetween: 40,
+                spaceBetween: 40
             },
+
             1300: {
                 slidesPerView: 5,
                 centeredSlides: true,
-                spaceBetween: 50,
-            },
-        },
+                spaceBetween: 50
+            }
+
+        }
+
     });
+}
+
+// ======================================================
+// Main Initializer
+// ======================================================
+// Initialize all static page features after the DOM loads.
+// Dynamic features (Popup Modal and Team Member Filter)
+// are initialized separately in research.js after the
+// research cards and modals are generated.
+document.addEventListener("DOMContentLoaded", () => {
+
+    // Core UI & Navigation
+    initThemeAndNavigation();
+    initMenu();
+    initLanguageSwitch();
+    initScrollArrow();
+    initScrollToTop();
+
+    // Content Filters
+    initPublicationsFilter();
+    initActivitiesFilter();
+
+    // Dynamic Content (research.js)
+    /* initPopupModal(); */
+    /* initTeamMemberFilter(); */
+
+    // Visual Effects & Interactive Components
+    initScrollReveal();
+    initTypedText();
+    initSwiperNew();
 
 });
-

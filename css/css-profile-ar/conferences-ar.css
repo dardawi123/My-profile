@@ -399,19 +399,23 @@ section {
   margin: 0 auto;
 }
 
+/* Alignment rules */
 table th:first-child,
 table td:first-child {
+  width: clamp(60px, 4vw, 80px);
   text-align: center;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
+  width: auto;
   text-align: justify;
 }
 
 /* TABLE LAYOUT */
 table {
   width: 100%;
+  table-layout: fixed;
   margin: 0.5rem auto;
   border-collapse: collapse;
   border-radius: 10px;

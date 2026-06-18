@@ -151,7 +151,7 @@ header {
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  z-index: 10000;
+  z-index: 1001;
 }
 
 nav {
@@ -706,7 +706,7 @@ tr:hover {
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;
-    z-index: 999;
+    z-index: 9999;
   }
   /* visible state */
   .menu-overlay.show {

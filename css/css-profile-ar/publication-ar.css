@@ -151,7 +151,7 @@ header {
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  z-index: 999;
+  z-index: 1000;
 }
 
 nav {
@@ -440,7 +440,7 @@ table td:nth-child(2) {
 .header-sticky {
   position: sticky;
   top: var(--navbar-height);
-  z-index: 999;
+  z-index: 200;
   background: var(--bg-color);
 }
 
@@ -448,7 +448,7 @@ table td:nth-child(2) {
   position: sticky;
   top: calc(var(--navbar-height) + var(--sticky-height));
   background-color: var(--main-color);
-  z-index: 998;
+  z-index: 100;
 }
 
 #publication-heading {
@@ -691,6 +691,9 @@ tr:hover {
 
 /* Responsive menu for small screens */
 @media (max-width: 650px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
   .container2 {
 	    margin: 30px auto 0 auto;
   }

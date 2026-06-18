@@ -153,7 +153,7 @@ header {
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  z-index: 999;
+  z-index: 1000;
 }
 
 nav {
@@ -544,6 +544,9 @@ ul li::marker {
 
 /* Responsive menu for small screens */
 @media (max-width: 650px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
   .container2 {
 	    margin: 30px auto 0 auto;
   }

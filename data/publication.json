@@ -1,6 +1,7 @@
 [
 
   {
+    "id": "pub-2025-001",
     "year": 2025,
     "type": "journal-article",
     "authors": "Berg, M., Alardawi, M., Al Obeidli, N.",
@@ -13,6 +14,7 @@
   },
 
   {
+    "id": "pub-2025-002",
     "year": 2025,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -25,6 +27,7 @@
   },
 
   {
+    "id": "pub-2025-003",
     "year": 2025,
     "type": "journal-article",
     "authors": "Al–Qurashi, D. and Alardawi, M.",
@@ -37,6 +40,7 @@
   },
 
   {
+    "id": "pub-2025-004",
     "year": 2025,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -49,6 +53,7 @@
   },
 
   {
+    "id": "pub-2025-005",
     "type": "online-publication",
     "authors": "Alardawi, M.",
     "year": 2025,
@@ -60,6 +65,7 @@
   },
 
   {
+    "id": "pub-2025-006",
     "year": 2025,
     "type": "journal-article",
     "authors": "Alardawi, M. and Brereton, P.",
@@ -72,6 +78,7 @@
   },
 
   {
+    "id": "pub-2024-001",
     "year": 2024,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -84,6 +91,7 @@
   },
 
   {
+   "id": "pub-2024-002",
     "year": 2024,
     "type": "journal-article",
     "authors": "Alardawi, M. and Brereton, P.",
@@ -96,6 +104,7 @@
   },
 
   {
+   "id": "pub-2024-003",
     "year": 2024,
     "type": "journal-article",
     "authors": "Alardawi, M. et al.",
@@ -108,6 +117,7 @@
   },
 
   {
+   "id": "pub-2024-004",
     "year": 2024,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -120,6 +130,7 @@
   },
 
   {
+   "id": "pub-2023-001",
     "year": 2023,
     "type": "journal-article",
     "authors": "Alardawi, M., Saqah, F. and Zakari, H.",
@@ -132,9 +143,10 @@
   },
 
   {
+   "id": "pub-2023-002",
     "year": 2023,
     "type": "phd-thesis",
-    "author": "Alardawi, M.",
+    "authors": "Alardawi, M.",
     "title": "The impact of watching Turkish Drama on Saudi women's attitudes and perception patterns: An audience study",
     "status": "Unpublished PhD",
     "university": "Dublin City University",
@@ -142,6 +154,7 @@
   },
 
   {
+   "id": "pub-2023-003",
     "year": 2023,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -154,6 +167,7 @@
   },
 
   {
+   "id": "pub-2022-001",
     "year": 2022,
     "type": "journal-article",
     "authors": "Qutub, A. and Alardawi, M.",
@@ -166,9 +180,10 @@
   },
 
   {
+   "id": "pub-2022-002",
+    "year": 2022,
     "type": "online-publication",
     "authors": "Alardawi, M. et al.",
-    "year": 2022,
     "title": "Cultural media and community thinking development",
     "website": "Al Riyadh Newspaper",
     "date": "2 July",
@@ -177,6 +192,7 @@
   },
 
   {
+   "id": "pub-2021-001",
     "year": 2021,
     "type": "journal-article",
     "authors": "Alardawi, M., Bajnaid, A. and Brereton, P.",
@@ -189,6 +205,7 @@
   },
 
   {
+   "id": "pub-2021-002",
     "year": 2021,
     "type": "conference-proceeding",
     "authors": "Alardawi, M., Brereton, P. and Bajnaid, A.",
@@ -204,6 +221,7 @@
   },
 
   {
+   "id": "pub-2020-001",
     "year": 2020,
     "type": "journal-article",
     "authors": "Alardawi, M.",
@@ -216,6 +234,7 @@
   },
 
   {
+   "id": "pub-2015-001",
     "year": 2015,
     "type": "book",
     "authors": "Alardawi, M.",
@@ -225,6 +244,7 @@
   },
 
   {
+   "id": "pub-2014-001",
     "year": 2014,
     "type": "journal-article",
     "authors": "Alardawi, M.",

@@ -1,0 +1,758 @@
+
+[
+
+  {
+    "id": "evt-2011-03-18-001",
+    "type": "workshop",
+    "title": {
+      "en": "Academic Accreditation",
+      "ar": "الاعتماد الأكاديمي"
+    },
+    "description": {
+      "en": "Attended a workshop on",
+      "ar": "حضور ورشة عمل حول"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2011-03-18",
+      "end": "2011-03-18"
+    },
+    "host": {
+      "name": {
+        "en": "Faculty of Arts and Humanities",
+        "ar": "كلية الآداب والعلوم الإنسانية"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2011-05-13-002",
+    "type": "workshop",
+    "title": {
+      "en": "Curriculum and Training Portfolios for Female Students",
+      "ar": "المناهج وحقيبة التدريب لشطر الطالبات"
+    },
+    "description": {
+      "en": "Attended a workshop on",
+      "ar": "حضور ورشة عمل حول"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2011-05-13",
+      "end": "2011-05-13"
+    },
+    "host": {
+      "name": {
+        "en": "Faculty of Arts and Humanities",
+        "ar": "كلية الآداب والعلوم الإنسانية"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2011-06-10-003",
+    "type": "workshop",
+    "title": {
+      "en": "The mechanism of electronic tests to faculty members",
+      "ar": "آلية الاختبارات الإلكترونية لأعضاء هيئة التدريس"
+    },
+    "description": {
+      "en": "Presented a workshop on",
+      "ar": "تقديم ورشة عمل حول."
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2011-06-10",
+      "end": "2011-06-10"
+    },
+    "host": {
+      "name": {
+        "en": "Faculty of Arts and Humanities",
+        "ar": "كلية الآداب والعلوم الإنسانية"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2015-03-20-004",
+    "type": "seminar",
+    "title": {
+      "en": "New Media Studies: An Analytic and Theoretical Survey (2010–2014)",
+      "ar": "دراسات الإعلام الجديد: مسح تحليلي ونظري (٢٠١٠–٢٠١٤)"
+    },
+    "description": {
+      "en": "Participated in the 3<sup>rd</sup> Communication Seminar and presented a paper entitled",
+      "ar": "المشاركة في السيمنار العلمي الثالث للاتصال وتقديم ورقة علمية بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2015-03-20",
+      "end": "2015-03-20"
+    },
+    "host": {
+      "name": {
+        "en": "Communication Skills Department",
+        "ar": "قسم مهارات الاتصال"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2015-05-15-005",
+    "type": "conference",
+    "title": {
+      "en": "The Social and Psychological Effects of Internet Addiction",
+      "ar": "الآثار الاجتماعية والنفسية لإدمان الإنترنت"
+    },
+    "description": {
+      "en": "Participated in the 1st Conference on New Media: Reality and Challenges and presented a paper entitled",
+      "ar": "المشاركة في المؤتمر الأول للإعلام الجديد: الواقع والتحديات بورقة علمية بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2015-05-15",
+      "end": "2015-05-15"
+    },
+    "host": {
+      "name": {
+        "en": "Faculty of Communication and Media",
+        "ar": "كلية الاتصال والإعلام"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2017-03-01-006",
+    "type": "workshop",
+    "title": {
+      "en": "The Joint Supervision Program",
+      "ar": "برنامج الإشراف المشترك"
+    },
+    "description": {
+      "en": "Attended a doctoral qualification program for",
+      "ar": "حضور البرنامج التأهيلي للدكتوراه"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2017-03-01",
+      "end": "2017-03-31"
+    },
+    "host": {
+      "name": {
+        "en": "University Education Development Center",
+        "ar": "مركز تطوير التعليم الجامعي"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2020-04-01-007",
+    "type": "workshop",
+    "title": {
+      "en": "Research Methods Theory: Realist Evaluation Methods",
+      "ar": "نظرية مناهج البحث: أساليب التقويم الواقعي"
+    },
+    "description": {
+      "en": "Attended a workshop titled",
+      "ar": "حضور ورشة عمل بعنوان"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2020-04-01",
+      "end": "2020-04-02"
+    },
+    "host": {
+      "name": {
+        "en": "Postgraduate Studies Research Service Unit",
+        "ar": "وحدة خدمة أبحاث الدراسات العليا"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2020-07-01-008",
+    "type": "workshop",
+    "title": {
+      "en": "Creating a Research Video – Introduction to Digital Storytelling",
+      "ar": "إنشاء فيديو بحثي - مقدمة في رواية القصص الرقمية"
+    },
+    "description": {
+      "en": "Attended a workshop titled",
+      "ar": "حضور ورشة عمل بعنوان"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2020-07-01",
+      "end": "2020-07-01"
+    },
+    "host": {
+      "name": {
+        "en": "Dublin City University",
+        "ar": "جامعة مدينة دبلن"
+      },
+      "institution": {
+        "en": "Dublin City University",
+        "ar": "جامعة مدينة دبلن"
+      }
+    },
+    "city": {
+      "en": "Dublin, Ireland",
+      "ar": "دبلن، أيرلندا"
+    }
+  },
+
+  {
+    "id": "evt-2020-11-11-009",
+    "type": "conference",
+    "title": {
+      "en": "Media, Communication and Film (Media Asia 2020)",
+      "ar": "وسائل الإعلام والاتصال والأفلام (Media Asia 2020)"
+    },
+    "description": {
+      "en": "Attended the 11<sup>th</sup> Asian Conference entitled",
+      "ar": "حضور المؤتمر الآسيوي الحادي عشر بعنوان"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2020-11-11",
+      "end": "2020-11-14"
+    },
+    "host": {
+      "name": {
+        "en": "IAFOR Research Centre",
+        "ar": "IAFOR Research Centre"
+      }
+    },
+    "city": {
+      "en": "Kyoto, Japan",
+      "ar": "كيوتو، اليابان"
+    }
+  },
+
+  {
+    "id": "evt-2021-05-24-010",
+    "type": "conference",
+    "title": {
+      "en": "Turkish Dramas and Saudi Female Perceptions of Socio-Cultural Values",
+      "ar": "الدراما التركية وتصورات المرأة السعودية للقيم الاجتماعية والثقافية"
+    },
+    "description": {
+      "en": "Participated in the 12<sup>th</sup> Asian Conference on Arts and Humanities (ACAH2021) and presented a paper entitled",
+      "ar": "المشاركة في المؤتمر الآسيوي الثاني عشر للفنون والعلوم الإنسانية (ACAH 2021) بورقة علمية بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2021-05-24",
+      "end": "2021-05-26"
+    },
+    "host": {
+      "name": null,
+      "institution": {
+        "en": "Toshi Center Hotel",
+        "ar": "فندق توشي سنتر"
+      }
+    },
+    "city": {
+      "en": "Tokyo, Japan",
+      "ar": "طوكيو، اليابان"
+    }
+  },
+
+  {
+    "id": "evt-2022-10-17-011",
+    "type": "workshop",
+    "title": {
+      "en": "quality management system according to ISO 9001:2015 specifications",
+      "ar": "لتدقيق الداخلي على نظام إدارة الجودة وفق مواصفة ISO 9001:2015"
+    },
+    "description": {
+      "en": "Attended the internal audit workshop on the",
+      "ar": "حضور ورشة عمل حول ا"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2022-10-17",
+      "end": "2022-10-17"
+    },
+    "host": {
+      "name": {
+        "en": "Deanship of Quality and Academic Accreditation",
+        "ar": "عمادة الجودة والاعتماد الأكاديمي"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2022-12-12-012",
+    "type": "workshop",
+    "title": {
+      "en": "How to Criticize a Cinematic Film",
+      "ar": "كيف تنتقد فيلمًا سينمائيًا"
+    },
+    "description": {
+      "en": "Presented a workshop on the major foundations for establishing a critical opinion of any cinematic work entitled",
+      "ar": "تقديم ورشة عمل حول الأسس اللازمة لتكوين رأي نقدي لأي عمل سينمائي بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2022-12-12",
+      "end": "2022-12-12"
+    },
+    "host": {
+      "name": {
+        "en": "Jeddah Book Fair 2022",
+        "ar": "معرض جدة للكتاب ٢٠٢٢"
+      },
+      "institution": null
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2023-01-29-013",
+    "type": "workshop",
+    "title": {
+      "en": "A Critical Vision with Saudi Eyes About the Culture of Film Hybridization",
+      "ar": "رؤية نقدية بعيون سعودية حول ثقافة تهجين الأفلام"
+    },
+    "description": {
+      "en": "Presented a workshop entitled",
+      "ar": "تقديم ورشة عمل بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2023-01-29",
+      "end": "2023-01-29"
+    },
+    "host": {
+      "name": {
+        "en": "Visual and Audio Production Department",
+        "ar": "قسم الإنتاج المرئي والمسموع"
+      },
+      "institution": {
+        "en": "Faculty of Communication and Media, King Abdulaziz University",
+        "ar": "كلية الاتصال والإعلام، جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2023-02-01-014",
+    "type": "workshop",
+    "title": {
+      "en": "Foreign Drama and Documentary",
+      "ar": "الدراما الأجنبية والوثائقي"
+    },
+    "description": {
+      "en": "Presented a workshop for students of dramatic and documentary production entitled",
+      "ar": "تقديم ورشة عمل لطالبات مقرر الإنتاج الدرامي والوثائقي بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2023-02-01",
+      "end": "2023-02-01"
+    },
+    "host": {
+      "name": {
+        "en": "Visual and Audio Production Department",
+        "ar": "قسم الإنتاج المرئي والمسموع"
+      },
+      "institution": {
+        "en": "Faculty of Communication and Media, King Abdulaziz University",
+        "ar": "كلية الاتصال والإعلام، جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2023-09-27-015",
+    "type": "workshop",
+    "title": {
+      "en": "The Role of Saudi Universities in Developing Talents in the Film Sector",
+      "ar": "دور الجامعات السعودية في تنمية وتطوير المواهب في قطاع الأفلام"
+    },
+    "description": {
+      "en": "Attended a workshop on strengthening cooperation mechanisms between the Film Commission (Ministry of Culture) and Saudi universities entitled",
+      "ar": "حضور ورشة عمل حول تعزيز آليات التعاون بين هيئة الأفلام (وزارة الثقافة) والجامعات السعودية بعنوان"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2023-09-27",
+      "end": "2023-09-27"
+    },
+    "host": {
+      "name": {
+        "en": "Film Commission (Ministry of Culture) & Saudi Universities",
+        "ar": "هيئة الأفلام (وزارة الثقافة)"
+      },
+      "institution": {
+        "en": "Crowne Plaza Hotel – Digital City, Riyadh",
+        "ar": "فندق كراون بلازا – المدينة الرقمية"
+      }
+    },
+    "city": {
+      "en": "Riyadh",
+      "ar": "الرياض"
+    }
+  },
+
+  {
+    "id": "evt-2023-11-14-016",
+    "type": "festival",
+    "title": {
+      "en": "We Dream Through Their Eyes: The First Students' Film Festival of the Visual and Audio Production Department",
+      "ar": "بعيونهم نحلم: المهرجان السينمائي الطلابي الأول لقسم الإنتاج المرئي والمسموع"
+    },
+    "description": {
+      "en": "Presented and organized the initiative to hold a festival entitled",
+      "ar": "قدمت ونظمت مبادرة إقامة مهرجان بعنوان"
+    },
+    "roles": ["Presenter", "Organizer"],
+    "dates": {
+      "start": "2023-11-14",
+      "end": "2023-11-14"
+    },
+    "host": {
+      "name": {
+        "en": "King Faisal Conference Center",
+        "ar": "مركز الملك فيصل للمؤتمرات"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2024-02-13-017",
+    "type": "forum-events",
+    "title": {
+      "en": "Podcasts, Saudi Podcasters and Digital Marketing",
+      "ar": "البودكاست، ومقدمو البودكاست السعوديون، والتسويق الرقمي"
+    },
+    "description": {
+      "en": "Participated in the 2<sup>nd</sup> Illuminations Research Meeting on World Radio Day and presented a paper titled",
+      "ar": "المشاركة في اللقاء الثاني للإضاءات البحثية بمناسبة اليوم العالمي للإذاعة بورقة علمية بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2024-02-13",
+      "end": "2024-02-13"
+    },
+    "host": {
+      "name": {
+        "en": "College of Communication and Media",
+        "ar": "كلية الاتصال والإعلام"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2024-05-19-018",
+    "type": "forum-events",
+    "title": {
+      "en": "Postgraduate Student Forum Events",
+      "ar": "فعاليات ملتقى طلبة الدراسات العليا"
+    },
+    "description": {
+      "en": "Attended the Postgraduate Student Forum events held by the",
+      "ar": "حضور فعاليات ملتقى طلبة الدراسات العليا التي أقامتها"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2024-05-19",
+      "end": "2024-05-20"
+    },
+    "host": {
+      "name": {
+        "en": "Seminars and Conferences Unit, College of Arts and Humanities",
+        "ar": "وحدة الندوات والمؤتمرات بكلية الآداب والعلوم الإنسانية"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2024-07-21-019",
+    "type": "workshop",
+    "title": {
+      "en": "Cinematic Films and Practical Applications (Compass Program - Bosala)",
+      "ar": "الأفلام السينمائية والتطبيقات العملية (برنامج بوصلة)"
+    },
+    "description": {
+      "en": "Participated in a workshop on cinematic films and practical applications, in addition to judging the shows participating in the activities of the Compass Program (Bosala), organized by the Red Sea and the West of Saudi Arabia History Centre",
+      "ar": "المشاركة في ورشة عمل في الأفلام السينمائية والتطبيقات العملية، إلى جانب تحكيم العروض المشاركة في فعاليات برنامج بوصلة الذي نظمه مركز تاريخ البحر الأحمر وغرب المملكة العربية السعودية"
+    },
+    "roles": ["Participant", "Judge"],
+    "dates": {
+      "start": "2024-07-21",
+      "end": "2024-07-25"
+    },
+    "host": {
+      "name": {
+        "en": "King Abdulaziz Foundation (Darah)",
+        "ar": "دارة الملك عبدالعزيز"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2025-04-07-020",
+    "type": "workshop",
+    "title": {
+      "en": "Television Drama: Between Creativity and Influence",
+      "ar": "الدراما التلفزيونية: بين الإبداع والتأثير"
+    },
+    "description": {
+      "en": "Attended a workshop titled",
+      "ar": "حضور ورشة عمل بعنوان"
+    },
+    "roles": ["Attendee"],
+    "dates": {
+      "start": "2025-04-07",
+      "end": "2025-04-07"
+    },
+    "host": {
+      "name": {
+        "en": "Majallat Al-Ghurfah 19",
+        "ar": "مجلة غرفة ١٩"
+      }
+    },
+    "city": {
+      "en": "San Diego, California, USA",
+      "ar": "سان دييغو، ولاية كاليفورنيا، الولايات المتحدة الأمريكية"
+    }
+  },
+
+  {
+    "id": "evt-2025-04-15-021",
+    "type": "seminar",
+    "title": {
+      "en": "Film Criticism: Tools and Techniques of Analysis",
+      "ar": "النقد السينمائي: أدوات وتقنيات التحليل"
+    },
+    "description": {
+      "en": "Presented and organized the 3<sup>rd</sup> Student Seminar on Film Criticism, titled",
+      "ar": "قدمت ونظمت الندوة الطلابية الثالثة للنقد السينمائي بعنوان"
+    },
+    "roles": ["Presenter", "Organizer"],
+    "dates": {
+      "start": "2025-04-15",
+      "end": "2025-04-15"
+    },
+    "host": {
+      "name": {
+        "en": "Visual and Audio Production Department",
+        "ar": "قسم الإنتاج المرئي والمسموع"
+      },
+      "institution": {
+        "en": "Faculty of Communication and Media, King Abdulaziz University",
+        "ar": "كلية الاتصال والإعلام، جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2026-04-06-022",
+    "type": "forum-events",
+    "title": {
+      "en": "Media Presence Charisma",
+      "ar": "كاريزما الظهور الإعلامي"
+    },
+    "description": {
+      "en": "Participated in the 13<sup>th</sup> Career Fair in a panel session titled",
+      "ar": "المشاركة في الملتقى المهني الثالث عشر في جلسة حوارية بعنوان"
+    },
+    "roles": ["Panelist"],
+    "dates": {
+      "start": "2026-04-06",
+      "end": "2026-04-08"
+    },
+    "host": {
+      "name": {
+        "en": "as part of the Career Fair events sponsored by ",
+        "ar": "ضمن فعاليات الملتقى المهني برعاية"
+      },
+      "institution": {
+        "en": " King Abdulaziz University, Superdome",
+        "ar": "جامعة الملك عبدالعزيز، سوبر دوم"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2026-04-27-023",
+    "type": "workshop",
+    "title": {
+      "en": "Research Methodology and Theory in TV & Film Studies",
+      "ar": "منهجية البحث والنظرية في دراسات التلفزيون والسينما"
+    },
+    "description": {
+      "en": "Delivered a workshop titled",
+      "ar": "تقديم ورشة عمل بعنوان"
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2026-04-27",
+      "end": "2026-04-27"
+    },
+    "host": {
+      "name": {
+        "en": "organized by the Research Committee, Visual and Audio Production Department",
+        "ar": "ضمن اللجنة البحثية بقسم الإنتاج المرئي والمسموع"
+      },
+      "institution": {
+        "en": "Faculty of Communication and Media, King Abdulaziz University",
+        "ar": "كلية الاتصال والإعلام، جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  },
+
+  {
+    "id": "evt-2026-05-14-024",
+    "type": "workshop",
+    "title": {
+      "en": "Screenwriting According to Syd Field's Model",
+      "ar": "كتابة السيناريو وفق نموذج سيد فيلد"
+    },
+    "description": {
+      "en": "Delivered a workshop titled",
+      "ar": "تقديم ورشة عمل بعنوان  جامعة."
+    },
+    "roles": ["Presenter"],
+    "dates": {
+      "start": "2026-05-14",
+      "end": "2026-05-14"
+    },
+    "host": {
+      "name": {
+        "en": "University Education Development Center",
+        "ar": "مركز تطوير التعليم الجامعي"
+      },
+      "institution": {
+        "en": "King Abdulaziz University",
+        "ar": "جامعة الملك عبدالعزيز"
+      }
+    },
+    "city": {
+      "en": "Jeddah",
+      "ar": "جدة"
+    }
+  }
+
+]

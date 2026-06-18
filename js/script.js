@@ -521,6 +521,34 @@ function initPopupModal() {
 }
 
 // ======================================================
+// Sticky Header
+// ======================================================
+const sticky =
+    document.querySelector(
+        ".header-sticky"
+    );
+
+const header =
+    document.querySelector(
+        "header"
+    );
+
+function updateStickyHeight() {
+
+    if (!sticky || !header) return;
+
+    document.documentElement.style.setProperty(
+        "--sticky-height",
+        `${sticky.offsetHeight}px`
+    );
+
+    document.documentElement.style.setProperty(
+        "--navbar-height",
+        `${header.offsetHeight}px`
+    );
+}
+
+// ======================================================
 // Publications Filter
 // ======================================================
 function initPublicationsFilter() {
@@ -655,6 +683,30 @@ function initPublicationsFilter() {
     });
 
     filterPublications("all");
+
+// ======================================================
+// Adjusts the Height of a Sticky Header 
+// ======================================================
+    updateStickyHeight();
+
+        window.addEventListener(
+            "resize",
+            updateStickyHeight
+        );
+
+        const sticky =
+            document.querySelector(
+                ".publication-sticky"
+            );
+
+        if (sticky) {
+
+            new ResizeObserver(
+                updateStickyHeight
+            ).observe(sticky);
+
+        }
+
 }
 
 // ======================================================
@@ -786,6 +838,30 @@ function initActivitiesFilter() {
     });
 
     filterActivities("all");
+
+// ======================================================
+// Adjusts the Height of a Sticky Header 
+// ======================================================
+    updateStickyHeight();
+
+        window.addEventListener(
+            "resize",
+            updateStickyHeight
+        );
+
+        const sticky =
+            document.querySelector(
+                ".publication-sticky"
+            );
+
+        if (sticky) {
+
+            new ResizeObserver(
+                updateStickyHeight
+            ).observe(sticky);
+
+        }
+
 }
 
 // ======================================================

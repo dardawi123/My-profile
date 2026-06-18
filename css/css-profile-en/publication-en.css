@@ -21,6 +21,8 @@
   --table-border-color: #A6A6A6;
   --th-text-color: #F5F5F5;
   --td-text-color: #222222;
+  --navbar-height: 74.5px;
+  --sticky-height: 160px;
 }
 
 * {
@@ -150,7 +152,7 @@ header {
   background-color: var(--bg-nav-color);
   box-shadow: var(--header-shadow);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
-  z-index: 999;
+  z-index: 1000;
 }
 
 nav {
@@ -410,6 +412,19 @@ a:hover {
   text-decoration: underline;
 }
 
+/* TABLE LAYOUT */
+table {
+  width: 100%;
+  table-layout: fixed;
+  margin: 0 auto;
+  /*border-collapse: collapse;*/
+  border-collapse: separate;
+  border-spacing: 0;
+  /*border-radius: 10px;*/
+  align-items: center;
+  /*overflow: hidden;*/
+}
+
 /* Alignment rules */
 table th:first-child,
 table td:first-child {
@@ -423,18 +438,34 @@ table td:nth-child(2) {
   text-align: justify;
 }
 
-/* TABLE LAYOUT */
-table {
-  width: 100%;
-  table-layout: fixed;
-  margin: 0.5rem auto;
-  border-collapse: collapse;
-  border-radius: 10px;
-  align-items: center;
-  overflow: hidden;
+/* Header Sticky */
+.header-sticky {
+  position: sticky;
+  top: var(--navbar-height);
+  z-index: 999;
+  background: var(--bg-color);
 }
 
-/* Header */
+.publication-table th {
+  position: sticky;
+  top: calc(var(--navbar-height) + var(--sticky-height));
+  background-color: var(--main-color);
+  z-index: 998;
+}
+
+#publication-heading {
+  padding-bottom: 8px;
+}
+
+.publication-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.publication-table th:last-child {
+  border-top-right-radius: 10px;
+}
+
+/* Header Row and Column Alignment */
 th {
   padding: 1rem;
   text-align: left;
@@ -522,7 +553,8 @@ tr:hover {
 
 /* SUBTITLE */
 .container2 h3 {
-  padding: 0 0 0 10px;
+  margin: 0;
+  padding: 0 0 10px 10px;
   font-weight: bold;
   color: var(--text-black-color);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
@@ -562,7 +594,7 @@ tr:hover {
 
 .no-data-filter {
   display: none; /* show when needed */
-  margin: 0.5rem auto;
+  margin: 0 auto;
   padding: 16px 20px;
   text-align: center;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
@@ -661,6 +693,10 @@ tr:hover {
 
 /* Responsive menu for small screens */
 @media (max-width: 650px) {
+  :root {
+        --navbar-height: 75px;
+        --sticky-block-height: 100px;
+  }
   .container2 {
 	    margin: 25px auto 0 auto;
   }

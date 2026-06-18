@@ -681,6 +681,9 @@ tr:hover {
 
 /* Responsive menu for small screens */
 @media (max-width: 650px) {
+  body.menu-open {
+    overflow: hidden;
+  }
   .container2 {
 	    margin: 30px auto 0 auto;
   }

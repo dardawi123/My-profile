@@ -725,20 +725,22 @@ function initActivitiesFilter() {
 
         en: {
             all: "All Activities",
-            conference: "Conference",
-            workshop: "Workshop",
-            seminar: "Seminar",
-            festival: "Festival",
-            "forum-events": "Forum Events"
+            conference: "Conferences",
+            seminar: "Seminars",
+            workshop: "Workshops",
+            forum: "Forums",
+            program: "Programs",
+            festival: "Festivals",
         },
 
         ar: {
             all: "جميع الأنشطة",
             conference: "المؤتمرات",
-            workshop: "ورش العمل",
             seminar: "الندوات",
+            workshop: "ورش العمل",
+            forum: "الملتقيات",
+            program: "البرامج",
             festival: "المهرجانات",
-            "forum-events": "فعاليات المنتدى"
         }
 
     };

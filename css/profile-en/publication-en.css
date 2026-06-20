@@ -600,68 +600,6 @@ tr:hover {
   outline-offset: 2px;
 }
 
-/* =================================================
-Filter Navigation
-================================================= */
-.filter-navigation {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  margin-top: 0.5rem;
-}
-
-/* =================================================
-Navigation Arrows
-================================================= */
-.filter-nav-btn {
-  background: none;
-  border: none;
-  padding: 0;
-  color: var(--main-color);
-  font-size: 0.8rem;
-  font-weight: 500;
-  line-height: 0.75;
-  cursor: pointer;
-  transition:
-      color 0.25s ease,
-      opacity 0.25s ease;
-}
-
-.filter-nav-btn:hover {
-color: var(--main-color-alt);
-}
-
-.filter-nav-btn:disabled {
-opacity: 0.35;
-cursor: default;
-}
-
-/* =================================================
-Pagination Dots
-================================================= */
-.filter-dots {
-display: flex;
-align-items: center;
-gap: 0.35rem;
-}
-
-.filter-dots span {
-width: 5px;
-height: 5px;
-border-radius: 50%;
-background: var(--main-color);
-opacity: 0.3;
-transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
-}
-
-.filter-dots span.active {
-opacity: 1;
-transform: scale(1.3);
-}
-
 /* Only apply hover animation on devices that support hover */
 @media (hover: hover) {
   .publication-filter button:hover {
@@ -780,19 +718,12 @@ transform: scale(1.3);
     scrollbar-width: none;          /* Firefox */
     -webkit-overflow-scrolling: touch;
     touch-action: pan-x;
-    margin-bottom: 0.5rem;
   }
   .publication-filter::-webkit-scrollbar {
     display: none;
   }
   .publication-filter button {
     flex: 0 0 auto;
-  }
-}
-
-@media (min-width: 768px) {
-  .filter-navigation {
-    display: none;
   }
 }
 
@@ -941,33 +872,8 @@ transform: scale(1.3);
 }
 
   /* For very small screens: 0px to 450px => full width */
-@media (max-width: 450px) {
+  @media (max-width: 450px) {
   .nav-links {
     max-width: none;
     }
   }
-
-@media (max-width: 430px) {
-  .publication-filter {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    gap: 0.75rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-    /* Small left padding + smaller right padding */
-    padding-left: 1rem;
-    padding-right: 1.5rem;
-    position: relative;
-  }
-  .publication-filter::-webkit-scrollbar {
-  display: none;
-  }
-  .publication-filter button {
-  flex-shrink: 0;
-  }
-}
-

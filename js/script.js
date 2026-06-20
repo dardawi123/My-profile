@@ -916,6 +916,72 @@ function initTeamMemberFilter() {
 }
 
 // ======================================================
+// Filter Pagination Navigation
+// ======================================================
+function initFilterPagination() {
+
+document.querySelectorAll('.filter-scrollable').forEach(filter => {
+
+    const navigation =
+        filter.parentElement.querySelector('.filter-navigation');
+
+    if (!navigation) return;
+
+    const prevBtn =
+        navigation.querySelector('.filter-nav-btn.prev');
+
+    const nextBtn =
+        navigation.querySelector('.filter-nav-btn.next');
+
+    const dots =
+        navigation.querySelectorAll('.filter-dots span');
+
+    if (!prevBtn || !nextBtn || !dots.length) return;
+
+    function updateDots() {
+
+        const maxScroll =
+            filter.scrollWidth - filter.clientWidth;
+
+        const progress =
+            maxScroll > 0
+                ? filter.scrollLeft / maxScroll
+                : 0;
+
+        const index = Math.min(
+            dots.length - 1,
+            Math.floor(progress * dots.length)
+        );
+
+        dots.forEach(dot =>
+            dot.classList.remove('active')
+        );
+
+        dots[index].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+        filter.scrollBy({
+            left: -200,
+            behavior: 'smooth'
+        });
+    });
+
+    nextBtn.addEventListener('click', () => {
+        filter.scrollBy({
+            left: 200,
+            behavior: 'smooth'
+        });
+    });
+
+    filter.addEventListener('scroll', updateDots);
+
+    updateDots();
+});
+
+}
+
+// ======================================================
 // ScrollReveal
 // ======================================================
 function initScrollReveal() {
@@ -1107,7 +1173,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Content Filters
     initPublicationsFilter();
     initActivitiesFilter();
-
+    initFilterPagination();
     // Dynamic Content (research.js)
     /* initPopupModal(); */
     /* initTeamMemberFilter(); */

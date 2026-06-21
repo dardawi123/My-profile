@@ -3,8 +3,8 @@
 
   "biography": {
     "title": {
-      "en": "Biography",
-      "ar": "السيرة الذاتية"
+      "en": "Academic Profile",
+      "ar": "نبذة أكاديمية"
     },
     "paragraphs": {
       "en": [
@@ -23,8 +23,8 @@
 
   "workExperience": {
     "title": {
-      "en": "Work Experience",
-      "ar": "التكليفات والتعيينات الإدارية"
+      "en": "Professional Experience",
+      "ar": "الخبرات المهنية"
     },
     "items": [
       {
@@ -82,8 +82,8 @@
 
   "associations": {
     "title": {
-      "en": "Professional Associations",
-      "ar": "النقابات المهنية"
+      "en": "Professional Memberships",
+      "ar": "العضويات العلمية والمهنية"
     },
     "items": [
       {
@@ -101,8 +101,8 @@
 
   "initiatives": {
     "title": {
-      "en": "Key Initiatives and Achievements",
-      "ar": "المبادرات والإنجازات الرئيسية"
+      "en": "Key Initiatives & Achievements",
+      "ar": "أبرز المبادرات والإنجازات"
     },
     "items": [
       {
@@ -123,7 +123,18 @@
         },
         "description": {
           "en": "Founder and Creator of the Student Scientific Seminar on Film Criticism, Department of Visual and Audio Production, King Abdulaziz University.",
-          "ar": "تأسيس وتصميم برنامج الدبلوم المتوسط في صناعة الأفلام، قسم الإنتاج المرئي والمسموع، جامعة الملك عبدالعزيز."
+          "ar": "صاحبة مبادرة إقامة السيمنار العلمي للنقد السينمائي الطلابي، قسم الإنتاج المرئي والمسموع، جامعة الملك عبدالعزيز."
+        }
+      },
+
+      {
+        "year": {
+          "en": "2023 – Present",
+          "ar": "٢٠٢٣ – حالياً"
+        },
+        "description": {
+          "en": "Founder and Creator of the Student Film Festival, King Abdulaziz University.",
+          "ar": "صاحبة مبادرة إقامة مهرجان الأفلام السينمائي الطلابي، جامعة الملك عبدالعزيز."
         }
       }
     ]
@@ -142,7 +153,7 @@
 
   "supervision": {
     "title": {
-      "en": "Research Degree Supervision",
+      "en": "Research Supervision",
       "ar": "الإشراف على الرسائل العلمية"
     },
     "items": [
@@ -155,7 +166,7 @@
 
   "reviews": {
     "title": {
-      "en": "Reviews",
+      "en": "Peer Review Activities",
       "ar": "التحكيم العلمي"
     },
     "headers": {

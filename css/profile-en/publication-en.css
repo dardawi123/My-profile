@@ -41,6 +41,7 @@ body.dark {
   --bg-nav-menu-hover-color: #2A3942;
   --bg-style-switcher-color: #E2E8F0;
   --card-bg-color: #1E2A2F;
+  --heading-color: color-mix(in srgb, var(--main-color) 50%, white);
   --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 24px rgba(0, 0, 0, 0.35);
   --text-black-color: #F5F5F5;
   --text-nav-menu-color: #F5F5F5;
@@ -54,6 +55,7 @@ body {
   margin: 0;
   background: var(--bg-color);
   color: var(--text-black-color);
+  --heading-color: var(--main-color); /* This is responsiple for color change in #publication-heading */
   overflow-x: hidden; /* Prevent horizontal scroll */
   overflow-y: auto;   /* Allow vertical scrolling */
   transition:
@@ -430,10 +432,12 @@ Academic Hero
 }
 
 .profile-info h1 {
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: .75rem;
   font-size: clamp(2rem, 1rem + 3vw, 3rem);
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .profile-info p {
@@ -468,7 +472,7 @@ Academic Hero
 .btn-secondary {
   border: 2px solid var(--main-color);
   color: var(--main-color) !important;
-  background: var(--text-white-color);
+  background-color: color-mix(in srgb, var(--main-color) 10%, white);
 }
 
 .btn:hover {
@@ -501,20 +505,22 @@ Academic Highlights
 
 .highlight-card i {
   font-size: 2rem;
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: 0.75rem;
   display: block;
 }
 
 .highlight-card strong {
   display: block;
-  color: var(--main-color);
+  color: var(--text-black-color);
   margin-bottom: 0.25rem;
 }
 
 .highlight-card small {
   display: block;
-  color: var(--text-black-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0 var(--main-color);
 }
 
 .main-title {
@@ -523,10 +529,12 @@ Academic Highlights
 
 .sub-title {
   text-align: center;
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   font-size: clamp(2.2rem, 1.5rem + 2vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 1px;;
   margin: 0;
 }
 
@@ -585,6 +593,8 @@ table td:nth-child(2) {
 
 #publication-heading {
   padding-bottom: 8px;
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
 }
 
 /* Bottom table row radius */
@@ -646,7 +656,7 @@ tr:hover {
   display: flex;
   flex-direction: column;
   margin-bottom: clamp(1.5rem, 1.3011rem + 0.8602vw, 2rem);
-  gap: clamp(0.9rem, 0.6613rem + 1.0323vw, 1.5rem);
+  gap: clamp(0.1rem, 0.05rem + 0.3vw, 0.4rem);
   padding: clamp(0.9rem, 0.5618rem + 1.4624vw, 1.75rem);
   background: var(--card-bg-color);
   border: 1px solid rgba(0,0,0,.08);
@@ -654,22 +664,14 @@ tr:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,.06);
 }
 
-/* TITLE */
-/*.container2 h2 {
-  padding: 0 0 10px 10px;
-  font-weight: bold;
-  color: var(--main-color);
-	font-size: clamp(1.3rem, 0.8556rem + 1.7778vw, 2.3rem);  
-  border-bottom: 0.3rem solid var(--main-color);
-}*/
-
 /* SUBTITLE */
 .container2 h3 {
   margin: 0;
   padding: 0 0 0 10px;
   font-weight: bold;
-  color: var(--text-black-color);
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
+  /*color: var(--text-black-color);*/
+  font-size: clamp(1.4rem, 1.2581rem + 0.6054vw, 1.75rem);
+  letter-spacing: 1px;
 }
 
 /* Publication Filters Buttons */
@@ -679,7 +681,6 @@ tr:hover {
   justify-content: flex-start;
   gap: 0.75rem;
   margin: 1rem 0 2rem;
-
 }
 
 .publication-filter button {
@@ -687,7 +688,7 @@ tr:hover {
   min-width: 6rem;
   border: 1px solid var(--main-color);
   border-radius: 999px;
-  background: var(--bg-white-color);
+  background-color: color-mix(in srgb, var(--main-color) 10%, white);
   color: var(--main-color);
   font-size: 1rem;
   font-weight: 500;
@@ -766,6 +767,7 @@ tr:hover {
 .footer-text {
   font-size: clamp(0.8rem, 0.7234rem + 0.3404vw, 1rem);
   color: var( --text-black-color);
+  opacity: 90%;
 }
 
 /* Scroll-to-top button inside footer */
@@ -776,10 +778,11 @@ tr:hover {
   padding: .8rem;
   width: 2.5rem;
   height: 2.5rem;
-  background: var(--bg-color);
-  color: var(--main-color);
+  background: var(--card-bg-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   border: 2px solid var(--main-color);
-  box-shadow: 0 0 .8rem var(--main-color);
+  box-shadow: 0 0 0.8rem color-mix(in srgb, var(--main-color) 10%, white);
   border-radius: .5rem;
   transition: .5s ease;
   animation: scalePulse 1.5s infinite;

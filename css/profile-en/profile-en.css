@@ -39,6 +39,7 @@ body.dark {
   --bg-nav-menu-hover-color: #2A3942;
   --bg-style-switcher-color: #E2E8F0;
   --card-bg-color: #1E2A2F;
+  --heading-color: color-mix(in srgb, var(--main-color) 50%, white);
   --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 24px rgba(0, 0, 0, 0.35);
   --text-black-color: #F5F5F5;
   --text-nav-menu-color: #F5F5F5;
@@ -52,6 +53,7 @@ body {
   margin: 0;
   background: var(--bg-color);
   color: var(--text-black-color);
+  --heading-color: var(--main-color); /* This is responsiple for color change to light in dark mode */
   overflow-x: hidden; /* Prevent horizontal scroll */
   overflow-y: auto;   /* Allow vertical scrolling */
   transition:
@@ -427,10 +429,12 @@ Academic Hero
 }
 
 .profile-info h1 {
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: .75rem;
   font-size: clamp(2rem, 1rem + 3vw, 3rem);
   line-height: 1.2;
+  letter-spacing: 1px;
 }
 
 .profile-info p {
@@ -465,7 +469,7 @@ Academic Hero
 .btn-secondary {
   border: 2px solid var(--main-color);
   color: var(--main-color) !important;
-  background: var(--text-white-color);
+  background-color: color-mix(in srgb, var(--main-color) 10%, white);
 }
 
 .btn:hover {
@@ -498,20 +502,22 @@ Academic Highlights
 
 .highlight-card i {
   font-size: 2rem;
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: 0.75rem;
   display: block;
 }
 
 .highlight-card strong {
   display: block;
-  color: var(--main-color);
+  color: var(--text-black-color);
   margin-bottom: 0.25rem;
 }
 
 .highlight-card small {
   display: block;
-  color: var(--text-black-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0 var(--main-color);
 }
 
 .main-title {
@@ -520,10 +526,12 @@ Academic Highlights
 
 .sub-title {
   text-align: center;
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   font-size: clamp(2.2rem, 1.5rem + 2vw, 3.5rem);
   font-weight: 700;
   line-height: 1.2;
+  letter-spacing: 1px;
   margin: 0;
 }
 
@@ -541,7 +549,8 @@ Academic Highlights
 
 /* Section Titles */
 .container2 h2 {
-  color: var(--main-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
   font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
   font-weight: 700;
   line-height: 1.3;
@@ -553,6 +562,7 @@ Academic Highlights
   line-height: 1.4;
   text-align: justify;
   color: var(--text-black-color);
+  opacity: 90%;
 }
 
 /* Links inside text */
@@ -578,8 +588,8 @@ Academic Highlights
 }
 
 .title {
-  color: var(--main-color);
-
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
   text-align: left;
   font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem);
   font-weight: 700;
@@ -597,6 +607,7 @@ li {
   text-align: justify;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   line-height: 1.3;
+  opacity: 90%;
 }
 
 li:last-child {
@@ -672,7 +683,8 @@ tr:hover {
 /* GLOBAL LINKS */
 a:link,
 a:visited {
-  color: var(--link-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.3px var(--main-color);
   text-decoration: none;
 }
 
@@ -698,6 +710,7 @@ a:hover {
 .footer-text {
   font-size: clamp(0.8rem, 0.7234rem + 0.3404vw, 1rem);
   color: var( --text-black-color);
+  opacity: 90%;
 }
 
 /* Scroll-to-top button inside footer */
@@ -708,10 +721,11 @@ a:hover {
   padding: .8rem;
   width: 2.5rem;
   height: 2.5rem;
-  background: var(--bg-color);
-  color: var(--main-color);
+  background: var(--card-bg-color);
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
   border: 2px solid var(--main-color);
-  box-shadow: 0 0 .8rem var(--main-color);
+  box-shadow: 0 0 0.8rem color-mix(in srgb, var(--main-color) 10%, white);
   border-radius: .5rem;
   transition: .5s ease;
   animation: scalePulse 1.5s infinite;

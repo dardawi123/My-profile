@@ -570,25 +570,6 @@ table td:nth-child(2) {
   text-align: justify;
 }
 
-/* Header Sticky */
-.header-sticky {
-  position: sticky;
-  top: var(--navbar-height);
-  z-index: 200;
-  background: var(--card-bg-color);
-}
-
-.table-body-wrapper {
-  border-radius: 10px 10px 10px 10px;
-}
-
-.publication-table th {
-  position: sticky;
-  top: calc(var(--navbar-height) + var(--sticky-height));
-  background-color: var(--main-color);
-  z-index: 100;
-}
-
 #publication-heading {
   padding-bottom: 8px;
   color: var(--heading-color);
@@ -631,6 +612,8 @@ td {
   color: var(--td-text-color);
 }
 
+
+
 /* ROW STYLING */
 tr:nth-child(odd) {
   background-color: color-mix(in srgb, var(--main-color) 2%, white);
@@ -649,6 +632,8 @@ tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }
+
+
 
 .container2 {
   display: flex;
@@ -720,6 +705,7 @@ tr:hover {
 
 .no-data-filter {
   display: none; /* show when needed */
+  width: 100%;
   margin: 0 auto;
   padding: 16px 20px;
   text-align: center;

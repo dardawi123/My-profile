@@ -705,6 +705,7 @@ tr:hover {
 
 .no-data-filter {
   display: none; /* show when needed */
+  width: 100%;
   margin: 0 auto;
   padding: 16px 20px;
   text-align: center;
@@ -838,7 +839,6 @@ tr:hover {
     height: 140px;
   }
 }
-
 
 @media (max-width: 650px) {
   body.no-scroll {

@@ -500,11 +500,12 @@ nav {
 .home-content {
   padding-right: clamp(0.5rem, calc(0.5rem + ((1vw - 0.34rem) * 5.2326)), 5rem);
 }
-    
+
 .home-content h3 {
   font-size: clamp(1.029rem, 1.903vw + 0.316rem, 2.6rem);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
+  margin-bottom: clamp(1.25rem, 0.54vw + 1.12rem, 1.5rem);
   text-align: left;
 }
 
@@ -513,11 +514,11 @@ body.dark .multiple-text {
 }
 
 .multiple-text {
-  padding: 0.25em 0.75em;
-  /*padding: 5px 12px;*/
+  padding: clamp(0.2rem, 0.11vw + 0.18rem, 0.25rem)
+           clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
-  line-height: 1.4;
+  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
 }
 
 .home-content h3:nth-of-type(2) {
@@ -531,7 +532,9 @@ body.dark .multiple-text {
 .home-content h1 {
   font-size: clamp(2.2rem, 2.424vw + 1.291rem, 4.2rem);
   font-weight: 700;
-  line-height: 1.6;
+  line-height: clamp(1.15, 1.13 + 0.08vw, 1.2);
+  margin-top: clamp(-0.5rem, -0.2vw - 0.45rem, -0.35rem);
+  margin-bottom: clamp(0.65rem, 0.22vw + 0.6rem, 0.8rem);
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
 }
@@ -540,7 +543,7 @@ body.dark .multiple-text {
   margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
   /*font-size: clamp(0.85rem, calc(0.85rem + ((1vw - 0.34rem) * 0.5233)), 1.3rem);*/
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-  opacity: 0.75;
+  opacity: 0.85;
   text-align: justify;
   line-height: 1.4;
 }

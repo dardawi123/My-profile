@@ -1091,30 +1091,62 @@ function initSwiperNew() {
 // ======================================================
 // Main Initializer
 // ======================================================
-// Initialize all static page features after the DOM loads.
-// Dynamic features (Popup Modal and Team Member Filter)
-// are initialized separately in research.js after the
-// research cards and modals are generated.
 document.addEventListener("DOMContentLoaded", () => {
 
-    // Core UI & Navigation
+    // ==================================================
+    // Theme & Navigation
+    // ==================================================
     initThemeAndNavigation();
     initMenu();
     initLanguageSwitch();
     initScrollArrow();
     initScrollToTop();
 
-    // Content Filters
+    // ==================================================
+    // Filters
+    // ==================================================
     initPublicationsFilter();
     initActivitiesFilter();
 
-    // Dynamic Content (research.js)
-    /* initPopupModal(); */
-    /* initTeamMemberFilter(); */
+    // ==================================================
+    // Dynamic Content
+    // ==================================================
+    if (typeof initHighlights === "function") {
+        initHighlights();
+    }
 
-    // Visual Effects & Interactive Components
-    initScrollReveal();
-    initTypedText();
-    initSwiperNew();
+    if (typeof initProfile === "function") {
+        initProfile();
+    }
+
+    if (typeof initBiography === "function") {
+        initBiography();
+    }
+
+    // ==================================================
+    // Research Components
+    // ==================================================
+    if (typeof initPopupModal === "function") {
+        initPopupModal();
+    }
+
+    if (typeof initTeamMemberFilter === "function") {
+        initTeamMemberFilter();
+    }
+
+    // ==================================================
+    // Visual Effects
+    // ==================================================
+    if (typeof initScrollReveal === "function") {
+        initScrollReveal();
+    }
+
+    if (typeof initTypedText === "function") {
+        initTypedText();
+    }
+
+    if (typeof initSwiperNew === "function") {
+        initSwiperNew();
+    }
 
 });

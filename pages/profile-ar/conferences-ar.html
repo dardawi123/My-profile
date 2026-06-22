@@ -68,12 +68,12 @@
         <div class="left-section">
           <div class="logo">
             <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
-            <img src="/assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
           </div>
           <div class="menu-overlay" id="menuOverlay"></div>
           <div class="nav-links" id="navLinks">
             <div class="menu-header">
-              <img class="mobile-logo" src="/assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
               <!-- Close button INSIDE menu -->
               <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
                 <i class="fas fa-times"></i>
@@ -107,64 +107,35 @@
 		<section>
 
 			<div class="academic-hero">
-				<div class="profile-card">
-					<div class="profile-image">
-						<img src="/assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager">
-					</div>
+        <div class="profile-card" data-language="ar">
+          <div class="profile-image">
+						<img class="profile-image" loading="eager">
+          </div>
+          <div class="profile-info">
+            <h1 id="profile-name"></h1>
+            <p id="profile-position" class="position"></p>
+            <p id="profile-department" class="department"></p>
+            <p id="profile-faculty" class="faculty"></p>
+            <p id="profile-university" class="university"></p>
+            <div class="hero-actions">
+              <a id="profile-email" class="btn btn-primary"></a>
+              <a id="profile-cv" class="btn btn-secondary"></a>
+            </div>
+          </div>
+        </div>
 
-					<div class="profile-info">
-						<h1>د. مرفت العرضاوي</h1>
-						<p class="position">أستاذ مساعد في الدراما ودراسات الأفلام</p>
-						<p class="department">قسم الإنتاج المرئي والمسموع</p>
-						<p class="faculty">كلية الاتصال والإعلام</p>
-						<p class="university">جامعة الملك عبدالعزيز</p>
-
-						<div class="hero-actions">
-							<a href="mailto:malaradawe@kau.edu.sa" class="btn btn-primary">البريد الإلكتروني</a>
-							<a href="javascript:void(0);" onclick="openPDF()" class="btn btn-secondary">تحميل السيرة الذاتية</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="academic-highlights">
-					<div class="highlight-card">
-						<i class="fas fa-graduation-cap"></i>
-						<strong>دكتوراه</strong>
-						<small>جامعة مدينة دبلن</small>
-					</div>
-					<div class="highlight-card">
-						<i class="fas fa-book-open"></i>
-						<strong>20+</strong>
-						<small>النشر العلمي</small>
-					</div>
-					<div class="highlight-card">
-                      	<i class="fa-solid fa-chart-line"></i>
-						<strong>+33</strong>
-						<small>الاستشهادات</small>
-					</div>
-					<div class="highlight-card">
-						<i class="fas fa-file-signature"></i>
-						<strong>محكمة</strong>
-						<small>للمجلات العلمية</small>
-					</div>
-					<div class="highlight-card">
-						<i class="fas fa-microphone"></i>
-						<strong>24+</strong>
-						<small>الأنشطة الأكاديمية</small>
-					</div>
-					<div class="highlight-card">
-						<i class="fas fa-film"></i>
-						<strong>صاحبة مبادرة</strong>
-						<small>مهرجان الأفلام الطلابي</small>
-					</div>
-				</div>
-			</div>
+        <div
+            id="subpage-highlights"
+            class="academic-highlights"
+            data-language="ar"
+            data-type="subpage">
+        </div>
+      </div>
 
 			<div class="main-title">
     			<h1 class="sub-title">الأنشطة الأكاديمية</h1>
 			</div>
       
-
       <div class="container2">
         <div class="header-sticky">
 
@@ -196,6 +167,7 @@
       </div>	
 
 		</section>
+    
 		<footer class="footer1">
 			<div class="footer-text">
 				<p>Copyright &copy; 2023 by Alardawi  -  All Rights Reserved.</p>
@@ -208,9 +180,10 @@
 		</footer>
 
 		<!-- Custom Script -->
-		<script src="/js/script.js"></script>
+    <script src="/js/profile/profile.js"></script>
+    <script src="/js/profile/highlights.js"></script>
 		<script src="/js/profile/activities.js"></script>
-
+    <script src="/js/script.js"></script>
 
 	</body>
 </html>

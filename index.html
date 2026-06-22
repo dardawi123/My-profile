@@ -105,7 +105,7 @@
 
   <body>
 
- <!-- <div class="top-header">
+    <!-- <div class="top-header">
       <span>Dr. Merfat Alardawi</span>
       <span class="dash">–</span>
       <img src="/assets/icons/drama1.webp" alt="Drama icon" class="icon1">
@@ -156,13 +156,12 @@
         <div class="left-section">
           <div class="logo">
             <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
-              <img src="assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">
-            </a>
+            <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
           </div>
           <div class="menu-overlay" id="menuOverlay"></div>
           <div class="nav-links" id="navLinks">
             <div class="menu-header">
-              <img class="mobile-logo" src="assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
               <!-- Close button INSIDE menu -->
               <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
                 <i class="fas fa-times"></i>
@@ -204,7 +203,7 @@
     <main>
       <section class="home" id="home">
         <div class="home-content">
-          <h3>Hello, I’m</h3>
+          <!--<h3>Hello, I’m</h3>-->
           <h1>Dr. Merfat Alardawi</h1>
           <h3><span class="multiple-text"></span></h3>
           <!--<p>My core research interests include the areas of drama, television, and film studies, with a particular interest in the relationship between drama and comparative cultural studies.</p>-->
@@ -268,7 +267,9 @@
 
         <!-- Home Image -->
         <div class="home-img">
-          <img src="assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi Portrait" loading="eager">
+          <!--<img src="assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi Portrait" loading="eager">-->
+          <img class="profile-image" alt="Dr. Merfat Alardawi Portrait" loading="eager">
+
         </div>
       </section>
 
@@ -292,111 +293,85 @@
     </main>
 
     <!-- Research Highlights Section Design -->
-    <!----> <section class="research-highlights" id="highlights">
-          <div class="highlights-container">
+    <section class="research-highlights" id="highlights">
+      <div class="highlights-container">
 
-            <div class="section-header">
-                <h2 class="heading"><span>Research Highlights</span></h2>
-                <p>A record of scholarly research contributions, including peer-reviewed publications, citations, conference presentations, teaching, and academic mentorship.</p>
-            </div>
-            <div class="stats-grid">
-              
-                  <div class="stat-card">
-						        <i class="fas fa-graduation-cap"></i>
-                    <h3 class="stat-number">PhD</h3>
-                    <p class="stat-label">Dublin City University</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fa-solid fa-book-open"></i>
-                    <h3 class="stat-number">20+</h3>
-                    <p class="stat-label">Publications</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fa-solid fa-chart-line"></i>
-                    <h3 class="stat-number">33+</h3>
-                    <p class="stat-label">Citations</p>
-                </div>
-                <div class="stat-card">
-						        <i class="fas fa-file-signature"></i>
-                    <h3 class="stat-number">Reviewer</h3>
-                    <p class="stat-label">Academic Journals</p>
-                </div>
-                <div class="stat-card">
-                    <i class="fa-solid fa-microphone"></i>
-                    <h3 class="stat-number">24+</h3>
-                    <p class="stat-label">Academic Activities</p>
-                </div>
-                <div class="stat-card">
-						        <i class="fas fa-film"></i>
-                    <h3 class="stat-number">Founder</h3>
-                    <p class="stat-label">Student Film Festival</p>
-                </div>
-                
-            </div>
-          </div>
+        <div class="section-header">
+            <h2 class="heading"><span>Research Highlights</span></h2>
+            <p>A record of scholarly research contributions, including peer-reviewed publications, citations, conference presentations, teaching, and academic mentorship.</p>
+        </div>
+
+        <div
+            id="homepage-highlights"
+            class="stats-grid"
+            data-language="en"
+            data-type="homepage">
+        </div>
+      </div>               
+
     </section>
 
-  <!-- research section design -->
-  <section class="research">
-    <h2 class="heading"><span>Research Interests</span></h2>
+    <!-- research section design -->
+    <section class="research">
+      <h2 class="heading"><span>Research Interests</span></h2>
 
-    <div class="field-intro">
-      <p class="lead">My research is situated within the fields of drama, film, and television studies, with a particular emphasis on audience studies, gender representation, and comparative cultural analysis, alongside interests in media production, podcasts, and artificial intelligence in film.</p>
-    </div>
-
-    <div class="research-filter">
-      <button class="active" data-filter="all">All</button>
-      <button data-filter="screen-media">Screen Media</button>
-      <button data-filter="film">Film</button>
-      <button data-filter="serialized-drama">Serial Drama</button>
-      <button data-filter="audience-studies">Audience Studies</button>
-    </div>
-    
-    <!-- Research Cards -->
-    <ul class="team_list" id="researchContainer">
-    <!-- Research cards generated dynamically from research.json -->
-    </ul>
-  </section>
-
-  <!-- Project section design -->
-  <section class="main project">
-    <h2 class="heading"><span>Students' Works</span></h2>
-
-    <div class="new-swiper swiper">
-      <div class="swiper-wrapper" id="swiperWrapper">
+      <div class="field-intro">
+        <p class="lead">My research is situated within the fields of drama, film, and television studies, with a particular emphasis on audience studies, gender representation, and comparative cultural analysis, alongside interests in media production, podcasts, and artificial intelligence in film.</p>
       </div>
-        <!-- Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-button-next"></div> -->
-    </div>
-  </section>  
+
+      <div class="research-filter">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="screen-media">Screen Media</button>
+        <button data-filter="film">Film</button>
+        <button data-filter="serialized-drama">Serial Drama</button>
+        <button data-filter="audience-studies">Audience Studies</button>
+      </div>
+      
+      <!-- Research Cards -->
+      <ul class="team_list" id="researchContainer">
+      <!-- Research cards generated dynamically from research.json -->
+      </ul>
+    </section>
+
+    <!-- Project section design -->
+    <section class="main project">
+      <h2 class="heading"><span>Students' Works</span></h2>
+
+      <div class="new-swiper swiper">
+        <div class="swiper-wrapper" id="swiperWrapper">
+        </div>
+          <!-- Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- Navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
+      </div>
+    </section>  
 
     <!-- Video section design-->
-  <section class="container">
-    <h2 class="heading"><span>Students' Creativity</span></h2>
+    <section class="container">
+      <h2 class="heading"><span>Students' Creativity</span></h2>
 
-    <div class="video-wrapper">
-      <!-- YouTube Embed Code with Autoplay -->
-      <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
-      frameborder="0"
-      allow="accelerometer; encrypted-media; gyroscope;">
-      </iframe>
-    </div>
-  </section>
-  
-  <!-- footer design -->
-  <footer class="footer1">
-    <div class="footer-text">
-        <p>Copyright &copy; 2023 by Alardawi  -  All Rights Reserved.</p>
-    </div>
-    <div class="footer-iconTop">
-        <a href="javascript:void(0)" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
-        </a>
-    </div>
-  </footer>
+      <div class="video-wrapper">
+        <!-- YouTube Embed Code with Autoplay -->
+        <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
+        frameborder="0"
+        allow="accelerometer; encrypted-media; gyroscope;">
+        </iframe>
+      </div>
+    </section>
+    
+    <!-- footer design -->
+    <footer class="footer1">
+      <div class="footer-text">
+          <p>Copyright &copy; 2023 by Alardawi  -  All Rights Reserved.</p>
+      </div>
+      <div class="footer-iconTop">
+          <a href="javascript:void(0)" aria-label="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+          </a>
+      </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -411,10 +386,11 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
    
     <!-- Custom Scripts -->
+    <script src="js/profile/profile.js"></script>
     <script src="js/swiper-project.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/profile/highlights.js"></script>
     <script src="js/research.js"></script>
-
+    <script src="js/script.js"></script>
     
   </body>
 </html>

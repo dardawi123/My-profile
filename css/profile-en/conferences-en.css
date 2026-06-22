@@ -707,6 +707,7 @@ tr:hover {
 
 .no-data-filter {
   display: none; /* show when needed */
+  width: 100%;
   margin: 0 auto;
   padding: 16px 20px;
   text-align: center;

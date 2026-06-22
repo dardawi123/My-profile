@@ -1,0 +1,79 @@
+{
+  "en": [
+    {
+      "id": "phd",
+      "icon": "fas fa-graduation-cap",
+      "value": "PhD",
+      "label": "Dublin City University"
+    },
+    {
+      "id": "publications",
+      "icon": "fas fa-book-open",
+      "value": "20+",
+      "label": "Publications"
+    },
+    {
+      "id": "citations",
+      "icon": "fas fa-chart-line",
+      "value": "33+",
+      "label": "Citations"
+    },
+    {
+      "id": "reviewer",
+      "icon": "fas fa-file-signature",
+      "value": "Reviewer",
+      "label": "Academic Journals"
+    },
+    {
+      "id": "activities",
+      "icon": "fas fa-microphone",
+      "value": "24+",
+      "label": "Academic Activities"
+    },
+    {
+      "id": "founder",
+      "icon": "fas fa-film",
+      "value": "Founder",
+      "label": "Student Film Festival"
+    }
+  ],
+
+  "ar": [
+    {
+      "id": "phd",
+      "icon": "fas fa-graduation-cap",
+      "value": "دكتوراه",
+      "label": "جامعة دبلن سيتي"
+    },
+    {
+      "id": "publications",
+      "icon": "fas fa-book-open",
+      "value": "+20",
+      "label": "المنشورات العلمية"
+    },
+    {
+      "id": "citations",
+      "icon": "fas fa-chart-line",
+      "value": "+33",
+      "label": "الاستشهادات العلمية"
+    },
+    {
+      "id": "reviewer",
+      "icon": "fas fa-file-signature",
+      "value": "محكّم",
+      "label": "المجلات الأكاديمية"
+    },
+    {
+      "id": "activities",
+      "icon": "fas fa-microphone",
+      "value": "+24",
+      "label": "الأنشطة الأكاديمية"
+    },
+    {
+      "id": "founder",
+      "icon": "fas fa-film",
+      "value": "مؤسس",
+      "label": "مهرجان الأفلام الطلابية"
+    }
+  ]
+}

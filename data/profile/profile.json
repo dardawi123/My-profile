@@ -1,0 +1,25 @@
+{
+  "image": "/assets/profile-image/profile.jpg",
+
+  "en": {
+    "name": "Dr. Merfat Alardawi",
+    "position": "Assistant Professor of Drama and Film Studies",
+    "department": "Visual and Audio Production Department",
+    "faculty": "Faculty of Communication and Media",
+    "university": "King Abdulaziz University",
+    "email": "malaradawe@kau.edu.sa",
+    "emailButton": "Email",
+    "cvButton": "Download CV"
+  },
+
+  "ar": {
+    "name": "د. مرفت العرضاوي",
+    "position": "أستاذ مساعد في الدراما ودراسات الأفلام",
+    "department": "قسم الإنتاج المرئي والمسموع",
+    "faculty": "كلية الاتصال والإعلام",
+    "university": "جامعة الملك عبدالعزيز",
+    "email": "malaradawe@kau.edu.sa",
+    "emailButton": "البريد الإلكتروني",
+    "cvButton": "تحميل السيرة الذاتية"
+  }
+}

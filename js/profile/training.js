@@ -12,6 +12,12 @@ async function initTraining() {
         document.getElementById("trainingTitle").textContent =
             data.title[lang];
 
+            const count = document.getElementById("trainingCount");
+
+            if (count) {
+                count.textContent = data.items.length;
+            }
+    
         container.innerHTML = data.items
             .map(item => `<li>${item[lang]}</li>`)
             .join("");

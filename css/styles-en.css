@@ -551,7 +551,7 @@ body.dark .multiple-text {
 .btn-box {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  gap: clamp(1.3rem, 1.121rem + 0.7742vw, 1.75rem);
   width: clamp(19.5rem, calc(19.5rem + ((1vw - 0.34rem) * 12.2093)), 30rem);
   height: clamp(2.5rem, 1.625vw + 1.98rem, 4.2rem);
 }
@@ -561,7 +561,7 @@ body.dark .multiple-text {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: clamp(9.2rem, 5.818vw + 7.018rem, 14rem);
+  width: clamp(9.2rem, 8.086rem + 4.8172vw, 12rem);
   height: 100%;
   border: 2px solid var(--main-color); /* Consistent thinner border */
   /*background: var(--bg-color);*/

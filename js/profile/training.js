@@ -15,7 +15,14 @@ async function initTraining() {
             const count = document.getElementById("trainingCount");
 
             if (count) {
-                count.textContent = data.items.length;
+                
+                
+                
+                count.textContent = document.documentElement.lang === "ar"
+                    ? `${data.items.length.toLocaleString("ar-SA")}+`
+                    : `${data.items.length}+`;
+                
+                /*count.textContent = data.items.length;*/
             }
     
         container.innerHTML = data.items

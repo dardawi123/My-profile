@@ -542,7 +542,6 @@ Academic Highlights
   display: flex;
   flex-direction: column;
   margin-bottom: clamp(1.5rem, 1.3011rem + 0.8602vw, 2rem);
-  /*gap: clamp(0.9rem, 0.6613rem + 1.0323vw, 1.5rem);*/
   gap: clamp(1.2rem, 0.8022rem + 1.7204vw, 2.2rem);
   padding: clamp(0.9rem, 0.5618rem + 1.4624vw, 1.75rem);
   background: var(--card-bg-color);
@@ -563,27 +562,21 @@ Academic Highlights
 
 /* Training Summary */
 .training-summary {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .summary-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    border-radius: 12px;
-    background: var(--card-bg-color);
-    border:
-        1px solid
-        color-mix(
-            in srgb,
-            var(--main-color) 15%,
-            transparent
-        );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: var(--card-bg-color);
+  border: 1px solid color-mix(in srgb, var(--main-color) 15%, transparent);
 }
 
 .summary-number {
@@ -594,55 +587,52 @@ Academic Highlights
 }
 
 .summary-label {
-    font-size: 0.95rem;
-    opacity: .8;
+  font-size: 0.95rem;
+  opacity: 0.8;
 }
 
 /* Vertical Timeline */
 .training-list {
-    --circle-offset: clamp(1rem, 2vw, 2rem);
-    --circle-size: clamp(1.7rem, 1.5rem + 0.4vw, 2rem);
-    counter-reset: training-counter;
-    list-style: none;
-    margin: 0;
-    position: relative;
+  --circle-offset: clamp(0.5rem, 1vw, 1rem);
+  --circle-size: clamp(1.7rem, 1.5rem + 0.4vw, 2rem);
+  counter-reset: training-counter;
+  list-style: none;
+  margin: 0;
+  position: relative;
 }
 
 .training-list::before {
-    content: "";
-    position: absolute;
-    left: calc(
-        var(--circle-offset) +
-        var(--circle-size) / 2
-    );
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: color-mix(
-        in srgb,
-        var(--main-color) 50%,
-        transparent
-    );
+  content: "";
+  position: absolute;
+  left: calc(var(--circle-offset) + var(--circle-size) / 2);
+  top: 0;
+  bottom: 0;
+  width: 2.25px;
+  background-color: var(--main-color);
+  opacity: 45%;
+  /*background: color-mix(in srgb, var(--main-color) 50%, transparent);*/
 }
 
 .training-list li {
-    counter-increment: training-counter;
-    position: relative;
-    padding-left: clamp(5rem, 6vw, 7rem);
-    padding-bottom: clamp(
-        0.6rem,
-        0.4rem + 0.4vw,
-        1rem
-    );
+  counter-increment: training-counter;
+  position: relative;
+  padding-left: clamp(3rem, 4.5vw, 6rem);
+  padding-top: clamp(0.3rem, 0.2rem + 0.3vw, 0.6rem);
+  padding-bottom: clamp(1rem, 0.8rem + 0.8vw, 1.8rem);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  line-height: 1.4;
+  color: var(--text-black-color);
+  /*border-bottom: 1px solid color-mix(in srgb, var(--text-black-color) 12%,transparent);*/
+}
 
-    font-size: clamp(
-        1rem,
-        0.9rem + 0.5vw,
-        1.15rem
-    );
-    line-height: 1.5;
-    opacity: 0.9;
-    border-bottom: 1px solid color-mix(
+.training-list li::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: clamp(2.25rem, 1.95rem + 1.29vw, 3rem);
+    right: 0;
+    height: 1px;
+    background: color-mix(
         in srgb,
         var(--text-black-color) 12%,
         transparent
@@ -650,65 +640,29 @@ Academic Highlights
 }
 
 .training-list li:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .training-list li::before {
-    content: counter(
-        training-counter,
-        decimal-leading-zero
-    );
-    position: absolute;
-    top: 0.15rem;
-    width: var(--circle-size);
-    height: var(--circle-size);
-    left: var(--circle-offset);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    background: var(--main-color);
-    color: var(--text-white-color);
-    font-size: clamp(
-        0.65rem,
-        0.6rem + 0.15vw,
-        0.8rem
-    );
-    font-weight: 700;
-    z-index: 1;
-}
-
-.training-list li {
-    border-bottom: 1px solid color-mix(
-        in srgb,
-        var(--text-black-color) 12%,
-        transparent
-    );
-}
-
-/* ==========================================
-   Training Timeline - Arabic
-========================================== */
-
-html[dir="rtl"] .training-list li {
-    padding-left: 0;
-    padding-right: clamp(4.5rem, 5vw, 6rem);
-    text-align: right;
-}
-
-html[dir="rtl"] .training-list::before {
-    left: auto;
-
-    right: calc(
-        var(--circle-offset) +
-        var(--circle-size) / 2
-    );
-}
-
-html[dir="rtl"] .training-list li::before {
-    left: auto;
-    right: var(--circle-offset);
+  content: counter(training-counter, decimal-leading-zero);
+  position: absolute;
+  top: 0.15rem;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  left: var(--circle-offset);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--heading-color);
+  -webkit-text-stroke: 0px var(--main-color);
+  /*background-color: color-mix(in srgb, var(--main-color) 550%, white);*/
+  color: var(--text-white-color);
+  box-shadow: 0 0 0 clamp(0.175rem, 0.16rem + 0.15vw, 0.25rem) var(--card-bg-color);
+  font-size: clamp(0.65rem, 0.6rem + 0.15vw, 0.8rem);
+  font-weight: 700;
+  z-index: 2;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

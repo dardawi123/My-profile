@@ -48,13 +48,13 @@
     {
       "id": "publications",
       "icon": "fas fa-book-open",
-      "value": "+20",
+      "value": "٢٠+",
       "label": "المنشورات العلمية"
     },
     {
       "id": "citations",
       "icon": "fas fa-chart-line",
-      "value": "+33",
+      "value": "٣٣+",
       "label": "الاستشهادات العلمية"
     },
     {
@@ -66,7 +66,7 @@
     {
       "id": "activities",
       "icon": "fas fa-microphone",
-      "value": "+24",
+      "value": "٢٤+",
       "label": "الأنشطة الأكاديمية"
     },
     {

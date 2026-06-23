@@ -570,10 +570,25 @@ table td:nth-child(2) {
   text-align: justify;
 }
 
+/* Header Sticky */
+.header-sticky {
+  position: sticky;
+  top: var(--navbar-height);
+  z-index: 200;
+  background: var(--card-bg-color);
+}
+
 #publication-heading {
   padding-bottom: 8px;
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
+}
+
+.publication-table th {
+  position: sticky;
+  top: calc(var(--navbar-height) + var(--sticky-height));
+  background-color: var(--main-color);
+  z-index: 100;
 }
 
 /* Bottom table row radius */
@@ -612,8 +627,6 @@ td {
   color: var(--td-text-color);
 }
 
-
-
 /* ROW STYLING */
 tr:nth-child(odd) {
   background-color: color-mix(in srgb, var(--main-color) 2%, white);
@@ -632,8 +645,6 @@ tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }
-
-
 
 .container2 {
   display: flex;

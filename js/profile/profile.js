@@ -31,17 +31,6 @@ async function initProfile() {
         }
 
         // ==================================================
-        // Profile Image (Homepage + Subpages)
-        // ==================================================
-
-        document
-            .querySelectorAll(".profile-image")
-            .forEach(img => {
-                img.src = data.image;
-                img.alt = profile.name;
-            });
-
-        // ==================================================
         // Profile Text (Subpages Only)
         // ==================================================
 

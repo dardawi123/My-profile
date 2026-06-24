@@ -598,30 +598,83 @@ Academic Highlights
   line-height: 1.3;
 }
 
-ul {
-  padding-left: 1.3rem;
-  list-style-type: disc;
+/* ------------------------------------------- */
+  Work Experience / Associations / Initiatives
+/* ------------------------------------------- */
+.timeline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-li {
-  padding-bottom: clamp(0.4rem, 0.2011rem + 0.8602vw, 0.9rem);
-  padding-left: clamp(0.0625rem, -0.1613rem + 0.9677vw, 0.625rem);
-  text-align: justify;
+.timeline-list li {
+  display: grid;
+  position: relative;
+  grid-template-columns: 8.5rem 1fr;
+  column-gap: 0.5rem;
+  padding-bottom: 1.25rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
-  line-height: 1.3;
+  text-align: justify;
+  margin-top: 0;
+  padding-top: 0;
+  line-height: 1.4;
 }
 
-li:last-child {
+.timeline-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--text-black-color) 10%, transparent);
+}
+
+.timeline-list li:last-child::after {
+  content: none;
+}
+
+.timeline-list li:last-child {
   padding-bottom: 0;
 }
 
-/*ul li::marker {
-  font-size: 1.5rem;
-}*/
+.timeline-list .year {
+  font-weight: 700;
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
+  white-space: nowrap;
+}
 
-.year {
-  font-weight: 600;
-  color: var(--text-black-color);
+/* ----------------------------------------
+   Supervision
+---------------------------------------- */
+.simple-list {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.simple-list li {
+  position: relative;
+  padding-bottom: clamp(0.4rem, 0.2011rem + 0.8602vw, 0.9rem);
+  padding-left: clamp(1.25rem, 1.1rem + 0.65vw, 1.75rem);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  text-align: justify;
+  line-height: 1.4;
+}
+
+.simple-list li:last-child {
+  padding-bottom: 0;
+}
+
+.simple-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: -0.2em;
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
+  font-size: clamp(1.4em, 1.3em + 0.2vw, 1.6em);
+  font-weight: 700;
 }
 
 /* Table */
@@ -778,6 +831,16 @@ a:hover {
   .profile-image img {
     width: 140px;
     height: 140px;
+  }
+  .timeline-list li {
+    grid-template-columns: 1fr;
+    margin-top: 10px;
+  }
+  .timeline-list li:first-child {
+    margin-top: 0px;
+  }
+  .timeline-list .year {
+    display: block;
   }
 }
 

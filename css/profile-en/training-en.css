@@ -608,8 +608,10 @@ Academic Highlights
   content: "";
   position: absolute;
   left: calc(var(--circle-offset) + var(--circle-size) / 2);
-  top: 0;
-  bottom: 0;
+  /* Prevent the timeline from extending above the first marker */
+  top: calc(var(--circle-size) / 2);
+  /* Prevent the timeline from extending below the last marker */
+  bottom: calc(var(--circle-size) + 0.5rem);
   width: 2.25px;
   background-color: var(--main-color);
   opacity: 45%;
@@ -625,26 +627,25 @@ Academic Highlights
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   line-height: 1.4;
   color: var(--text-black-color);
-  /*border-bottom: 1px solid color-mix(in srgb, var(--text-black-color) 12%,transparent);*/
-}
-
-.training-list li::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: clamp(2.25rem, 1.95rem + 1.29vw, 3rem);
-    right: 0;
-    height: 1px;
-    background: color-mix(
-        in srgb,
-        var(--text-black-color) 12%,
-        transparent
-    );
 }
 
 .training-list li:last-child {
-  border-bottom: none;
   padding-bottom: 0;
+}
+
+.training-list li:last-child::after {
+  /* Prevent a separator from appearing below the last item */
+  content: none;
+}
+
+.training-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: clamp(2.25rem, 1.95rem + 1.29vw, 3rem);
+  right: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--text-black-color) 12%, transparent);
 }
 
 .training-list li::before {

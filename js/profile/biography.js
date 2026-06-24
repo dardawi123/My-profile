@@ -89,13 +89,16 @@ function renderYearListSection(section, lang) {
         <div class="container3">
             <h3 class="title">${section.title[lang]}</h3>
 
-            <ul>
+            <ul class="timeline-list">
                 ${section.items.map(item => `
                     <li>
                         <span class="year">
                             ${item.year[lang]}:
                         </span>
-                        ${item.description[lang]}
+
+                        <span class="description">
+                            ${item.description[lang]}
+                        </span>
                     </li>
                 `).join("")}
             </ul>
@@ -112,7 +115,7 @@ function renderSimpleListSection(section, lang) {
         <div class="container3">
             <h3 class="title">${section.title[lang]}</h3>
 
-            <ul>
+            <ul class="simple-list">
                 ${section.items.map(item => `
                     <li>${item[lang]}</li>
                 `).join("")}

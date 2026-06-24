@@ -720,19 +720,23 @@ table td:nth-child(2) {
 }
 
 /* Rows */
-tr:nth-child(odd) {
+tbody tr:nth-child(odd) {
   background-color: color-mix(in srgb, var(--main-color) 2%, white);
 }
 
-tr:nth-child(even) {
+tbody tr:nth-child(even) {
   background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
-tr {
-  border-bottom: 1px solid var(--table-border-color);
+tbody td {
+  border-bottom: 0.5px solid var(--table-border-color);
 }
 
-tr:hover {
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }

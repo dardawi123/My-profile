@@ -731,7 +731,7 @@ tbody td {
   border-bottom: 0.5px solid var(--table-border-color);
 }
 
-tbody tr:last-child td {
+ tbody tr:last-child td {
   border-bottom: none;
 }
 

@@ -17,6 +17,7 @@
   --style-switcher-text-color: #1C1917;
   --overlay-bg-color: rgba(0, 0, 0, 0.4);
   --table-border-color: #A6A6A6;
+   --table-border-color: #A6A6A6;
   --th-text-color: #F5F5F5;
   --td-text-color: #222222;
   --navbar-height: 74.5px;
@@ -589,10 +590,6 @@ table td:nth-child(2) {
   -webkit-text-stroke: 0.5px var(--main-color);
 }
 
-/*.table-body-wrapper {
-  border-radius: 10px 10px 10px 10px;
-}*/
-
 .publication-table th {
   position: sticky;
   top: calc(var(--navbar-height) + var(--sticky-height));
@@ -645,12 +642,15 @@ tr:nth-child(even) {
   background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
-tr {
-	border-bottom: 1px solid var(--table-border-color);
-  border-top: 1px solid var(--table-border-color);
+.publication-table tbody td {
+  border-bottom: 0.5px solid var(--table-border-color);
 }
 
-tr:hover {
+.publication-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.publication-table tbody tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }

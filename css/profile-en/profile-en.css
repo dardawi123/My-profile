@@ -677,7 +677,9 @@ Academic Highlights
   font-weight: 700;
 }
 
-/* Table */
+/* ----------------------- */
+/*  Table
+/* ----------------------- */
 table {
   width: 100%;
   margin: 0 auto;
@@ -717,19 +719,23 @@ table td:nth-child(2) {
 }
 
 /* Rows */
-tr:nth-of-type(odd) {
+tbody tr:nth-of-type(odd) {
   background-color: color-mix(in srgb, var(--main-color) 2%, white);
 }
 
-tr:nth-of-type(even) {
+tbody tr:nth-of-type(even) {
   background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
-tr {
-  border-bottom: 1px solid var(--table-border-color);
+tbody td {
+  border-bottom: 0.5px solid var(--table-border-color);
 }
 
-tr:hover {
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }

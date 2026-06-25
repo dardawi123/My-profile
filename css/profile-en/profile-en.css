@@ -734,11 +734,11 @@ table td:nth-child(2) {
 
 /* Rows */
 tr:nth-of-type(even) {
-  background-color: var(--tr-light-color);
+  background-color: color-mix(in srgb, var(--main-color) 2%, white);
 }
 
 tr:nth-of-type(odd) {
-  background-color: var(--tr-dark-color);
+  background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
 tr {

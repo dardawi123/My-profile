@@ -692,7 +692,6 @@ a:hover {
 /* ----------------------- */
 /*  Table
 /* ----------------------- */
-/* Table */
 table {
   width: 100%;
   margin: 1rem auto;
@@ -742,7 +741,7 @@ tr:nth-of-type(odd) {
 }
 
 tr {
-  border-bottom: 1px solid var(--table-border-color);
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
 }
 
 tr:last-child {

@@ -680,10 +680,24 @@ Academic Highlights
   font-weight: 700;
 }
 
-/* Table */
+/* GLOBAL LINKS */
+a:link,
+a:visited {
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.3px var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------- */
+/*  Table
+/* ----------------------- */
 table {
   width: 100%;
-  margin: 0 auto;
+  margin: 0rem auto;
   border-collapse: collapse;
   border-radius: 10px;
   align-items: center;
@@ -694,7 +708,7 @@ table {
 th {
   padding: 1rem;
   text-align: left;
-  font-size: clamp(1.1rem, 0.95rem + 0.5vw, 1.35rem);
+  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
   font-weight: 700;
   background-color: var(--main-color);
   color: var(--th-text-color);
@@ -703,7 +717,8 @@ th {
 /* Cells */
 td {
   padding: 0.9rem 1rem;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
   text-align: left;
   color: var(--td-text-color);
 }
@@ -720,15 +735,17 @@ table td:nth-child(2) {
 }
 
 /* Rows */
-tbody tr:nth-child(odd) {
-  background-color: color-mix(in srgb, var(--main-color) 2%, white);
-}
-
-tbody tr:nth-child(even) {
+tbody tr:nth-of-type(odd) {
+  /*background-color: var(--tr-dark-color);*/
   background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
-tbody td {
+tbody tr:nth-of-type(even) {
+  /*background-color: var(--tr-light-color);*/
+  background-color: color-mix(in srgb, var(--main-color) 2%, white);
+}
+
+tbody tr td {
   border-bottom: 0.5px solid var(--table-border-color);
 }
 
@@ -736,20 +753,9 @@ tbody tr:last-child td {
   border-bottom: none;
 }
 
-tbody tr:hover {
+tbody tr:hover td {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
-}
-
-/* GLOBAL LINKS */
-a:link,
-a:visited {
-  color: var(--heading-color);
-  -webkit-text-stroke: 0.3px var(--main-color);
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

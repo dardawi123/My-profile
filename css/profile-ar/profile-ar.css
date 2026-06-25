@@ -615,7 +615,7 @@ Academic Highlights
   position: relative;
   grid-template-columns: 7rem 1fr;
   column-gap: 0.5rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.3rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   text-align: justify;
   margin-top: 0;
@@ -630,7 +630,7 @@ Academic Highlights
   right:0;
   left: 0;
   height: 1px;
-  background: color-mix(in srgb, var(--text-black-color) 10%, transparent);
+  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
 }
 
 .timeline-list li:last-child::after {
@@ -652,37 +652,47 @@ Academic Highlights
    Supervision
 ---------------------------------------- */
 .simple-list {
-  list-style: none;
-  padding-right: 5px;
+  list-style: disc;
+  padding-right: 1.25rem;
 }
 
 .simple-list li {
   position: relative;
-  padding-bottom: clamp(0.4rem, 0.2011rem + 0.8602vw, 0.9rem);
-  padding-right: clamp(1.25rem, 1.1rem + 0.65vw, 1.75rem);
+  padding-bottom: 1.3rem;
+  padding-right: 1rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   text-align: justify;
+  margin-top: 0;
+  padding-top: 0;
   line-height: 1.4;
+}
+
+.simple-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  right: -1.2rem;
+  left: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
+}
+
+.simple-list li:last-child::after {
+  content: none;
 }
 
 .simple-list li:last-child {
   padding-bottom: 0;
 }
 
-.simple-list li::before {
-  content: "•";
-  position: absolute;
-  right: 0;
-  top: -0.18em;
+ul li::marker {
+  font-size: 1.3rem;
   color: var(--heading-color);
   -webkit-text-stroke: 0.7px var(--main-color);
-  font-size: clamp(1.4em, 1.3em + 0.2vw, 1.6em);
-  font-weight: 700;
 }
 
 /* GLOBAL LINKS */
-a:link,
-a:visited {
+a:link, a:visited {
   color: var(--heading-color);
   -webkit-text-stroke: 0.3px var(--main-color);
   text-decoration: none;
@@ -744,7 +754,7 @@ tr:nth-of-type(odd) {
 }
 
 tr {
-  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 40%, transparent);
 }
 
 tr:last-child {

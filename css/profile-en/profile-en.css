@@ -742,11 +742,15 @@ tr:nth-of-type(odd) {
 }
 
 tr {
-  border-bottom: 1px solid var(--table-border-color);
+  border-bottom: 0.5px solid var(--table-border-color);
+}
+
+tr:last-child td {
+  border-bottom: none;
 }
 
 tr:hover {
-  background-color: red;
+  background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }
 

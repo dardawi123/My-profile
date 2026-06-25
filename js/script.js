@@ -445,22 +445,6 @@ function initScrollToTop() {
         }
     );
 }
-// ======================================================
-// Open / Download PDF
-// ======================================================
-function openPDF() {
-    const path = window.location.pathname.toLowerCase();
-
-    const isArabicPage =
-        path.includes("/ar/")
-        || path.includes("-ar.html");
-
-    const pdfPath = isArabicPage
-        ? "/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf"
-        : "/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf";
-
-    window.open(pdfPath, "_blank");
-}
 
 // ======================================================
 // Popup Modal
@@ -1113,10 +1097,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==================================================
     if (typeof initHighlights === "function") {
         initHighlights();
-    }
-
-    if (typeof initProfile === "function") {
-        initProfile();
     }
 
     if (typeof initBiography === "function") {

@@ -697,7 +697,7 @@ a:hover {
 /* ----------------------- */
 table {
   width: 100%;
-  margin: 0rem auto;
+  margin: 1rem auto;
   border-collapse: collapse;
   border-radius: 10px;
   align-items: center;
@@ -735,25 +735,23 @@ table td:nth-child(2) {
 }
 
 /* Rows */
-tbody tr:nth-of-type(odd) {
-  /*background-color: var(--tr-dark-color);*/
-  background-color: color-mix(in srgb, var(--main-color) 6%, white);
-}
-
-tbody tr:nth-of-type(even) {
-  /*background-color: var(--tr-light-color);*/
+tr:nth-of-type(even) {
   background-color: color-mix(in srgb, var(--main-color) 2%, white);
 }
 
-tbody tr td {
-  border-bottom: 0.5px solid var(--table-border-color);
+tr:nth-of-type(odd) {
+  background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
-tbody tr:last-child td {
+tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
+}
+
+tr:last-child {
   border-bottom: none;
 }
 
-tbody tr:hover td {
+tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
 }

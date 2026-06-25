@@ -645,7 +645,7 @@ Academic Highlights
   left: clamp(2.25rem, 1.95rem + 1.29vw, 3rem);
   right: 0;
   height: 1px;
-  background: color-mix(in srgb, var(--text-black-color) 12%, transparent);
+  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
 }
 
 .training-list li::before {

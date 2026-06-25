@@ -631,7 +631,7 @@ tr:nth-child(even) {
 }
 
 .activity-table tbody td {
-  border-bottom: 0.5px solid var(--table-border-color);
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 40%, transparent);
 }
 
 .activity-table tbody tr:last-child td {

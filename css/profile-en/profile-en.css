@@ -612,7 +612,7 @@ Academic Highlights
   position: relative;
   grid-template-columns: 8.5rem 1fr;
   column-gap: 0.5rem;
-  padding-bottom: 1.25rem;
+  padding-bottom: 1.3rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   text-align: justify;
   margin-top: 0;
@@ -627,7 +627,7 @@ Academic Highlights
   left: 0;
   right: 0;
   height: 1px;
-  background: color-mix(in srgb, var(--text-black-color) 10%, transparent);
+  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
 }
 
 .timeline-list li:last-child::after {
@@ -649,37 +649,47 @@ Academic Highlights
    Supervision
 ---------------------------------------- */
 .simple-list {
-  list-style: none;
-  padding-left: 5px;
+  list-style: disc;
+  padding-left: 1.25rem;
 }
 
 .simple-list li {
   position: relative;
-  padding-bottom: clamp(0.4rem, 0.2011rem + 0.8602vw, 0.9rem);
-  padding-left: clamp(1.25rem, 1.1rem + 0.65vw, 1.75rem);
+  padding-bottom: 1.3rem;
+  padding-left: 1rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   text-align: justify;
+  margin-top: 0;
+  padding-top: 0;
   line-height: 1.4;
+}
+
+.simple-list li::after {
+  content: "";
+  position: absolute;
+  bottom: 0.6rem;
+  left: -1.2rem;
+  right: 0;
+  height: 1px;
+  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
+}
+
+ul li::marker {
+  font-size: 1.3rem;
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.7px var(--main-color);
+}
+
+.simple-list li:last-child::after {
+  content: none;
 }
 
 .simple-list li:last-child {
   padding-bottom: 0;
 }
 
-.simple-list li::before {
-  content: "•";
-  position: absolute;
-  left: 0;
-  top: -0.2em;
-  color: var(--heading-color);
-  -webkit-text-stroke: 0.7px var(--main-color);
-  font-size: clamp(1.4em, 1.3em + 0.2vw, 1.6em);
-  font-weight: 700;
-}
-
 /* GLOBAL LINKS */
-a:link,
-a:visited {
+a:link, a:visited {
   color: var(--heading-color);
   -webkit-text-stroke: 0.3px var(--main-color);
   text-decoration: none;

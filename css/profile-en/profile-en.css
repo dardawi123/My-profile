@@ -749,10 +749,10 @@ tr:last-child {
   border-bottom: none;
 }
 
-/*tr:hover {
+tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
-}*/
+}
 
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {

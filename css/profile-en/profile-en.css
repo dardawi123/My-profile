@@ -677,14 +677,24 @@ Academic Highlights
   font-weight: 700;
 }
 
+/* GLOBAL LINKS */
+a:link,
+a:visited {
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.3px var(--main-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* ----------------------- */
 /*  Table
 /* ----------------------- */
-
-/* Table */
 table {
   width: 100%;
-  margin: 1rem auto;
+  margin: 0rem auto;
   border-collapse: collapse;
   border-radius: 10px;
   align-items: center;
@@ -724,12 +734,12 @@ table td:nth-child(2) {
 /* Rows */
 tbody tr:nth-of-type(odd) {
   /*background-color: var(--tr-dark-color);*/
-  background-color: color-mix(in srgb, var(--main-color) 2%, white);
+  background-color: color-mix(in srgb, var(--main-color) 6%, white);
 }
 
 tbody tr:nth-of-type(even) {
   /*background-color: var(--tr-light-color);*/
-  background-color: color-mix(in srgb, var(--main-color) 6%, white);
+  background-color: color-mix(in srgb, var(--main-color) 2%, white);
 }
 
 tbody tr td {
@@ -743,84 +753,6 @@ tbody tr:last-child td {
 tbody tr:hover td {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
-}
-
-
-
-
-
-
-
-/*table {
-  width: 100%;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border-radius: 10px;
-  align-items: center;
-  overflow: hidden;
-}*/
-
-/* Header */
-/*th {
-  padding: 1rem;
-  text-align: left;
-  font-size: clamp(1.1rem, 0.95rem + 0.5vw, 1.35rem);
-  font-weight: 700;
-  background-color: var(--main-color);
-  color: var(--th-text-color);
-}*/
-
-/* Cells */
-/*td {
-  padding: 0.9rem 1rem;
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
-  text-align: left;
-  color: var(--td-text-color);
-}*/
-
-/* Alignment */
-/*table th:first-child,
-table td:first-child {
-  text-align: left;
-}*/
-
-/*table th:nth-child(2),
-table td:nth-child(2) {
-  text-align: left;
-}*/
-
-/* Rows */
-/*tbody tr:nth-of-type(odd) {
-  background-color: color-mix(in srgb, var(--main-color) 2%, white);
-}*/
-
-/*tbody tr:nth-of-type(even) {
-  background-color: color-mix(in srgb, var(--main-color) 6%, white);
-}*/
-
-/*tbody td {
-  border-bottom: 0.5px solid var(--table-border-color);
-}*/
-
-/*tbody tr:last-child td {
-  border-bottom: none;
-}*/
-
-/*tbody tr:hover {
-  background-color: color-mix(in srgb, var(--main-color) 12%, white);
-  transition: background-color 0.2s ease;
-}*/
-
-/* GLOBAL LINKS */
-a:link,
-a:visited {
-  color: var(--heading-color);
-  -webkit-text-stroke: 0.3px var(--main-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

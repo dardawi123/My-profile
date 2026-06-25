@@ -742,7 +742,7 @@ tr:nth-of-type(odd) {
 }
 
 tr {
-  border-bottom: 0.5px solid var(--table-border-color);
+  border-bottom: 1px solid var(--table-border-color);
 }
 
 tr:last-child {

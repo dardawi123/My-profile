@@ -659,7 +659,7 @@ Academic Highlights
 .simple-list li {
   position: relative;
   padding-bottom: 1.3rem;
-  padding-right: 1rem;
+  padding-right: clamp(0.25rem, -0.0541rem + 1.2973vw, 1rem);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   text-align: justify;
   margin-top: 0;

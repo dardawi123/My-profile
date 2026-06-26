@@ -41,7 +41,7 @@ body.dark {
   --header-shadow: 0 1px 0 rgba(255, 255, 255, 0.08), 0 8px 24px rgba(0, 0, 0, 0.35);
   --text-black-color: #F5F5F5;
   --text-nav-menu-color: #F5F5F5;
-  --scroll-arrow-color: #e9e9e9;
+  --scroll-arrow-color: color-mix(in srgb, var(--main-color) 50%, white);
 }
 
 body {
@@ -50,6 +50,7 @@ body {
   font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   background: var(--bg-color);
   color: var(--text-black-color);
+  --scroll-arrow-color: var(--main-color);
   --heading-color: var(--main-color); /* This is responsiple for color change to light in dark mode */
   overflow-x: hidden;
   overflow-y: auto;

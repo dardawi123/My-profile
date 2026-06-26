@@ -1,47 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- English -->
-    <url>
-        <loc>https://www.alardawi.com/</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-en/profile-en.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/ar/</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-en/publication-en.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/profile-en.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-en/conferences-en.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/publication-en.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-en/training-en.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/conferences-en.html</loc>
+  </url>
 
-    <!-- Arabic -->
-    <url>
-        <loc>https://www.alardawi.com/ar/</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/training-en.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-ar/profile-ar.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/profile-ar.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-ar/publication-ar.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/publication-ar.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-ar/conferences-ar.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/conferences-ar.html</loc>
+  </url>
 
-    <url>
-        <loc>https://www.alardawi.com/pages/profile-ar/training-ar.html</loc>
-    </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/training-ar.html</loc>
+  </url>
 
 </urlset>

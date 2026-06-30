@@ -395,7 +395,15 @@ nav {
 
 /* GLOBAL LAYOUT */
 section {
-padding: 2.5rem 2.2% 5rem;
+  padding: 2.5rem 2.2% 5rem;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.page-loaded section {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* ===========================
@@ -677,7 +685,7 @@ tbody td {
   border: 1px solid var(--main-color);
   border-radius: 999px;
   background-color: color-mix(in srgb, var(--main-color) 10%, white);
-  color: var(--main-color);
+  color: var(--text-popup-color);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.2;

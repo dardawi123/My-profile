@@ -198,7 +198,11 @@
 
 	</body>
 
- <!-- <div class="top-header">
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- <div class="top-header">
       <span>د. مرفت العرضاوي</span>
       <span class="dash">–</span>
       <img src="/assets/icons/drama1.webp" alt="Drama icon" class="icon1">
@@ -206,87 +210,86 @@
       <img src="/assets/icons/clapperboard1.png" alt="Film icon" class="icon2">
     </div> -->
 		
-  <!-- Header Section Design -->
-  <header>
-    <nav>
-      <div class="right-section">
-        <!-- language switcher from English to English -->
-        <div class="lang-switcher">
-          <a href="#" class="switch" id="langSwitch" aria-label="Switch language">
-            <div class="slider">EN</div>
-          </a>
-        </div>
-
-        <!-- Day/Night Mode Toggle -->
-        <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
-          <span class="fas fa-moon"></span>
-        </div>
-
-        <!-- Gear and Switcher -->
-        <div class="style-switcher-wrapper">
-          <div class="style-switcher-toggler" id="gearToggle">
-            <span class="fas fa-cog fa-spin"></span>
+    <!-- Header Section Design -->
+    <header>
+      <nav>
+        <div class="right-section">
+          <!-- language switcher from English to English -->
+          <div class="lang-switcher">
+            <a href="#" class="switch" id="langSwitch" aria-label="Switch language">
+              <div class="slider">EN</div>
+            </a>
           </div>
 
-        <div class="style-switcher" id="styleSwitcher">
-          <h4>ألوان النمط</h4>
-            <div class="colors">
-				<span class="color-1" onclick="setActiveStyle('theme-1')"></span>
-				<span class="color-2" onclick="setActiveStyle('theme-2')"></span>
-				<span class="color-3" onclick="setActiveStyle('theme-3')"></span>
-				<span class="color-4" onclick="setActiveStyle('theme-4')"></span>
-				<span class="color-5" onclick="setActiveStyle('theme-5')"></span>
+          <!-- Day/Night Mode Toggle -->
+          <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
+            <span class="fas fa-moon"></span>
+          </div>
+
+          <!-- Gear and Switcher -->
+          <div class="style-switcher-wrapper">
+            <div class="style-switcher-toggler" id="gearToggle">
+              <span class="fas fa-cog fa-spin"></span>
+            </div>
+
+          <div class="style-switcher" id="styleSwitcher">
+            <h4>ألوان النمط</h4>
+              <div class="colors">
+          <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
+          <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
+          <span class="color-3" onclick="setActiveStyle('theme-3')"></span>
+          <span class="color-4" onclick="setActiveStyle('theme-4')"></span>
+          <span class="color-5" onclick="setActiveStyle('theme-5')"></span>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
-          <i class="fas fa-bars" id="menuIcon"></i>
-        </div>
-      </div>
-
-      <div class="left-section">
-        <div class="logo">
-          <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
-          <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
-        </div>
-        <div class="menu-overlay" id="menuOverlay"></div>
-        <div class="nav-links" id="navLinks">
-          <div class="menu-header">
-            <!--<img class="mobile-logo" src="assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">-->
-              <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
-            <!-- Close button INSIDE menu -->
-            <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
-              <i class="fas fa-times"></i>
-            </div>
+          <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
+            <i class="fas fa-bars" id="menuIcon"></i>
           </div>
-            <a href="/ar/index.html">
-              <i class="fa-solid fa-house nav-icon"></i>
-              <span>الرئيسية</span>
-            </a>
-            <a href="profile-ar.html">
-              <i class="fa-solid fa-user nav-icon"></i>
-              <span>السيرة الذاتية</span>
-            </a>
-            <a href="publication-ar.html">
-              <i class="fa-solid fa-book-open nav-icon"></i>
-              <span>النشر العلمي</span>
-            </a>
-            <a href="conferences-ar.html">
-              <i class="fa-solid fa-briefcase nav-icon"></i>
-              <span>الأنشطة الأكاديمية</span>
-            </a>
-            <a href="training-ar.html">
-              <i class="fa-solid fa-chalkboard-user nav-icon"></i>
-              <span>التدريب</span>
-            </a>
         </div>
-      </div>
-    </nav>
-  </header>
+
+        <div class="left-section">
+          <div class="logo">
+            <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
+            <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+          </div>
+          <div class="menu-overlay" id="menuOverlay"></div>
+          <div class="nav-links" id="navLinks">
+            <div class="menu-header">
+              <!--<img class="mobile-logo" src="assets/profile-image/logo.png" alt="Drama and Film Studies Logo" loading="eager">-->
+                <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              <!-- Close button INSIDE menu -->
+              <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+              </div>
+            </div>
+              <a href="/ar/index.html">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span>الرئيسية</span>
+              </a>
+              <a href="profile-ar.html">
+                <i class="fa-solid fa-user nav-icon"></i>
+                <span>السيرة الذاتية</span>
+              </a>
+              <a href="publication-ar.html">
+                <i class="fa-solid fa-book-open nav-icon"></i>
+                <span>النشر العلمي</span>
+              </a>
+              <a href="conferences-ar.html">
+                <i class="fa-solid fa-briefcase nav-icon"></i>
+                <span>الأنشطة الأكاديمية</span>
+              </a>
+              <a href="training-ar.html">
+                <i class="fa-solid fa-chalkboard-user nav-icon"></i>
+                <span>التدريب</span>
+              </a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
 		<section>
-
 			<div class="academic-hero">
         <div class="profile-card" data-language="ar">
           <div class="profile-image">
@@ -325,7 +328,6 @@
 			data/biography.json - Rendered by: js/biography.js -->
 			<div id="biographyContent"></div>
 			<!-- To update biography information, edit the JSON file instead of modifying the HTML. -->
-
 		</section>
 
 		<footer class="footer1">

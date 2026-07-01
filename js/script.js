@@ -1073,6 +1073,41 @@ function initSwiperNew() {
 }
 
 // ======================================================
+// Loader
+// ======================================================
+let loaderTimer;
+let loaderShown = false;
+
+document.addEventListener("DOMContentLoaded", () => {
+    loaderTimer = setTimeout(() => {
+        const loader = document.getElementById("loader");
+
+        if (loader) {
+            loader.style.display = "flex";
+            loaderShown = true;
+        }
+    }, 350);
+});
+
+window.addEventListener("load", () => {
+    clearTimeout(loaderTimer);
+
+    const loader = document.getElementById("loader");
+
+    if (!loader) return;
+
+    if (loaderShown) {
+        loader.classList.add("hidden");
+
+        setTimeout(() => {
+            loader.remove();
+        }, 150);
+    } else {
+        loader.remove();
+    }
+});
+
+// ======================================================
 // Main Initializer
 // ======================================================
 document.addEventListener("DOMContentLoaded", () => {

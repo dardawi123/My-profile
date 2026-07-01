@@ -170,6 +170,11 @@
   </head>  
 
 	<body>
+
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
     <!-- <div class="top-header">
       <span>د. مرفت العرضاوي</span>
       <span class="dash">–</span>
@@ -264,7 +269,8 @@
     </div>
 
     <!-- home section design -->
-    <main>	
+    <main>
+      
       <section class="home" id="home">
         <div class="home-content">
           <!--<h3>مرحباً، أنا</h3>-->
@@ -328,10 +334,10 @@
           </div>
         </div>
 
-          <!-- Home Image -->
-          <div class="home-img">
-          <img src="/assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager" fetchpriority="high">
-          </div>
+        <!-- Home Image -->
+        <div class="home-img">
+        <img src="/assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager" fetchpriority="high">
+        </div>
       </section>
 
       <!-- Visit Counter Section -->
@@ -354,76 +360,78 @@
           <figcaption><h3>زيارة</h3></figcaption>
         </figure>
       </div>
-    </main>
 
-    <!-- Research Highlights Section Design -->
-    <section class="research-highlights" id="highlights">
-      <div class="highlights-container">
+      <!-- Research Highlights Section Design -->
+      <section class="research-highlights" id="highlights">
+        <div class="highlights-container">
 
-        <div class="section-header">
-            <h2 class="heading"><span></span>الإنجازات البحثية</h2>
-            <p>مسيرةٌ حافلةٌ بالإسهامات البحثية والأكاديمية، تشمل النشر في المجلات المُحكَّمة، والاستشهادات البحثية، والعروض المقدَّمة في المؤتمرات العلمية، والأنشطة التدريسية، والإشراف الأكاديمي.</p>
+          <div class="section-header">
+              <h2 class="heading"><span></span>الإنجازات البحثية</h2>
+              <p>مسيرةٌ حافلةٌ بالإسهامات البحثية والأكاديمية، تشمل النشر في المجلات المُحكَّمة، والاستشهادات البحثية، والعروض المقدَّمة في المؤتمرات العلمية، والأنشطة التدريسية، والإشراف الأكاديمي.</p>
+          </div>
+
+          <div
+              id="homepage-highlights"
+              class="stats-grid"
+              data-language="ar"
+              data-type="homepage">
+          </div>
         </div>
 
-        <div
-            id="homepage-highlights"
-            class="stats-grid"
-            data-language="ar"
-            data-type="homepage">
-        </div>
-      </div>
+      </section>
 
-    </section>
-
-    <!-- research section design -->
-    <section class="research">
+      <!-- research section design -->
+      <section class="research">
         <h2 class="heading"><span>الاهتمامات البحثية</span></h2>
 
-      <div class="field-intro">
-        <p class="lead">تندرج أبحاثي ضمن مجالات دراسات الدراما والسينما والتلفزيون، مع تركيز خاص على دراسات الجمهور، وتمثيلات النوع الاجتماعي، والتحليل الثقافي المقارن، إلى جانب اهتمامات بحثية بإنتاج الوسائط الإعلامية، والبودكاست، وتطبيقات الذكاء الاصطناعي في صناعة السينما.</p>
-      </div>
-
-      <div class="research-filter">
-        <button class="active" data-filter="all">الكل</button>
-        <button data-filter="screen-media">وسائط الشاشة</button>
-        <button data-filter="film">السينما</button>
-        <button data-filter="serialized-drama">المسلسلات الدرامية</button>
-        <button data-filter="audience-studies">دراسات الجمهور</button>
-      </div>
-
-      <!-- Research Cards -->
-      <ul class="team_list" id="researchContainer">
-      <!-- Research cards generated dynamically from research.json -->
-      </ul>
-    </section>
-
-    <!-- Project section design -->
-    <section class="main project">
-      <h2 class="heading">نماذج <span>من أعمال طالباتي</span></h2>
-
-      <div class="new-swiper swiper">
-        <div class="swiper-wrapper" id="swiperWrapper">
+        <div class="field-intro">
+          <p class="lead">تندرج أبحاثي ضمن مجالات دراسات الدراما والسينما والتلفزيون، مع تركيز خاص على دراسات الجمهور، وتمثيلات النوع الاجتماعي، والتحليل الثقافي المقارن، إلى جانب اهتمامات بحثية بإنتاج الوسائط الإعلامية، والبودكاست، وتطبيقات الذكاء الاصطناعي في صناعة السينما.</p>
         </div>
-        <!-- Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-button-next"></div> -->
 
-      </div>
-    </section>
+        <div class="research-filter">
+          <button class="active" data-filter="all">الكل</button>
+          <button data-filter="screen-media">وسائط الشاشة</button>
+          <button data-filter="film">السينما</button>
+          <button data-filter="serialized-drama">المسلسلات الدرامية</button>
+          <button data-filter="audience-studies">دراسات الجمهور</button>
+        </div>
 
-    <!-- Video section design-->
-    <section class="container">
-      <h2 class="heading">عروض <span>من إبداع طالباتي</span></h2>
-      <div class="video-wrapper">
-        <!-- YouTube Embed Code with Autoplay -->
-        <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
-        frameborder="0"
-        allow="accelerometer; encrypted-media; gyroscope;">
-        </iframe>
-      </div>
-    </section>
+        <!-- Research Cards -->
+        <ul class="team_list" id="researchContainer">
+        <!-- Research cards generated dynamically from research.json -->
+        </ul>
+      </section>
+
+      <!-- Project section design -->
+      <section class="main project">
+        <h2 class="heading">نماذج <span>من أعمال طالباتي</span></h2>
+
+        <div class="new-swiper swiper">
+          <div class="swiper-wrapper" id="swiperWrapper">
+          </div>
+          <!-- Pagination -->
+          <!-- <div class="swiper-pagination"></div> -->
+          <!-- Navigation buttons -->
+          <!-- <div class="swiper-button-prev"></div> -->
+          <!-- <div class="swiper-button-next"></div> -->
+
+        </div>
+      </section>
+
+      <!-- Video section design-->
+      <section class="container">
+        <h2 class="heading">عروض <span>من إبداع طالباتي</span></h2>
+        <div class="video-wrapper">
+          <!-- YouTube Embed Code with Autoplay -->
+          <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
+          frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope;">
+          </iframe>
+        </div>
+      </section>
+
+    </main>
+
 
     <!-- footer design -->
     <footer class="footer1">

@@ -173,6 +173,10 @@
 
   <body>
 
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
     <!-- <div class="top-header">
       <span>Dr. Merfat Alardawi</span>
       <span class="dash">–</span>
@@ -260,14 +264,14 @@
       </nav>
     </header>
 
-      <!-- Animated Arrows -->
-      <div class="scroll-arrow" id="scrollArrow">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+    <!-- Animated Arrows -->
+    <div class="scroll-arrow" id="scrollArrow">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-      <!-- Home Section Design -->
+    <!-- Home Section Design -->
     <main>
       <section class="home" id="home">
         <div class="home-content">
@@ -357,76 +361,77 @@
           <figcaption><h3>Visits</h3></figcaption>
         </figure>
       </div>
+
+      <!-- Research Highlights Section Design -->
+      <section class="research-highlights" id="highlights">
+        <div class="highlights-container">
+
+          <div class="section-header">
+              <h2 class="heading"><span>Research Highlights</span></h2>
+              <p>A record of scholarly research contributions, including peer-reviewed publications, citations, conference presentations, teaching, and academic mentorship.</p>
+          </div>
+
+          <div
+              id="homepage-highlights"
+              class="stats-grid"
+              data-language="en"
+              data-type="homepage">
+          </div>
+        </div>               
+      </section>
+
+      <!-- research section design -->
+      <section class="research">
+        <h2 class="heading"><span>Research Interests</span></h2>
+
+        <div class="field-intro">
+          <p class="lead">My research is situated within the fields of drama, film, and television studies, with a particular emphasis on audience studies, gender representation, and comparative cultural analysis, alongside interests in media production, podcasts, and artificial intelligence in film.</p>
+        </div>
+
+        <div class="research-filter">
+          <button class="active" data-filter="all">All</button>
+          <button data-filter="screen-media">Screen Media</button>
+          <button data-filter="film">Film</button>
+          <button data-filter="serialized-drama">Serial Drama</button>
+          <button data-filter="audience-studies">Audience Studies</button>
+        </div>
+        
+        <!-- Research Cards -->
+        <ul class="team_list" id="researchContainer">
+        <!-- Research cards generated dynamically from research.json -->
+        </ul>
+      </section>
+
+      <!-- Project section design -->
+      <section class="main project">
+        <h2 class="heading"><span>Students' Works</span></h2>
+
+        <div class="new-swiper swiper">
+          <div class="swiper-wrapper" id="swiperWrapper">
+          </div>
+            <!-- Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+            <!-- Navigation buttons -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+        </div>
+      </section>  
+
+      <!-- Video section design-->
+      <section class="container">
+        <h2 class="heading"><span>Students' Creativity</span></h2>
+
+        <div class="video-wrapper">
+          <!-- YouTube Embed Code with Autoplay -->
+          <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
+          frameborder="0"
+          allow="accelerometer; encrypted-media; gyroscope;">
+          </iframe>
+        </div>
+      </section>
+
     </main>
 
-    <!-- Research Highlights Section Design -->
-    <section class="research-highlights" id="highlights">
-      <div class="highlights-container">
-
-        <div class="section-header">
-            <h2 class="heading"><span>Research Highlights</span></h2>
-            <p>A record of scholarly research contributions, including peer-reviewed publications, citations, conference presentations, teaching, and academic mentorship.</p>
-        </div>
-
-        <div
-            id="homepage-highlights"
-            class="stats-grid"
-            data-language="en"
-            data-type="homepage">
-        </div>
-      </div>               
-
-    </section>
-
-    <!-- research section design -->
-    <section class="research">
-      <h2 class="heading"><span>Research Interests</span></h2>
-
-      <div class="field-intro">
-        <p class="lead">My research is situated within the fields of drama, film, and television studies, with a particular emphasis on audience studies, gender representation, and comparative cultural analysis, alongside interests in media production, podcasts, and artificial intelligence in film.</p>
-      </div>
-
-      <div class="research-filter">
-        <button class="active" data-filter="all">All</button>
-        <button data-filter="screen-media">Screen Media</button>
-        <button data-filter="film">Film</button>
-        <button data-filter="serialized-drama">Serial Drama</button>
-        <button data-filter="audience-studies">Audience Studies</button>
-      </div>
-      
-      <!-- Research Cards -->
-      <ul class="team_list" id="researchContainer">
-      <!-- Research cards generated dynamically from research.json -->
-      </ul>
-    </section>
-
-    <!-- Project section design -->
-    <section class="main project">
-      <h2 class="heading"><span>Students' Works</span></h2>
-
-      <div class="new-swiper swiper">
-        <div class="swiper-wrapper" id="swiperWrapper">
-        </div>
-          <!-- Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-          <!-- Navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div> -->
-          <!-- <div class="swiper-button-next"></div> -->
-      </div>
-    </section>  
-
-    <!-- Video section design-->
-    <section class="container">
-      <h2 class="heading"><span>Students' Creativity</span></h2>
-
-      <div class="video-wrapper">
-        <!-- YouTube Embed Code with Autoplay -->
-        <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
-        frameborder="0"
-        allow="accelerometer; encrypted-media; gyroscope;">
-        </iframe>
-      </div>
-    </section>
     
     <!-- footer design -->
     <footer class="footer1">

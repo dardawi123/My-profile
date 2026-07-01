@@ -1086,7 +1086,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loader.style.display = "flex";
             loaderShown = true;
         }
-    }, 350);
+    }, 400);
 });
 
 window.addEventListener("load", () => {

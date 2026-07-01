@@ -1086,7 +1086,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loader.style.display = "flex";
             loaderShown = true;
         }
-    }, 400);
+    }, 300);
 });
 
 window.addEventListener("load", () => {
@@ -1101,7 +1101,7 @@ window.addEventListener("load", () => {
 
         setTimeout(() => {
             loader.remove();
-        }, 150);
+        }, 200);
     } else {
         loader.remove();
     }

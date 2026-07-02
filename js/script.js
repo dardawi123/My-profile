@@ -26,7 +26,8 @@ function setActiveStyle(theme) {
         "theme-2",
         "theme-3",
         "theme-4",
-        "theme-5"
+        "theme-5",
+        "theme-6"
     );
 
     document.body.classList.add(theme);
@@ -277,7 +278,7 @@ function initLanguageSwitch() {
 // ======================================================
 // Scroll Arrow
 // ======================================================
-function initScrollArrow() {
+/*function initScrollArrow() {
     const scrollArrow = document.getElementById("scrollArrow");
     const sections = document.querySelectorAll("section");
     const pageNeedsIt =
@@ -384,7 +385,8 @@ function initScrollArrow() {
     );
 
     updateArrowVisibility();
-}
+}*/
+
 // ======================================================
 // Scroll To Top
 // ======================================================
@@ -1121,7 +1123,7 @@ document.addEventListener("DOMContentLoaded", () => {
     initThemeAndNavigation();
     initMenu();
     initLanguageSwitch();
-    initScrollArrow();
+    /*initScrollArrow();*/
     initScrollToTop();
 
     // ==================================================

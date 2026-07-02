@@ -491,7 +491,7 @@ nav {
 .style-switcher .color-6 { background: #B5562F; }
 
 /* Arrow Style */
-.scroll-arrow {
+/*.scroll-arrow {
   position: fixed;
   display: none;
   left: 30px;
@@ -506,9 +506,9 @@ nav {
   display: block;
   width: 15px;
   height: 15px;
-  border: 3px solid var(--scroll-arrow-color); /* Use a single border for both directions */
+  border: 3px solid var(--scroll-arrow-color);
   margin: -10px;
-  transform: rotate(45deg); /* Default: down direction */
+  transform: rotate(45deg); 
   animation: scroll 1.5s infinite ease-in-out;
 }
 
@@ -518,14 +518,14 @@ nav {
 
 .scroll-arrow.down span:nth-child(3) {
   animation-delay: -0.4s;
-}
+}*/
 
 /* Arrow pointing down */
-.scroll-arrow.down span {
-  border-top: 3px solid var(--scroll-arrow-color);  /* Use top-left borders for up arrow */
+/*.scroll-arrow.down span {
+  border-top: 3px solid var(--scroll-arrow-color);
   border-right: 3px solid var(--scroll-arrow-color);
-  border-top: none; /* Remove bottom border for up */
-  border-left: none;  /* Remove right border for up */
+  border-top: none; 
+  border-left: none;  
   animation: scrollDown 1.5s infinite ease-in-out;
 }
 
@@ -535,19 +535,19 @@ nav {
 
 .scroll-arrow.up span:nth-child(3) {
   animation-delay: 0.4s;
-}
+}*/
 
 /* Arrow pointing up */
-.scroll-arrow.up span {
-  border-top: 3px solid var(--scroll-arrow-color);  /* Use top-left borders for up arrow */
+/*.scroll-arrow.up span {
+  border-top: 3px solid var(--scroll-arrow-color); 
   border-left: 3px solid var(--scroll-arrow-color);
-  border-bottom: none; /* Remove bottom border for up */
-  border-right: none;  /* Remove right border for up */
+  border-bottom: none; 
+  border-right: none;  
   animation: scrollUp 1.5s infinite ease-in-out;
-}
+}*/
 
 /* Scroll animation */
-@keyframes scrollDown {
+/*@keyframes scrollDown {
   0% {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
@@ -573,7 +573,7 @@ nav {
     opacity: 0;
     transform: rotate(45deg) translate(-20px, -20px);
   }
-}
+}*/
 
 /*------------------------------ Home section design CSS ---------------------------- */
 .home {

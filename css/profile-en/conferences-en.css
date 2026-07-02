@@ -1,4 +1,6 @@
 :root {
+  --font-display: "Source Serif 4", Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   --main-color: #0F766E;
   --bg-nav-menu-color: #F5F5F5;
   --bg-nav-menu-hover-color: #E5E7EB;
@@ -31,7 +33,7 @@
   border: none;
   outline: none;
   scroll-behavior: smooth;
-  font-family: sans-serif;
+  font-family: var(--font-body);
 }
 
 body.dark {
@@ -48,6 +50,10 @@ body.dark {
   --scroll-arrow-color: #e9e9e9;
   --table-border-color: #7d7d7d;
   --td-text-color: #1a1a1a;
+}
+
+h1 span, h2 span, h3 span, h4 span {
+  font-family: inherit;
 }
 
 body {
@@ -193,18 +199,20 @@ body.fade-out {
 }
 
 /* Light Mode Themes */
-body.theme-1 {--main-color: #0F766E; --bg-nav-color: #0F766E; --bg-switcher-color: #0F766E; --bg-nav-hover-color: #0F766E; --link-color: #0F766E;}
-body.theme-2 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #0891B2;}
-body.theme-3 {--main-color: #2563EB; --bg-nav-color: #2563EB; --bg-switcher-color: #2563EB; --bg-nav-hover-color: #2563EB; --link-color: #2563EB;}
-body.theme-4 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
-body.theme-5 {--main-color: #C84B68; --bg-nav-color: #C84B68; --bg-switcher-color: #C84B68; --bg-nav-hover-color: #C84B68; --link-color: #C84B68;}
+body.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #1F6F6B;}
+body.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
+body.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #0891B2;}
+body.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #8B3A3A;}
+body.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #3B4C8C;}
+body.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #B5562F;}
 
 /* Dark Mode Themes */
-body.dark.theme-1 {--main-color: #118278; --bg-nav-color: #118278; --bg-switcher-color: #118278; --bg-nav-hover-color: #118278; --link-color: #118278;}
-body.dark.theme-2 {--main-color: #099BC0; --bg-nav-color: #099BC0; --bg-switcher-color: #099BC0; --bg-nav-hover-color: #099BC0; --link-color: #099BC0;}
-body.dark.theme-3 {--main-color: #2F6EF0; --bg-nav-color: #2F6EF0; --bg-switcher-color: #2F6EF0; --bg-nav-hover-color: #2F6EF0; --link-color: #2F6EF0;}
-body.dark.theme-4 {--main-color: #987214; --bg-nav-color: #987214; --bg-switcher-color: #987214; --bg-nav-hover-color: #987214; --link-color: #987214;}
-body.dark.theme-5 {--main-color: #CF5671; --bg-nav-color: #CF5671; --bg-switcher-color: #CF5671; --bg-nav-hover-color: #CF5671; --link-color: #CF5671;}
+body.dark.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #1F6F6B;}
+body.dark.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
+body.dark.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #0891B2;}
+body.dark.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #8B3A3A;}
+body.dark.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #3B4C8C;}
+body.dark.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #B5562F;}
 
 /*------------------------------ Header section design CSS ---------------------------- */
 /*.top-header {
@@ -448,9 +456,8 @@ nav {
   position: fixed;
   right: 0;
   top: clamp(5.25rem, 5.0312rem + 0.9462vw, 5.8rem);
-  /*top: clamp(7.3rem, 7.0421rem + 1.1789vw, 8rem);*/
   padding: clamp(0.625rem, 0.4861rem + 0.5556vw, 0.9375rem);
-  width: clamp(9.375rem, 7.9861rem + 5.5556vw, 12.5rem);
+  width: clamp(11rem, 9.0108rem + 8.6022vw, 16rem);
   border: 1px solid var(--bg-switcher-color);
   background: var(--bg-style-switcher-color);
   z-index: 101;
@@ -494,11 +501,12 @@ nav {
   opacity: 0.8;
 }
 
-.style-switcher .color-1 { background: #0F766E; }
-.style-switcher .color-2 { background: #0891B2; }
-.style-switcher .color-3 { background: #2563EB; }
-.style-switcher .color-4 { background: #8C6A12; }
-.style-switcher .color-5 { background: #C84B68; }
+.style-switcher .color-1 { background: #1F6F6B; }
+.style-switcher .color-2 { background: #8C6A12; }
+.style-switcher .color-3 { background: #0891B2; }
+.style-switcher .color-4 { background: #8B3A3A; }
+.style-switcher .color-5 { background: #3B4C8C; }
+.style-switcher .color-6 { background: #B5562F; }
 
 /* GLOBAL LAYOUT */
 section {
@@ -548,6 +556,8 @@ Academic Hero
 
 .profile-info h1 {
   /*color: var(--main-color);*/
+  font-family: var(--font-display);
+  font-weight: 600;
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: .75rem;
@@ -647,11 +657,12 @@ Academic Highlights
 }
 
 .sub-title {
+  font-family: var(--font-display);
+  font-weight: 600;
   text-align: center;
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
   font-size: clamp(2.2rem, 1.5rem + 2vw, 3.5rem);
-  font-weight: 700;
   line-height: 1.2;
   letter-spacing: 1px;
   margin: 0;
@@ -672,9 +683,10 @@ Academic Highlights
 
 /* SUBTITLE */
 .container2 h3 {
+  font-family: var(--font-display);
   margin: 0;
   padding: 0 0 0 10px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: clamp(1.4rem, 1.2581rem + 0.6054vw, 1.75rem);
   letter-spacing: 1px;
 }
@@ -727,6 +739,7 @@ Academic Highlights
 }
 
 .no-data-filter {
+  font-family: var(--font-display);
   display: none; /* show when needed */
   width: 100%;
   margin: 0 auto;
@@ -803,10 +816,11 @@ tbody tr:last-child td:last-child {
 
 /* Header Row and Column Alignment */
 th {
+  font-family: var(--font-display);
   padding: 1rem;
   text-align: left;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.3rem);
-  font-weight: 700;
+  font-weight: 600;
   background-color: var(--main-color);
   color: var(--th-text-color);
 }

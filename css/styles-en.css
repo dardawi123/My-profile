@@ -195,8 +195,8 @@ ul li {
 }
 
 section {
-  /*min-height: 100vh;*/
-  padding: 5rem 2.2% clamp(3rem, 6vw, 5rem);
+  padding: clamp(3rem, 5vw, 4rem) 2.2%
+           clamp(2rem, 4vw, 3rem);
 }
 
 /*------------------------------ Header section design CSS ---------------------------- */
@@ -262,10 +262,10 @@ nav {
 	position: relative;
   padding-top: 12px;
   padding-bottom: 12px;
-  padding-left: clamp(0.875rem, 0.4772rem + 1.7204vw, 1.875rem);
-  padding-right: clamp(0.875rem, 0.4772rem + 1.7204vw, 1.875rem);
+  padding-left: clamp(0.8rem, 0.0978rem + 1.7257vw, 1.5rem);
+  padding-right: clamp(0.8rem, 0.0978rem + 1.7257vw, 1.5rem);
   background-color: transparent;
-  font-size: clamp(0.75rem, -0.1528rem + 2.2188vw, 1.65rem);
+  font-size: clamp(0.8rem, 0.0978rem + 1.7257vw, 1.5rem);
 }
 
 .right-section {
@@ -315,9 +315,7 @@ nav {
 }
 
 .nav-links a span {
-  font-family: var(--font-display);
   font-weight: 500;
-  text-wrap: nowrap;
   color: inherit;
 }
 
@@ -667,7 +665,7 @@ body.dark .multiple-text {
   align-items: center;
   width: clamp(9.2rem, 8.086rem + 4.8172vw, 12rem);
   height: 100%;
-  border: 1.5px solid var(--main-color); /* Consistent thinner border */
+  border: 1.5px solid var(--main-color); 
   background-color: color-mix(in srgb, var(--main-color) 10%, white);
   color: var(--main-color);
   border-radius: 5px;
@@ -829,7 +827,7 @@ a:focus, .btn:focus {
     transform: translateY(0);
   }   
   50% {
-    transform: translateY(-2.5rem);
+    transform: translateY(-1.25rem);
   }
   100% {
     transform: translateY(0);

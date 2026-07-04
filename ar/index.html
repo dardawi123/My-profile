@@ -182,18 +182,6 @@
       </div>
     </div>
 
-    <!--<div id="loader">
-      <div class="spinner"></div>
-    </div>-->
-
-    <!-- <div class="top-header">
-      <span>د. مرفت العرضاوي</span>
-      <span class="dash">–</span>
-      <img src="/assets/icons/drama1.webp" alt="Drama icon" class="icon1">
-      <span>الدراما ودراسات الأفلام</span>
-      <img src="/assets/icons/clapperboard1.png" alt="Film icon" class="icon2">
-    </div> -->
-
     <!-- Header Section Design -->
     <header>
       <nav>
@@ -273,21 +261,12 @@
       </nav>
     </header>
 
-    <!-- Animated Arrows -->
-    <!--<div class="scroll-arrow" id="scrollArrow">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>-->
-
     <!-- home section design -->
     <main>
       <section class="home" id="home">
         <div class="home-content">
-          <!--<h3>مرحباً، أنا</h3>-->
           <h1>د. مرفت العرضاوي</h1>
           <h3><span class="multiple-text"></h3>
-          <!--<p>تشمل اهتماماتي البحثية بشكل اساسي أبحاث الدراما والتلفزيون ودراسات الأفلام، مع الاهتمام الخاص بالأبحاث الدرامية، المقارنة من المنظور الثقافي.</p>-->
           <p>يقدم هذا الموقع نبذة عن أبحاثي المنشورة وأنشطتي التدريسية والأكاديمية في دراسات الدراما والسينما والتلفزيون، مع اهتمام خاص بدراسات المرأة، وتفاعل الجمهور، والتمثيل الثقافي.</p>
           <div class="btn-box">
             <!-- Link to CV -->
@@ -306,9 +285,6 @@
               <a href="mailto:malaradawe@kau.edu.sa" aria-label="Email">
               <i class="fa-regular fa-envelope"></i>
               </a>
-              <!-- <a href="https://www.kau.edu.sa/ar" target="_blank" rel="noopener noreferrer" aria-label="King Abdulaziz University">
-              <img src="assets/profile-image/KAU.png" alt="King Abdulaziz University" />
-              </a> -->
               <a href="https://www.kau.edu.sa/ar" target="_blank" rel="noopener noreferrer" aria-label="Orcid">
               <i class="fa-solid fa-building-columns"></i>
               </a>
@@ -350,24 +326,6 @@
         <img src="/assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager" fetchpriority="high">
         </div>
       </section>
-
-      <!-- Visit Counter Section -->
-      <div class="visit-counter" aria-label="Website Visit Counter">
-        <figure>
-          <a href="https://www.hitwebcounter.com" 
-          title="Website Hit Web Counter" 
-          target="_blank" 
-          rel="noopener noreferrer">
-          <img 
-          src="https://hitwebcounter.com/counter/counter.php?page=21313422&style=0025&nbdigits=5&type=ip&initCount=750"
-          alt="Live website visitor counter">
-          <img 
-          src="https://hitwebcounter.com/counter/counter.php?page=21313433&style=0006&nbdigits=5&type=ip&initCount=750"
-          alt="Live website visitor counter">
-          </a>
-          <figcaption><h3>زيارة</h3></figcaption>
-        </figure>
-      </div>
     </main>
 
     <!-- Research Highlights Section Design -->
@@ -415,14 +373,7 @@
       <h2 class="heading">نماذج <span>من أعمال طالباتي</span></h2>
 
       <div class="new-swiper swiper">
-        <div class="swiper-wrapper" id="swiperWrapper">
-        </div>
-        <!-- Pagination -->
-        <!-- <div class="swiper-pagination"></div> -->
-        <!-- Navigation buttons -->
-        <!-- <div class="swiper-button-prev"></div> -->
-        <!-- <div class="swiper-button-next"></div> -->
-
+        <div class="swiper-wrapper" id="swiperWrapper"></div>
       </div>
     </section>
 
@@ -441,11 +392,26 @@
     <!-- footer design -->
     <footer class="footer1">
       <div class="footer-text">
-        <p>Copyright &copy; 2023 by Alardawi - All Rights Reserved.</p>
+        <div class="footer-meta">
+          <div class="footer-visitors" aria-label="Website visitor counter">
+            <!--<i class="fa-regular fa-eye footer-visitors__icon" aria-hidden="true"></i>-->
+            <span class="footer-visitors__label">Site Visitors</span>
+            <span class="footer-visitors__count">
+              <span class="footer-visitors__bracket">[</span>
+              <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+              <span class="footer-visitors__bracket">]</span>
+            </span>
+            <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+          </div>
+          <span class="footer-separator">|</span>
+          <p class="footer-copyright">
+            Copyright © <span id="currentYear"></span> by Alardawi - All Rights Reserved.
+          </p>
+        </div>
       </div>
       <div class="footer-iconTop">
         <a href="javascript:void(0)" aria-label="Scroll to top">
-          <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
         </a>
       </div>
     </footer>

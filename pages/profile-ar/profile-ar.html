@@ -212,14 +212,14 @@
 		
     <!-- Header Section Design -->
     <header>
-      <nav>
+      <nav aria-label="Primary Navigation">
         <div class="right-section">
-          <!-- language switcher from English to English -->
-          <div class="lang-switcher">
-            <a href="#" class="switch" id="langSwitch" aria-label="Switch language">
-              <div class="slider">EN</div>
-            </a>
-          </div>
+          <!-- language switcher from Arabic to English -->
+          <nav class="lang-switcher" aria-label="Language selector">
+            <span class="lang-option is-current" lang="ar" aria-current="page">العربية</span>
+            <span class="lang-divider" aria-hidden="true"></span>
+            <a href="/pages/profile-en/profile-en.html" class="lang-option" id="langSwitch" lang="en" aria-label="التبديل إلى الانجلزية (Switch to English)">EN</a>
+          </nav>
 
           <!-- Day/Night Mode Toggle -->
           <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
@@ -331,12 +331,18 @@
 			<!-- To update biography information, edit the JSON file instead of modifying the HTML. -->
 		</section>
 
-    <!-- footer design -->
+    <!-- Footer -->
     <footer class="footer1">
       <div class="footer-text">
         <div class="footer-meta">
           <div class="footer-visitors" aria-label="Website visitor counter">
-            <!--<i class="fa-regular fa-eye footer-visitors__icon" aria-hidden="true"></i>-->
+            <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+              <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+              <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+              <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
+                stroke-width="2" />
+            </svg>
             <span class="footer-visitors__label">Site Visitors</span>
             <span class="footer-visitors__count">
               <span class="footer-visitors__bracket">[</span>
@@ -353,7 +359,7 @@
       </div>
       <div class="footer-iconTop">
         <a href="javascript:void(0)" aria-label="Scroll to top">
-        <i class="fas fa-arrow-up"></i>
+          <i class="fas fa-arrow-up"></i>
         </a>
       </div>
     </footer>

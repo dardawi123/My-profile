@@ -197,8 +197,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 
       <!-- Custom Stylesheet -->
-      <link rel="stylesheet"
-            href="/css/profile-ar/conferences-ar.css"/>
+      <link rel="stylesheet" href="/css/profile-ar/conferences-ar.css"/>
   </head>
   
 	<!--<body style="direction: rtl; text-align: right;">-->
@@ -211,18 +210,6 @@
           <div class="loader-subtitle">يرجى الانتظار...</div>
       </div>
     </div>
-
-    <!--<div id="loader">
-      <div class="spinner"></div>
-    </div>-->
-
-    <!-- <div class="top-header">
-    <span>د. مرفت العرضاوي</span>
-    <span class="dash">–</span>
-    <img src="/assets/icons/drama1.webp" alt="Drama icon" class="icon1">
-    <span>الدراما ودراسات الأفلام</span>
-    <img src="/assets/icons/clapperboard1.png" alt="Film icon" class="icon2">
-    </div> -->
 
     <!-- Header Section Design -->
     <header>
@@ -369,16 +356,32 @@
 
 		</section>
     
-		<footer class="footer1">
-			<div class="footer-text">
-				<p>Copyright &copy; 2023 by Alardawi  -  All Rights Reserved.</p>
-			</div>
-			<div class="footer-iconTop">
-				<a href="javascript:void(0)" aria-label="Scroll to top">
-				<i class="fas fa-arrow-up"></i>
-				</a>
-			</div>
-		</footer>
+    <!-- footer design -->
+    <footer class="footer1">
+      <div class="footer-text">
+        <div class="footer-meta">
+          <div class="footer-visitors" aria-label="Website visitor counter">
+            <!--<i class="fa-regular fa-eye footer-visitors__icon" aria-hidden="true"></i>-->
+            <span class="footer-visitors__label">Site Visitors</span>
+            <span class="footer-visitors__count">
+              <span class="footer-visitors__bracket">[</span>
+              <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+              <span class="footer-visitors__bracket">]</span>
+            </span>
+            <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+          </div>
+          <span class="footer-separator">|</span>
+          <p class="footer-copyright">
+            Copyright © <span id="currentYear"></span> by Alardawi - All Rights Reserved.
+          </p>
+        </div>
+      </div>
+      <div class="footer-iconTop">
+        <a href="javascript:void(0)" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </footer>
 
 		<!-- Custom Script -->
     <script src="/js/profile/highlights.js"></script>

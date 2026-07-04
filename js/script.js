@@ -189,82 +189,74 @@ function initMenu() {
 // ======================================================
 // Language Switch
 // ======================================================
-function initLanguageSwitch() {
-    const pageNeedsIt = document.getElementById("langSwitch") !== null;
+function getLanguageSwitchTarget(path) {
+    path = path.toLowerCase();
 
-    if (!pageNeedsIt) {
+    const isHome =
+        path === "/" ||
+        path === "/index.html" ||
+        path === "/index";
+
+    const isArabicHome =
+        path === "/ar/" ||
+        path === "/ar/index.html" ||
+        path === "/ar/index";
+
+    if (isHome) {
+        return "/ar/index.html";
+    }
+
+    if (isArabicHome) {
+        return "/index.html";
+    }
+
+    if (path.includes("/profile-en/")) {
+        return path
+            .replace("/profile-en/", "/profile-ar/")
+            .replace("-en.html", "-ar.html");
+    }
+
+    if (path.includes("/profile-ar/")) {
+        return path
+            .replace("/profile-ar/", "/profile-en/")
+            .replace("-ar.html", "-en.html");
+    }
+
+    if (path.includes("/ar/")) {
+        return path
+            .replace("/ar/", "/")
+            .replace("-ar.html", ".html");
+    }
+
+    return path.replace(".html", "-ar.html");
+}
+
+function initLanguageSwitch() {
+    const langSwitch = document.getElementById("langSwitch");
+
+    if (!langSwitch) {
         console.log("Language switch skipped");
         return;
     }
 
-    const langSwitch = document.getElementById("langSwitch");
+    const target = getLanguageSwitchTarget(window.location.pathname);
+
+    // Set the real destination up front so the link works even before JS
+    // runs, and so right-click / open-in-new-tab / screen readers all see
+    // the correct URL rather than a placeholder.
+    langSwitch.setAttribute("href", target);
+
+    let isNavigating = false;
 
     langSwitch.addEventListener("click", function (e) {
 
-        e.preventDefault();
-
-        if (this.classList.contains("animating")) {
+        if (isNavigating) {
+            e.preventDefault();
             return;
         }
 
-        this.classList.add(
-            "animating",
-            "animate"
-        );
-
-        let path =
-            window.location.pathname.toLowerCase();
-
-        let target = null;
-
-        const isHome =
-            path === "/" ||
-            path === "/index.html" ||
-            path === "/index";
-
-        const isArabicHome =
-            path === "/ar/" ||
-            path === "/ar/index.html" ||
-            path === "/ar/index";
-
-        if (isHome) {
-
-            target = "/ar/index.html";
-
-        } else if (isArabicHome) {
-
-            target = "/index.html";
-
-        } else if (path.includes("/profile-en/")) {
-
-            target = path
-                .replace("/profile-en/", "/profile-ar/")
-                .replace("-en.html", "-ar.html");
-
-        } else if (path.includes("/profile-ar/")) {
-
-            target = path
-                .replace("/profile-ar/", "/profile-en/")
-                .replace("-ar.html", "-en.html");
-
-        } else {
-
-            if (path.includes("/ar/")) {
-
-                target =
-                    path.replace("/ar/", "/");
-
-                target =
-                    target.replace("-ar.html", ".html");
-
-            } else {
-
-                target =
-                    path.replace(".html", "-ar.html");
-            }
-        }
-
-        if (!target) return;
+        isNavigating = true;
+        e.preventDefault();
 
         document.body.classList.add("fade-out");
 
@@ -1071,6 +1063,25 @@ function initVisitorCounter() {
         sessionStorage.getItem(SESSION_FLAG) === "true";
     const action = alreadyCounted ? "get" : "hit";
     const url = `${API_BASE}/${action}/${KEY}`;
+
+//=========================================================
+// This will stop the Count visitor temerary,
+// to resume it remove the below and activate the above counter visitor
+    /*const isLocal =
+        location.hostname === "localhost" ||
+        location.hostname === "127.0.0.1";
+
+    const alreadyCounted =
+        sessionStorage.getItem(SESSION_FLAG) === "true";
+
+    const action = isLocal
+        ? "get"
+        : (alreadyCounted ? "get" : "hit");
+
+    const url = `${API_BASE}/${action}/${KEY}`;*/
+//=========================================================
+
+    
     fetchWithTimeout(url, FETCH_TIMEOUT_MS)
         .then((response) => {
             if (!response.ok) {

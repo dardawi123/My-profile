@@ -67,6 +67,9 @@ body {
     filter 0.2s ease;
 }
 
+/* ======================================================
+   Loader
+====================================================== */
 #loader{
   position: fixed;
   inset: 0;
@@ -144,22 +147,6 @@ body.fade-out {
     filter: blur(.5px);
 }
 
-.animate {
-    animation: langSwitch 0.2s ease;
-}
-
-@keyframes langSwitch {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(0.92);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 /* Light Mode Themes */
 body.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #1F6F6B;}
 body.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
@@ -195,7 +182,6 @@ section:last-of-type {
   padding-bottom: clamp(4rem, 6vw, 5rem);
 }
 
-/*------------------------------ Header section design CSS ---------------------------- */
 header {
   position: sticky;
   top: 0;
@@ -219,7 +205,7 @@ nav {
 .right-section {
 	display: flex;
 	align-items: center;
-  gap: clamp(1rem, 0.8011rem + 0.8602vw, 1.5rem);
+  gap: clamp(0.7rem, -0.8548rem + 3.8213vw, 2.25rem);
 }
  
 .left-section {
@@ -241,7 +227,7 @@ nav {
 
 .nav-links {
 	display: flex;
-  gap: clamp(0.8rem, -0.623rem + 3.4973vw, 2rem);
+  gap: clamp(0.65rem, -0.7042rem + 3.3282vw, 2rem);
 }
 
 /* Hide menu icons on desktop */
@@ -260,6 +246,7 @@ nav {
 
 .nav-links a span {
   font-weight: 500;
+  white-space: nowrap;
   color: inherit;
 }
 
@@ -307,40 +294,71 @@ nav {
 .lang-switcher {
   display: flex;
   justify-content: center;
+  padding: clamp(0.02rem, -0.2107rem + 0.567vw, 0.25rem);
+  gap: clamp(0.2rem, -0.1711rem + 0.9122vw, 0.57rem);
 }
 
-.switch {
+.lang-switcher .lang-option {
   position: relative;
-  width: clamp(3rem, 0.9938rem + 4.9307vw, 5rem);
-  height: clamp(1.65rem, 0.7974rem + 2.0955vw, 2.5rem);
-  background: var(--bg-white-color);
-  border-radius: 20px;
-  border: 1px solid var(--bg-switcher-color);
-  cursor: pointer;
+  color: var(--text-nav-color);
   text-decoration: none;
-  overflow: hidden;
+  font-weight: 500;
+  font-size: clamp(0.85rem, 0.75rem + 0.35vw, 1rem);
+  line-height: 1;
+  padding: 0.3em 0.1em;
+  cursor: default;
+  transition: font-weight 0.15s ease;
 }
 
-.slider {
+.lang-switcher a.lang-option {
+  cursor: pointer;
+}
+
+/* Underline element shared by hover + active states */
+.lang-switcher a.lang-option::after {
+  content: "";
   position: absolute;
-  top: clamp(0.115rem, 0.0448rem + 0.1726vw, 0.185rem);
-  right: clamp(1.45rem, 0.2965rem + 2.8351vw, 2.6rem);
-  width: clamp(1.3rem, 0.5978rem + 1.7257vw, 2rem);
-  height: clamp(1.3rem, 0.5978rem + 1.7257vw, 2rem);
-  background-color: var(--bg-switcher-color);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--text-slider-color);
-  font-weight: bold;
-  font-size: clamp(0.73rem, 0.4592rem + 0.6656vw, 1rem);
-  transition: transform 0.3s ease;
-  transform: translateX(0); /* START on the right */
+  bottom: -3px;
+  right: 0; /* RTL: grow right-to-left, matching .nav-links a::after */
+  width: 0;
+  height: 2px;
+  background-color: var(--text-nav-color);
+  transition: width 0.3s ease;
 }
 
-.switch.animate .slider {
-  transform: translateX(clamp(1.25rem, 0.9046rem + 1.5789vw, 2.1875rem)); /* SLIDE to the left */
+@media (hover: hover) and (pointer: fine) {
+  .lang-switcher a.lang-option:hover::after {
+    width: 100%;
+  }
+}
+
+.lang-switcher a.lang-option:focus-visible {
+  outline: 2px solid var(--text-nav-color);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+.lang-switcher .lang-option.is-current {
+  font-weight: 700;
+}
+
+.lang-switcher .lang-option.is-current::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  right: 0; /* RTL: matches .nav-links a::after */
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-nav-color);
+}
+
+.lang-switcher .lang-divider {
+  display: inline-block;
+  width: 1px;
+  height: 0.95em;
+  background-color: var(--text-nav-color);
+  opacity: 0.6;
+  user-select: none;
 }
 
 /* Menu icon section*/
@@ -1355,12 +1373,19 @@ border: none;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  white-space: nowrap;
 }
 
 .footer-visitors__count {
   display: inline-flex;
   align-items: center;
   gap: 0.15rem; /* controls spacing inside brackets */
+}
+
+.footer-visitors__icon {
+  width: 1.275em;
+  height: 1.275em;
+  vertical-align: middle;
 }
 
 .footer-visitors__value {
@@ -1552,8 +1577,16 @@ border: none;
 
 /* Mobile menu: tablets and phones */
 @media (max-width: 650px) {
+  .right-section {
+    gap: clamp(0.85rem, 0.1rem + 3.2vw, 1.4rem);
+  }
+  .lang-switcher {
+    padding: clamp(0.35rem, 0.2136rem + 0.5818vw, 0.45rem);
+    gap: clamp(0.3rem, 0.0273rem + 1.1636vw, 0.5rem);
+  }
   .menu-icon {
     display: flex;
+    padding: clamp(0.4rem, 0.0591rem + 1.4545vw, 0.65rem);
   }
   .menu-header {
     display: flex;

@@ -209,84 +209,84 @@
       </div>
     </div>
 
-        <!-- Header Section Design -->
-        <header>
-          <nav aria-label="Primary Navigation">
-              <div class="right-section">
-                <!-- language switcher from English to English -->
-                <div class="lang-switcher">
-                <a href="#" class="switch" id="langSwitch" aria-label="Switch language">
-                    <div class="slider">AR</div>
-                </a>
-                </div>
+    <!-- Header Section Design -->
+    <header>
+      <nav aria-label="Primary Navigation">
+          <div class="right-section">
+            <!-- language switcher from English to Arabic -->
+            <nav class="lang-switcher" aria-label="Language selector">
+              <span class="lang-option is-current" lang="en" aria-current="page">EN</span>
+              <span class="lang-divider" aria-hidden="true"></span>
+              <a href="/pages/profile-ar/profile-ar.html" class="lang-option" id="langSwitch" lang="ar" aria-label="التبديل إلى العربية (Switch to Arabic)">العربية</a>
+            </nav>
 
-                <!-- Day/Night Mode Toggle -->
-                <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
-                <span class="fas fa-moon"></span>
-                </div>
+            <!-- Day/Night Mode Toggle -->
+            <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
+            <span class="fas fa-moon"></span>
+            </div>
 
-                <!-- Gear and Switcher -->
-                <div class="style-switcher-wrapper">
-                  <div class="style-switcher-toggler" id="gearToggle">
-                      <span class="fas fa-cog fa-spin"></span>
-                  </div>
-
-                  <div class="style-switcher" id="styleSwitcher">
-                    <h4>Theme Colors</h4>
-                    <div class="colors">
-                      <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
-                      <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
-                      <span class="color-3" onclick="setActiveStyle('theme-3')"></span>
-                      <span class="color-4" onclick="setActiveStyle('theme-4')"></span>
-                      <span class="color-5" onclick="setActiveStyle('theme-5')"></span>
-                      <span class="color-6" onclick="setActiveStyle('theme-6')"></span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
-                  <i class="fas fa-bars" id="menuIcon"></i>
-                </div>
+            <!-- Gear and Switcher -->
+            <div class="style-switcher-wrapper">
+              <div class="style-switcher-toggler" id="gearToggle">
+                  <span class="fas fa-cog fa-spin"></span>
               </div>
 
-              <div class="left-section">
-                  <div class="logo">
-                      <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
-                      <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              <div class="style-switcher" id="styleSwitcher">
+                <h4>Theme Colors</h4>
+                <div class="colors">
+                  <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
+                  <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
+                  <span class="color-3" onclick="setActiveStyle('theme-3')"></span>
+                  <span class="color-4" onclick="setActiveStyle('theme-4')"></span>
+                  <span class="color-5" onclick="setActiveStyle('theme-5')"></span>
+                  <span class="color-6" onclick="setActiveStyle('theme-6')"></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu">
+              <i class="fas fa-bars" id="menuIcon"></i>
+            </div>
+          </div>
+
+          <div class="left-section">
+              <div class="logo">
+                  <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
+                  <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+              </div>
+              <div class="menu-overlay" id="menuOverlay"></div>
+              <div class="nav-links" id="navLinks">
+              <div class="menu-header">
+                    <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+                  <!-- Close button INSIDE menu -->
+                  <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
+                  <i class="fas fa-times"></i>
                   </div>
-                  <div class="menu-overlay" id="menuOverlay"></div>
-                  <div class="nav-links" id="navLinks">
-                  <div class="menu-header">
-                        <img class="mobile-logo" src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
-                      <!-- Close button INSIDE menu -->
-                      <div class="menu-close" id="menuClose" role="button" tabindex="0" aria-label="Close menu">
-                      <i class="fas fa-times"></i>
                       </div>
-                          </div>
-                          <a href="/index.html">
-                              <i class="fa-solid fa-house nav-icon"></i>
-                              <span>Home</span>
-                          </a>
-                          <a href="profile-en.html">
-                              <i class="fa-solid fa-user nav-icon"></i>
-                              <span>Biography</span>
-                          </a>
-                          <a href="publication-en.html">
-                              <i class="fa-solid fa-book-open nav-icon"></i>
-                              <span>Publications</span>
-                          </a>
-                          <a href="conferences-en.html">
-                              <i class="fa-solid fa-briefcase nav-icon"></i>
-                              <span>Academic Activities</span>
-                          </a>
-                          <a href="training-en.html">
-                              <i class="fa-solid fa-chalkboard-user nav-icon"></i>
-                              <span>Training</span>
-                          </a>
-                      </div>
+                      <a href="/index.html">
+                          <i class="fa-solid fa-house nav-icon"></i>
+                          <span>Home</span>
+                      </a>
+                      <a href="profile-en.html">
+                          <i class="fa-solid fa-user nav-icon"></i>
+                          <span>Biography</span>
+                      </a>
+                      <a href="publication-en.html">
+                          <i class="fa-solid fa-book-open nav-icon"></i>
+                          <span>Publications</span>
+                      </a>
+                      <a href="conferences-en.html">
+                          <i class="fa-solid fa-briefcase nav-icon"></i>
+                          <span>Academic Activities</span>
+                      </a>
+                      <a href="training-en.html">
+                          <i class="fa-solid fa-chalkboard-user nav-icon"></i>
+                          <span>Training</span>
+                      </a>
                   </div>
-              </nav>
-            </header>
+              </div>
+          </nav>
+        </header>
 
         <section>
             <div class="academic-hero">
@@ -328,31 +328,37 @@
             <!-- To update biography information, edit the JSON file instead of modifying the HTML. -->
         </section>
 
-        <!-- footer design -->
+        <!-- Footer -->
         <footer class="footer1">
-          <div class="footer-text">
+        <div class="footer-text">
             <div class="footer-meta">
-              <div class="footer-visitors" aria-label="Website visitor counter">
-                <!--<i class="fa-regular fa-eye footer-visitors__icon" aria-hidden="true"></i>-->
+            <div class="footer-visitors" aria-label="Website visitor counter">
+                <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+                <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+                <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
+                    stroke-width="2" />
+                </svg>
                 <span class="footer-visitors__label">Site Visitors</span>
                 <span class="footer-visitors__count">
-                  <span class="footer-visitors__bracket">[</span>
-                  <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
-                  <span class="footer-visitors__bracket">]</span>
+                <span class="footer-visitors__bracket">[</span>
+                <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+                <span class="footer-visitors__bracket">]</span>
                 </span>
                 <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
-              </div>
-              <span class="footer-separator">|</span>
-              <p class="footer-copyright">
-                Copyright © <span id="currentYear"></span> by Alardawi - All Rights Reserved.
-              </p>
             </div>
-          </div>
-          <div class="footer-iconTop">
+            <span class="footer-separator">|</span>
+            <p class="footer-copyright">
+                Copyright © <span id="currentYear"></span> by Alardawi - All Rights Reserved.
+            </p>
+            </div>
+        </div>
+        <div class="footer-iconTop">
             <a href="javascript:void(0)" aria-label="Scroll to top">
             <i class="fas fa-arrow-up"></i>
             </a>
-          </div>
+        </div>
         </footer>
 
         <!-- Custom Script -->

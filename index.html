@@ -162,7 +162,6 @@
     </script>
 
     <!-- Font Awesome CSS -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -184,18 +183,6 @@
           <div class="loader-subtitle">Please wait...</div>
       </div>
     </div>
-
-    <!--<div id="loader">
-      <div class="spinner"></div>
-    </div>-->
-
-    <!-- <div class="top-header">
-      <span>Dr. Merfat Alardawi</span>
-      <span class="dash">–</span>
-      <img src="/assets/icons/drama1.webp" alt="Drama icon" class="icon1">
-      <span>Drama & Film Studies</span>
-      <img src="/assets/icons/clapperboard1.png" alt="Film icon" class="icon2">
-    </div> -->
 
     <!-- Header Section Design -->
     <header>
@@ -277,21 +264,12 @@
       </nav>
     </header>
 
-    <!-- Animated Arrows -->
-    <!--<div class="scroll-arrow" id="scrollArrow">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>-->
-
     <!-- Home Section Design -->
     <main>
       <section class="home" id="home">
         <div class="home-content">
-          <!--<h3>Hello, I’m</h3>-->
           <h1>Dr. Merfat Alardawi</h1>
           <h3><span class="multiple-text"></span></h3>
-          <!--<p>My core research interests include the areas of drama, television, and film studies, with a particular interest in the relationship between drama and comparative cultural studies.</p>-->
           <p>This website presents my research, publications, teaching and academic activities in drama, film, and television studies, with a focus on women's studies, audience engagement, and cultural representation.</p>
           <div class="btn-box">
             <!-- Link to CV -->
@@ -312,9 +290,6 @@
               <a href="mailto:malaradawe@kau.edu.sa" aria-label="Email">
               <i class="fa-regular fa-envelope"></i>
               </a>
-              <!-- <a href="https://www.kau.edu.sa" target="_blank" rel="noopener noreferrer" aria-label="King Abdulaziz University">
-              <img src="assets/profile-image/KAU.png" alt="King Abdulaziz University" />
-              </a> -->
               <a href="https://www.kau.edu.sa" target="_blank" rel="noopener noreferrer" aria-label="Orcid">
               <i class="fa-solid fa-building-columns"></i>
               </a>
@@ -356,24 +331,6 @@
           <img src="assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager" fetchpriority="high">
         </div>
       </section>
-
-      <!-- Visit Counter Section -->
-      <div class="visit-counter" aria-label="Website Visit Counter">
-        <figure>
-          <a href="https://www.hitwebcounter.com" 
-          title="Website Hit Web Counter" 
-          target="_blank" 
-          rel="noopener noreferrer">
-          <img 
-          src="https://hitwebcounter.com/counter/counter.php?page=21313422&style=0025&nbdigits=5&type=ip&initCount=750"
-          alt="Live website visitor counter">
-          <img 
-          src="https://hitwebcounter.com/counter/counter.php?page=21313433&style=0006&nbdigits=5&type=ip&initCount=750"
-          alt="Live website visitor counter">
-          </a>
-          <figcaption><h3>Visits</h3></figcaption>
-        </figure>
-      </div>
     </main>
 
     <!-- Research Highlights Section Design -->
@@ -421,13 +378,7 @@
       <h2 class="heading"><span>Students' Works</span></h2>
 
       <div class="new-swiper swiper">
-        <div class="swiper-wrapper" id="swiperWrapper">
-        </div>
-          <!-- Pagination -->
-          <!-- <div class="swiper-pagination"></div> -->
-          <!-- Navigation buttons -->
-          <!-- <div class="swiper-button-prev"></div> -->
-          <!-- <div class="swiper-button-next"></div> -->
+        <div class="swiper-wrapper" id="swiperWrapper"></div>
       </div>
     </section>  
 
@@ -447,12 +398,27 @@
     <!-- footer design -->
     <footer class="footer1">
       <div class="footer-text">
-          <p>Copyright &copy; 2023 by Alardawi  -  All Rights Reserved.</p>
+        <div class="footer-meta">
+          <div class="footer-visitors" aria-label="Website visitor counter">
+            <!--<i class="fa-regular fa-eye footer-visitors__icon" aria-hidden="true"></i>-->
+            <span class="footer-visitors__label">Site Visitors</span>
+            <span class="footer-visitors__count">
+              <span class="footer-visitors__bracket">[</span>
+              <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+              <span class="footer-visitors__bracket">]</span>
+            </span>
+            <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+          </div>
+          <span class="footer-separator">|</span>
+          <p class="footer-copyright">
+            Copyright © <span id="currentYear"></span> by Alardawi - All Rights Reserved.
+          </p>
+        </div>
       </div>
       <div class="footer-iconTop">
-          <a href="javascript:void(0)" aria-label="Scroll to top">
-          <i class="fas fa-arrow-up"></i>
-          </a>
+        <a href="javascript:void(0)" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+        </a>
       </div>
     </footer>
 

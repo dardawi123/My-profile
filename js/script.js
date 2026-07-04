@@ -979,7 +979,7 @@ function initVisitorCounter() {
     // https://countapi.mileshilliard.com/api/v1/hit/alardawi-com-homepage-total-visitors
     const API_BASE = "https://countapi.mileshilliard.com/api/v1";
     const KEY = "alardawi-com-homepage-total-visitors";
-    const OFFSET = 1700;
+    const OFFSET = 1500;
     const FETCH_TIMEOUT_MS = 6000;
     const COUNT_UP_DURATION_MS = 900;
     const SESSION_FLAG = "visitorCounter:countedThisSession";

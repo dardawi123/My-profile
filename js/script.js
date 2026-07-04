@@ -10,7 +10,9 @@ function initTheme() {
         "theme-2",
         "theme-3",
         "theme-4",
-        "theme-5"
+        "theme-5",
+        "theme-6"
+
     );
     document.body.classList.add(savedTheme);
     document.body.classList.toggle("dark", isDark);
@@ -274,118 +276,6 @@ function initLanguageSwitch() {
 
     });
 }
-
-// ======================================================
-// Scroll Arrow
-// ======================================================
-/*function initScrollArrow() {
-    const scrollArrow = document.getElementById("scrollArrow");
-    const sections = document.querySelectorAll("section");
-    const pageNeedsIt =
-        scrollArrow !== null &&
-        sections.length > 0;
-
-    if (!pageNeedsIt) {
-        console.log("Scroll Arrow skipped");
-        return;
-    }
-
-    let lastScrollY = window.scrollY;
-    let isScrollingDown = true;
-
-    function getCurrentSectionIndex() {
-
-        const mid = window.innerHeight / 2;
-
-        let index = 0;
-
-        sections.forEach((section, i) => {
-
-            const rect = section.getBoundingClientRect();
-
-            if (
-                rect.top <= mid &&
-                rect.bottom >= mid
-            ) {
-                index = i;
-            }
-
-        });
-
-        return index;
-    }
-
-    function updateArrowVisibility() {
-        const scrollTop = window.scrollY;
-        const scrollBottom = scrollTop + window.innerHeight;
-        const pageHeight = document.documentElement.scrollHeight;
-        const atTop =
-            scrollTop <= 10;
-        const atBottom =
-            scrollBottom >= pageHeight - 2;
-
-        isScrollingDown =
-            scrollTop > lastScrollY;
-
-        lastScrollY = scrollTop;
-
-        scrollArrow.classList.remove(
-            "visible",
-            "up",
-            "down"
-        );
-
-        if (atBottom) return;
-
-        if (atTop) {
-            scrollArrow.classList.add(
-                "visible",
-                "down"
-            );
-            return;
-        }
-
-        if (isScrollingDown) {
-            scrollArrow.classList.add(
-                "visible",
-                "down"
-            );
-        } else {
-            scrollArrow.classList.remove(
-                "visible"
-            );
-        }
-    }
-
-    function scrollToNextSection() {
-        const index = getCurrentSectionIndex();
-
-        if (index < sections.length - 1) {
-
-            sections[index + 1].scrollIntoView({
-                behavior: "smooth"
-            });
-
-        }
-    }
-
-    scrollArrow.addEventListener(
-        "click",
-        scrollToNextSection
-    );
-
-    window.addEventListener(
-        "scroll",
-        updateArrowVisibility
-    );
-
-    window.addEventListener(
-        "resize",
-        updateArrowVisibility
-    );
-
-    updateArrowVisibility();
-}*/
 
 // ======================================================
 // Scroll To Top
@@ -1075,6 +965,149 @@ function initSwiperNew() {
 }
 
 // ======================================================
+// Visitor Counter (Footer)
+// ======================================================
+function initVisitorCounter() {
+    const valueEl = document.getElementById("visitorCount");
+    const liveEl = document.getElementById("visitorCountLive");
+
+    if (!valueEl) return;
+
+    // KEY should be unique to your website.
+    // OFFSET carries over the starting value from the previous HitWebCounter.
+    // CountAPI endpoint:
+    // https://countapi.mileshilliard.com/api/v1/hit/alardawi-com-homepage-total-visitors
+    const API_BASE = "https://countapi.mileshilliard.com/api/v1";
+    const KEY = "alardawi-com-homepage-total-visitors";
+    const OFFSET = 1700;
+    const FETCH_TIMEOUT_MS = 6000;
+    const COUNT_UP_DURATION_MS = 900;
+    const SESSION_FLAG = "visitorCounter:countedThisSession";
+    const LOCAL_FALLBACK_KEY = "visitorCounter:localFallbackValue";
+
+    // Fetch with timeout protection
+    function fetchWithTimeout(url, timeoutMs) {
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
+
+        return fetch(url, { signal: controller.signal })
+            .finally(() => clearTimeout(timer));
+    }
+
+    // Animate counter
+    function animateCountTo(el, targetValue) {
+        const prefersReducedMotion = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+        ).matches;
+        if (prefersReducedMotion) {
+            el.textContent = targetValue.toLocaleString();
+            return;
+        }
+        const startTime = performance.now();
+        const startValue = Math.max(targetValue - 100, 0);
+
+        function easeOutCubic(t) {
+            return 1 - Math.pow(1 - t, 3);
+        }
+        function tick(now) {
+            const elapsed = now - startTime;
+            const progress = Math.min(
+                elapsed / COUNT_UP_DURATION_MS,
+                1
+            );
+            const eased = easeOutCubic(progress);
+            const currentValue = Math.round(
+                startValue +
+                (targetValue - startValue) * eased
+            );
+            el.textContent = currentValue.toLocaleString();
+            if (progress < 1) {
+                requestAnimationFrame(tick);
+            } else {
+                el.textContent = targetValue.toLocaleString();
+            }
+        }
+        requestAnimationFrame(tick);
+    }
+
+    // Update displayed count
+    function showCount(value, isLive) {
+        animateCountTo(valueEl, value);
+
+        if (liveEl) {
+            liveEl.textContent = isLive
+                ? `Total visitors: ${value.toLocaleString()}`
+                : `Total visitors: ${value.toLocaleString()} (offline estimate)`;
+        }
+    }
+
+    // Local fallback if API is unavailable
+    function getLocalFallbackCount() {
+        const alreadyCounted =
+            sessionStorage.getItem(SESSION_FLAG) === "true";
+        let value = parseInt(
+            localStorage.getItem(LOCAL_FALLBACK_KEY),
+            10
+        );
+        if (Number.isNaN(value)) {
+            value = 0;
+        }
+        if (!alreadyCounted) {
+            value += 1;
+            localStorage.setItem(
+                LOCAL_FALLBACK_KEY,
+                String(value)
+            );
+            sessionStorage.setItem(
+                SESSION_FLAG,
+                "true"
+            );
+        }
+        return value + OFFSET;
+    }
+
+    // Count visitor
+    const alreadyCounted =
+        sessionStorage.getItem(SESSION_FLAG) === "true";
+    const action = alreadyCounted ? "get" : "hit";
+    const url = `${API_BASE}/${action}/${KEY}`;
+    fetchWithTimeout(url, FETCH_TIMEOUT_MS)
+        .then((response) => {
+            if (!response.ok) {
+                throw new Error(
+                    `Counter API responded with ${response.status}`
+                );
+            }
+            return response.json();
+        })
+        .then((data) => {
+            const count = Number(data.value);
+            if (Number.isNaN(count)) {
+                throw new Error(
+                    "Counter API returned an unexpected payload"
+                );
+            }
+            if (!alreadyCounted) {
+                sessionStorage.setItem(
+                    SESSION_FLAG,
+                    "true"
+                );
+            }
+            showCount(count + OFFSET, true);
+        })
+        .catch((error) => {
+            console.warn(
+                "Visitor counter: falling back to local mode.",
+                error
+            );
+            showCount(
+                getLocalFallbackCount(),
+                false
+            );
+        });
+}
+
+// ======================================================
 // Loader
 // ======================================================
 let loaderTimer;
@@ -1110,12 +1143,29 @@ window.addEventListener("load", () => {
 });
 
 // ======================================================
+// Current Year
+// ======================================================
+function initCurrentYear() {
+    const yearEl = document.getElementById("currentYear");
+
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+}
+
+// ======================================================
 // Main Initializer
 // ======================================================
 document.addEventListener("DOMContentLoaded", () => {
+
     requestAnimationFrame(() => {
         document.body.classList.add("page-loaded");
     });
+
+    // ==================================================
+    // Core Utilities
+    // ==================================================
+    initCurrentYear();
 
     // ==================================================
     // Theme & Navigation
@@ -1123,8 +1173,14 @@ document.addEventListener("DOMContentLoaded", () => {
     initThemeAndNavigation();
     initMenu();
     initLanguageSwitch();
-    /*initScrollArrow();*/
     initScrollToTop();
+
+    // ==================================================
+    // Footer & Engagement
+    // ==================================================
+    if (typeof initVisitorCounter === "function") {
+        initVisitorCounter();
+    }
 
     // ==================================================
     // Filters

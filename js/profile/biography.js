@@ -127,7 +127,6 @@ function renderSimpleListSection(section, lang) {
 /* ----------------------------------------
    Reviews Table
 ---------------------------------------- */
-
 function renderReviewsTable(section, lang) {
     return `
         <div class="container3">
@@ -136,26 +135,25 @@ function renderReviewsTable(section, lang) {
             <table dir="ltr">
                 <thead>
                     <tr>
-                        <th>${section.headers.journal[lang]}</th>
                         <th>${section.headers.role[lang]}</th>
+                        <th>${section.headers.journal[lang]}</th>
                     </tr>
                 </thead>
 
                 <tbody>
                     ${section.items.map(item => `
                         <tr>
+                            <td>${item.role[lang]}</td>
+
                             <td>
                                 ${item.journal}
                                 <a
                                     href="${item.url}"
                                     target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                                    rel="noopener noreferrer">
                                     [Link]
                                 </a>
                             </td>
-
-                            <td>${item.role[lang]}</td>
                         </tr>
                     `).join("")}
                 </tbody>

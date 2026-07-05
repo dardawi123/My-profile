@@ -174,6 +174,7 @@ async function initPublications() {
                         publication.type;
 
                     row.innerHTML = `
+
                         <td>${publication.year}</td>
 
                         <td>

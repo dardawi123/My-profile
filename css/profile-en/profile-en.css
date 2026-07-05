@@ -798,8 +798,8 @@ table {
   margin: 1rem auto;
   border-collapse: collapse;
   border-radius: 10px;
-  align-items: center;
   overflow: hidden;
+  table-layout: auto;
 }
 
 /* Header */
@@ -822,15 +822,16 @@ td {
   color: var(--td-text-color);
 }
 
-/* Alignment */
+/* Desktop */
 table th:first-child,
 table td:first-child {
-  text-align: left;
+  width: clamp(4.5rem, 2.473rem + 8.6486vw, 9.5rem);
+  white-space: nowrap;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
-  text-align: left;
+  text-align: justify;
 }
 
 /* Rows */
@@ -1002,6 +1003,10 @@ tr:hover {
   }
   .timeline-list .year {
     display: block;
+  }
+  table th:first-child,
+  table td:first-child {
+    white-space: normal;
   }
   .footer1 {
     flex-direction: column;

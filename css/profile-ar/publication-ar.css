@@ -802,13 +802,13 @@ table {
 /* Alignment rules */
 table th:first-child,
 table td:first-child {
-  width: clamp(60px, 4vw, 80px);
-  text-align: right;
+  width: clamp(3.3rem, 2.4081rem + 3.8054vw, 5.5rem);
+  text-align: center;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
-  width: auto;
+  width: 92.6%;
   text-align: justify;
 }
 
@@ -820,12 +820,6 @@ table td:nth-child(2) {
   background: var(--card-bg-color);
 }
 
-#publication-heading {
-  padding-bottom: 8px;
-  color: var(--heading-color);
-  -webkit-text-stroke: 0.5px var(--main-color);
-}
-
 .publication-table th {
   position: sticky;
   top: calc(var(--navbar-height) + var(--sticky-height));
@@ -833,21 +827,60 @@ table td:nth-child(2) {
   z-index: 100;
 }
 
-/* Bottom table row radius */
-tbody tr:last-child td:first-child {
-  border-bottom-left-radius: 12px;
+#publication-heading {
+  padding-bottom: 8px;
+  color: var(--heading-color);
+  -webkit-text-stroke: 0.5px var(--main-color);
 }
 
-tbody tr:last-child td:last-child {
+/* Bottom table row radius */
+tbody tr:last-child td:first-child {
   border-bottom-right-radius: 12px;
 }
 
-.publication-table th:first-child {
-  border-top-left-radius: 10px;
+tbody tr:last-child td:last-child {
+  border-bottom-left-radius: 12px;
 }
 
-.publication-table th:last-child {
-  border-top-right-radius: 10px;
+/* ===========================================================================
+   NOTE: do not add overflow:hidden / border-radius to .table-body-wrapper.
+   Any ancestor with overflow other than visible becomes a new "scroll
+   container", which breaks position:sticky for descendants (the header
+   then sticks relative to that ancestor instead of the page).
+
+   Corner rounding is NOT done with border-radius, clip-path, or mask
+   on the sticky <th> itself — every one of those triggers a persistent
+   browser bug where the sticky compositing layer bleeds a white sliver
+   at the curved edge, worst exactly when the cell reaches its stuck
+   offset (Mozilla bug 1866715 / WebKit bug 128486).
+
+   Instead, a small overlay is painted on top of each square corner.
+   The overlay is filled with the color that actually sits behind the
+   table (--card-bg-color, from .container2) with a transparent
+   circular cutout the size of the intended radius. This "paints over"
+   the square corner to fake a rounded one, using plain background
+   rendering only — no clip/mask/radius anywhere near the sticky
+   element, so the buggy code path is never invoked.
+   =========================================================================== */
+.publication-table th:first-child::after,
+.publication-table th:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.publication-table th:first-child::after {
+  right: 0;
+  background: radial-gradient(circle at 0% 100%, transparent 10px, var(--card-bg-color) 10px);
+}
+
+.publication-table th:last-child::after {
+  left: 0;
+  background: radial-gradient(circle at 100% 100%, transparent 10px, var(--card-bg-color) 10px);
 }
 
 /* Header Row and Column Alignment */
@@ -892,6 +925,29 @@ tr:nth-child(even) {
   transition: background-color 0.2s ease;
 }
 
+/* ===========================================================================
+   Citations in this column are English — force the text itself to flow
+   LTR (numbers, punctuation, parentheses) even though the table around
+   it is RTL. unicode-bidi: isolate keeps this cell's bidi resolution
+   self-contained so it doesn't get reordered by the surrounding RTL
+   context. This affects only the TEXT DIRECTION inside the cell, not
+   which side the column appears on — that's controlled separately by
+   the table's own dir="rtl" in the HTML.
+  =========================================================================== */
+.publication-table td:nth-child(2) {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+ 
+.publication-table tbody tr:last-child td {
+  border-bottom: none;
+}
+ 
+.publication-table tbody tr:hover {
+  background-color: color-mix(in srgb, var(--main-color) 12%, white);
+  transition: background-color 0.2s ease;
+}
+ 
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {
   position: relative; 

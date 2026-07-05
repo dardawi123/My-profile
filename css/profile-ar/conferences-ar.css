@@ -635,7 +635,7 @@ table {
 /* Alignment rules */
 table th:first-child,
 table td:first-child {
-  width: clamp(60px, 4vw, 80px);
+  width: clamp(3.3rem, 2.4081rem + 3.8054vw, 5.5rem);
   text-align: center;
 }
 
@@ -675,12 +675,45 @@ tbody tr:last-child td:last-child {
   border-bottom-left-radius: 12px;
 }
 
-.activity-table th:first-child {
-  border-top-right-radius: 10px;
+/* ===========================================================================
+   NOTE: do not add overflow:hidden / border-radius to .table-body-wrapper.
+   Any ancestor with overflow other than visible becomes a new "scroll
+   container", which breaks position:sticky for descendants (the header
+   then sticks relative to that ancestor instead of the page).
+
+   Corner rounding is NOT done with border-radius, clip-path, or mask
+   on the sticky <th> itself — every one of those triggers a persistent
+   browser bug where the sticky compositing layer bleeds a white sliver
+   at the curved edge, worst exactly when the cell reaches its stuck
+   offset (Mozilla bug 1866715 / WebKit bug 128486).
+
+   Instead, a small overlay is painted on top of each square corner.
+   The overlay is filled with the color that actually sits behind the
+   table (--card-bg-color, from .container2) with a transparent
+   circular cutout the size of the intended radius. This "paints over"
+   the square corner to fake a rounded one, using plain background
+   rendering only — no clip/mask/radius anywhere near the sticky
+   element, so the buggy code path is never invoked.
+   =========================================================================== */
+.activity-table th:first-child::after,
+.activity-table th:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  z-index: 1;
+  pointer-events: none;
 }
 
-.activity-table th:last-child {
-  border-top-left-radius: 10px;
+.activity-table th:first-child::after {
+  right: 0;
+  background: radial-gradient(circle at 0% 100%, transparent 10px, var(--card-bg-color) 10px);
+}
+
+.activity-table th:last-child::after {
+  left: 0;
+  background: radial-gradient(circle at 100% 100%, transparent 10px, var(--card-bg-color) 10px);
 }
 
 /* Header */
@@ -694,7 +727,7 @@ th {
 }
 
 /* Cells */
-tbody td {
+td {
   padding: 0.9rem 1rem;
   font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
   line-height: 1.6;

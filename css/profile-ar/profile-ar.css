@@ -791,12 +791,13 @@ a:hover {
 /*  Table
 /* ----------------------- */
 table {
+  direction: rtl;
   width: 100%;
   margin: 1rem auto;
   border-collapse: collapse;
   border-radius: 10px;
-  align-items: center;
   overflow: hidden;
+  table-layout: auto;
 }
 
 /* Header */
@@ -814,19 +815,22 @@ td {
   padding: 0.9rem 1rem;
   font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
   line-height: 1.6;
-  text-align: left;
+  text-align: right;
   color: var(--td-text-color);
 }
 
-/* Alignment */
+/* Desktop */
 table th:first-child,
 table td:first-child {
-  text-align: left;
+  width: clamp(3.75rem, 1.6216rem + 9.0811vw, 9rem);
+  white-space: nowrap;
+  text-align: right;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
-  text-align: left;
+  direction:ltr;
+  text-align: justify;
 }
 
 /* Rows */
@@ -977,6 +981,13 @@ tr:hover {
 }
 
 /*------------------------------ Responsive Design ---------------------------- */
+@media (max-width: 710px) {
+  table th:first-child,
+  table td:first-child {
+    white-space: normal;
+  }
+}
+
 @media (max-width: 768px) {
   .profile-card {
     flex-direction: column;
@@ -1174,5 +1185,9 @@ tr:hover {
 @media (max-width: 450px) {
   .nav-links {
     max-width: none;
+  }
+  table th:nth-child(2) {
+    direction: rtl;
+    padding-right: 0.7rem;
   }
 }

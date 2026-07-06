@@ -145,35 +145,66 @@ function initMenu() {
         return;
     }
 
+    // CHANGED: menuClose lookup removed — element no longer exists in HTML
     const menuToggle = document.getElementById("menuToggle");
     const navLinks = document.getElementById("navLinks");
-    const menuClose = document.getElementById("menuClose");
     const menuOverlay = document.getElementById("menuOverlay");
     const body = document.body;
 
     if (
         !menuToggle ||
         !navLinks ||
-        !menuClose ||
         !menuOverlay
     ) {
         return;
     }
 
+    // CHANGED: added aria-expanded/aria-label sync + deferred no-scroll
     function openMenu() {
         navLinks.classList.add("show");
         menuOverlay.classList.add("show");
-        body.classList.add("no-scroll");
+        menuToggle.setAttribute("aria-expanded", "true");
+        menuToggle.setAttribute("aria-label", "Close menu");
+
+        requestAnimationFrame(() => {
+            body.classList.add("no-scroll");
+        });
     }
 
     function closeMenu() {
         navLinks.classList.remove("show");
         menuOverlay.classList.remove("show");
         body.classList.remove("no-scroll");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Toggle menu");
     }
 
-    menuToggle.addEventListener("click", openMenu);
-    menuClose.addEventListener("click", closeMenu);
+    // NEW: hamburger now toggles instead of only opening
+    function toggleMenu() {
+        const isOpen = navLinks.classList.contains("show");
+        if (isOpen) {
+            closeMenu();
+        } else {
+            openMenu();
+        }
+    }
+
+    // CHANGED: click -> toggleMenu (was openMenu); menuClose listener removed
+    menuToggle.addEventListener("click", toggleMenu);
+    // NEW: clicking the dimmed overlay now also closes the menu
+    menuOverlay.addEventListener("click", closeMenu);
+
+    // NEW: keyboard activation (Enter/Space) for the custom role="button" toggle
+    function handleButtonKeydown(handler) {
+        return (e) => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                handler();
+            }
+        };
+    }
+
+    menuToggle.addEventListener("keydown", handleButtonKeydown(toggleMenu));
 
     navLinks.querySelectorAll("a").forEach(link => {
         link.addEventListener("click", closeMenu);
@@ -241,9 +272,6 @@ function initLanguageSwitch() {
 
     const target = getLanguageSwitchTarget(window.location.pathname);
 
-    // Set the real destination up front so the link works even before JS
-    // runs, and so right-click / open-in-new-tab / screen readers all see
-    // the correct URL rather than a placeholder.
     langSwitch.setAttribute("href", target);
 
     let isNavigating = false;
@@ -1059,15 +1087,15 @@ function initVisitorCounter() {
     }
 
     // Count visitor
-    const alreadyCounted =
+    /*const alreadyCounted =
         sessionStorage.getItem(SESSION_FLAG) === "true";
     const action = alreadyCounted ? "get" : "hit";
-    const url = `${API_BASE}/${action}/${KEY}`;
+    const url = `${API_BASE}/${action}/${KEY}`;*/
 
 //=========================================================
 // This will stop the Count visitor temerary,
 // to resume it remove the below and activate the above counter visitor
-    /*const isLocal =
+    const isLocal =
         location.hostname === "localhost" ||
         location.hostname === "127.0.0.1";
 
@@ -1078,7 +1106,7 @@ function initVisitorCounter() {
         ? "get"
         : (alreadyCounted ? "get" : "hit");
 
-    const url = `${API_BASE}/${action}/${KEY}`;*/
+    const url = `${API_BASE}/${action}/${KEY}`;
 //=========================================================
 
     

@@ -1087,15 +1087,15 @@ function initVisitorCounter() {
     }
 
     // Count visitor
-    /*const alreadyCounted =
+    const alreadyCounted =
         sessionStorage.getItem(SESSION_FLAG) === "true";
     const action = alreadyCounted ? "get" : "hit";
-    const url = `${API_BASE}/${action}/${KEY}`;*/
+    const url = `${API_BASE}/${action}/${KEY}`;
 
 //=========================================================
 // This will stop the Count visitor temerary,
 // to resume it remove the below and activate the above counter visitor
-    const isLocal =
+    /*const isLocal =
         location.hostname === "localhost" ||
         location.hostname === "127.0.0.1";
 
@@ -1106,7 +1106,7 @@ function initVisitorCounter() {
         ? "get"
         : (alreadyCounted ? "get" : "hit");
 
-    const url = `${API_BASE}/${action}/${KEY}`;
+    const url = `${API_BASE}/${action}/${KEY}`;*/
 //=========================================================
 
     

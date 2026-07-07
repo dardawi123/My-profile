@@ -859,7 +859,6 @@ function initTypedText() {
     if (lang === "ar") {
 
         strings = [
-            "أستاذ مساعد",
             "باحثة أكاديمية",
             "متخصصة في الدراسات الدرامية والسينمائية",
             "ناقدة درامية وسينمائية"
@@ -868,9 +867,8 @@ function initTypedText() {
     } else {
 
         strings = [
-            "Assistant Professor",
             "Academic Researcher",
-            "Scholar of Drama and Film Studies",
+            "Drama and Film Studies Scholar",
             "Drama and Film Critic"
         ];
 
@@ -1109,7 +1107,6 @@ function initVisitorCounter() {
     const url = `${API_BASE}/${action}/${KEY}`;*/
 //=========================================================
 
-    
     fetchWithTimeout(url, FETCH_TIMEOUT_MS)
         .then((response) => {
             if (!response.ok) {
@@ -1151,6 +1148,11 @@ function initVisitorCounter() {
 // ======================================================
 let loaderTimer;
 let loaderShown = false;
+let loaderShownAt = null;
+
+const LOADER_SHOW_DELAY = 300;   // wait before showing the loader at all
+const LOADER_MIN_VISIBLE = 500;  // once shown, keep it visible at least this long
+const LOADER_FADE_OUT = 200;     // must match #loader transition duration in CSS
 
 document.addEventListener("DOMContentLoaded", () => {
     loaderTimer = setTimeout(() => {
@@ -1159,8 +1161,9 @@ document.addEventListener("DOMContentLoaded", () => {
         if (loader) {
             loader.style.display = "flex";
             loaderShown = true;
+            loaderShownAt = performance.now();
         }
-    }, 300);
+    }, LOADER_SHOW_DELAY);
 });
 
 window.addEventListener("load", () => {
@@ -1171,11 +1174,19 @@ window.addEventListener("load", () => {
     if (!loader) return;
 
     if (loaderShown) {
-        loader.classList.add("hidden");
+        // Make sure the loader has been visible for at least
+        // LOADER_MIN_VISIBLE ms before fading it out, so it never
+        // flashes on screen for a few milliseconds on fast loads.
+        const visibleFor = performance.now() - loaderShownAt;
+        const remaining = Math.max(0, LOADER_MIN_VISIBLE - visibleFor);
 
         setTimeout(() => {
-            loader.remove();
-        }, 200);
+            loader.classList.add("hidden");
+
+            setTimeout(() => {
+                loader.remove();
+            }, LOADER_FADE_OUT);
+        }, remaining);
     } else {
         loader.remove();
     }

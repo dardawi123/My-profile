@@ -522,29 +522,26 @@ nav {
 }
 
 .home-content h3 {
-  margin-top: clamp(1.25rem, 0.8rem + 1vw, 1.75rem);
-  margin-bottom: clamp(0.4rem, 0.2vw + 0.3rem, 0.6rem);
   font-family: var(--font-display);
-  /*font-size: clamp(1.1rem, 1.4vw + 0.4rem, 1.7rem);*/
-  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
-  font-weight: 700;
-  line-height: 1.2;
-  min-height: 2.6em;
+  margin-bottom: clamp(1.7rem, 1.3817rem + 1.3763vw, 2.5rem);
+  font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
+  font-weight: 600;
+  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
+  min-height: 1.4em;
   text-align: right;
-  color: var(--text-black-color);
   opacity: 0.85;
 }
 
 .home-content .static-title {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
+  font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
   line-height: 0.75;
   color: var(--heading-color);
   text-align: right;
-  opacity: 0.9;
-  margin-top:  clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
-  margin-bottom: clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
+  opacity: 0.85;
+  margin-top: 0;
+  margin-bottom: clamp(1.1rem, 0.9011rem + 0.8602vw, 1.6rem);
 }
 
 body.dark .multiple-text {
@@ -555,23 +552,21 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   direction: rtl;
   unicode-bidi: isolate;
   white-space: nowrap;
-  /*padding:
-    clamp(0.25rem, 0.15vw + 0.22rem, 0.4rem)
-    clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);*/
   padding: clamp(0.2rem, 0.11vw + 0.18rem, 0.25rem)
            clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
+  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
 }
 
 .home-content h1 {
   font-family: var(--font-display);
-  margin-top: -0.5rem;
   font-size: clamp(2.4rem, 2.424vw + 1.5rem, 4rem);
   font-weight: 700;
-  line-height: 1.25;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+  line-height: clamp(1.1, 1.08 + 0.06vw, 1.15);
+  /*margin-bottom: 0.75rem;*/
+  margin-top: clamp(-0.5rem, -0.2vw - 0.45rem, -0.35rem);
+  margin-bottom: clamp(0.2rem, 0.1vw + 0.15rem, 0.35rem);
   color: var(--heading-color);
 }
 
@@ -581,6 +576,7 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   line-height: clamp(1.5, 1.48 + 0.08vw, 1.6);
   opacity: 0.85;
   text-align: justify;
+  line-height: 1.7;
 }
 
 .btn-box {
@@ -596,7 +592,7 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: clamp(9.2rem, 8.086rem + 4.8172vw, 12rem);
+  width:clamp(9.15rem, 8.2151rem + 4.043vw, 11.5rem);
   height: 100%;
   border: 1.5px solid var(--main-color); /* Consistent thinner border */
   background-color: color-mix(in srgb, var(--main-color) 10%, white);

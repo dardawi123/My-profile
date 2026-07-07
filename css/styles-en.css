@@ -520,13 +520,13 @@ nav {
 
 .home-content h3 {
   font-family: var(--font-display);
-  font-style: italic;
+  margin-top: 0;
+  margin-bottom: clamp(1.7rem, 1.3817rem + 1.3763vw, 2.5rem);
+  font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
   font-weight: 600;
-  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
   line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
   min-height: 1.4em;
-  margin-top: 0;
-  margin-bottom: clamp(1.4rem, 1.0618rem + 1.4624vw, 2.25rem);
+  font-style: italic;
   text-align: left;
   opacity: 0.85;
 }
@@ -534,13 +534,13 @@ nav {
 .home-content .static-title {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: clamp(1rem, 0.8409rem + 0.6882vw, 1.4rem);
+  font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
   line-height: 0.75;
   color: var(--heading-color);
   text-align: left;
-  opacity: 0.9;
+  opacity: 0.85;
   margin-top: 0;
-  margin-bottom: clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
+  margin-bottom: clamp(1rem, 0.8011rem + 0.8602vw, 1.5rem);
 }
 
 body.dark .multiple-text {
@@ -557,8 +557,7 @@ body.dark .multiple-text {
 
 .home-content h1 {
   font-family: var(--font-display);
-  /*font-size: clamp(2.4rem, 2.424vw + 1.5rem, 4.4rem);*/
-  font-size: clamp(1.75rem, 1.2527rem + 2.1505vw, 3rem);
+  font-size: clamp(1.75rem, 1.4118rem + 1.4624vw, 2.6rem);
   text-transform: uppercase;
   font-weight: 700;
   line-height: clamp(1.1, 1.08 + 0.06vw, 1.15);
@@ -573,7 +572,7 @@ body.dark .multiple-text {
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
   opacity: 0.85;
   text-align: justify;
-  line-height: 1.4;
+  line-height: 1.7;
 }
 
 .btn-box {
@@ -589,7 +588,6 @@ body.dark .multiple-text {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  /*width: clamp(9rem, 7.8065rem + 5.1613vw, 12rem);*/
   width:clamp(9.15rem, 8.2151rem + 4.043vw, 11.5rem);
   height: 100%;
   border: 1.5px solid var(--main-color); 
@@ -797,11 +795,12 @@ a:focus, .btn:focus {
 }
 
  .section-header p {
-    margin-bottom: 0;
-    margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);  
-    margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
-    font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
-    opacity: 0.75;
+  margin-bottom: 0;
+  margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);  
+  margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  line-height: 1.7;
+  opacity: 0.85;
   }
 
 .stats-grid {
@@ -911,9 +910,9 @@ a:focus, .btn:focus {
   font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
   margin-left: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
   margin-right: clamp(0.375rem, -3.8273rem + 18.172vw, 10.9375rem);
-  line-height: 1.4;
+  line-height: 1.7;
   margin-bottom: 15px;
-  opacity: 0.75;
+  opacity: 0.85;
 }
  
 .team_list {

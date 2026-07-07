@@ -38,7 +38,7 @@ async function initBiography() {
         html += renderTextSection(data.researchInterests, lang);
 
         // Research Degree Supervision
-        html += renderSimpleListSection(data.supervision, lang);
+        html += renderSupervisionTable(data.supervision, lang);
 
         // Reviews
         html += renderReviewsTable(data.reviews, lang);
@@ -83,7 +83,6 @@ function renderTextSection(section, lang) {
    Work Experience / Associations /
    Initiatives
 ---------------------------------------- */
-
 function renderYearListSection(section, lang) {
     return `
         <div class="container3">
@@ -107,19 +106,30 @@ function renderYearListSection(section, lang) {
 }
 
 /* ----------------------------------------
-   Supervision
+   Research Supervision (table)
 ---------------------------------------- */
-
-function renderSimpleListSection(section, lang) {
+function renderSupervisionTable(section, lang) {
     return `
         <div class="container3">
             <h3 class="title">${section.title[lang]}</h3>
 
-            <ul class="simple-list">
-                ${section.items.map(item => `
-                    <li>${item[lang]}</li>
-                `).join("")}
-            </ul>
+            <table class="supervision-table">
+                <thead>
+                    <tr>
+                        <th scope="col">${section.headers.year[lang]}</th>
+                        <th scope="col">${section.headers.description[lang]}</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    ${section.items.map(item => `
+                        <tr>
+                            <td>${item.year[lang]}</td>
+                            <td>${item.description[lang]}</td>
+                        </tr>
+                    `).join("")}
+                </tbody>
+            </table>
         </div>
     `;
 }
@@ -132,7 +142,7 @@ function renderReviewsTable(section, lang) {
         <div class="container3">
             <h3 class="title">${section.title[lang]}</h3>
 
-            <table dir="ltr">
+            <table class="reviews-table" dir="ltr">
                 <thead>
                     <tr>
                         <th>${section.headers.role[lang]}</th>

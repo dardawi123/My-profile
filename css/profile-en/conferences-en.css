@@ -536,13 +536,14 @@ Academic Hero
 }
 
 .profile-info h1 {
-  /*color: var(--main-color);*/
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: .75rem;
-  font-size: clamp(2rem, 1rem + 3vw, 3rem);
+  font-size: clamp(1.5rem, 0.9032rem + 2.5806vw, 3rem);
+  letter-spacing: clamp(0.05rem, -0.0296rem + 0.3441vw, 0.25rem);
+  text-transform: uppercase;
   line-height: 1.2;
   letter-spacing: 1px;
 }
@@ -552,6 +553,10 @@ Academic Hero
   color: var(--text-black-color);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   line-height: 1.3;
+}
+
+.profile-info .short {
+    display: none;
 }
 
 .hero-actions {
@@ -1213,6 +1218,15 @@ tr:nth-child(even) {
   }
   .style-switcher.open {
     transform: translateX(-20px);
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-info .full {
+    display: none;
+  }
+  .profile-info .short {
+    display: block;
   }
 }
 

@@ -32,6 +32,14 @@
   font-family: var(--font-body);
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+
 body.dark {
   --bg-color: #0B1215;
   --bg-nav-menu-color: #1A252B;

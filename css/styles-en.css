@@ -176,8 +176,8 @@ section {
            clamp(2rem, 4vw, 3rem);
 }
 
-section:last-of-type {
-  padding-bottom: clamp(4rem, 6vw, 5rem);
+body > section:last-of-type {
+    padding-bottom: clamp(4rem, 6vw, 5rem);
 }
 
 header {

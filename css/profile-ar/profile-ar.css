@@ -34,6 +34,14 @@
   font-family: var(--font-body);
 }
 
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Edge, Safari */
+}
+
 h1 span, h2 span, h3 span, h4 span {
   font-family: inherit;
 }

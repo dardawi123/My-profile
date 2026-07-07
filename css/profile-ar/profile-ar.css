@@ -784,7 +784,7 @@ Academic Highlights
 /* ----------------------------------------
    Supervision
 ---------------------------------------- */
-.simple-list {
+/*.simple-list {
   list-style: disc;
   padding-right: 1.25rem;
 }
@@ -798,6 +798,10 @@ Academic Highlights
   margin-top: 0;
   padding-top: 0;
   line-height: 1.4;
+}
+
+.simple-list li strong {
+  font-weight: 700;
 }
 
 .simple-list li::after {
@@ -822,8 +826,22 @@ ul li::marker {
   font-size: 1.3rem;
   color: var(--heading-color);
   -webkit-text-stroke: 0.7px var(--main-color);
+}*/
+
+/* ----------------------- */
+/*  Table
+/* ----------------------- */
+table {
+  direction: rtl;
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: auto;
 }
 
+/* Header */
 /* ----------------------- */
 /*  Table
 /* ----------------------- */
@@ -859,14 +877,13 @@ td {
 /* Desktop */
 table th:first-child,
 table td:first-child {
-  width: clamp(3.75rem, 1.6216rem + 9.0811vw, 9rem);
+  width: clamp(4.5rem, 2.473rem + 8.6486vw, 9.5rem);
   white-space: nowrap;
   text-align: right;
 }
 
 table th:nth-child(2),
 table td:nth-child(2) {
-  direction:ltr;
   text-align: justify;
 }
 
@@ -880,7 +897,7 @@ tr:nth-of-type(odd) {
 }
 
 tr {
-  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 40%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
 }
 
 tr:last-child {
@@ -899,6 +916,174 @@ td a:visited {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* ============================================================
+   RESEARCH SUPERVISION TABLE 
+   ============================================================ */
+/* Table shell */
+.supervision-table {
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+/* Header cells */
+.supervision-table th {
+  padding: 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.25rem);
+  font-weight: 500;
+  background-color: var(--main-color);
+  color: var(--th-text-color);
+}
+
+/* Body cells */
+.supervision-table td {
+  padding: 0.9rem 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  color: var(--td-text-color);
+}
+
+/* Column 1 — Year (narrow, fixed width, no wrap) */
+.supervision-table th:first-child,
+.supervision-table td:first-child {
+  width:clamp(2.85rem, 2.5118rem + 1.4624vw, 3.7rem);
+  white-space: nowrap;
+}
+
+/* Column 2 — Description (fills space, wraps, never overflows) */
+.supervision-table th:nth-child(2),
+.supervision-table td:nth-child(2) {
+  width: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Links */
+.supervision-table td a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.supervision-table td a:link,
+.supervision-table td a:visited {
+  color: var(--main-color);
+}
+.supervision-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Rows */
+.supervision-table tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
+}
+.supervision-table tr:nth-of-type(even) {
+  background-color: color-mix(in srgb, var(--main-color) 2%, white);
+}
+.supervision-table tr:nth-of-type(odd) {
+  background-color: color-mix(in srgb, var(--main-color) 6%, white);
+}
+.supervision-table tr:last-child {
+  border-bottom: none;
+}
+.supervision-table tr:hover {
+  background-color: color-mix(in srgb, var(--main-color) 12%, white);
+  transition: background-color 0.2s ease;
+}
+
+/* ============================================================
+   PEER REVIEW TABLE 
+   ============================================================ */
+/* Table shell */
+.reviews-table {
+  direction: rtl;
+  width: 100%;
+  margin: 1rem auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+
+/* Header cells */
+.reviews-table th {
+  padding: 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.25rem);
+  font-weight: 500;
+  background-color: var(--main-color);
+  color: var(--th-text-color);
+  text-align: right;
+}
+
+/* Body cells */
+.reviews-table td {
+  padding: 0.9rem 1rem;
+  font-size: clamp(0.9rem, 0.85rem + 0.2vw, 1rem);
+  line-height: 1.6;
+  color: var(--td-text-color);
+}
+
+/* Column 1 — Role (narrow, fixed width, no wrap) */
+.reviews-table th:first-child,
+.reviews-table td:first-child {
+  width: clamp(5rem, 3rem + 8vw, 9rem);
+  white-space: nowrap;
+  text-align: right;
+}
+
+/* Column 2 — Journal (fills space, wraps, never overflows) */
+.reviews-table th:nth-child(2),
+.reviews-table td:nth-child(2) {
+  width: auto;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+}
+
+/* Journal header stays left; journal names justified */
+.reviews-table th:nth-child(2) {
+  text-align: left;
+}
+.reviews-table td:nth-child(2) {
+  direction: ltr;
+  text-align: justify;
+}
+
+/* Links */
+.reviews-table td a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+.reviews-table td a:link,
+.reviews-table td a:visited {
+  color: var(--main-color);
+}
+.reviews-table td a:hover {
+  text-decoration: underline;
+}
+
+/* Rows */
+.reviews-table tr {
+  border-bottom: 1px solid color-mix(in srgb, var(--table-border-color) 35%, transparent);
+}
+.reviews-table tr:nth-of-type(even) {
+  background-color: color-mix(in srgb, var(--main-color) 2%, white);
+}
+.reviews-table tr:nth-of-type(odd) {
+  background-color: color-mix(in srgb, var(--main-color) 6%, white);
+}
+.reviews-table tr:last-child {
+  border-bottom: none;
+}
+.reviews-table tr:hover {
+  background-color: color-mix(in srgb, var(--main-color) 12%, white);
+  transition: background-color 0.2s ease;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */
@@ -1028,8 +1213,12 @@ a:hover {
 
 /*------------------------------ Responsive Design ---------------------------- */
 @media (max-width: 710px) {
-  table th:first-child,
-  table td:first-child {
+  .supervision-table th:first-child,
+  .supervision-table td:first-child {
+    white-space: normal;
+  }
+  .reviews-table th:first-child,
+  .reviews-table td:first-child {
     white-space: normal;
   }
 }

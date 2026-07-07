@@ -525,7 +525,8 @@ nav {
   margin-top: clamp(1.25rem, 0.8rem + 1vw, 1.75rem);
   margin-bottom: clamp(0.4rem, 0.2vw + 0.3rem, 0.6rem);
   font-family: var(--font-display);
-  font-size: clamp(1.1rem, 1.4vw + 0.4rem, 1.7rem);
+  /*font-size: clamp(1.1rem, 1.4vw + 0.4rem, 1.7rem);*/
+  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
   font-weight: 700;
   line-height: 1.2;
   min-height: 2.6em;
@@ -534,6 +535,17 @@ nav {
   opacity: 0.85;
 }
 
+.home-content .static-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
+  line-height: 0.75;
+  color: var(--heading-color);
+  text-align: right;
+  opacity: 0.9;
+  margin-top:  clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
+  margin-bottom: clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
+}
 
 body.dark .multiple-text {
 background: color-mix(in srgb, var(--main-color) 35%, transparent);
@@ -543,9 +555,11 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   direction: rtl;
   unicode-bidi: isolate;
   white-space: nowrap;
-  padding:
+  /*padding:
     clamp(0.25rem, 0.15vw + 0.22rem, 0.4rem)
-    clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);
+    clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);*/
+  padding: clamp(0.2rem, 0.11vw + 0.18rem, 0.25rem)
+           clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
 }

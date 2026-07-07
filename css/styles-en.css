@@ -522,13 +522,25 @@ nav {
   font-family: var(--font-display);
   font-style: italic;
   font-weight: 600;
-  font-size: clamp(1.029rem, 1.903vw + 0.316rem, 2.6rem);
+  font-size: clamp(1.05rem, 0.9108rem + 0.6022vw, 1.4rem);
   line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
-  min-height: 2.5em;
-  margin-top: clamp(0.9rem, 0.6rem + 0.65vw, 1.3rem);
-  margin-bottom: clamp(0.4rem, 0.2vw + 0.3rem, 0.6rem);
+  min-height: 1.4em;
+  margin-top: 0;
+  margin-bottom: clamp(1.4rem, 1.0618rem + 1.4624vw, 2.25rem);
   text-align: left;
   opacity: 0.85;
+}
+
+.home-content .static-title {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: clamp(1rem, 0.8409rem + 0.6882vw, 1.4rem);
+  line-height: 0.75;
+  color: var(--heading-color);
+  text-align: left;
+  opacity: 0.9;
+  margin-top: 0;
+  margin-bottom: clamp(0.95rem, 0.771rem + 0.7742vw, 1.4rem);
 }
 
 body.dark .multiple-text {
@@ -545,12 +557,14 @@ body.dark .multiple-text {
 
 .home-content h1 {
   font-family: var(--font-display);
-  font-size: clamp(2.4rem, 2.424vw + 1.5rem, 4.4rem);
-  font-weight: 600;
+  /*font-size: clamp(2.4rem, 2.424vw + 1.5rem, 4.4rem);*/
+  font-size: clamp(1.75rem, 1.2527rem + 2.1505vw, 3rem);
+  text-transform: uppercase;
+  font-weight: 700;
   line-height: clamp(1.1, 1.08 + 0.06vw, 1.15);
-  letter-spacing: -0.01em;
+  letter-spacing: clamp(0.05rem, -0.0296rem + 0.3441vw, 0.25rem);
   margin-top: clamp(-0.5rem, -0.2vw - 0.45rem, -0.35rem);
-  margin-bottom: clamp(0.65rem, 0.22vw + 0.6rem, 0.8rem);
+  margin-bottom: clamp(0.2rem, 0.1vw + 0.15rem, 0.35rem);
   color: var(--heading-color);
 }
 
@@ -566,7 +580,7 @@ body.dark .multiple-text {
   position: relative;
   display: flex;
   gap: clamp(1.3rem, 1.121rem + 0.7742vw, 1.75rem);
-  width: clamp(19.5rem, calc(19.5rem + ((1vw - 0.34rem) * 12.2093)), 30rem);
+  width: clamp(19.5rem, calc(19.5rem + ((1vw - 0.34rem) * 12.2093)), 30);
   height: clamp(2.5rem, 1.625vw + 1.98rem, 4.2rem);
 }
 
@@ -575,7 +589,8 @@ body.dark .multiple-text {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: clamp(9.2rem, 8.086rem + 4.8172vw, 12rem);
+  /*width: clamp(9rem, 7.8065rem + 5.1613vw, 12rem);*/
+  width:clamp(9.15rem, 8.2151rem + 4.043vw, 11.5rem);
   height: 100%;
   border: 1.5px solid var(--main-color); 
   background-color: color-mix(in srgb, var(--main-color) 10%, white);
@@ -583,7 +598,6 @@ body.dark .multiple-text {
   border-radius: 5px;
   font-size: clamp(0.75rem, calc(0.75rem + ((1vw - 0.34rem) * 0.4)), 0.95rem);
   letter-spacing: 0.05rem;
-  text-transform: uppercase;
   font-weight: 600;
   cursor: pointer;
   overflow: hidden;

@@ -161,6 +161,9 @@
       }
     </script>
 
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon.png" type="image/png">
+
     <!-- Font Awesome CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -229,7 +232,7 @@
         <div class="left-section">
           <div class="logo">
             <!-- <a href="https://www.kau.edu.sa/Home.aspx?lng=en" target="_blank" rel="noopener noreferrer"></a> -->
-            <img src="/assets/site-logo/logo.png" alt="Drama and Film Studies Logo" loading="eager">
+            <img src="/assets/site-logo/logo.webp" alt="Dr. Merfat Alardawi logo" width="120" height="120" loading="eager" decoding="async">
           </div>
 
           <div class="menu-overlay" id="menuOverlay"></div>
@@ -326,7 +329,7 @@
 
         <!-- Home Image -->
         <div class="home-img">
-          <img src="assets/profile-image/profile.jpg" alt="Dr. Merfat Alardawi" loading="eager" fetchpriority="high">
+        <img src="/assets/profile-image/profile.webp" alt="Dr. Merfat Alardawi" width="512" height="640" loading="eager" fetchpriority="high" decoding="async">       
         </div>
       </section>
     </main>
@@ -383,16 +386,23 @@
       </div>
     </section>  
 
-    <!-- Video section design-->
+    <!-- Video section design -->
     <section class="container">
       <h2 class="heading"><span>Students' Creativity</span></h2>
 
-      <div class="video-wrapper">
-        <!-- YouTube Embed Code with Autoplay -->
+      <!--<div class="video-wrapper">
         <iframe src="https://www.youtube.com/embed/ZlmwBTcLURQ?rel=0&controls=1&modestbranding=1&disablekb=0&playsinline=1&fs=0"
         frameborder="0"
         allow="accelerometer; encrypted-media; gyroscope;">
         </iframe>
+      </div>-->
+
+      <div class="video-wrapper">
+        <div class="youtube-facade" data-id="ZlmwBTcLURQ">
+          <img src="https://i.ytimg.com/vi/ZlmwBTcLURQ/hqdefault.jpg"
+              alt="Play video" loading="lazy" width="480" height="360">
+          <button class="youtube-play" aria-label="Play video"></button>
+        </div>
       </div>
     </section>
 

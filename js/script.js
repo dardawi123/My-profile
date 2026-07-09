@@ -1253,8 +1253,10 @@ document.addEventListener("click", (e) => {
   iframe.setAttribute("allowfullscreen", "");
   iframe.style.width = "100%";
   iframe.style.height = "100%";
+  iframe.style.background = "#000";
   facade.replaceWith(iframe);
 });
+
 
 // ======================================================
 // Current Year

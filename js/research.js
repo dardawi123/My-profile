@@ -66,7 +66,7 @@ async function loadResearch() {
 
         <div class="image">
 
-          <img src="${item.image}" alt="${title}">
+          <img data-src="${item.image}" alt="${title}" class="lazy-img" decoding="async">
 
           <div class="text">
             <h2>
@@ -130,6 +130,20 @@ async function loadResearch() {
       card
     );
   });
+
+  // Lazy-load images only when they scroll into view
+  const lazyImages = container.querySelectorAll("img.lazy-img");
+  const imgObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const img = entry.target;
+        img.src = img.dataset.src;
+        img.removeAttribute("data-src");
+        obs.unobserve(img);
+      }
+    });
+  }, { rootMargin: "200px" });
+  lazyImages.forEach(img => imgObserver.observe(img));
 
   initPopupModal();
   initTeamMemberFilter();

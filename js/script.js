@@ -367,7 +367,7 @@ function initPopupModal() {
         document.querySelector(".popup_wrap") !== null;
 
     if (!pageNeedsIt) {
-        console.log("Popup modal skipped");
+     // console.log("Popup modal skipped");
         return;
     }
 
@@ -451,7 +451,7 @@ function initPublicationsFilter() {
     const pageNeedsIt = document.querySelector(".publication-filter") !== null;
 
     if (!pageNeedsIt) {
-        console.log("Publications filter skipped");
+     // console.log("Publications filter skipped");
         return;
     }
 
@@ -612,7 +612,7 @@ function initActivitiesFilter() {
     const pageNeedsIt = document.querySelector(".activities-filter") !== null;
 
     if (!pageNeedsIt) {
-        console.log("Activities filter skipped");
+     // console.log("Activities filter skipped");
         return;
     }
 
@@ -769,7 +769,7 @@ function initTeamMemberFilter() {
     const pageNeedsIt = document.querySelector(".team_member") !== null;
 
     if (!pageNeedsIt) {
-        console.log("Team member filter skipped");
+     // console.log("Team member filter skipped");
         return;
     }
 
@@ -819,7 +819,7 @@ function initScrollReveal() {
     const pageNeedsIt = document.querySelector(".heading, .project") !== null;
 
     if (!(featureExists && pageNeedsIt)) {
-        console.log("ScrollReveal skipped");
+     // console.log("ScrollReveal skipped");
         return;
     }
 
@@ -843,7 +843,7 @@ function initTypedText() {
     const pageNeedsIt = document.querySelector(".multiple-text") !== null;
 
     if (!(featureExists && pageNeedsIt)) {
-        console.log("Typed.js skipped");
+     // console.log("Typed.js skipped");
         return;
     }
 
@@ -894,7 +894,7 @@ function initSwiperNew() {
     const pageNeedsIt = document.querySelector(".new-swiper") !== null;
 
     if (!(featureExists && pageNeedsIt)) {
-        console.log("Swiper skipped");
+     // console.log("Swiper skipped");
         return;
     }
 
@@ -1146,7 +1146,7 @@ function initVisitorCounter() {
 // ======================================================
 // Loader
 // ======================================================
-let loaderTimer;
+/*let loaderTimer;
 let loaderShown = false;
 let loaderShownAt = null;
 
@@ -1190,6 +1190,70 @@ window.addEventListener("load", () => {
     } else {
         loader.remove();
     }
+});*/
+
+// ======================================================
+// New Loader
+// ======================================================
+let loaderTimer;
+let loaderShown = false;
+let loaderShownAt = null;
+let loaderHidden = false;
+
+const LOADER_SHOW_DELAY = 300;
+const LOADER_MIN_VISIBLE = 500;
+const LOADER_FADE_OUT = 200;
+const LOADER_MAX_WAIT = 4000; // hard ceiling — loader never stays longer than this
+
+document.addEventListener("DOMContentLoaded", () => {
+    loaderTimer = setTimeout(() => {
+        const loader = document.getElementById("loader");
+        if (loader) {
+            loader.style.display = "flex";
+            loaderShown = true;
+            loaderShownAt = performance.now();
+        }
+    }, LOADER_SHOW_DELAY);
+});
+
+function hideLoader() {
+    if (loaderHidden) return;      // only run once
+    loaderHidden = true;
+    clearTimeout(loaderTimer);
+
+    const loader = document.getElementById("loader");
+    if (!loader) return;
+
+    const finish = () => {
+        loader.classList.add("hidden");
+        setTimeout(() => loader.remove(), LOADER_FADE_OUT);
+    };
+
+    if (loaderShown) {
+        const visibleFor = performance.now() - loaderShownAt;
+        const remaining = Math.max(0, LOADER_MIN_VISIBLE - visibleFor);
+        setTimeout(finish, remaining);
+    } else {
+        loader.remove();
+    }
+}
+
+// Hide as soon as the DOM/content is ready...
+document.addEventListener("DOMContentLoaded", hideLoader);
+// ...but never wait longer than LOADER_MAX_WAIT no matter what.
+setTimeout(hideLoader, LOADER_MAX_WAIT);
+
+document.addEventListener("click", (e) => {
+  const facade = e.target.closest(".youtube-facade");
+  if (!facade) return;
+  const id = facade.dataset.id;
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&controls=1&modestbranding=1&playsinline=1`;
+  iframe.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
+  iframe.setAttribute("allowfullscreen", "");
+  iframe.style.width = "100%";
+  iframe.style.height = "100%";
+  facade.replaceWith(iframe);
 });
 
 // ======================================================

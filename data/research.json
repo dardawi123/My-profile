@@ -3,7 +3,7 @@
   {
     "id": "drama",
     "icon": "fa-masks-theater",
-    "image": "/assets/cards-images/drama.png",
+    "image": "/assets/cards-images/drama.webp",
     "categories": ["screen-media", "audience-studies"],
 
     "title": {
@@ -54,7 +54,7 @@
   {
     "id": "film",
     "icon": "fa-film",
-    "image": "/assets/cards-images/film.png",
+    "image": "/assets/cards-images/film.webp",
     "categories": ["screen-media", "film"],
 
     "title": {
@@ -107,7 +107,7 @@
   {
   "id": "television",
   "icon": "fa-tv",
-  "image": "/assets/cards-images/tv.png",
+  "image": "/assets/cards-images/tv.webp",
   "categories": ["screen-media", "audience-studies"],
 
   "title": {
@@ -160,7 +160,7 @@
   {
     "id": "soap-opera",
     "icon": "fa-heart",
-    "image": "/assets/cards-images/soap-opera.png",
+    "image": "/assets/cards-images/soap-opera.webp",
     "categories": ["serialized-drama", "audience-studies"],
 
     "title": {
@@ -213,7 +213,7 @@
   {
     "id": "telenovela",
     "icon": "fa-earth-americas",
-    "image": "/assets/cards-images/telenovela.png",
+    "image": "/assets/cards-images/telenovela.webp",
     "categories": ["serialized-drama", "audience-studies"],
 
     "title": {
@@ -266,7 +266,7 @@
   {
     "id": "dizi",
     "icon": "fa-earth-americas",
-    "image": "/assets/cards-images/dizi.png",
+    "image": "/assets/cards-images/dizi.webp",
     "categories": ["serialized-drama", "audience-studies"],
 
     "title": {
@@ -319,7 +319,7 @@
   {
     "id": "podcast",
     "icon": "fa-microphone",
-    "image": "/assets/cards-images/podcast.jpeg",
+    "image": "/assets/cards-images/podcast.webp",
     "categories": ["screen-media", "audience-studies"],
 
     "title": {
@@ -370,7 +370,7 @@
   {
     "id": "ai",
     "icon": "fa-robot",
-    "image": "/assets/cards-images/ai.jpeg",
+    "image": "/assets/cards-images/ai.webp",
     "categories": ["screen-media", "film"],
 
     "title": {

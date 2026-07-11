@@ -586,6 +586,13 @@ body.dark .multiple-text {
   word-spacing: -0.01em;    /* subtly tightens overall spacing */
 }
 
+@media (max-width: 600px) {
+  .home-content p {
+    word-spacing: -0.03em;   /* tighter than your desktop -0.01em */
+    letter-spacing: -0.01em; /* optional, subtle */
+  }
+}
+
 .btn-box {
   position: relative;
   display: flex;

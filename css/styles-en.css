@@ -783,13 +783,12 @@ a:focus, .btn:focus {
 }
 
 .highlights-container {
-  max-width: clamp(20.3125rem, -1.4449rem + 94.086vw, 75rem);
   margin: 0 auto;
 }
 
 .section-header {
   text-align: center;
-  margin-bottom: clamp(2.5rem, 4vw, 3.5rem);
+  margin-bottom:clamp(2rem, 1.7016rem + 1.2903vw, 2.75rem);
 }
 
 .section-header h2 {
@@ -802,10 +801,11 @@ a:focus, .btn:focus {
 .section-header h2::after {
   content: "";
   display: block;
-  width: 4.5rem;
+  width: 10rem;
   height: 3px;
   margin: 0.9rem auto 1.6rem;
   background: var(--heading-color);
+  border-radius: 999px;
 }
 
 .section-header span {
@@ -883,6 +883,112 @@ a:focus, .btn:focus {
   transform: scale(1.1);
 }
 
+/*------------------------------ Work in Progress Section CSS ---------------------------- */
+.work-in-progress {
+  background: var(--bg-color);
+}
+
+/* Container stays WIDE — holds the cards */
+.wip-container {
+  margin: 0 auto;
+}
+
+.work-in-progress .section-header p {
+  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  width: min(85ch, 90vw);
+  margin-inline: auto;
+  line-height: 1.7;
+  text-wrap: pretty;
+  margin-bottom: 0;
+}
+
+.wip-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: min(60rem, 90vw);
+  display: flex;        
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.wip-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 1.1rem 1.25rem;
+  gap: 1rem;
+  background: var(--card-bg-color);
+  border: 0.1rem solid var(--heading-color);
+  border-inline-start: 0.5rem solid var(--heading-color);
+  border-radius: 10px;
+  box-shadow: 0 8px 30px var(--card-shadow-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wip-item li {
+  transition: transform 0.3s ease;
+}
+
+.wip-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.wip-status {
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  color: var(--text-white-color);
+}
+
+.wip-status.forthcoming {background: #059669;}
+/* .wip-status.under-review {background: #A16207;}*/
+.wip-status.in-preparation {background: #64748B;}
+
+.wip-text-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: wip;
+}
+
+.wip-text {
+  counter-increment: wip;
+  font-size: clamp(1rem, 0.9rem + 0.4vw, 1.15rem);
+  line-height: 1.6;
+  opacity: 0.9;
+  padding-inline-start: 1.5em;   /* indent for numbered items */
+  position: relative;
+}
+
+.wip-text::before {
+  content: counter(wip) ". ";
+  font-weight: 600;
+  position: absolute;
+  inset-inline-start: 0;
+}
+
+/* Single item → no number and no indent */
+.wip-text-group li:only-child {
+  padding-inline-start: 0;
+}
+.wip-text-group li:only-child::before {
+  content: "";
+}
+
+@media (max-width: 650px) {
+  .wip-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 /*------------------------------ Research Interests Section Design CSS ---------------------------- */
 .research {
   background: var(--bg-color);
@@ -900,10 +1006,11 @@ a:focus, .btn:focus {
 .heading::after {
   content: "";
   display: block;
-  width: 4.5rem;
+  width: 10rem;
   height: 3px;
   margin: 0.9rem auto 1.6rem;
   background: var(--heading-color);
+  border-radius: 999px;
 }
 
 .research h2 {
@@ -1265,10 +1372,11 @@ body.no-scroll {
 .project h2::after {
   content: "";
   display: block;
-  width: 4.5rem;
+  width: 10rem;
   height: 3px;
   margin: 0.9rem auto 1.6rem;
   background: var(--heading-color);
+  border-radius: 999px;
 }
 
 .project span {
@@ -1379,10 +1487,11 @@ body.no-scroll {
 .container h2::after {
   content: "";
   display: block;
-  width: 4.5rem;
+  width: 10rem;
   height: 3px;
   margin: 0.9rem auto 1.6rem;
   background: var(--heading-color);
+  border-radius: 999px;
 }
 
 .container span {

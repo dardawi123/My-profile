@@ -982,13 +982,6 @@ a:focus, .btn:focus {
   content: "";
 }
 
-@media (max-width: 650px) {
-  .wip-item {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-}
-
 /*------------------------------ Research Interests Section Design CSS ---------------------------- */
 .research {
   background: var(--bg-color);
@@ -1715,6 +1708,10 @@ iframe {
   }
   .btn {
     font-weight: 900;
+  }
+  .wip-item {
+    flex-direction: column;
+    gap: 0.5rem;
   }
   .stats-grid {
     grid-template-columns: repeat(2, minmax(220px, 1fr));

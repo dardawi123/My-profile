@@ -512,7 +512,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2.75rem;
+  gap: clamp(2rem, 3vw, 3.5rem);
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -522,10 +522,6 @@ nav {
   opacity: 1;
   transform: translateY(0);
 }
-
-/*.home-content {
-  padding-right: clamp(0.5rem, calc(0.5rem + ((1vw - 0.34rem) * 5.2326)), 5rem);
-}*/
 
 .home-content {
   flex: 1 1 55%;
@@ -723,89 +719,32 @@ a:focus, .btn:focus {
   transform: translateY(-2px);
   outline: none;
 }
-
-/* ===========  Photo Design 1 =========== */
-/*.home-img img {
-  border-radius: 50%;
-  padding-top: 0;
-  border: .05rem solid var(--main-color);
-  width: clamp(16rem, calc(16rem + ((1vw - 0.34rem) * 22.093)), 35rem);
-  box-shadow: 0 0 2rem var(--main-color);
-  height: auto;
-  object-fit: cover;
-  animation: floatImage 4s ease-in-out infinite;
-} 
-
-@keyframes floatImage {
-  0% {
-    transform: translateY(0);
-  }   
-  50% {
-    transform: translateY(-1.25rem);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}*/
-
-/* ===========  Photo Design 2 =========== */
-/*.home-img {
-  position: relative;
-  display: inline-block;
-  animation: floatImage 4s ease-in-out infinite;
-}
-
-.home-img img {
-  position: relative;
-  z-index: 1;
-  display: block;
-  width: clamp(16rem, calc(16rem + ((1vw - 0.34rem) * 22.093)), 32rem);
-  height: auto;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
-  object-position: center top;
-  border-radius: 4px;
-  border: 6px solid white;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
-}*/
-
-/* ===========  Photo Design 3 =========== */
+/* ===========  Photo Design =========== */
 .home-img {
   position: relative;
   flex: 0 1 auto;
   min-width: 0;
-  animation: floatImage 4s ease-in-out infinite;
+  animation: floatImage 5.5s ease-in-out infinite;
 }
 
 .home-img img {
   position: relative;
   z-index: 1;
   display: block;
-  width: clamp(18rem, 38vw, 30rem);
+  width: clamp(18rem, 38vw, 28.5rem);
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
-  border-radius: 18px;
-  border: 6px solid white;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+  border-radius: 1.125rem;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 14px 32px rgba(0,0,0,.16);
 }
 
 @keyframes floatImage {
   0%, 100% { transform: translateY(0); }
-  50%      { transform: translateY(-1.25rem); }
+  50%      { transform: translateY(-0.5rem); }
 }
-
-/*.home-img::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  transform: translate(14px, -14px);
-  border-radius: 4px;
-  z-index: 0;
-  background: linear-gradient(135deg, var(--heading-color), #1b4a44);
-  /*background: var(--heading-color);
-}*/
 
 /*------------------------------ Research Highlights Section CSS ---------------------------- */
 .research-highlights {
@@ -1724,7 +1663,7 @@ iframe {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 900px) {
   .home {
     flex-direction: column;
     gap: 2.5rem;
@@ -1733,8 +1672,8 @@ iframe {
     order: -1;
   }
   .home-img img {
-    width: 88%;
-    max-width: 26rem;
+    width: 100%;
+    max-width: 23rem;
     margin-inline: auto;    /* centers it */
   }
   .home-content {
@@ -1743,17 +1682,6 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  /*.home {
-    flex-direction: column;
-  }
-  .home-img {
-    order: -1;
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-  .home-content {
-    padding-right: 0rem;
-  }*/
   .btn {
     font-weight: 900;
   }

@@ -1729,7 +1729,7 @@ iframe {
 @media (max-width: 1024px) {
   .home {
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
   }
   .home-img {
     order: -1;

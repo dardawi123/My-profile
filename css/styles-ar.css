@@ -1669,7 +1669,7 @@ iframe {
 @media (max-width: 900px) {
   .home {
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1rem;
   }
   .home-img {
     order: -1;

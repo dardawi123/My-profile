@@ -512,6 +512,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2.75rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -522,8 +523,14 @@ nav {
   transform: translateY(0);
 }
 
-.home-content {
+/*.home-content {
   padding-right: clamp(0.5rem, calc(0.5rem + ((1vw - 0.34rem) * 5.2326)), 5rem);
+}*/
+
+.home-content {
+  flex: 1 1 55%;
+  min-width: 0;
+  padding-right: 0;
 }
 
 .home-content h3 {
@@ -543,7 +550,8 @@ nav {
   font-family: var(--font-body);
   font-weight: 500;
   font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
-  line-height: 0.75;
+  /*line-height: 0.75;*/
+  line-height: 1.3;    /* was 0.75 */
   color: var(--heading-color);
   text-align: left;
   opacity: 0.85;
@@ -590,7 +598,7 @@ body.dark .multiple-text {
   position: relative;
   display: flex;
   gap: clamp(1.3rem, 1.121rem + 0.7742vw, 1.75rem);
-  width: clamp(19.5rem, calc(19.5rem + ((1vw - 0.34rem) * 12.2093)), 30);
+  width: clamp(19.5rem, calc(19.5rem + ((1vw - 0.34rem) * 12.2093)), 30rem);
   height: clamp(2.5rem, 1.625vw + 1.98rem, 4.2rem);
 }
 
@@ -740,8 +748,8 @@ a:focus, .btn:focus {
   }
 }*/
 
-/* /* ===========  Photo Design 2 =========== */
-.home-img {
+/* ===========  Photo Design 2 =========== */
+/*.home-img {
   position: relative;
   display: inline-block;
   animation: floatImage 4s ease-in-out infinite;
@@ -757,6 +765,28 @@ a:focus, .btn:focus {
   object-fit: cover;
   object-position: center top;
   border-radius: 4px;
+  border: 6px solid white;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
+}*/
+
+/* ===========  Photo Design 3 =========== */
+.home-img {
+  position: relative;
+  flex: 0 1 auto;
+  min-width: 0;
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+.home-img img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: clamp(18rem, 38vw, 30rem);
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 18px;
   border: 6px solid white;
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.18);
 }
@@ -1694,8 +1724,26 @@ iframe {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .home {
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .home-img {
+    order: -1;
+  }
+  .home-img img {
+    width: 88%;
+    max-width: 26rem;
+    margin-inline: auto;    /* centers it */
+  }
+  .home-content {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /*.home {
     flex-direction: column;
   }
   .home-img {
@@ -1705,7 +1753,7 @@ iframe {
   }
   .home-content {
     padding-right: 0rem;
-  }
+  }*/
   .btn {
     font-weight: 900;
   }

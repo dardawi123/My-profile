@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- HOMEPAGE (EN) -->
   <url>
     <loc>https://www.alardawi.com/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/"/>
+    <lastmod>2026-07-17</lastmod>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/ZlmwBTcLURQ/hqdefault.jpg</video:thumbnail_loc>
       <video:title>Exploring Student Creativity: A Showcase of Drama and Documentary Projects!</video:title>
@@ -12,9 +18,14 @@
       <video:publication_date>2025-07-04T00:00:00+03:00</video:publication_date>
     </video:video>
   </url>
+
+  <!-- HOMEPAGE (AR) -->
   <url>
     <loc>https://www.alardawi.com/ar/</loc>
-    <lastmod>2026-07-13</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/ar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/"/>
+    <lastmod>2026-07-17</lastmod>
     <video:video>
       <video:thumbnail_loc>https://i.ytimg.com/vi/ZlmwBTcLURQ/hqdefault.jpg</video:thumbnail_loc>
       <video:title>استكشاف إبداع الطلاب: عرض لمشاريع الدراما والأفلام الوثائقية!</video:title>
@@ -23,36 +34,69 @@
       <video:publication_date>2025-07-04T00:00:00+03:00</video:publication_date>
     </video:video>
   </url>
+
+  <!-- ACADEMIC PROFILE -->
   <url>
     <loc>https://www.alardawi.com/pages/profile-en/profile-en.html</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/publication-en.html</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/conferences-en.html</loc>
-    <lastmod>2026-07-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/training-en.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/profile-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/profile-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/profile-en.html"/>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/profile-ar.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/profile-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/profile-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/profile-en.html"/>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+
+  <!-- PUBLICATIONS -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/publication-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/publication-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/publication-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/publication-en.html"/>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/publication-ar.html</loc>
-    <lastmod>2026-07-05</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/publication-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/publication-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/publication-en.html"/>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+
+  <!-- ACADEMIC ACTIVITIES / CONFERENCES -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/conferences-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/conferences-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/conferences-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/conferences-en.html"/>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/conferences-ar.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/conferences-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/conferences-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/conferences-en.html"/>
+    <lastmod>2026-07-17</lastmod>
+  </url>
+
+  <!-- TRAINING & PROFESSIONAL SKILLS -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/training-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/training-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/training-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/training-en.html"/>
+    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/training-ar.html</loc>
-    <lastmod>2026-07-04</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/training-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/training-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/training-en.html"/>
+    <lastmod>2026-07-17</lastmod>
   </url>
+
 </urlset>

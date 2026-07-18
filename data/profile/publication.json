@@ -1,6 +1,19 @@
 [
 
   {
+    "id": "pub-2026-001",
+    "year": 2026,
+    "type": "journal-article",
+    "authors": "Alardawi, M.",
+    "title": "Exposure to AI-themed films and perceptions of artificial intelligence: a survey of Saudi young adults in Saudi Arabia",
+    "journal": "Online Media and Global Communication",
+    "volume": "0",
+    "issue": "0",
+    "pages": "1–30",
+    "link": "https://doi.org/10.1515/omgc-2025-0083"
+  },
+
+  {
     "id": "pub-2025-001",
     "year": 2025,
     "type": "journal-article",
@@ -23,7 +36,7 @@
     "volume": "12",
     "issue": "1",
     "pages": "12–21",
-    "link": "https://www.sciedupress.com/journal/index.php/wjss/article/download/27993/17446?utm_source=chatgpt.com"
+    "link": "https://doi.org/10.5430/wjss.v12n1p12"
   },
 
   {
@@ -36,7 +49,7 @@
     "volume": "2",
     "issue": "1",
     "pages": "106–142",
-    "link": "https://journals.kau.edu.sa/index.php/JCMS/article/view/3328/990"
+    "link": "https://doi.org/10.4197/Comm.2-1.3"
   },
 
   {
@@ -87,7 +100,7 @@
     "volume": "22",
     "issue": "2",
     "pages": "164–178",
-    "link": "https://mnmk.ro/documents/2024_2/2-4-2-24.pdf"
+    "link": "https://manmar.ucv.ro/Arhiva%20articole/2024/Volume%20XXII%2C%20issue%202-2024/2-4-2-24.pdf"
   },
 
   {
@@ -126,7 +139,7 @@
     "volume": "1",
     "issue": "8",
     "pages": "9–27",
-    "link": "https://drive.google.com/file/d/1msP4-Dd1rltFYdhEWRLI0e1SL8Vcbz5J/view?usp=drivesdk"
+    "link": "/assets/docs/italian-drama.pdf"
   },
 
   {

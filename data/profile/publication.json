@@ -1,7 +1,20 @@
 [
 
-  {
+    {
     "id": "pub-2026-001",
+    "year": 2026,
+    "type": "journal-article",
+    "authors": "Alardawi, M.",
+    "title": "Exploring Saudi Women's Consumption of Turkish Dramas",
+    "journal": "Journal of Humanities and Social Sciences Studies",
+    "volume": "8",
+    "issue": "7",
+    "pages": "160–179",
+    "link": "https://al-kindipublisher.com/index.php/jhsss/article/view/13014"
+  },
+
+  {
+    "id": "pub-2026-002",
     "year": 2026,
     "type": "journal-article",
     "authors": "Alardawi, M.",

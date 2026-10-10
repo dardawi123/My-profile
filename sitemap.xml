@@ -99,4 +99,19 @@
     <lastmod>2026-07-17</lastmod>
   </url>
 
+    <!-- TEACHING -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/teaching-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <lastmod>2026-10-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/teaching-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <lastmod>2026-10-10</lastmod>
+  </url>
 </urlset>

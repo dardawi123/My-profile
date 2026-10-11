@@ -674,7 +674,7 @@ Academic Highlights
   margin: 0;
 }
 
-.container2 {
+.container2, .container3 {
   display: flex;
   flex-direction: column;
   margin-bottom: clamp(1.5rem, 1.3011rem + 0.8602vw, 2rem);
@@ -687,7 +687,7 @@ Academic Highlights
 }
 
 /* Section Titles */
-.container2 h2 {
+.container2 h2, .container3 h2 {
   font-family: var(--font-display);
   color: var(--heading-color);
   -webkit-text-stroke: 0.7px var(--main-color);
@@ -699,8 +699,8 @@ Academic Highlights
 
 .container2 h3 {
   font-family: var(--font-display);
-  color: var(--heading-color);
-  background-color: #E8F3F1;
+  color: var(--main-color);
+  background-color: color-mix(in srgb, var(--main-color) 10%, white);
   font-size: clamp(1.15rem, 1rem + 0.65vw, 1.5rem);
   font-weight: 600;
   line-height: 1.3;
@@ -709,7 +709,7 @@ Academic Highlights
   border-radius: 4px;
 }
 
-.container2 p {
+.container2 p, .container3 p {
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
   line-height: 1.7;
   text-align: justify;
@@ -717,13 +717,38 @@ Academic Highlights
   text-wrap: pretty;   /* improves break decisions, safe with justify */
 }
 
+.container3 h3 {
+  font-family: var(--font-display);
+  color: var(--main-color);
+  background-color: color-mix(in srgb, var(--main-color) 10%, white);
+  font-size: clamp(1.15rem, 1rem + 0.65vw, 1.5rem);
+  font-weight: 600;
+  line-height: 1.3;
+  padding: 0.65rem 1rem;
+  border-right: 4px solid var(--main-color);
+  border-radius: 4px;
+}
+
+/* Group each subtitle with its paragraph */
+.curriculum-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+/* Remove default margins */
+.curriculum-item h3,
+.curriculum-item p {
+  margin: 0;
+}
+
+/* Vertical Timeline */
 @counter-style arabic-indic {
   system: numeric;
   symbols: ٠ ١ ٢ ٣ ٤ ٥ ٦ ٧ ٨ ٩;
   suffix: "";
 }
 
-/* Vertical Timeline */
 .courses-list {
   --circle-offset: clamp(0.5rem, 1vw, 1rem);
   --circle-size: clamp(1.7rem, 1.5rem + 0.4vw, 2rem);

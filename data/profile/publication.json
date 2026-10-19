@@ -75,7 +75,7 @@
     "volume": "21",
     "issue": "2",
     "pages": "10–19",
-    "link": "https://ccsenet.org/journal/index.php/ass/article/view/0/51530"
+    "link": "https://doi.org/10.5539/ass.v21n2p10"
   },
 
   {
@@ -100,7 +100,7 @@
     "volume": "8",
     "issue": "",
     "pages": "69–89",
-    "link": "https://journals.umcs.pl/ms/article/view/18049"
+    "link": "https://doi.org/10.17951/ms.2024.8.69-89"
   },
 
   {
@@ -113,7 +113,7 @@
     "volume": "22",
     "issue": "2",
     "pages": "164–178",
-    "link": "https://manmar.ucv.ro/Arhiva%20articole/2024/Volume%20XXII%2C%20issue%202-2024/2-4-2-24.pdf"
+    "link": "https://doi.org/10.52846/MNMK.22.2.02"
   },
 
   {
@@ -195,19 +195,6 @@
   {
    "id": "pub-2022-001",
     "year": 2022,
-    "type": "journal-article",
-    "authors": "Qutub, A. and Alardawi, M.",
-    "title": "Saudi viewers' perceptions of Attack on Titan Japanese animation online series",
-    "journal": "Asian Social Science",
-    "volume": "18",
-    "issue": "1",
-    "pages": "65–77",
-    "link": "https://ccsenet.org/journal/index.php/ass/article/view/0/46547"
-  },
-
-  {
-   "id": "pub-2022-002",
-    "year": 2022,
     "type": "online-publication",
     "authors": "Alardawi, M. et al.",
     "title": "Cultural media and community thinking development",
@@ -217,8 +204,21 @@
     "link": "https://www.alriyadh.com/1959582"
   },
 
-  {
+    {
    "id": "pub-2021-001",
+    "year": 2021,
+    "type": "journal-article",
+    "authors": "Qutub, A. and Alardawi, M.",
+    "title": "Saudi viewers' perceptions of Attack on Titan Japanese animation online series",
+    "journal": "Asian Social Science",
+    "volume": "18",
+    "issue": "1",
+    "pages": "65–77",
+    "link": "https://doi.org/10.5539/ass.v18n1p65"
+  },
+
+  {
+   "id": "pub-2021-002",
     "year": 2021,
     "type": "journal-article",
     "authors": "Alardawi, M., Bajnaid, A. and Brereton, P.",
@@ -231,7 +231,7 @@
   },
 
   {
-   "id": "pub-2021-002",
+   "id": "pub-2021-003",
     "year": 2021,
     "type": "conference-proceeding",
     "authors": "Alardawi, M., Brereton, P. and Bajnaid, A.",
@@ -256,7 +256,7 @@
     "volume": "16",
     "issue": "11",
     "pages": "56–65",
-    "link": "https://econpapers.repec.org/article/ibnassjnl/v_3a16_3ay_3a2020_3ai_3a11_3ap_3a56.htm"
+    "link": "https://doi.org/10.5539/ass.v16n11p56"
   },
 
   {

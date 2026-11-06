@@ -825,6 +825,61 @@ Academic Highlights
   z-index: 2;
 }
 
+/* =====================================
+  DIGITAL RESOURCES
+===================================== */
+/* Preview image */
+.digital-image-link {
+  display: block;
+  overflow: hidden;
+  border-radius: 1.125rem;
+  line-height: 0;
+}
+
+.digital-image-link img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 12 / 4;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.45s ease;
+}
+
+.digital-image-link:hover img {
+  transform: scale(1.01);
+}
+
+/* Explore button */
+.digital-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+  margin-top: -10px;
+  width: 100%;
+  min-height: 45px;
+  padding: .5rem 1.25rem;
+  background: #39736f;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: clamp(0.85rem, 0.705rem + 0.6188vw, 1.2rem);
+  line-height: 1.4;
+  font-weight: 600;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.digital-button:hover {
+  background: #285b57;
+  transform: translateY(-2px);
+}
+
+.digital-arrow {
+  font-size: clamp(1.5625rem, 1.2986rem + 1.1111vw, 2.1875rem);
+  flex-shrink: 0;
+}
+
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {
   position: relative; 
@@ -1130,6 +1185,12 @@ Academic Highlights
   .footer-iconTop a:hover {
     color: var(--text-white-color);
   }
+}
+
+@media (max-width: 600px) {
+   .digital-image-link img {
+       aspect-ratio: 16 / 9;
+   }
 }
 
 @media (max-width: 450px) {

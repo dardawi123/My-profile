@@ -224,7 +224,7 @@
           <nav class="lang-switcher" aria-label="Language selector">
             <span class="lang-option is-current" lang="ar" aria-current="page">العربية</span>
             <span class="lang-divider" aria-hidden="true"></span>
-            <a href="/pages/profile-en/profile-en.html" class="lang-option" id="langSwitch" lang="en" aria-label="التبديل إلى الانجلزية (Switch to English)">EN</a>
+            <a href="/pages/profile-en/teaching-en.html" class="lang-option" id="langSwitch" lang="en" aria-label="التبديل إلى الانجلزية (Switch to English)">EN</a>
           </nav>
 
           <!-- Day/Night Mode Toggle -->
@@ -406,50 +406,72 @@
         </div>
       </section> -->
 
-      <!-- Digital Learning Resources -->
-      <section class="container2">
-        <h2>موارد التعلّم الرقمي</h2>
+<!-- Digital Learning Resources -->
+      <section class="container2 resources" aria-labelledby="resources-title">
+        <h2 id="resources-title">موارد التعلّم الرقمي</h2>
+
         
-        <h3>بصيرة | مختبر الاستقصاء النقدي</h3>
-        <a
-          class="digital-image-link"
-          href="https://basira-film-research.modream-aa18.chatgpt.site/#examples" target="_blank" rel="noopener noreferrer" aria-label="Explore Basira Critical Inquiry Lab">
-          <img src="/assets/digital-learning/basira-ar.webp" alt="Basira Critical Inquiry Lab – Film and audiovisual research" loading="lazy">
-        </a>
+        <!--
+          TO ADD A RESOURCE: copy one <li class="resource-card"> block, paste it
+          at the end of the list, then change the image, title, link and text.
+          Cards beyond the first 6 (data-visible) are tucked behind "View all".
+        -->
+        <ul class="resource-grid" id="resourceGrid" data-visible="3" role="list">
 
-        <p>
-          مصدر تعليمي أكاديمي تفاعلي موجّه لطلبة الدراسات العليا،
-          يُعنى بتطوير أسئلة البحث وصياغتها وتقييمها نقديًا
-          في مجال الدراسات السينمائية والمرئية والمسموعة.
-        </p>
+          <!-- Resource: Research Problem Compass -->
+          <li class="resource-card">
+            <div class="resource-card__media">
+              <img src="/assets/e-teaching/compass/compass.webp" alt="" loading="lazy" decoding="async">
+            </div>
+            <h3 class="resource-card__title">
+              <a class="resource-card__link" href="/pages/profile-ar/e-teaching-ar/compass-ar.html" target="_blank" rel="noopener noreferrer">
+                بوصلة المشكلة البحثية<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </h3>
+            <p class="resource-card__desc">
+              مصدر تعليمي أكاديمي تفاعلي موجّه لطلبة الدراسات العليا،
+              يُعنى بتطوير أسئلة البحث وصياغتها وتقييمها نقديًا
+              في مجال الدراسات السينمائية والمرئية والمسموعة.
+            </p>
+            <span class="resource-card__cta" aria-hidden="true">
+              استكشف المصدر <span class="resource-card__arrow">↗</span>
+            </span>
+          </li>
+<!------------------------------------------------>
+          <!-- Resource: Ba'ura – Screen Research Problem Lab -->
+          <li class="resource-card">
+            <div class="resource-card__media">
+              <img src="/assets/e-teaching/rquestions/rquestions.webp" alt="" loading="lazy" decoding="async">
+            </div>
+            <h3 class="resource-card__title">
+              <a class="resource-card__link" href="/pages/profile-ar/e-teaching-ar/rquestions-ar.html" target="_blank" rel="noopener noreferrer">
+                صياغة أسئلة البحث<span class="sr-only"> (opens in a new tab)</span>
+              </a>
+            </h3>
+            <p class="resource-card__desc">
+              مصدر تعليمي أكاديمي تفاعلي موجّه لطلبة الدراسات العليا،
+              يُعنى بتحديد المشكلات البحثية وتطويرها وصياغتها
+              في مجال الدراسات السينمائية والمرئية والمسموعة.
+              ويقود الطلبة عبر خطوات منهجية لتحديد الفجوات البحثية،
+              وبيان الأهمية العلمية، وبناء مشكلات بحثية تستند
+              إلى أسس نظرية ومنهجية واضحة.
+            </p>
+            <span class="resource-card__cta" aria-hidden="true">
+              استكشف المصدر <span class="resource-card__arrow">↗</span>
+            </span>
+          </li>
 
-        <a
-          class="digital-button" href="https://basira-film-research.modream-aa18.chatgpt.site/#examples" target="_blank" rel="noopener noreferrer">
-          <span>استكشف بصيرة | مختبر الاستقصاء النقدي</span>
-          <span class="digital-arrow" aria-hidden="true">↗</span>
-        </a>
+        </ul>
 
-        <h3>بؤرة | مختبر المشكلة البحثية</h3>
-        <a
-          class="digital-image-link"
-          href="https://screen-research-lab.modream-aa18.chatgpt.site" target="_blank" rel="noopener noreferrer" aria-label="Explore Basira Critical Inquiry Lab">
-          <img src="/assets/digital-learning/focus-ar.webp" alt="Basira Critical Inquiry Lab – Film and audiovisual research" loading="lazy">
-        </a>
-
-        <p>
-          مصدر تعليمي أكاديمي تفاعلي موجّه لطلبة الدراسات العليا،
-          يُعنى بتحديد المشكلات البحثية وتطويرها وصياغتها
-          في مجال الدراسات السينمائية والمرئية والمسموعة.
-          ويقود الطلبة عبر خطوات منهجية لتحديد الفجوات البحثية،
-          وبيان الأهمية العلمية، وبناء مشكلات بحثية تستند
-          إلى أسس نظرية ومنهجية واضحة.
-        </p>
-
-        <a
-          class="digital-button" href="https://screen-research-lab.modream-aa18.chatgpt.site" target="_blank" rel="noopener noreferrer">
-          <span>استكشف بؤرة | مختبر المشكلة البحثية</span>
-          <span class="digital-arrow" aria-hidden="true">↗</span>
-        </a>
+        <!-- Shown by JS only when there are more cards than data-visible -->
+        <div class="resources__more" id="resourcesMore" hidden>
+          <button type="button" class="btn btn-secondary resources__toggle" id="resourcesToggle"
+            aria-expanded="false" aria-controls="resourceGrid"
+            data-label-more="عرض جميع المصادر" data-label-less="عرض أقل">
+            <span class="resources__toggle-label">عرض جميع المصادر</span>
+            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
       </section>
       
 		</section>

@@ -1035,6 +1035,20 @@ Academic Highlights
   outline-offset: 3px;
 }
 
+/* Safari fix: cards were taller than the box around them.
+   1) text-wrap:pretty makes Safari measure one line less than it draws.
+   2) The thumbnail image is taken out of the size calculation. */
+.resources .resource-card__desc {
+  text-wrap: wrap;
+}
+.resource-card__media {
+  position: relative;
+}
+.resource-card__media img {
+  position: absolute;
+  inset: 0;
+}
+
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {
   position: relative; 

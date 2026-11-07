@@ -1085,15 +1085,15 @@ function initVisitorCounter() {
     }
 
     // Count visitor
-    const alreadyCounted =
+    /*const alreadyCounted =
         sessionStorage.getItem(SESSION_FLAG) === "true";
     const action = alreadyCounted ? "get" : "hit";
-    const url = `${API_BASE}/${action}/${KEY}`;
+    const url = `${API_BASE}/${action}/${KEY}`;*/
 
 //=========================================================
 // This will stop the Count visitor temerary,
 // to resume it remove the below and activate the above counter visitor
-    /*const isLocal =
+    const isLocal =
         location.hostname === "localhost" ||
         location.hostname === "127.0.0.1";
 
@@ -1104,7 +1104,7 @@ function initVisitorCounter() {
         ? "get"
         : (alreadyCounted ? "get" : "hit");
 
-    const url = `${API_BASE}/${action}/${KEY}`;*/
+    const url = `${API_BASE}/${action}/${KEY}`;
 //=========================================================
 
     fetchWithTimeout(url, FETCH_TIMEOUT_MS)
@@ -1257,7 +1257,6 @@ document.addEventListener("click", (e) => {
   facade.replaceWith(iframe);
 });
 
-
 // ======================================================
 // Current Year
 // ======================================================
@@ -1267,6 +1266,57 @@ function initCurrentYear() {
     if (yearEl) {
         yearEl.textContent = new Date().getFullYear();
     }
+}
+
+// ======================================================
+// Digital Learning Resources — "View all" toggle
+// Progressive enhancement: without JS, every card is shown.
+// ======================================================
+function initDigitalResources() {
+    const grid = document.getElementById("resourceGrid");
+    const wrap = document.getElementById("resourcesMore");
+    const toggle = document.getElementById("resourcesToggle");
+
+    if (!grid || !wrap || !toggle) {
+     // console.log("Digital resources skipped");
+        return;
+    }
+
+    const limit = parseInt(grid.dataset.visible, 10) || 6;
+    const cards = Array.from(grid.querySelectorAll(":scope > .resource-card"));
+
+    // Nothing to collapse — keep the button hidden
+    if (cards.length <= limit) return;
+
+    const extra = cards.slice(limit);
+    const label = toggle.querySelector(".resources__toggle-label");
+    const moreText = toggle.dataset.labelMore || "View all resources";
+    const lessText = toggle.dataset.labelLess || "Show fewer";
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    function setExpanded(expanded) {
+        extra.forEach(card => { card.hidden = !expanded; });
+        toggle.setAttribute("aria-expanded", String(expanded));
+        if (label) {
+            label.textContent = expanded ? lessText : `${moreText} (${cards.length})`;
+        }
+    }
+
+    toggle.addEventListener("click", () => {
+        const expanded = toggle.getAttribute("aria-expanded") !== "true";
+        setExpanded(expanded);
+
+        if (expanded) {
+            // Move keyboard focus to the first newly revealed resource
+            const firstLink = extra[0].querySelector("a");
+            if (firstLink) firstLink.focus();
+        } else {
+            toggle.scrollIntoView({ block: "nearest", behavior: reduceMotion ? "auto" : "smooth" });
+        }
+    });
+
+    wrap.hidden = false;
+    setExpanded(false);
 }
 
 // ======================================================
@@ -1303,6 +1353,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // ==================================================
     initPublicationsFilter();
     initActivitiesFilter();
+
+    // ==================================================
+    // Teaching Page
+    // ==================================================
+    initDigitalResources();
 
     // ==================================================
     // Dynamic Content

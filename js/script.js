@@ -1001,7 +1001,18 @@ function initVisitorCounter() {
     const FETCH_TIMEOUT_MS = 6000;
     const COUNT_UP_DURATION_MS = 900;
     const SESSION_FLAG = "visitorCounter:countedThisSession";
-    const LOCAL_FALLBACK_KEY = "visitorCounter:localFallbackValue";
+    const COUNT_WINDOW_MS = 24 * 60 * 60 * 1000; // count each visitor once per 24 hours
+
+    function wasCountedRecently() {
+        try {
+            const t = parseInt(localStorage.getItem(SESSION_FLAG), 10);
+            return !Number.isNaN(t) && (Date.now() - t) < COUNT_WINDOW_MS;
+        } catch (e) { return false; }
+    }
+
+    function markCounted() {
+        try { localStorage.setItem(SESSION_FLAG, String(Date.now())); } catch (e) {}
+    }
 
     // Fetch with timeout protection
     function fetchWithTimeout(url, timeoutMs) {
@@ -1049,63 +1060,28 @@ function initVisitorCounter() {
     }
 
     // Update displayed count
-    function showCount(value, isLive) {
+    function showCount(value) {
         animateCountTo(valueEl, value);
 
         if (liveEl) {
-            liveEl.textContent = isLive
-                ? `Total visitors: ${value.toLocaleString()}`
-                : `Total visitors: ${value.toLocaleString()} (offline estimate)`;
+            const isAr = document.documentElement.lang === "ar";
+            const n = value.toLocaleString();
+            liveEl.textContent = isAr ? `إجمالي الزوار: ${n}` : `Total visitors: ${n}`;
         }
     }
 
-    // Local fallback if API is unavailable
-    function getLocalFallbackCount() {
-        const alreadyCounted =
-            sessionStorage.getItem(SESSION_FLAG) === "true";
-        let value = parseInt(
-            localStorage.getItem(LOCAL_FALLBACK_KEY),
-            10
-        );
-        if (Number.isNaN(value)) {
-            value = 0;
-        }
-        if (!alreadyCounted) {
-            value += 1;
-            localStorage.setItem(
-                LOCAL_FALLBACK_KEY,
-                String(value)
-            );
-            sessionStorage.setItem(
-                SESSION_FLAG,
-                "true"
-            );
-        }
-        return value + OFFSET;
-    }
-
-    // Count visitor
-    /*const alreadyCounted =
-        sessionStorage.getItem(SESSION_FLAG) === "true";
-    const action = alreadyCounted ? "get" : "hit";
-    const url = `${API_BASE}/${action}/${KEY}`;*/
-
-//=========================================================
-// This will stop the Count visitor temerary,
-// to resume it remove the below and activate the above counter visitor
+    // Count visitor (only reads the total when testing on your computer)
     const isLocal =
         location.hostname === "localhost" ||
         location.hostname === "127.0.0.1";
 
-    const alreadyCounted =
-        sessionStorage.getItem(SESSION_FLAG) === "true";
+    const alreadyCounted = wasCountedRecently();
 
     const action = isLocal
         ? "get"
         : (alreadyCounted ? "get" : "hit");
 
     const url = `${API_BASE}/${action}/${KEY}`;
-//=========================================================
 
     fetchWithTimeout(url, FETCH_TIMEOUT_MS)
         .then((response) => {
@@ -1123,23 +1099,14 @@ function initVisitorCounter() {
                     "Counter API returned an unexpected payload"
                 );
             }
-            if (!alreadyCounted) {
-                sessionStorage.setItem(
-                    SESSION_FLAG,
-                    "true"
-                );
+            if (!alreadyCounted && !isLocal) {
+                markCounted();
             }
-            showCount(count + OFFSET, true);
+            showCount(count + OFFSET);
         })
         .catch((error) => {
-            console.warn(
-                "Visitor counter: falling back to local mode.",
-                error
-            );
-            showCount(
-                getLocalFallbackCount(),
-                false
-            );
+            console.warn("Visitor counter: service unavailable.", error);
+            valueEl.textContent = "\u2014";
         });
 }
 

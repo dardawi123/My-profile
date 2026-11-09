@@ -1106,6 +1106,10 @@ a:hover {
   user-select: none;
 }
 
+.footer-visitors__bracket {
+  opacity: 0.75;
+}
+
 .footer-copyright {
   margin: 0;
 }

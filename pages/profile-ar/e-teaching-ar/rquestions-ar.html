@@ -489,36 +489,65 @@
       </article>
     </div>
     <div class="disclaimer"><strong>إخلاء مسؤولية أكاديمي.</strong> تقدّم هذه المنصة إرشاداً منهجياً ومساعدة تعليمية، ولا تغني عن التقدير العلمي أو الإشراف الأكاديمي أو التحقق من الأدلة البحثية. ودرجات التقييم الذاتي أدوات للتأمل، وليست مقاييس مُحكَّمة للجودة. وتبقى جميع المنشورات والوثائق المرجعية والصور المستشهد بها ملكاً فكرياً لمؤلفيها وأصحاب حقوقها.</div>
-    <div class="card card-dark">
-      <h3>الإسناد الأكاديمي</h3>
-      <p>إعداد وتطوير الأداة العلمية: <strong>د. مرفت العرضاوي</strong> (<span lang="en">Dr. Merfat Alardawi</span>)، قسم الإنتاج المرئي والمسموع — الدراسات السينمائية والتلفزيونية.</p>
-    </div>
   </div>
 </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-col">
-      <span class="footer-title">صياغة وتنقيح أسئلة البحث</span>
-      <span>أداة تعليمية لدعم البحث في الدراسات السينمائية والتلفزيونية، تقدّم إرشاداً منهجياً ولا تغني عن الإشراف الأكاديمي.</span>
-      <a href="#about">إخلاء المسؤولية والخصوصية</a>
-    </div>
-    <div class="footer-col">
-      <span>إعداد وتطوير الأداة العلمية</span>
-      <span class="footer-name">د. مرفت العرضاوي</span>
-      <span lang="en" dir="ltr">Academic Tool Developed by Dr. Merfat Alardawi</span>
-      <span>© 2026</span>
-    </div>
-  </div>
-</footer>
-
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+      <span class="footer-title">صياغة وتنقيح أسئلة البحث</span>
+      <span>أداة تعليمية لمسار الدراما والأفلام — قسم الإنتاج المرئي والمسموع</span>
+      </div>
+      <div class="footer-col footer-author">
+        <span class="small-muted">إعداد وتطوير الأداة العلمية</span>
+        <span class="footer-name">د. مرفت العرضاوي</span>
+      </div>
+    </div>
+
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <div class="footer-visitors" aria-label="عدد زوار الموقع">
+          <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+            <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+            <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <span class="footer-visitors__label">زوار الموقع</span>
+          <span class="footer-visitors__count">
+            <span class="footer-visitors__bracket">[</span>
+            <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+            <span class="footer-visitors__bracket">]</span>
+          </span>
+          <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+        </div>
+
+        <span class="footer-separator" aria-hidden="true">|</span>
+
+        <p class="footer-copyright">
+          <img src="/assets/favicon.png" alt="" class="footer-logo" width="20" height="20">
+          © <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
+        </p>
+
+        <a href="#top" class="footer-top" id="footerTop" aria-label="العودة إلى أعلى الصفحة">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true" focusable="false">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 
 <script src="/js/profile/e-teaching/rquestions/rquestions-ar.js"></script>
 <script src="/js/profile/e-teaching/rquestions/analyzer.js"></script>
 <script src="/js/profile/e-teaching/rquestions/glossary.js"></script>
 <script src="/js/profile/e-teaching/rquestions/references.js"></script>
 <script src="/js/profile/e-teaching/rquestions/app.js"></script>
+<script src="/js/script.js"></script>
+
 </body>
 </html>

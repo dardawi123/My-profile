@@ -210,12 +210,16 @@ nav {
   gap: clamp(0.7rem, 0.3991rem + 0.7396vw, 1rem);
 }
 
-.logo img {
+/*.logo img {
   width: 55px;
   height: auto;
   object-fit: cover; /* Ensures the image covers the container without distortion */
-  display: block;
-}
+  /*display: block;
+}*/
+
+.logo { flex: none; }
+.logo a { display: block; }
+.logo img { width: 55px; height: auto; display: block; }
 
 .nav-links {
 	display: flex;

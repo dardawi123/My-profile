@@ -59,15 +59,17 @@
   <a href="#main" class="skip-link">Skip to content</a>
 
   <!-- ===== Header ===== -->
-  <header class="site-header">
+  <header class="site-header">  
     <div class="container header-inner">
-      <a href="#top" class="brand">
-        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#C9A45C" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><polygon points="15.5,8.5 13.5,13.5 8.5,15.5 10.5,10.5"></polygon></svg>
+      <div class="brand">
+        <a href="/index.html" class="logo" aria-label="Home page">
+          <img src="/assets/site-logo/logo.webp" alt="" width="120" height="120" loading="eager" decoding="async">
+        </a>
         <span class="brand-text">
           <span class="brand-title">Research Problem Compass</span>
           <span class="brand-sub">Drama and Film Track · Department of Audiovisual Production</span>
         </span>
-      </a>
+      </div>
       <div class="header-actions">
         <nav class="main-nav" aria-label="Site sections">
           <a href="#learn">Concepts</a>
@@ -392,15 +394,17 @@
           <img src="/assets/favicon.png" alt="" class="footer-logo" width="20" height="20">
           © <span id="currentYear"></span>Dr. Alardawi. All Rights Reserved.</p>
 
-        <a href="#top" class="footer-top" id="footerTop" aria-label="العودة إلى أعلى الصفحة">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true" focusable="false">
-            <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+        <div class="footer-iconTop">
+          <a href="#top" class="footer-top" aria-label="Back to top">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true" focusable="false">
+              <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+        
       </div>
     </div>
   </footer>
-
 
   <script src="/js/profile/e-teaching/compass/compass-en.js"></script>
   <script src="/js/profile/e-teaching/compass/app.js"></script>

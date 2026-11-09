@@ -1048,7 +1048,7 @@ Academic Highlights
 /*------------------------------ Footer section design CSS ---------------------------- */
 .footer1 {
   position: relative; 
-  direction: ltr;
+  /*direction: ltr;*/
   width: 100%;
   padding: 15px 2%;
   display: flex;
@@ -1114,6 +1114,10 @@ Academic Highlights
 .footer-separator {
   opacity: 0.75;
   user-select: none;
+}
+
+.footer-visitors__bracket {
+  opacity: 0.75;
 }
 
 .footer-copyright {

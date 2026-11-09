@@ -1590,6 +1590,10 @@ iframe {
   user-select: none;
 }
 
+.footer-visitors__bracket {
+  opacity: 0.75;
+}
+
 .footer-copyright {
   margin: 0;
 }
@@ -1598,7 +1602,7 @@ iframe {
   width: 20px;
   height: auto;
   vertical-align: middle;
-  margin-inline-end: 5px;
+  margin-inline-end: 10px;
 }
 
 /* Scroll-to-top button inside footer */

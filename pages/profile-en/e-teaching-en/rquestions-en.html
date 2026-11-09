@@ -489,29 +489,55 @@
       </article>
     </div>
     <div class="disclaimer"><strong>Academic disclaimer.</strong> This platform provides methodological guidance and educational assistance. It does not replace scholarly judgement, academic supervision or the verification of research evidence. Self-assessment scores are reflective aids, not validated measures of quality. All cited publications, reference documents and images remain the intellectual property of their respective authors and rights holders.</div>
-    <div class="card card-dark">
-      <h3>Academic attribution</h3>
-      <p>Academic tool developed by <strong>Dr. Merfat Alardawi</strong> (<span lang="ar">د. مرفت العرضاوي</span>), Department of Audio-Visual Production — Film and Television Studies.</p>
-    </div>
   </div>
 </section>
 </main>
 
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-col">
-      <span class="footer-title">Research Question Formulation and Refinement</span>
-      <span>An educational research-support tool for film and television studies. It offers methodological guidance and does not replace academic supervision.</span>
-      <a href="#about">Academic disclaimer and privacy</a>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <span class="footer-title">Research Problem Compass</span>
+        <span>An educational tool for the Drama and Film Track — Department of Audiovisual Production</span>
+      </div>
+      <div class="footer-col footer-author">
+        <span class="small-muted">Developed and designed by</span>
+        <span class="footer-name">Dr. Mervat Alardawi</span>
+      </div>
     </div>
-    <div class="footer-col">
-      <span>Academic tool developed by</span>
-      <span class="footer-name">Dr. Merfat Alardawi</span>
-      <span lang="ar" dir="rtl">إعداد وتطوير الأداة العلمية: د. مرفت العرضاوي</span>
-      <span>© 2026</span>
+
+    <div class="footer-bar">
+      <div class="container footer-bar__inner">
+        <div class="footer-visitors" aria-label="عدد زوار الموقع">
+          <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+            <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+            <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="2" />
+          </svg>
+          <span class="footer-visitors__label">Site Visitors</span>
+          <span class="footer-visitors__count">
+            <span class="footer-visitors__bracket">[</span>
+            <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+            <span class="footer-visitors__bracket">]</span>
+          </span>
+          <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+        </div>
+
+        <span class="footer-separator" aria-hidden="true">|</span>
+
+        <p class="footer-copyright">
+          <img src="/assets/favicon.png" alt="" class="footer-logo" width="20" height="20">
+          © <span id="currentYear"></span>Dr. Alardawi. All Rights Reserved.</p>
+
+        <a href="#top" class="footer-top" id="footerTop" aria-label="العودة إلى أعلى الصفحة">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" aria-hidden="true" focusable="false">
+            <path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
 
@@ -520,5 +546,7 @@
 <script src="/js/profile/e-teaching/rquestions/glossary.js"></script>
 <script src="/js/profile/e-teaching/rquestions/references.js"></script>
 <script src="/js/profile/e-teaching/rquestions/app.js"></script>
+<script src="/js/script.js"></script>
+
 </body>
 </html>

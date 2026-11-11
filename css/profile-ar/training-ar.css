@@ -34,6 +34,23 @@
   font-family: var(--font-body);
 }
 
+/* Visible focus for keyboard users only (mouse clicks show nothing) */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--main-color);
+  outline-offset: 3px;
+}
+
+/* On the teal header and footer, use white so the ring shows */
+header :focus-visible,
+footer :focus-visible {
+  outline-color: #fff;
+}
+
 html {
   scrollbar-width: none; /* Firefox */
   /* Prevent unexpected text enlargement on iPhone */

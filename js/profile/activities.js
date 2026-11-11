@@ -400,7 +400,7 @@ function formatActivityDate(
                 start.getFullYear()
             );
 
-        return `${startDay} - ${endDay} ${monthName} ${year}`;
+        return `${startDay}-${endDay} ${monthName} ${year}`;
 
     }
 

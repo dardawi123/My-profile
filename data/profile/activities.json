@@ -74,7 +74,7 @@
     },
     "description": {
       "en": "Presented a workshop on",
-      "ar": "تقديم ورشة عمل حول."
+      "ar": "تقديم ورشة عمل حول"
     },
     "roles": ["Presenter"],
     "dates": {
@@ -243,12 +243,12 @@
     },
     "host": {
       "name": {
-        "en": "Dublin City University",
-        "ar": "جامعة مدينة دبلن"
+        "en": "",
+        "ar": ""
       },
       "institution": {
         "en": "Dublin City University",
-        "ar": "جامعة مدينة دبلن"
+        "ar": "جامعة دبلن سيتي"
       }
     },
     "city": {
@@ -319,11 +319,11 @@
     "type": "workshop",
     "title": {
       "en": "quality management system according to ISO 9001:2015 specifications",
-      "ar": "لتدقيق الداخلي على نظام إدارة الجودة وفق مواصفة ISO 9001:2015"
+      "ar": "التدقيق الداخلي على نظام إدارة الجودة وفق مواصفة ISO 9001:2015"
     },
     "description": {
       "en": "Attended the internal audit workshop on the",
-      "ar": "حضور ورشة عمل حول ا"
+      "ar": "حضور ورشة عمل حول"
     },
     "roles": ["Attendee"],
     "dates": {
@@ -461,7 +461,7 @@
         "ar": "هيئة الأفلام (وزارة الثقافة)"
       },
       "institution": {
-        "en": "Crowne Plaza Hotel – Digital City, Riyadh",
+        "en": "Crowne Plaza Hotel – Digital City",
         "ar": "فندق كراون بلازا – المدينة الرقمية"
       }
     },
@@ -732,7 +732,7 @@
     },
     "description": {
       "en": "Delivered a workshop titled",
-      "ar": "تقديم ورشة عمل بعنوان  جامعة."
+      "ar": "تقديم ورشة عمل بعنوان."
     },
     "roles": ["Presenter"],
     "dates": {

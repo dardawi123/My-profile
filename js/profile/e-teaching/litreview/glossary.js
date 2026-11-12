@@ -1,0 +1,35 @@
+/* =========================================================
+   Bilingual literature review terminology (shared by both pages).
+   ========================================================= */
+window.LR_GLOSSARY = [
+  { en: 'Literature review', ar: 'مراجعة الأدبيات', defEn: 'A critical account of existing research on a question, organised to show what is known and what is not.', defAr: 'عرض نقدي للبحوث القائمة حول سؤال ما، منظم لإظهار ما هو معروف وما ليس معروفاً.' },
+  { en: 'Review question', ar: 'سؤال المراجعة', defEn: 'The question the review sets out to answer from the literature.', defAr: 'السؤال الذي تسعى المراجعة إلى الإجابة عنه من الأدبيات.' },
+  { en: 'Narrative review', ar: 'المراجعة السردية', defEn: 'A selective, interpretive overview of a body of literature.', defAr: 'عرض انتقائي تأويلي لمجموعة من الأدبيات.' },
+  { en: 'Critical review', ar: 'المراجعة النقدية', defEn: 'A review that evaluates and challenges the literature, often proposing a new model.', defAr: 'مراجعة تقيّم الأدبيات وتسائلها، وكثيراً ما تقترح نموذجاً جديداً.' },
+  { en: 'Scoping review', ar: 'المراجعة الاستطلاعية', defEn: 'A review that maps the extent and nature of research on a broad topic.', defAr: 'مراجعة ترسم خريطة لمدى البحوث وطبيعتها في موضوع واسع.' },
+  { en: 'Systematic review', ar: 'المراجعة المنهجية', defEn: 'A protocol-driven review with comprehensive search, explicit criteria and appraisal.', defAr: 'مراجعة يقودها بروتوكول، ببحث شامل ومعايير صريحة وتقييم.' },
+  { en: 'Integrative review', ar: 'المراجعة التكاملية', defEn: 'A review combining studies of different designs into a new synthesis.', defAr: 'مراجعة تجمع دراسات مختلفة التصاميم في تركيب جديد.' },
+  { en: 'Search strategy', ar: 'استراتيجية البحث', defEn: 'The planned combination of concepts, terms, databases and limits used to find literature.', defAr: 'التوليفة المخططة من المفاهيم والمصطلحات وقواعد البيانات والقيود للعثور على الأدبيات.' },
+  { en: 'Boolean operators', ar: 'العوامل البوليانية', defEn: 'AND, OR and NOT, used to combine search terms.', defAr: 'AND وOR وNOT، وتُستخدم لربط مصطلحات البحث.' },
+  { en: 'Truncation', ar: 'البتر', defEn: 'A symbol (usually *) that finds all endings of a word stem.', defAr: 'رمز (عادة *) يجد جميع نهايات جذر الكلمة.' },
+  { en: 'Phrase searching', ar: 'البحث بالعبارة', defEn: 'Putting words in quotation marks to find them together in that order.', defAr: 'وضع الكلمات بين علامتي تنصيص لإيجادها متجاورة بهذا الترتيب.' },
+  { en: 'Grey literature', ar: 'الأدبيات الرمادية', defEn: 'Reports, theses and other material not published commercially or in journals.', defAr: 'التقارير والرسائل العلمية وغيرها مما لا يُنشر تجارياً أو في المجلات.' },
+  { en: 'Inclusion criteria', ar: 'معايير الاشتمال', defEn: 'Conditions a study must meet to enter the review.', defAr: 'الشروط التي يجب أن تستوفيها الدراسة لتدخل المراجعة.' },
+  { en: 'Exclusion criteria', ar: 'معايير الاستبعاد', defEn: 'Conditions that remove a study from the review.', defAr: 'الشروط التي تُخرج الدراسة من المراجعة.' },
+  { en: 'Screening', ar: 'الفرز', defEn: 'Checking records against the criteria, first by title and abstract, then by full text.', defAr: 'مطابقة السجلات مع المعايير، بالعنوان والملخص أولاً ثم بالنص الكامل.' },
+  { en: 'PRISMA 2020', ar: 'PRISMA 2020', defEn: 'A reporting guideline and flow diagram for systematic reviews.', defAr: 'دليل للإبلاغ ومخطط تدفق للمراجعات المنهجية.' },
+  { en: 'Data extraction', ar: 'استخلاص البيانات', defEn: 'Recording the relevant details of each study in a consistent form.', defAr: 'تسجيل التفاصيل ذات الصلة لكل دراسة بصيغة موحدة.' },
+  { en: 'Literature review matrix', ar: 'مصفوفة مراجعة الأدبيات', defEn: 'A table that organises studies by authors, methods, findings and other attributes.', defAr: 'جدول ينظم الدراسات بحسب المؤلفين والمناهج والنتائج وسمات أخرى.' },
+  { en: 'Critical appraisal', ar: 'التقييم النقدي', defEn: 'Judging how far a study’s design and conduct support its conclusions.', defAr: 'الحكم على مدى دعم تصميم الدراسة وتنفيذها لاستنتاجاتها.' },
+  { en: 'Synthesis', ar: 'التركيب', defEn: 'Bringing studies together to produce an understanding none provides alone.', defAr: 'الجمع بين الدراسات لإنتاج فهم لا تقدمه أي منها منفردة.' },
+  { en: 'Thematic synthesis', ar: 'التركيب الموضوعاتي', defEn: 'Organising findings across studies into themes.', defAr: 'تنظيم النتائج عبر الدراسات في محاور.' },
+  { en: 'Narrative synthesis', ar: 'التركيب السردي', defEn: 'Synthesis that relies mainly on words and text to summarise and explain findings.', defAr: 'تركيب يعتمد أساساً على الكلمات والنص في تلخيص النتائج وتفسيرها.' },
+  { en: 'Research gap', ar: 'الفجوة البحثية', defEn: 'An evidenced area where knowledge is missing, inconclusive or contested.', defAr: 'مجال تثبت الأدلة نقص المعرفة فيه أو عدم حسمها أو الخلاف حولها.' },
+  { en: 'Gap-spotting', ar: 'رصد الفجوات', defEn: 'Constructing research questions by identifying what is missing in the literature.', defAr: 'بناء أسئلة البحث عبر تحديد الناقص في الأدبيات.' },
+  { en: 'Problematization', ar: 'الاستشكال', defEn: 'Questioning the assumptions behind existing research to generate new questions.', defAr: 'مساءلة الافتراضات التي تقوم عليها البحوث القائمة لتوليد أسئلة جديدة.' },
+  { en: 'Descriptive writing', ar: 'الكتابة الوصفية', defEn: 'Reporting what studies did and found without evaluating or comparing them.', defAr: 'عرض ما فعلته الدراسات ووجدته دون تقييم أو مقارنة.' },
+  { en: 'Critical writing', ar: 'الكتابة النقدية', defEn: 'Writing that compares, evaluates and synthesises studies to build an argument.', defAr: 'كتابة تقارن الدراسات وتقيّمها وتركّبها لبناء حجة.' },
+  { en: 'Citation tracking', ar: 'تتبع الاستشهادات', defEn: 'Following references backwards and citing works forwards from a key study.', defAr: 'تتبع المراجع إلى الوراء والأعمال المستشهِدة إلى الأمام انطلاقاً من دراسة محورية.' },
+  { en: 'Thematic organisation', ar: 'التنظيم الموضوعاتي', defEn: 'Structuring a review around themes or concepts rather than individual studies.', defAr: 'هيكلة المراجعة حول محاور أو مفاهيم بدلاً من الدراسات المنفردة.' },
+  { en: 'Academic integrity', ar: 'النزاهة الأكاديمية', defEn: 'Honest use and accurate acknowledgement of sources.', defAr: 'الاستخدام الأمين للمصادر والإسناد الدقيق إليها.' }
+];

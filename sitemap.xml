@@ -179,4 +179,20 @@
     <lastmod>2026-11-12</lastmod>
   </url>
 
+  <!-- litreview -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+
 </urlset>

@@ -599,14 +599,15 @@ body.dark .multiple-text {
 }
 
 .home-content p {
-  margin-bottom: clamp(1.5rem, calc(1.5rem + ((1vw - 0.34rem) * 1.1628)), 2.5rem);
-  font-size: clamp(1rem, 0.8806rem + 0.5161vw, 1.3rem);
+  max-width: 68ch;                 /* shorter lines = more even spacing */
+  margin-bottom: clamp(1.5rem, 1.1rem + 1.2vw, 2.5rem);
+  font-size: clamp(1rem, 0.88rem + 0.52vw, 1.3rem);
+  line-height: 1.75;
   text-align: justify;
-  line-height: 1.7;
-  hyphens: auto;
-  -webkit-hyphens: auto;
-  text-wrap: pretty;        /* improves break decisions, safe with justify */
-  word-spacing: -0.01em;    /* subtly tightens overall spacing */
+  text-justify: inter-word;        /* stretch spaces only, not letters */
+  hyphens: none;                   /* no more "in-cludes" / "devel-opment" */
+  -webkit-hyphens: none;
+  text-wrap: pretty;               /* avoids a single word on the last line */
 }
 
 .btn-box {
@@ -1892,6 +1893,16 @@ iframe {
   }
   .research-filter button {
     flex: 0 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-content p {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -webkit-hyphenate-limit-before: 3; /* Safari: at least 3 letters before the hyphen */
+    -webkit-hyphenate-limit-after: 3;  /* and 3 after it */
+    hyphenate-limit-chars: 7 3 3;      /* others: only split words of 7+ letters */
   }
 }
 

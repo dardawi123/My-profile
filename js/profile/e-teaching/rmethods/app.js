@@ -163,11 +163,19 @@
     }
     return '';
   }
+  /* Link from each Builder step to the matching section of the User Guide.
+     The guide URL and labels come from data attributes on #steps, so this file stays language-neutral. */
+  function guideLink(i) {
+    const box = document.getElementById('steps'), g = box && box.dataset.guide;
+    if (!g) return '';
+    return '<a class="step-guide" href="' + String(g).replace(/"/g, '&quot;') + '#step-' + (i + 1) + '" target="_blank" rel="noopener noreferrer">' + esc(box.dataset.guideLabel || '') +
+      '<span class="sr-only">' + esc(box.dataset.guideNewtab || '') + '</span></a>';
+  }
   function renderBuilder() {
     const body = $('#steps'); if (!body) return;
     body.innerHTML = RC.stepText.map((s, i) =>
       '<div class="step" data-step="' + i + '"' + (i ? ' hidden' : '') + '>' +
-      '<div class="step-head"><h3>' + esc(s.h) + '</h3><p>' + esc(s.p) + '</p></div>' +
+      '<div class="step-head"><h3>' + esc(s.h) + '</h3><p>' + esc(s.p) + '</p>' + guideLink(i) + '</div>' +
       '<div class="explain"><strong>' + esc(s.whyH) + '</strong><span>' + esc(s.why) + '</span></div>' +
       (s.ex ? '<div class="example-box"><b>' + (RC.lang === 'ar' ? 'مثال: ' : 'Example: ') + '</b>' + esc(s.ex) + '</div>' : '') +
       stepBody(i) + (i < 8 ? OUT(i) : '') + '</div>').join('');

@@ -321,10 +321,10 @@ textarea.inp { min-height: 96px; resize: vertical; line-height: 1.8; }
 .footer-name { font-size: 18px; color: var(--gold-light); font-weight: 700; }
 .small-muted { font-size: 13px; color: #BDB5A3; }
 
-.footer-links a { color: #F6F2E9; font-size: 14px; text-decoration: none; }
-.footer-links a:hover { color: var(--gold-light); text-decoration: underline; }
+.footer-links a { color: #F6F2E9; font-size: 14px; text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; }
+.footer-links a:hover { color: var(--gold-light); }
 /* English pages only: underline the footer links */
-html[lang="en"] .footer-links a { text-decoration: underline; text-underline-offset: 3px; }
+html[lang="en"] .footer-links a { text-underline-offset: 4px; }
 
 /* Bottom bar: visitors + copyright + back to top */
 .footer-bar { border-top: 1px solid rgba(201, 164, 92, .35); background: rgba(0, 0, 0, .12); }
@@ -432,3 +432,11 @@ html[lang="en"] .footer-links a { text-decoration: underline; text-underline-off
   .site-header, .hero, .lab, .wizard-nav, .btn-row, .stepper, .progress { display: none !important; }
   body { background: #fff; }
 }
+
+/* ---------- User Guide links (added with the User Guide pages) ---------- */
+.guide-switch { border-color: rgba(244,241,232,.5); color: #F4F1E8; }
+.guide-switch:hover { background: rgba(255,255,255,.1); color: #fff; }
+.step-guide { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; margin-top: 2px; padding: 3px 12px; border: 1px solid #A9C4BE; border-radius: 999px; background: #F2F8F6; color: #154E4B; font-size: 13.5px; font-weight: 600; text-decoration: none; }
+.step-guide::before { content: "?"; display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: #1F6F6B; color: #fff; font-size: 12px; font-weight: 700; }
+.step-guide:hover { background: #E5F0EE; color: #0B1F1E; border-color: #1F6F6B; }
+@media print { .step-guide, .guide-switch { display: none !important; } }

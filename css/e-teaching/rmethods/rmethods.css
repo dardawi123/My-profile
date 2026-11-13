@@ -440,10 +440,10 @@ fieldset { border: 0; padding: 0; margin: 0; display: flex; flex-direction: colu
 .footer-author { text-align: start; }
 .footer-name { font-size: 18px; color: var(--gold-light); font-weight: 700; }
 .small-muted { font-size: 13px; color: #BDB5A3; }
-.footer-links a { color: #F6F2E9; font-size: 14px; text-decoration: none; }
-.footer-links a:hover { color: var(--gold-light); text-decoration: underline; }
-  /* English pages only: underline the footer links */
-  html[lang="en"] .footer-links a { text-decoration: underline; text-underline-offset: 3px; }
+.footer-links a { color: #F6F2E9; font-size: 14px; text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; }
+.footer-links a:hover { color: var(--gold-light); }
+/* English pages only: underline the footer links */
+html[lang="en"] .footer-links a { text-underline-offset: 4px; }
 .footer-bar { border-top: 1px solid rgba(201,164,92,.35); background: rgba(0,0,0,.12); }
 .footer-bar__inner { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; padding-block: 14px; font-size: 14px; }
 .footer-visitors { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
@@ -524,3 +524,11 @@ table.data th[scope="row"] { text-align: start; color: var(--green-dark); backgr
 }
 .rec-panel .tag { align-self: flex-start; }
 [dir="rtl"] .report ol { list-style-type: arabic-indic; }
+
+/* ---------- User Guide links (added with the User Guide pages) ---------- */
+.guide-switch { border-color: rgba(244,241,232,.5); color: #F4F1E8; }
+.guide-switch:hover { background: rgba(255,255,255,.1); color: #fff; }
+.step-guide { align-self: flex-start; display: inline-flex; align-items: center; gap: 6px; margin-top: 2px; padding: 3px 12px; border: 1px solid var(--border-strong); border-radius: 999px; background: var(--green-tint-2); color: var(--green-dark); font-size: 13.5px; font-weight: 600; text-decoration: none; }
+.step-guide::before { content: "?"; display: inline-flex; align-items: center; justify-content: center; width: 18px; height: 18px; border-radius: 50%; background: var(--green); color: #fff; font-size: 12px; font-weight: 700; }
+.step-guide:hover { background: var(--green-tint); color: var(--green-ink); border-color: var(--green); }
+@media print { .step-guide, .guide-switch { display: none !important; } }

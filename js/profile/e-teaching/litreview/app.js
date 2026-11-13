@@ -140,6 +140,14 @@
   const OUT = (i) => '<div class="output-box"><span class="k">' + esc(RC.stepText[i].out) + '</span><span class="v" id="out-' + i + '" style="white-space:pre-line"></span></div>';
   const tag = (t, cls) => '<span class="tag ' + (cls || '') + '">' + esc(t) + '</span>';
 
+  /* Link from each Builder step to the matching section of the User Guide.
+     The guide URL and labels come from data attributes on #steps, so this file stays language-neutral. */
+  function guideLink(i) {
+    const box = document.getElementById('steps'), g = box && box.dataset.guide;
+    if (!g) return '';
+    return '<a class="step-guide" href="' + attr(g) + '#step-' + (i + 1) + '" target="_blank" rel="noopener noreferrer">' + esc(box.dataset.guideLabel || '') +
+      '<span class="sr-only">' + esc(box.dataset.guideNewtab || '') + '</span></a>';
+  }
   /* ---------------- Builder markup ---------------- */
   function stepBody(i) {
     switch (i) {
@@ -176,7 +184,7 @@
     return '';
   }
   function renderBuilder() {
-    $('#steps').innerHTML = RC.stepText.map((s, i) => '<div class="step" data-step="' + i + '"' + (i ? ' hidden' : '') + '><div class="step-head"><h3>' + esc(s.h) + '</h3><p>' + esc(s.p) + '</p></div>' +
+    $('#steps').innerHTML = RC.stepText.map((s, i) => '<div class="step" data-step="' + i + '"' + (i ? ' hidden' : '') + '><div class="step-head"><h3>' + esc(s.h) + '</h3><p>' + esc(s.p) + '</p>' + guideLink(i) + '</div>' +
       '<div class="explain"><strong>' + esc(s.whyH) + '</strong><span>' + esc(s.why) + '</span></div>' + (s.ex ? '<div class="example-box"><b>' + (AR ? 'مثال: ' : 'Example: ') + '</b>' + esc(s.ex) + '</div>' : '') +
       stepBody(i) + ([0, 1, 2].indexOf(i) !== -1 ? OUT(i) : '') + '</div>').join('');
     const rb = $('#rubric');

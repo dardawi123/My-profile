@@ -1,0 +1,41 @@
+/* =========================================================
+   Theoretical Framework Development — bilingual terminology guide
+   Shared by the Arabic and English pages.
+   ========================================================= */
+window.TFR_GLOSSARY = [
+  { en: 'Theory', ar: 'النظرية', defEn: 'A set of related propositions that explains or interprets a phenomenon.', defAr: 'مجموعة من القضايا المترابطة التي تفسر ظاهرة أو تؤولها.' },
+  { en: 'Theoretical framework', ar: 'الإطار النظري', defEn: 'The theory or theories selected for a study, with their assumptions and concepts, applied to its problem, questions and method.', defAr: 'النظرية أو النظريات المختارة لدراسة ما، بافتراضاتها ومفاهيمها، مطبقة على مشكلتها وأسئلتها ومنهجها.' },
+  { en: 'Conceptual framework', ar: 'الإطار المفاهيمي', defEn: 'The researcher’s own map of concepts and their relations, which may draw on several sources.', defAr: 'خريطة الباحث للمفاهيم والعلاقات بينها، وقد تستند إلى مصادر متعددة.' },
+  { en: 'Literature review', ar: 'مراجعة الأدبيات', defEn: 'A critical synthesis of previous studies that establishes what is known and the gap.', defAr: 'توليف نقدي للدراسات السابقة يحدد ما هو معروف والفجوة.' },
+  { en: 'Theoretical tradition', ar: 'التقليد النظري', defEn: 'A body of scholarship sharing assumptions and concepts, containing several theories and debates.', defAr: 'مجموعة من الأعمال العلمية تشترك في الافتراضات والمفاهيم وتضم نظريات ونقاشات متعددة.' },
+  { en: 'Critical perspective', ar: 'المنظور النقدي', defEn: 'A standpoint that examines power, inequality or ideology.', defAr: 'موقف فكري يفحص السلطة أو اللامساواة أو الأيديولوجيا.' },
+  { en: 'Conceptual model', ar: 'النموذج المفاهيمي', defEn: 'A schematic account of how elements relate, such as the stages of communication.', defAr: 'تصور تخطيطي لكيفية ارتباط العناصر، مثل مراحل الاتصال.' },
+  { en: 'Analytical method', ar: 'المنهج التحليلي (أداة التحليل)', defEn: 'A procedure for analysing material that may carry theoretical assumptions.', defAr: 'إجراء لتحليل المادة البحثية قد يحمل افتراضات نظرية.' },
+  { en: 'Assumption', ar: 'الافتراض النظري', defEn: 'A premise a theory takes for granted about its object (texts, audiences, power).', defAr: 'مقدمة تسلّم بها النظرية عن موضوعها (النصوص، الجمهور، السلطة).' },
+  { en: 'Concept', ar: 'المفهوم', defEn: 'An abstract idea, defined within a theory, used to name and analyse aspects of a phenomenon.', defAr: 'فكرة مجردة تُعرَّف داخل نظرية وتُستخدم لتسمية جوانب الظاهرة وتحليلها.' },
+  { en: 'Operational definition', ar: 'التعريف الإجرائي', defEn: 'How a concept is measured or observed in a quantitative study.', defAr: 'كيفية قياس المفهوم أو ملاحظته في الدراسة الكمية.' },
+  { en: 'Sensitising concept', ar: 'المفهوم الموجِّه (الحساس)', defEn: 'A concept that orients attention in exploratory qualitative research without fixing what will be found.', defAr: 'مفهوم يوجّه الانتباه في البحث النوعي الاستكشافي دون أن يحدد مسبقًا ما سيُكتشف.' },
+  { en: 'Paradigm', ar: 'النموذج المعرفي (البراديغم)', defEn: 'A set of beliefs about reality and knowledge that frames research.', defAr: 'منظومة معتقدات حول الواقع والمعرفة تؤطر البحث.' },
+  { en: 'Epistemology', ar: 'نظرية المعرفة (الإبستمولوجيا)', defEn: 'Assumptions about how knowledge can be produced and justified.', defAr: 'الافتراضات حول كيفية إنتاج المعرفة وتسويغها.' },
+  { en: 'Ontology', ar: 'الأنطولوجيا (نظرية الوجود)', defEn: 'Assumptions about the nature of reality.', defAr: 'الافتراضات حول طبيعة الواقع.' },
+  { en: 'Theoretical lens', ar: 'العدسة النظرية', defEn: 'A theory used to guide what the researcher looks at and how it is interpreted.', defAr: 'نظرية تُستخدم لتوجيه ما يركز عليه الباحث وكيفية تفسيره.' },
+  { en: 'Theory–research alignment', ar: 'مواءمة النظرية مع البحث', defEn: 'The logical fit between theory, problem, questions, concepts and method.', defAr: 'التوافق المنطقي بين النظرية والمشكلة والأسئلة والمفاهيم والمنهج.' },
+  { en: 'Deductive use of theory', ar: 'الاستخدام الاستنباطي للنظرية', defEn: 'Deriving expectations or hypotheses from theory and testing them.', defAr: 'اشتقاق توقعات أو فرضيات من النظرية واختبارها.' },
+  { en: 'Inductive use of theory', ar: 'الاستخدام الاستقرائي للنظرية', defEn: 'Developing concepts or theory from the data.', defAr: 'تطوير المفاهيم أو النظرية انطلاقًا من البيانات.' },
+  { en: 'Male gaze', ar: 'النظرة الذكورية', defEn: 'Mulvey’s term for the way classical cinema organises looking around a male viewpoint.', defAr: 'مصطلح مولفي لطريقة تنظيم السينما الكلاسيكية للنظر حول وجهة نظر ذكورية.' },
+  { en: 'Representation', ar: 'التمثيل', defEn: 'The production of meaning through signs and discourse (Hall’s constructionist view).', defAr: 'إنتاج المعنى عبر العلامات والخطاب (وفق التصور البنائي عند هول).' },
+  { en: 'Encoding/decoding', ar: 'الترميز وفك الترميز', defEn: 'Hall’s model of how meanings are encoded in production and decoded by audiences.', defAr: 'نموذج هول لكيفية ترميز المعاني في الإنتاج وفك ترميزها لدى الجمهور.' },
+  { en: 'Preferred reading', ar: 'القراءة المفضّلة', defEn: 'The meaning a text invites its audience to accept.', defAr: 'المعنى الذي يدعو النص جمهوره إلى قبوله.' },
+  { en: 'Negotiated reading', ar: 'القراءة التفاوضية', defEn: 'A decoding that accepts parts of the preferred meaning and adapts others.', defAr: 'فك ترميز يقبل أجزاء من المعنى المفضّل ويكيّف أجزاء أخرى.' },
+  { en: 'Connotation', ar: 'التضمين (الدلالة الإيحائية)', defEn: 'Secondary, culturally associated meaning of a sign (Barthes).', defAr: 'المعنى الثانوي المرتبط ثقافيًا بالعلامة (بارت).' },
+  { en: 'Myth (semiology)', ar: 'الأسطورة (في السيميولوجيا)', defEn: 'Barthes’ term for second-order meanings that naturalise ideology.', defAr: 'مصطلح بارت للمعاني من الدرجة الثانية التي تجعل الأيديولوجيا تبدو طبيعية.' },
+  { en: 'Cultivation', ar: 'الغرس الثقافي', defEn: 'The cumulative shaping of perceptions of reality through long-term television exposure.', defAr: 'التشكيل التراكمي لتصورات الواقع عبر التعرض الطويل للتلفزيون.' },
+  { en: 'Gratifications sought / obtained', ar: 'الإشباعات المطلوبة / المتحققة', defEn: 'Motives for media use and the satisfactions actually experienced.', defAr: 'دوافع استخدام وسائل الإعلام والإشباعات التي تتحقق فعلًا.' },
+  { en: 'Cultural proximity', ar: 'القرب الثقافي', defEn: 'Audiences’ tendency to prefer content close to their language and culture (Straubhaar).', defAr: 'ميل الجمهور إلى تفضيل المحتوى القريب من لغته وثقافته (ستروبار).' },
+  { en: 'Hegemony', ar: 'الهيمنة', defEn: 'Leadership secured through consent rather than force, central to cultural studies.', defAr: 'سيادة تتحقق بالرضا لا بالقوة، وهي مفهوم محوري في الدراسات الثقافية.' },
+  { en: 'Orientalism', ar: 'الاستشراق', defEn: 'Said’s term for Western discourse that constructs “the East” as Other.', defAr: 'مصطلح سعيد للخطاب الغربي الذي يبني «الشرق» بوصفه آخر.' },
+  { en: 'Culture industry', ar: 'صناعة الثقافة', defEn: 'Horkheimer and Adorno’s term for the industrial production of standardised culture.', defAr: 'مصطلح هوركهايمر وأدورنو للإنتاج الصناعي لثقافة نمطية.' },
+  { en: 'Auteur', ar: 'المخرج المؤلف', defEn: 'A director whose films show a consistent personal vision and style.', defAr: 'مخرج تُظهر أفلامه رؤية وأسلوبًا شخصيين متسقين.' },
+  { en: 'Genre convention', ar: 'العرف النوعي (تقاليد النوع)', defEn: 'A recurring element of a genre recognised by industry and audiences.', defAr: 'عنصر متكرر في النوع الفني تعرفه الصناعة والجمهور.' },
+  { en: 'Fabula / syuzhet', ar: 'الحكاية / الحبكة', defEn: 'The story as reconstructed by the viewer versus the way it is presented.', defAr: 'القصة كما يعيد المشاهد بناءها مقابل طريقة عرضها.' }
+];

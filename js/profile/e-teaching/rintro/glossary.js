@@ -1,0 +1,40 @@
+/* =========================================================
+   Research Introduction Writing and Refinement — bilingual terminology guide
+   Shared by the Arabic and English pages.
+   ========================================================= */
+window.RIN_GLOSSARY = [
+  { en: 'Research introduction', ar: 'مقدمة البحث', defEn: 'The opening section that establishes the context, positions the study in scholarship, identifies a gap or problem and states the purpose and contribution.', defAr: 'القسم الافتتاحي الذي يرسّخ السياق، ويموضع الدراسة في الأدبيات العلمية، ويحدد الفجوة أو المشكلة، ويعرض الهدف والإسهام.' },
+  { en: 'Research territory', ar: 'مجال البحث (الإقليم البحثي)', defEn: 'The broader area and phenomenon in which the study is located; the first move of many introductions.', defAr: 'المجال الأوسع والظاهرة التي تقع فيها الدراسة، وهو الحركة الأولى في كثير من المقدمات.' },
+  { en: 'Research context', ar: 'سياق البحث', defEn: 'The academic, cultural, historical or industrial circumstances that make the topic relevant now.', defAr: 'الظروف الأكاديمية أو الثقافية أو التاريخية أو الصناعية التي تجعل الموضوع جديرًا بالدراسة الآن.' },
+  { en: 'Scholarly background', ar: 'الخلفية العلمية', defEn: 'The essential previous scholarship needed to understand the gap and the problem; narrower than a full literature review.', defAr: 'الأدبيات السابقة الضرورية لفهم الفجوة والمشكلة، وهي أضيق من مراجعة الأدبيات الكاملة.' },
+  { en: 'Literature review', ar: 'مراجعة الأدبيات (الدراسات السابقة)', defEn: 'A separate, fuller section that critically reviews previous research in detail.', defAr: 'قسم مستقل وأوسع يراجع البحوث السابقة مراجعة نقدية مفصلة.' },
+  { en: 'Synthesis', ar: 'التوليف (التركيب النقدي)', defEn: 'Connecting several sources around shared findings, debates or methods rather than summarising them one by one.', defAr: 'الربط بين عدة مصادر حول نتائج أو نقاشات أو مناهج مشتركة بدلًا من تلخيصها واحدًا تلو الآخر.' },
+  { en: 'Citation matrix', ar: 'مصفوفة الاستشهادات', defEn: 'A table that records each source, the claim used, its theory, method and role in the argument.', defAr: 'جدول يسجل كل مصدر والادعاء المستخدم منه ونظريته ومنهجه ودوره في الحجة.' },
+  { en: 'Research gap', ar: 'الفجوة البحثية', defEn: 'What existing scholarship leaves unexamined, unresolved or contradictory; a claim that requires evidence.', defAr: 'ما تتركه الأدبيات القائمة دون دراسة أو دون حسم أو متناقضًا، وهو ادعاء يحتاج إلى دليل.' },
+  { en: 'Empirical gap', ar: 'الفجوة الإمبريقية (التطبيقية)', defEn: 'A lack of evidence about a group, text, period or practice.', defAr: 'نقص الأدلة عن فئة أو نص أو حقبة أو ممارسة.' },
+  { en: 'Theoretical gap', ar: 'الفجوة النظرية', defEn: 'A theory does not adequately explain a phenomenon or has not been examined in a new setting.', defAr: 'قصور نظرية ما عن تفسير ظاهرة، أو عدم اختبارها في سياق جديد.' },
+  { en: 'Methodological gap', ar: 'الفجوة المنهجية', defEn: 'Previous research relied on methods that leave certain questions unanswered.', defAr: 'اعتماد البحوث السابقة على مناهج تترك أسئلة معينة دون إجابة.' },
+  { en: 'Contextual gap', ar: 'الفجوة السياقية', defEn: 'Findings from one cultural, geographical or industrial context are assumed to apply elsewhere.', defAr: 'افتراض انطباق نتائج سياق ثقافي أو جغرافي أو صناعي على سياقات أخرى.' },
+  { en: 'Gap-spotting', ar: 'رصد الفجوات', defEn: 'Building research questions by identifying what has not been studied; useful but limited if it ignores underlying assumptions.', defAr: 'بناء أسئلة البحث برصد ما لم يُدرس، وهو مفيد لكنه محدود إن أغفل الافتراضات الكامنة.' },
+  { en: 'Problematization', ar: 'الأشكلة', defEn: 'Questioning the assumptions of existing theory or readings to generate a research problem.', defAr: 'مساءلة افتراضات النظرية أو القراءات القائمة لتوليد مشكلة بحثية.' },
+  { en: 'Critical problem', ar: 'الإشكال النقدي', defEn: 'A tension, contradiction or blind spot in understanding that does not depend on the absence of studies.', defAr: 'توتر أو تناقض أو نقطة عمياء في الفهم لا تعتمد على غياب الدراسات.' },
+  { en: 'Research problem', ar: 'المشكلة البحثية', defEn: 'A statement of what is not understood and why it matters for knowledge.', defAr: 'عبارة تحدد ما لم يُفهم بعد ولماذا يهم ذلك للمعرفة.' },
+  { en: 'Research rationale', ar: 'مبررات البحث (مسوّغاته)', defEn: 'The reasons why the study is needed now.', defAr: 'الأسباب التي تجعل الدراسة ضرورية الآن.' },
+  { en: 'Research significance', ar: 'أهمية البحث', defEn: 'The theoretical, empirical, methodological, cultural, contextual or practical value of the study.', defAr: 'القيمة النظرية أو الإمبريقية أو المنهجية أو الثقافية أو السياقية أو التطبيقية للدراسة.' },
+  { en: 'Research aim', ar: 'هدف البحث', defEn: 'The overall purpose of the study, stated with a purpose verb.', defAr: 'الغاية العامة من الدراسة، تُصاغ بفعل يدل على الغرض.' },
+  { en: 'Research objectives', ar: 'أهداف البحث التفصيلية', defEn: 'Specific steps through which the aim is achieved.', defAr: 'خطوات محددة يتحقق من خلالها الهدف العام.' },
+  { en: 'Research question', ar: 'سؤال البحث', defEn: 'An answerable question that the study addresses; its form depends on the design.', defAr: 'سؤال قابل للإجابة تتناوله الدراسة، ويتوقف شكله على التصميم.' },
+  { en: 'Hypothesis', ar: 'الفرضية', defEn: 'A testable statement of an expected relationship, usually derived from theory in quantitative designs.', defAr: 'عبارة قابلة للاختبار عن علاقة متوقعة، تُشتق عادة من النظرية في التصاميم الكمية.' },
+  { en: 'Theoretical positioning', ar: 'التموضع النظري', defEn: 'A brief statement of the theory, concepts or critical approach that inform the study.', defAr: 'عرض موجز للنظرية أو المفاهيم أو المقاربة النقدية التي تستند إليها الدراسة.' },
+  { en: 'Theoretical framework', ar: 'الإطار النظري', defEn: 'The fuller account of theory used to frame the study, usually in its own section.', defAr: 'العرض الأوفى للنظرية التي تؤطر الدراسة، ويكون عادة في قسم مستقل.' },
+  { en: 'Conceptual framework', ar: 'الإطار المفاهيمي', defEn: 'The concepts and their relationships that guide a study, with or without one overarching theory.', defAr: 'المفاهيم والعلاقات بينها التي توجه الدراسة، بوجود نظرية جامعة أو بدونها.' },
+  { en: 'Scholarly contribution', ar: 'الإسهام العلمي', defEn: 'What the study adds to knowledge, theory, method or context.', defAr: 'ما تضيفه الدراسة إلى المعرفة أو النظرية أو المنهج أو السياق.' },
+  { en: 'Rhetorical move', ar: 'الحركة البلاغية', defEn: 'A segment of text that performs one communicative function, such as establishing a territory.', defAr: 'مقطع من النص يؤدي وظيفة تواصلية واحدة، مثل تحديد مجال البحث.' },
+  { en: 'CARS model (Create a Research Space)', ar: 'نموذج إنشاء حيز بحثي (CARS)', defEn: 'Swales’ model of introductions: establishing a territory, establishing a niche and occupying the niche.', defAr: 'نموذج سويلز للمقدمات: تحديد المجال، وإنشاء الحيز (الفجوة)، وشغل الحيز.' },
+  { en: 'Hedging', ar: 'التحوّط اللغوي', defEn: 'Cautious wording (may, suggests, is expected to) that matches the strength of the evidence.', defAr: 'صياغة حذرة (قد، يشير، يُتوقع) تتناسب مع قوة الدليل.' },
+  { en: 'Transition', ar: 'أداة الربط (الانتقال)', defEn: 'A word or phrase that shows how a sentence or paragraph relates to the previous one.', defAr: 'كلمة أو عبارة تبين علاقة الجملة أو الفقرة بما قبلها.' },
+  { en: 'Coherence', ar: 'الترابط (الاتساق النصي)', defEn: 'The logical connection of ideas across sentences and paragraphs.', defAr: 'الاتصال المنطقي للأفكار بين الجمل والفقرات.' },
+  { en: 'Research alignment', ar: 'الاتساق البحثي', defEn: 'The logical fit between the problem, gap, aim, objectives, questions, design and contribution.', defAr: 'التوافق المنطقي بين المشكلة والفجوة والهدف والأهداف التفصيلية والأسئلة والتصميم والإسهام.' },
+  { en: 'Research boundaries (scope and delimitations)', ar: 'حدود البحث', defEn: 'What the study covers and deliberately leaves out.', defAr: 'ما تشمله الدراسة وما تستبعده عن قصد.' },
+  { en: 'Organisation of the paper', ar: 'تنظيم البحث (هيكل الدراسة)', defEn: 'A short outline of the sections that follow, common in theses.', defAr: 'عرض موجز للأقسام التالية، وهو شائع في الرسائل العلمية.' }
+];

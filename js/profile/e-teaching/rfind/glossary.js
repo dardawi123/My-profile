@@ -1,0 +1,40 @@
+/* =========================================================
+   Research Findings: Writing, Presentation, and Discussion — bilingual
+   terminology guide. Shared by the Arabic and English pages.
+   ========================================================= */
+window.RFD_GLOSSARY = [
+  { en: 'Findings / results', ar: 'النتائج', defEn: 'What the analysis showed, presented and described in relation to the research questions.', defAr: 'ما كشفه التحليل، معروضًا وموصوفًا في ضوء أسئلة البحث.' },
+  { en: 'Discussion', ar: 'المناقشة', defEn: 'The section that interprets findings, compares them with previous studies and theory, and states implications and limitations.', defAr: 'القسم الذي يفسّر النتائج ويقارنها بالدراسات السابقة والنظرية ويبيّن دلالاتها وحدودها.' },
+  { en: 'Raw data', ar: 'البيانات الخام', defEn: 'Material as collected, before analysis.', defAr: 'المادة كما جُمعت قبل التحليل.' },
+  { en: 'Code', ar: 'الرمز (الترميز)', defEn: 'A short label attached to a segment of data.', defAr: 'تسمية قصيرة تُلحق بمقطع من البيانات.' },
+  { en: 'Category', ar: 'الفئة', defEn: 'A group of related codes.', defAr: 'مجموعة من الرموز المترابطة.' },
+  { en: 'Theme', ar: 'الموضوع (الثيمة)', defEn: 'A pattern of shared meaning organised around a central concept.', defAr: 'نمط من المعنى المشترك ينتظم حول مفهوم مركزي.' },
+  { en: 'Subtheme', ar: 'الموضوع الفرعي', defEn: 'A distinct facet within a theme.', defAr: 'جانب متمايز داخل الموضوع الرئيس.' },
+  { en: 'Central organising concept', ar: 'المفهوم المنظِّم المركزي', defEn: 'The idea that unites the data within a theme.', defAr: 'الفكرة التي توحّد البيانات داخل الموضوع.' },
+  { en: 'Thematic map', ar: 'الخريطة الموضوعية', defEn: 'A diagram of themes, subthemes and their relationships.', defAr: 'مخطط يبيّن الموضوعات وفروعها والعلاقات بينها.' },
+  { en: 'Analytical observation', ar: 'الملاحظة التحليلية', defEn: 'A pattern noted in the data before it is stated as a finding.', defAr: 'نمط يُلاحظ في البيانات قبل صياغته نتيجة.' },
+  { en: 'Interpretation', ar: 'التفسير (التأويل)', defEn: 'An explanation of what a finding means in context and in relation to theory.', defAr: 'تفسير لمعنى النتيجة في سياقها وفي ضوء النظرية.' },
+  { en: 'Conclusion', ar: 'الخلاصة (الاستنتاج)', defEn: 'The overall answer to the research problem and its significance.', defAr: 'الإجابة الكلية عن المشكلة البحثية وأهميتها.' },
+  { en: 'Participant code', ar: 'رمز المشارك', defEn: 'An identifier used instead of a name to protect anonymity.', defAr: 'معرّف يُستخدم بدل الاسم لحماية هوية المشارك.' },
+  { en: 'Extract / excerpt', ar: 'المقتطف', defEn: 'A quoted segment of data used as evidence.', defAr: 'مقطع مقتبس من البيانات يُستخدم دليلًا.' },
+  { en: 'Block quotation', ar: 'الاقتباس الكتلي', defEn: 'A quotation of 40 words or more set apart without quotation marks (APA 7).', defAr: 'اقتباس من ٤٠ كلمة فأكثر يُفصل عن النص دون علامات تنصيص (APA 7).' },
+  { en: 'Negative case', ar: 'الحالة السلبية (المخالفة)', defEn: 'Data that do not fit the main pattern and are reported to show variation.', defAr: 'بيانات لا تتفق مع النمط الغالب وتُعرض لبيان التباين.' },
+  { en: 'Timestamp', ar: 'الختم الزمني', defEn: 'The time code locating a moment in a film or episode.', defAr: 'الرمز الزمني الذي يحدد لحظة في فيلم أو حلقة.' },
+  { en: 'Mise-en-scène', ar: 'الميزانسين (الإخراج المشهدي)', defEn: 'Everything placed in front of the camera: setting, lighting, costume, performance.', defAr: 'كل ما يوضع أمام الكاميرا: المكان والإضاءة والأزياء والأداء.' },
+  { en: 'Denotation / connotation', ar: 'التعيين / التضمين', defEn: 'The literal meaning of a sign and its culturally associated meaning.', defAr: 'المعنى الحرفي للعلامة ومعناها المرتبط ثقافيًا.' },
+  { en: 'Descriptive statistics', ar: 'الإحصاء الوصفي', defEn: 'Summaries of data such as means, standard deviations and frequencies.', defAr: 'ملخصات للبيانات مثل المتوسطات والانحرافات المعيارية والتكرارات.' },
+  { en: 'Inferential statistics', ar: 'الإحصاء الاستدلالي', defEn: 'Tests used to draw conclusions beyond the sample.', defAr: 'اختبارات تُستخدم لاستخلاص استنتاجات تتجاوز العينة.' },
+  { en: 'Effect size', ar: 'حجم الأثر', defEn: 'The magnitude of a difference or relationship, reported alongside p values.', defAr: 'مقدار الفرق أو العلاقة، ويُذكر إلى جانب قيمة الدلالة.' },
+  { en: 'Joint display', ar: 'العرض المشترك', defEn: 'A table or figure that sets qualitative and quantitative results side by side.', defAr: 'جدول أو شكل يضع النتائج النوعية والكمية جنبًا إلى جنب.' },
+  { en: 'Meta-inference', ar: 'الاستدلال التكاملي', defEn: 'A conclusion drawn from integrating qualitative and quantitative strands.', defAr: 'استنتاج مستخلص من دمج المسارين النوعي والكمي.' },
+  { en: 'Triangulation', ar: 'التثليث', defEn: 'Using several sources or methods to examine the same phenomenon.', defAr: 'استخدام عدة مصادر أو مناهج لفحص الظاهرة نفسها.' },
+  { en: 'Hedging', ar: 'التحوّط اللغوي', defEn: 'Cautious wording (may, suggests) that matches claims to evidence.', defAr: 'صياغة حذرة (قد، يشير) توائم بين الادعاء والدليل.' },
+  { en: 'Implication', ar: 'الدلالة (الأثر المترتب)', defEn: 'What a finding means for theory, method, practice or industry.', defAr: 'ما تعنيه النتيجة للنظرية أو المنهج أو الممارسة أو الصناعة.' },
+  { en: 'Limitation', ar: 'حدود الدراسة', defEn: 'A methodological constraint that affects how findings should be read.', defAr: 'قيد منهجي يؤثر في طريقة قراءة النتائج.' },
+  { en: 'Transferability', ar: 'قابلية النقل', defEn: 'The extent to which qualitative findings may apply to similar contexts.', defAr: 'مدى إمكان انطباق النتائج النوعية على سياقات مماثلة.' },
+  { en: 'Generalisability', ar: 'قابلية التعميم', defEn: 'The extent to which quantitative findings apply to a wider population.', defAr: 'مدى انطباق النتائج الكمية على مجتمع أوسع.' },
+  { en: 'Researcher positionality', ar: 'موقع الباحث', defEn: 'How the researcher’s background and position shape the research.', defAr: 'أثر خلفية الباحث وموقعه في البحث.' },
+  { en: 'Trustworthiness', ar: 'الجدارة بالثقة', defEn: 'Criteria of quality in qualitative research such as credibility and dependability.', defAr: 'معايير الجودة في البحث النوعي مثل المصداقية والاعتمادية.' },
+  { en: 'Signposting', ar: 'الإرشاد النصي', defEn: 'Phrases that tell readers what comes next and how parts connect.', defAr: 'عبارات تخبر القارئ بما سيأتي وبكيفية ترابط الأجزاء.' },
+  { en: 'Results and Discussion (combined)', ar: 'النتائج والمناقشة (قسم مدمج)', defEn: 'A structure in which each finding is presented and discussed together.', defAr: 'بنية تُعرض فيها كل نتيجة وتُناقش معًا.' }
+];

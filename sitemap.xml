@@ -83,6 +83,22 @@
     <lastmod>2026-11-09</lastmod>
   </url>
 
+  <!-- TEACHING -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/teaching-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/teaching-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
   <!-- TRAINING & PROFESSIONAL SKILLS -->
   <url>
     <loc>https://www.alardawi.com/pages/profile-en/training-en.html</loc>
@@ -97,54 +113,6 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/training-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/training-en.html"/>
     <lastmod>2026-11-09</lastmod>
-  </url>
-
-  <!-- TEACHING -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/teaching-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
-    <lastmod>2026-11-14</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/teaching-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/teaching-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/teaching-en.html"/>
-    <lastmod>2026-11-14</lastmod>
-  </url>
-
-  <!-- COMPASS -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-
-  <!-- RQUESTIONS -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
-    <lastmod>2026-11-13</lastmod>
   </url>
 
   <!-- RTITLES -->
@@ -163,118 +131,21 @@
     <lastmod>2026-11-13</lastmod>
   </url>
 
-  <!-- RMETHODS -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-
-  <!-- LITREVIEW -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
-    <lastmod>2026-11-13</lastmod>
-  </url>
-
   <!-- RTITLES USER GUIDE -->
   <url>
     <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rtitles-guide-en.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rtitles-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rtitles-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rtitles-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rtitles-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rtitles-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rtitles-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rtitles-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
-
-  <!-- COMPASS USER GUIDE -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-
-  <!-- RQUESTIONS USER GUIDE -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-
-  <!-- RMETHODS USER GUIDE -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-
-  <!-- LITREVIEW USER GUIDE -->
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
-    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
-  </url>
-
 
   <!-- RESEARCH ABSTRACT -->
   <url>
@@ -298,14 +169,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rabstract-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rabstract-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rabstract-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rabstract-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rabstract-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rabstract-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rabstract-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <!-- RESEARCH INTRODUCTION -->
@@ -330,14 +201,142 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rintro-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rintro-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rintro-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rintro-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rintro-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rintro-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rintro-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <!-- COMPASS -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+
+  <!-- COMPASS USER GUIDE -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/compass-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/compass-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <!-- RQUESTIONS -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+
+  <!-- RQUESTIONS USER GUIDE -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rquestions-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rquestions-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <!-- LITREVIEW -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+
+  <!-- LITREVIEW USER GUIDE -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/litreview-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/litreview-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <!-- RMETHODS -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-en.html"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+
+  <!-- RMETHODS USER GUIDE -->
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rmethods-guide-ar.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rmethods-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <!-- THEORETICAL FRAMEWORK -->
@@ -362,14 +361,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/tframe-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/tframe-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/tframe-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/tframe-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/tframe-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/tframe-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/tframe-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <!-- RESEARCH FINDINGS AND DISCUSSION -->
@@ -394,14 +393,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rfind-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rfind-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rfind-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rfind-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rfind-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rfind-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rfind-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
 
   <!-- RESEARCH CONCLUSION -->
@@ -426,13 +425,23 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rconc-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rconc-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rconc-guide-en.html"/>
-    <lastmod>2026-11-16</lastmod>
+    <lastmod>2026-11-15</lastmod>
   </url>
   <url>
     <loc>https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rconc-guide-ar.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rconc-guide-en.html"/>
     <xhtml:link rel="alternate" hreflang="ar" href="https://www.alardawi.com/pages/profile-ar/e-teaching-ar/rconc-guide-ar.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.alardawi.com/pages/profile-en/e-teaching-en/rconc-guide-en.html"/>
+    <lastmod>2026-11-15</lastmod>
+  </url>
+
+  <!-- CV (PDF) -->
+  <url>
+    <loc>https://www.alardawi.com/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.alardawi.com/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf</loc>
     <lastmod>2026-11-16</lastmod>
   </url>
 </urlset>

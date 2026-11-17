@@ -234,11 +234,11 @@ function getLanguageSwitchTarget(path) {
         path === "/ar/index";
 
     if (isHome) {
-        return "/ar/index.html";
+        return "/ar/";
     }
 
     if (isArabicHome) {
-        return "/index.html";
+        return "/";
     }
 
     if (path.includes("/profile-en/")) {

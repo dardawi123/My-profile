@@ -200,7 +200,7 @@ ul li {
 }
 
 section {
-  padding: clamp(3rem, 5vw, 4rem) 2.2%
+  padding: clamp(3rem, 5vw, 4rem) max(1.25rem, 2.2%)
            clamp(2rem, 4vw, 3rem);
 }
 
@@ -567,7 +567,7 @@ nav {
 .home-content .static-title {
   font-family: var(--font-body);
   font-weight: 500;
-  font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
+  font-size: min(clamp(1rem, 0.8548rem + 0.628vw, 1.365rem), calc((100vw - 40px) / 22.8));
   line-height: 1.3;
   color: var(--heading-color);
   text-align: left;
@@ -590,7 +590,7 @@ body.dark .multiple-text {
 
 .home-content h1 {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 1.4118rem + 1.4624vw, 2.6rem);
+  font-size: min(clamp(1.75rem, 1.4118rem + 1.4624vw, 2.6rem), calc((100vw - 40px) / 11.8));
   text-transform: uppercase;
   font-weight: 700;
   line-height: clamp(1.1, 1.08 + 0.06vw, 1.15);
@@ -1383,38 +1383,43 @@ body.no-scroll {
   display: grid;
   place-items: center;
   color: hsl(0, 0%, 100%);
+  overflow: hidden;        /* hides the caption while it's below the poster */
+  border-radius: 1rem;     /* same rounded corners as the poster */
 }
 
 .card-img {
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   border-radius: 1rem;
 }
 
 .card-data {
   position: absolute;
-  bottom: -20px;
+  bottom: 0;                       /* sits on the poster's bottom edge */
   left: 0;
   right: 0;
   text-align: center;
   padding: 1rem;
   opacity: 0;
-  transition: bottom 0.7s ease-in-out, opacity 0.7s ease-in-out;
+  transform: translateY(100%);     /* starts just below the edge, hidden by the clip */
+  transition: transform 0.6s ease, opacity 0.6s ease;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-  background: rgba(0, 0, 0, .8);
+  /*background: rgba(0, 0, 0, .8);*/
+  background: linear-gradient(to top, rgba(0, 0, 0, .85), rgba(0, 0, 0, 0));
+  padding-top: 5rem;   /* taller area so the fade is gentle */
   border-bottom-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
 
-/* Hover effect on the card */
+/* Hover: slide up into view */
 .new-card:hover .card-data {
   opacity: 1;
-  bottom: 0;
+  transform: translateY(0);
 }
 
 .card-name {
-  font-size: clamp(1.7rem, 1.8532rem + -0.6809vw, 1.3rem);
+  font-size: clamp(1.4rem, 1.8532rem - 0.6809vw, 1.7rem);
   font-weight: 600;
 }
 
@@ -1428,8 +1433,12 @@ body.no-scroll {
   pointer-events: auto;
 }
 
+.new-swiper {
+  padding-bottom: 2.5rem;  /* room for the dots inside the slider */
+}
+
 .project .swiper-pagination-bullets {
-  bottom: -1rem;
+  bottom: 0;
 }
 
 .project .swiper-pagination-bullet {
@@ -1437,11 +1446,13 @@ body.no-scroll {
   height: .25rem;
   border-radius: .5rem;
   background-color: var(--main-color);
+  opacity: .35;                       /* inactive dots: easier to see than Swiper's default 0.2 */
   transition: .3s, opacity .3s;
 }
 
 .project .swiper-pagination-bullet-active {
   background-color: var(--main-color);
+  opacity: 1;                               /* the current poster's dot is fully solid */
 }
 
 .project .swiper-slide-active,
@@ -1673,12 +1684,6 @@ iframe {
 }
 
 /*------------------------------ Responsive Design ---------------------------- */
-@media (max-width: 1300px) {
-  .card-data {
-    bottom: -20px; /* Keep the card starting from the bottom */
-  }
-}
-
 @media (max-width: 1200px) {
   .stats-grid {
     grid-template-columns: repeat(3, minmax(220px, 1fr));
@@ -1686,6 +1691,12 @@ iframe {
   .stats-grid .stat-card:nth-child(5),
   .stats-grid .stat-card:nth-child(6) {
     grid-column: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card-name {
+    font-size: 1.15rem;   /* about 18 px on the narrow desktop posters */
   }
 }
 
@@ -1899,12 +1910,14 @@ iframe {
 }
 
 @media (max-width: 600px) {
-  .home-content p {
-    hyphens: auto;
+  .home-content p,
+  .model_body p {
     -webkit-hyphens: auto;
-    -webkit-hyphenate-limit-before: 3; /* Safari: at least 3 letters before the hyphen */
-    -webkit-hyphenate-limit-after: 3;  /* and 3 after it */
-    hyphenate-limit-chars: 7 3 3;      /* others: only split words of 7+ letters */
+    hyphens: auto;
+    hyphenate-limit-chars: 6 3 3;       /* others: only split words of 6+ letters */
+    -webkit-hyphenate-limit-before: 3;  /* Safari: at least 3 letters before the hyphen */
+    -webkit-hyphenate-limit-after: 3;   /* and 3 after it */
+    -webkit-hyphenate-limit-lines: 2;
   }
 }
 
@@ -1981,6 +1994,18 @@ iframe {
   .popup_box {
     max-width: 365px;
     max-height: 575px;
+  }
+}
+
+@media (max-width: 420px) {
+  .link-groups {
+    gap: 1.25rem; /* space between the two groups */
+  }
+  .link-group {
+    row-gap: 0.6rem; /* space between each title and its icons */
+  }
+  .group-title {
+    width: 100%;
   }
 }
 

@@ -2041,9 +2041,6 @@ iframe {
 }
 
 @media (max-width: 365px) {
-  .home-img img {
-    width: 60vw;
-  }
   .popup_box {
     max-width: 300px;
     max-height: 525px;

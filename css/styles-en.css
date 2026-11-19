@@ -1694,12 +1694,6 @@ iframe {
   }
 }
 
-@media (min-width: 1024px) {
-  .card-name {
-    font-size: 1.15rem;   /* about 18 px on the narrow desktop posters */
-  }
-}
-
 @media (max-width: 900px) {
   .home {
     flex-direction: column;

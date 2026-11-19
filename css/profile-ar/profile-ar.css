@@ -723,7 +723,6 @@ Academic Highlights
   line-height: 1.7;
   text-align: justify;
   color: var(--text-black-color);
-  text-wrap: pretty;   /* improves break decisions, safe with justify */
 }
 
 /* Links inside text */

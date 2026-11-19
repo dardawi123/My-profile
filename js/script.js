@@ -120,14 +120,18 @@ function initThemeAndNavigation() {
         );
     }
 
-    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const normalizePath = (p) => p.toLowerCase().replace(/index\.html$/, "");
+    const currentPath = normalizePath(window.location.pathname);
     const navLinks = document.querySelectorAll(".nav-links a");
 
     navLinks.forEach(link => {
 
         const href = link.getAttribute("href");
+        if (!href || href.startsWith("#")) return;
 
-        if (href === currentPage) {
+        const linkPath = normalizePath(new URL(href, window.location.href).pathname);
+
+        if (linkPath === currentPath) {
             link.classList.add("active");
         }
 

@@ -29,9 +29,9 @@ projects.forEach((p, index) => {
   const slide = document.createElement("article");
   slide.className = "new-card card-article swiper-slide";
 
-  const loading = index < 3 ? "eager" : "lazy";
-  const fetchPriority = index === 0 ? 'fetchpriority="high"' : "";
-
+  const loading = "lazy";
+  const fetchPriority = "";
+  
   slide.innerHTML = `
     <div class="card-link">
       <img src="${p.img}"

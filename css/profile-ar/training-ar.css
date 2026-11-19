@@ -515,7 +515,7 @@ nav {
 
 /* GLOBAL LAYOUT */
 section {
-  padding: 2.5rem 2.2% 5rem;
+  padding: 2.5rem max(1rem, 2.2%) 5rem;
   opacity: 0;
   transform: translateY(10px);
   transition: opacity 0.3s ease, transform 0.3s ease;
@@ -579,7 +579,7 @@ Academic Hero
   margin-bottom: 0.4rem;
   color: var(--text-black-color);
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 .hero-actions {
@@ -698,7 +698,7 @@ Academic Highlights
   flex-direction: column;
   margin-bottom: clamp(1.5rem, 1.3011rem + 0.8602vw, 2rem);
   gap: clamp(0.9rem, 0.6613rem + 1.0323vw, 1.5rem);
-  padding: clamp(0.9rem, 0.5618rem + 1.4624vw, 1.75rem);
+  padding: clamp(1.25rem, 0.9rem + 1.4624vw, 1.75rem);
   background: var(--card-bg-color);
   border: 1px solid rgba(0,0,0,.08);
   border-radius: 18px;

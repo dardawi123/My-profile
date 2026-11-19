@@ -50,7 +50,3 @@ projects.forEach((p, index) => {
 
   wrapper.appendChild(slide);
 });
-
-if (window.swiperNew) {
-  swiperNew.update();
-}

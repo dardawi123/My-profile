@@ -910,19 +910,15 @@ function initSwiperNew() {
         slidesPerView: 1,
         spaceBetween: 20,
 
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
+        autoplay: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+        ? false
+        : { delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true },
 
         pagination: {
             el: ".swiper-pagination",
-            clickable: true
-        },
-
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            clickable: true,
+            dynamicBullets: true,
+            dynamicMainBullets: 5
         },
 
         breakpoints: {
@@ -967,12 +963,6 @@ function initSwiperNew() {
                 slidesPerView: 3,
                 centeredSlides: true,
                 spaceBetween: 30
-            },
-
-            1280: {
-                slidesPerView: 4,
-                centeredSlides: false,
-                spaceBetween: 40
             },
 
             1300: {

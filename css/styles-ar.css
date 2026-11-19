@@ -75,7 +75,7 @@ body.dark {
   --scroll-arrow-color: color-mix(in srgb, var(--main-color) 50%, white);  
 }
 
-h1 span, h2 span, h3 span, h4 span {
+h1 span, h2 span, h3 span, h4 span, .typed-line span {
   font-family: inherit;
 }
 
@@ -176,18 +176,18 @@ body.fade-out {
 /* Light Mode Themes */
 body.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #1F6F6B;}
 body.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
-body.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #0891B2;}
+body.theme-3 {--main-color: #0E7490; --bg-nav-color: #0E7490; --bg-switcher-color: #0E7490; --bg-nav-hover-color: #0E7490; --link-color: #0E7490;}
 body.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #8B3A3A;}
 body.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #3B4C8C;}
-body.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #B5562F;}
+body.theme-6 {--main-color: #A0492A; --bg-nav-color: #A0492A; --bg-switcher-color: #A0492A; --bg-nav-hover-color: #A0492A; --link-color: #A0492A;}
 
 /* Dark Mode Themes */
 body.dark.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #6DA19F;}
 body.dark.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #B49E65;}
-body.dark.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #5EB8CD;}
+body.dark.theme-3 {--main-color: #0E7490; --bg-nav-color: #0E7490; --bg-switcher-color: #0E7490; --bg-nav-hover-color: #0E7490; --link-color: #5EB8CD;}
 body.dark.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #B47F7F;}
 body.dark.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #808BB4;}
-body.dark.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #CF9178;}
+body.dark.theme-6 {--main-color: #A0492A; --bg-nav-color: #A0492A; --bg-switcher-color: #A0492A; --bg-nav-hover-color: #A0492A; --link-color: #CF9178;}
 
 /*------------------------------ Header section design CSS ---------------------------- */
 a {
@@ -488,7 +488,8 @@ nav {
   transform: translateX(30px);
 }
 
-.style-switcher h4 {
+.style-switcher h4,
+.style-switcher .switcher-title {
   margin: 0 0 10px;
   color: var(--style-switcher-text-color);
   font-size: clamp(0.875rem, 0.8194rem + 0.2222vw, 1rem);
@@ -521,10 +522,10 @@ nav {
 
 .style-switcher .color-1 { background: #1F6F6B; }
 .style-switcher .color-2 { background: #8C6A12; }
-.style-switcher .color-3 { background: #0891B2; }
+.style-switcher .color-3 { background: #0E7490; }
 .style-switcher .color-4 { background: #8B3A3A; }
 .style-switcher .color-5 { background: #3B4C8C; }
-.style-switcher .color-6 { background: #B5562F; }
+.style-switcher .color-6 { background: #A0492A; }
 
 /*------------------------------ Home section design CSS ---------------------------- */
 .home {
@@ -548,12 +549,13 @@ nav {
   padding-right: 0;
 }
 
-.home-content h3 {
+.home-content h3,
+.home-content .typed-line {
   font-family: var(--font-display);
   margin-bottom: clamp(1.7rem, 1.3817rem + 1.3763vw, 2.5rem);
   font-size: clamp(1rem, 0.8548rem + 0.628vw, 1.365rem);
   font-weight: 600;
-  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
+  line-height: normal;
   min-height: 1.4em;
   text-align: right;
   opacity: 0.85;
@@ -579,11 +581,11 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   direction: rtl;
   unicode-bidi: isolate;
   white-space: nowrap;
-  padding: clamp(0.2rem, 0.11vw + 0.18rem, 0.25rem)
-           clamp(0.65rem, 0.22vw + 0.6rem, 0.75rem);
+  padding: clamp(0.1rem, 0.08vw + 0.08rem, 0.15rem)
+          clamp(1rem, 0.3vw + 0.9rem, 1.25rem);
   border-radius: 6px;
   background: color-mix(in srgb, var(--main-color) 14%, transparent);
-  line-height: clamp(1.35, 1.32 + 0.12vw, 1.4);
+  line-height: normal;
 }
 
 .home-content h1 {

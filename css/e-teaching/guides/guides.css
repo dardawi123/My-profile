@@ -110,7 +110,7 @@ button { font: inherit; }
 .guide-step { border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px 12px; margin: 18px 0; background: #FCFEFD; }
 .guide-step > h3 { margin-top: 0; display: flex; align-items: baseline; gap: 10px; }
 .guide-step .step-badge { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: var(--green); color: #fff; font-size: 15px; font-weight: 700; }
-.to-top { display: inline-block; margin-top: 4px; font-size: 13.5px; color: var(--muted-2); text-decoration: none; }
+.to-top { display: inline-block; margin-top: 4px; padding: 6px 0; min-height: 24px; font-size: 15px; color: var(--muted-2); text-decoration: none; }
 .to-top:hover { color: var(--green-dark); text-decoration: underline; }
 .guide-note { border-inline-start: 4px solid var(--gold); background: #FBF6EA; padding: 12px 16px; border-radius: 10px; font-size: 15px; color: #4E3D17; margin: 12px 0; }
 .guide-note.is-important { border-inline-start-color: #B07A12; background: var(--warn-bg); }
@@ -138,6 +138,7 @@ button { font: inherit; }
 .site-footer { background: var(--green-ink); color: #D5CEBE; }
 .footer-inner { padding-block: 36px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; align-items: center; }
 .footer-col { display: flex; flex-direction: column; gap: 4px; font-size: 14px; max-width: 560px; }
+.footer-author { text-align: start; }
 .footer-title { font-family: var(--font-display); font-size: 21px; color: #F6F2E9; font-weight: 700; }
 .footer-name { font-size: 18px; color: var(--gold-light); font-weight: 700; }
 .small-muted { font-size: 13px; color: #BDB5A3; }
@@ -150,7 +151,7 @@ html[lang="en"] .footer-links a { text-underline-offset: 4px; }
 .footer-visitors { display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; }
 .footer-visitors__icon { width: 1.25em; height: 1.25em; color: var(--gold-light); }
 .footer-visitors__count { display: inline-flex; align-items: center; gap: 2px; direction: ltr; }
-.footer-visitors__value { font-variant-numeric: tabular-nums; font-weight: 700; color: #F6F2E9; }
+.footer-visitors__value { font-variant-numeric: tabular-nums; font-weight: 500; }
 .footer-visitors__bracket { opacity: .7; }
 .footer-separator { opacity: .5; user-select: none; }
 .footer-copyright { margin: 0; display: inline-flex; align-items: center; gap: 6px; }

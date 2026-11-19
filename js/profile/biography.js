@@ -154,14 +154,13 @@ function renderReviewsTable(section, lang) {
                     ${section.items.map(item => `
                         <tr>
                             <td>${item.role[lang]}</td>
-
                             <td>
                                 ${item.journal}
                                 <a
                                     href="${item.url}"
                                     target="_blank"
                                     rel="noopener noreferrer">
-                                    [Link]
+                                    [Link]<span class="sr-only"> – ${item.journal} ${lang === "ar" ? "(يُفتح في نافذة جديدة)" : "(opens in a new tab)"}</span>
                                 </a>
                             </td>
                         </tr>

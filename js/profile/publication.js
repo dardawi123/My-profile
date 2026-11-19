@@ -189,7 +189,7 @@ async function initPublications() {
                                         href="${publication.link}"
                                         target="_blank"
                                         rel="noopener noreferrer">
-                                        [Link]
+                                        [Link]<span class="sr-only"> – ${publication.title} ${lang === "ar" ? "(يُفتح في نافذة جديدة)" : "(opens in a new tab)"}</span>
                                     </a>
                                     `
                                     : ""

@@ -4,8 +4,10 @@
    1. keeps the current section when switching language
       (the other language uses the same anchor IDs, e.g. #step-3);
    2. shows the "Print / Save as PDF" button and opens the print dialog;
-   3. highlights the current section in the contents list.
-   Academic tools developed by Dr. Merfat Alardawi | د. مرفت العرضاوي
+   3. highlights the current section in the contents list;
+   4. makes "Back to contents" scroll to the top on desktop,
+      where the contents list is a sticky sidebar.
+    Academic tools developed by Dr. Merfat Alardawi | د. مرفت العرضاوي
    ========================================================= */
 (function () {
   'use strict';
@@ -50,3 +52,16 @@
   }, { rootMargin: '-110px 0px -55% 0px' });
   targets.forEach(function (t) { io.observe(t); });
 })();
+
+// "Back to contents" on desktop: the contents list is a sticky sidebar that is
+// always visible, so scroll the page back to the top instead.
+document.addEventListener('click', function (e) {
+  var link = e.target.closest('a.to-top');
+  var toc = document.getElementById('toc');
+  if (!link || !toc || getComputedStyle(toc).position !== 'sticky') return;
+  e.preventDefault();
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+  var first = toc.querySelector('a');
+  if (first) first.focus({ preventScroll: true });
+});

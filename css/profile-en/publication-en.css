@@ -180,18 +180,18 @@ body.fade-out {
 /* Light Mode Themes */
 body.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #1F6F6B;}
 body.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #8C6A12;}
-body.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #0891B2;}
+body.theme-3 {--main-color: #0E7490; --bg-nav-color: #0E7490; --bg-switcher-color: #0E7490; --bg-nav-hover-color: #0E7490; --link-color: #0E7490;}
 body.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #8B3A3A;}
 body.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #3B4C8C;}
-body.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #B5562F;}
+body.theme-6 {--main-color: #A0492A; --bg-nav-color: #A0492A; --bg-switcher-color: #A0492A; --bg-nav-hover-color: #A0492A; --link-color: #A0492A;}
 
 /* Dark Mode Themes */
 body.dark.theme-1 {--main-color: #1F6F6B; --bg-nav-color: #1F6F6B; --bg-switcher-color: #1F6F6B; --bg-nav-hover-color: #1F6F6B; --link-color: #6DA19F;}
 body.dark.theme-2 {--main-color: #8C6A12; --bg-nav-color: #8C6A12; --bg-switcher-color: #8C6A12; --bg-nav-hover-color: #8C6A12; --link-color: #B49E65;}
-body.dark.theme-3 {--main-color: #0891B2; --bg-nav-color: #0891B2; --bg-switcher-color: #0891B2; --bg-nav-hover-color: #0891B2; --link-color: #5EB8CD;}
+body.dark.theme-3 {--main-color: #0E7490; --bg-nav-color: #0E7490; --bg-switcher-color: #0E7490; --bg-nav-hover-color: #0E7490; --link-color: #5EB8CD;}
 body.dark.theme-4 {--main-color: #8B3A3A; --bg-nav-color: #8B3A3A; --bg-switcher-color: #8B3A3A; --bg-nav-hover-color: #8B3A3A; --link-color: #B47F7F;}
 body.dark.theme-5 {--main-color: #3B4C8C; --bg-nav-color: #3B4C8C; --bg-switcher-color: #3B4C8C; --bg-nav-hover-color: #3B4C8C; --link-color: #808BB4;}
-body.dark.theme-6 {--main-color: #B5562F; --bg-nav-color: #B5562F; --bg-switcher-color: #B5562F; --bg-nav-hover-color: #B5562F; --link-color: #CF9178;}
+body.dark.theme-6 {--main-color: #A0492A; --bg-nav-color: #A0492A; --bg-switcher-color: #A0492A; --bg-nav-hover-color: #A0492A; --link-color: #CF9178;}
 
 /*------------------------------ Header section design CSS ---------------------------- */
 header {
@@ -474,7 +474,8 @@ nav {
   transform: translateX(-30px);
 }
 
-.style-switcher h4 {
+.style-switcher h4,
+.style-switcher .switcher-title {
   margin: 0 0 10px;
   color: var(--style-switcher-text-color);
   font-size: clamp(0.875rem, 0.8194rem + 0.2222vw, 1rem);
@@ -507,10 +508,10 @@ nav {
 
 .style-switcher .color-1 { background: #1F6F6B; }
 .style-switcher .color-2 { background: #8C6A12; }
-.style-switcher .color-3 { background: #0891B2; }
+.style-switcher .color-3 { background: #0E7490; }
 .style-switcher .color-4 { background: #8B3A3A; }
 .style-switcher .color-5 { background: #3B4C8C; }
-.style-switcher .color-6 { background: #B5562F; }
+.style-switcher .color-6 { background: #A0492A; }
 
 /* GLOBAL LAYOUT */
 section {
@@ -563,17 +564,17 @@ Academic Hero
   flex: 1;
 }
 
-.profile-info h1 {
+.profile-info h1,
+.profile-info .profile-name {
   font-family: var(--font-display);
+  font-weight: 700;
   color: var(--heading-color);
   -webkit-text-stroke: 0.5px var(--main-color);
   margin-bottom: .75rem;
-  font-size: clamp(1.5rem, 0.9032rem + 2.5806vw, 3rem);
-  letter-spacing: clamp(0.05rem, -0.0296rem + 0.3441vw, 0.25rem);
+  font-size: clamp(1.5rem, 1.0624rem + 1.8925vw, 2.6rem);  
   text-transform: uppercase;
   line-height: 1.2;
-  letter-spacing: 1px;
-  font-weight: 700;
+  letter-spacing: clamp(0.05rem, -0.0296rem + 0.3441vw, 0.25rem);
 }
 
 .profile-info p {
@@ -1026,7 +1027,11 @@ td a:link, td a:visited {
   text-decoration: none;
 }
 
-a:hover {
+.publication-table td a { 
+  display: inline-block; padding: 4px 2px; min-height: 24px;
+}
+
+.publication-table td a:hover {
   text-decoration: underline;
 }
 
@@ -1345,6 +1350,11 @@ a:hover {
   }
   .footer-iconTop a:hover {
     color: var(--text-white-color);
+  }
+}
+
+@media (max-width: 600px) {
+  .highlight-card { flex: 0 1 calc(50% - 0.5rem); 
   }
 }
 

@@ -24,7 +24,7 @@ async function initActivities() {
             seminar: "Seminars",
             workshop: "Workshops",
             forum: "Forums",
-            program: "Programs",
+            program: "Programmes",
             festival: "Festivals",
             noResults: "No results found."
         },

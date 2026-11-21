@@ -536,6 +536,14 @@ section:last-of-type {
   transform: translateY(0);
 }
 
+sup {
+  font-size: 0.7em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+}
+
 /* ===========================
 Academic Hero
 =========================== */
@@ -720,7 +728,7 @@ table td:first-child {
 table th:nth-child(2),
 table td:nth-child(2) {
   width: 94%;
-  text-align: justify;
+  text-align: start;
 }
 
 /* Header Sticky */
@@ -942,6 +950,13 @@ td {
   background-color: var(--main-color);
   border-radius: 10px 10px 0 0;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+table td,
+table th {
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  vertical-align: top;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */
@@ -1267,6 +1282,22 @@ td {
 
 @media (max-width: 600px) {
   .highlight-card { flex: 0 1 calc(50% - 0.5rem); 
+  }
+  /* Phones: compact header on subpages (Biography keeps the full version) */
+  .academic-highlights {
+    display: none;
+  }
+  .profile-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .profile-image img {
+    width: 96px;
+    height: 96px;
+  }
+  .profile-info p.department,
+  .profile-info p.faculty {
+    display: none;
   }
 }
 

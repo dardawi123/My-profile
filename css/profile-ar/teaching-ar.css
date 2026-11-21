@@ -1384,6 +1384,22 @@ Academic Highlights
 @media (max-width: 600px) {
   .highlight-card { flex: 0 1 calc(50% - 0.5rem); 
   }
+  /* Phones: compact header on subpages (Biography keeps the full version) */
+  .academic-highlights {
+    display: none;
+  }
+  .profile-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .profile-image img {
+    width: 96px;
+    height: 96px;
+  }
+  .profile-info p.department,
+  .profile-info p.faculty {
+    display: none;
+  }
 }
 
 /* Phones: compact horizontal card (thumbnail beside the title) */

@@ -773,7 +773,7 @@ Academic Highlights
   column-gap: 0.5rem;
   padding-bottom: 1.3rem;
   font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
-  text-align: justify;
+  text-align: start;
   margin-top: 0;
   padding-top: 0;
   line-height: 1.4;
@@ -803,53 +803,6 @@ Academic Highlights
   -webkit-text-stroke: 0.7px var(--main-color);
   white-space: nowrap;
 }
-
-/* ----------------------------------------
-   Supervision
----------------------------------------- */
-/*.simple-list {
-  list-style: disc;
-  padding-right: 1.25rem;
-}
-
-.simple-list li {
-  position: relative;
-  padding-bottom: 1.3rem;
-  padding-right: clamp(0.25rem, -0.0541rem + 1.2973vw, 1rem);
-  font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
-  text-align: justify;
-  margin-top: 0;
-  padding-top: 0;
-  line-height: 1.4;
-}
-
-.simple-list li strong {
-  font-weight: 700;
-}
-
-.simple-list li::after {
-  content: "";
-  position: absolute;
-  bottom: 0.6rem;
-  right: -1.2rem;
-  left: 0;
-  height: 1px;
-  background: color-mix(in srgb, var(--text-black-color) 15%, transparent);
-}
-
-.simple-list li:last-child::after {
-  content: none;
-}
-
-.simple-list li:last-child {
-  padding-bottom: 0;
-}
-
-ul li::marker {
-  font-size: 1.3rem;
-  color: var(--heading-color);
-  -webkit-text-stroke: 0.7px var(--main-color);
-}*/
 
 /* ----------------------- */
 /*  Table
@@ -907,7 +860,7 @@ table td:first-child {
 
 table th:nth-child(2),
 table td:nth-child(2) {
-  text-align: justify;
+  text-align: start;
 }
 
 /* Rows */
@@ -1075,7 +1028,7 @@ a:hover {
 }
 .reviews-table td:nth-child(2) {
   direction: ltr;
-  text-align: justify;
+  text-align: start;
 }
 
 /* Links */
@@ -1112,6 +1065,13 @@ a:hover {
 .reviews-table tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
+}
+
+table td,
+table th {
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  vertical-align: top;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */

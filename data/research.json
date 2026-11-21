@@ -5,49 +5,48 @@
     "icon": "fa-masks-theater",
     "image": "/assets/cards-images/drama.webp",
     "categories": ["screen-media", "audience-studies"],
-
     "title": {
       "en": "Drama",
       "ar": "الدراما"
     },
-
     "paragraphs": {
       "en": [
-        "Drama is a performing art that portrays real or imagined events through the enactment of scripted dialogue before an audience. Theatre is the traditional and most prominent medium of drama, although it has expanded to include film, television, and radio. Drama conveys ideas, emotions, and human experiences through artistic performance. Classical drama is commonly classified into five principal genres: comedy, tragedy, farce, melodrama, and musical drama."
+        "Drama is a performing art that portrays real or imagined events through the enactment of scripted dialogue before an audience. Theatre is the traditional and most prominent medium of drama, although it has expanded to include film, television, and radio. Drama conveys ideas, emotions, and human experiences through artistic performance. Common dramatic genres include tragedy, comedy, farce, melodrama, and musical drama."
       ],
       "ar": [
-        "هي عبارة عن تصوير أحداث خيالية أو غير خيالية من خلال أداء حوار مكتوب أمام الجمهور. يتم أداء الدراما بشكل ملحوظ كمسرحيات في المسرح على الرغم من إعادة إنشاء العديد من الأعمال الدرامية وتكييفها للأفلام أو التلفزيون أو الراديو. في الوقت الحاضر، تُستخدم الدراما بشكل شائع لوصف نوع من سرد القصص في الأفلام والتلفزيون مثل الدراما فن أدائي يُجسّد أحداثًا واقعية أو خيالية من خلال أداء حوار مكتوب أمام الجمهور. ويُعد المسرح الوسيط التقليدي والأبرز للدراما، إلا أنها امتدت لتشمل السينما والتلفزيون والإذاعة. وتهدف الدراما إلى نقل الأفكار والمشاعر والتجارب الإنسانية من خلال التمثيل الفني. وتُصنَّف الدراما الكلاسيكية إلى خمسة أنواع رئيسة: الكوميديا، والتراجيديا، والهزلية، والميلودراما، والدراما الموسيقية."
+        "الدراما فن أدائي يُجسّد أحداثًا واقعية أو خيالية من خلال أداء حوار مكتوب أمام الجمهور. ويُعد المسرح الوسيط التقليدي والأبرز للدراما، إلا أنها امتدت لتشمل السينما والتلفزيون والإذاعة. وتهدف الدراما إلى نقل الأفكار والمشاعر والتجارب الإنسانية من خلال التمثيل الفني. ومن أبرز أنواعها: التراجيديا، والكوميديا، والهزلية، والميلودراما، والدراما الموسيقية."
       ]
     },
-
     "focus": {
-      "en": "Drama as a narrative form across theatre, film, and television.",
-      "ar": "الدراما كشكل سردي عبر المسرح والسينما والتلفزيون."
+      "en": "Adaptation and cultural identity in drama across borders, including Arabic remakes of foreign formats (The Killing) and Italian television drama (My Brilliant Friend).",
+      "ar": "الاقتباس والهوية الثقافية في الدراما العابرة للحدود، ومنها النسخ العربية من الصيغ الأجنبية (The Killing) والدراما التلفزيونية الإيطالية (My Brilliant Friend)."
     },
-
     "reference": [
+      "Alardawi, M. (2024) ‘Cultural identity through the televised Italian drama: A case study of <em>My Brilliant Friend</em>’, <em>Josh Journal of Human Studies</em>, 1(8), pp. 9–27.",
+      "Alardawi, M. and Brereton, P. (2024) ‘Arabic script television formats between adaptation and cultural identity: A case study of <em>The Killing</em>’, <em>International Journal of Psychological Studies</em>, 16(4), pp. 1–15.",
+      "Aristotle (1996) <em>Poetics</em>. Translated by M. Heath. London: Penguin.",
       "Balme, C.B. (2008) <em>The Cambridge Introduction to Theatre Studies</em>. Cambridge: Cambridge University Press.",
-      "Kennedy, D. (ed.) (2010) <em>The Oxford Companion to Theatre and Performance</em>. Oxford: Oxford University Press."
+      "Hutcheon, L. with O’Flynn, S. (2013) <em>A Theory of Adaptation</em>. 2<sup>nd</sup> edn. Abingdon: Routledge.",
+      "Kennedy, D. (ed.) (2010) <em>The Oxford Companion to Theatre and Performance</em>. Oxford: Oxford University Press.",
+      "Mittell, J. (2015) <em>Complex TV: The Poetics of Contemporary Television Storytelling</em>. New York: New York University Press."
     ],
-
     "themes": {
       "en": [
         "Narrative structure",
-        "Adaptation",
+        "Adaptation and hybridity",
         "Genre conventions",
         "Performance and audience interpretation"
       ],
       "ar": [
         "البنية السردية",
-        "التكيّف",
-        "اتفاقيات النوع",
+        "الاقتباس والتهجين",
+        "أعراف النوع",
         "الأداء وتفسير الجمهور"
       ]
     },
-
     "lens": {
       "en": "Cultural studies, narrative theory, and media form analysis.",
-      "ar": "الدراسات الثقافية، نظرية السرد، وتحليل أشكال الإعلام."
+      "ar": "الدراسات الثقافية ونظرية السرد وتحليل الأشكال الإعلامية."
     }
   },
 
@@ -56,105 +55,100 @@
     "icon": "fa-film",
     "image": "/assets/cards-images/film.webp",
     "categories": ["screen-media", "film"],
-
     "title": {
       "en": "Film",
       "ar": "الأفلام"
     },
-
     "paragraphs": {
       "en": [
-        "Film (or cinema) is an audiovisual art form that uses a sequence of moving images with sound to construct narrative and create the illusion of continuous time and space. It emerged in the late nineteenth century in Europe and the United States and has developed into a global industry, with major production centers such as Hollywood and Bollywood.",
-        "While films are primarily produced for entertainment, they also carry intellectual and symbolic meanings, including political and cultural dimensions. Film reception extends beyond narrative comprehension to interpretation of underlying ideas, which is the focus of film studies in terms of form, context, and impact."
+        "Film (or cinema) is an audiovisual art form that uses a sequence of moving images with sound to construct narrative and create the illusion of continuous time and space. It emerged in the late nineteenth century in Europe and the United States and has developed into a global industry, with major production centres such as Hollywood and Bollywood.",
+        "While films are primarily produced for entertainment, they also carry intellectual and symbolic meanings, including political and cultural dimensions. Film reception extends beyond narrative comprehension to the interpretation of underlying ideas, which film studies examines in terms of form, context, and impact."
       ],
       "ar": [
-        "الفيلم (أو السينما) هو فن سمعي بصري يعتمد على سلسلة من الصور المتحركة المصحوبة بالصوت لتقديم سرد قصصي يوحي بالاستمرارية الزمنية والمكانية. ظهرت السينما في أواخر القرن التاسع عشر في أوروبا والولايات المتحدة، ثم أصبحت صناعة عالمية كبرى مع مراكز إنتاج بارزة مثل هوليوود وبوليوود.",
-        "ورغم أن الهدف الأساسي للأفلام هو الترفيه، إلا أنها تحمل أيضًا أبعادًا فكرية ورمزية قد تتضمن معاني سياسية وثقافية. كما لا يقتصر تلقي الأفلام على متابعة القصة فقط، بل يشمل تفسير الأفكار والمعاني الكامنة وراءها، وهو ما يدرسه مجال دراسات السينما من حيث الشكل والسياق والتأثير."
+        "الفيلم (أو السينما) فن سمعي بصري يعتمد على سلسلة من الصور المتحركة المصحوبة بالصوت لتقديم سرد قصصي يوحي بالاستمرارية الزمنية والمكانية. ظهرت السينما في أواخر القرن التاسع عشر في أوروبا والولايات المتحدة، ثم أصبحت صناعة عالمية كبرى لها مراكز إنتاج بارزة مثل هوليوود وبوليوود.",
+        "ومع أن الترفيه هو الهدف الأساسي للأفلام، فإنها تحمل أيضًا أبعادًا فكرية ورمزية قد تتضمن معاني سياسية وثقافية. ولا يقتصر تلقي الأفلام على متابعة القصة، بل يشمل تفسير الأفكار والمعاني الكامنة وراءها، وهو ما تدرسه الدراسات السينمائية من حيث الشكل والسياق والتأثير."
       ]
     },
-
     "focus": {
-      "en": "Film as a visual and narrative medium.",
-      "ar": "السينما كوسيط بصري وسردي."
+      "en": "The representation of women in Saudi film, and how films shape audience perceptions, including AI-themed films among young Saudi adults.",
+      "ar": "تمثيل المرأة في السينما السعودية، ودور الأفلام في تشكيل تصورات الجمهور، ومنها أفلام الذكاء الاصطناعي لدى الشباب السعودي."
     },
-
     "reference": [
-      "Balio, T. (2010) <em>The Oxford History of World Cinema</em>. Oxford: Oxford University Press.",
-      "Bordwell, D. and Thompson, K. (2016) <em>Film Art: An Introduction</em>. 11<sup>th</sup> edn. New York: McGraw-Hill Education."
-    ],
-
+      "Alardawi, M., Saqah, F. and Zakari, H. (2023) ‘The representation of women in Saudi film: The case of <em>Amra and the Second Marriage</em>’, <em>Asian Social Science</em>, 19(6), pp. 123–134.",
+      "Alardawi, M. (2026) ‘Exposure to AI-themed films and perceptions of artificial intelligence: a survey of Saudi young adults in Saudi Arabia’, <em>Online Media and Global Communication</em>, pp. 1–30.",
+      "Bordwell, D., Thompson, K. and Smith, J. (2017) <em>Film Art: An Introduction</em>. 11<sup>th</sup> edn. New York: McGraw-Hill Education.",
+      "Cave, S., Dihal, K. and Dillon, S. (eds) (2020) <em>AI Narratives: A History of Imaginative Thinking about Intelligent Machines</em>. Oxford: Oxford University Press.",
+      "Kuhn, A. and Westwell, G. (2020) <em>A Dictionary of Film Studies</em>. 2<sup>nd</sup> edn. Oxford: Oxford University Press.",
+      "Mulvey, L. (1975) ‘Visual pleasure and narrative cinema’, <em>Screen</em>, 16(3), pp. 6–18."
+    ],    
     "themes": {
       "en": [
         "Visual storytelling",
         "Genre analysis",
         "Meaning-making",
-        "Cultural representation"
+        "Gender and cultural representation"
       ],
       "ar": [
         "السرد البصري",
         "تحليل النوع",
-        "صناعة المعنى",
-        "التمثيل الثقافي"
+        "إنتاج المعنى",
+        "تمثيل المرأة والتمثيل الثقافي"
       ]
     },
-
     "lens": {
       "en": "Film studies, semiotics, and cultural analysis.",
-      "ar": "دراسات السينما، علم العلامات، والتحليل الثقافي."
+      "ar": "دراسات السينما وعلم العلامات والتحليل الثقافي."
     }
   },
 
   {
-  "id": "television",
-  "icon": "fa-tv",
-  "image": "/assets/cards-images/tv.webp",
-  "categories": ["screen-media", "audience-studies"],
-
-  "title": {
-    "en": "Television",
-    "ar": "التلفزيون"
-  },
-
-  "paragraphs": {
-    "en": [
-      "Television is a system for transmitting visual and audio content to screens for entertainment, information, and education. It has become a central feature of households and institutions and serves as a major medium for advertising and cultural communication.",
-      "Since the mid-twentieth century, television has experienced rapid expansion and significant social influence, becoming a shared experience across diverse audiences. It has also evolved technologically from early mechanical systems to modern electronic broadcasting, with continuing changes in viewing practices today."
+    "id": "television",
+    "icon": "fa-tv",
+    "image": "/assets/cards-images/tv.webp",
+    "categories": ["screen-media", "audience-studies"],
+    "title": {
+      "en": "Television",
+      "ar": "التلفزيون"
+    },
+    "paragraphs": {
+      "en": [
+        "Television is a system for transmitting visual and audio content to screens for entertainment, information, and education. It has become a central feature of households and institutions and serves as a major medium for advertising and cultural communication.",
+        "Since the mid-twentieth century, television has expanded rapidly and gained significant social influence, becoming a shared experience across diverse audiences. It has also evolved technologically from early mechanical systems to modern electronic broadcasting and streaming, with viewing practices continuing to change today."
+      ],
+      "ar": [
+        "التلفزيون نظام لنقل المحتوى المرئي والمسموع إلى الشاشات بهدف الترفيه والإعلام والتعليم. وقد أصبح جزءًا أساسيًا من الحياة اليومية في المنازل والمؤسسات، ووسيلة رئيسية للإعلان والتواصل الثقافي.",
+        "ومنذ منتصف القرن العشرين، شهد التلفزيون انتشارًا واسعًا وأثرًا اجتماعيًا كبيرًا، وأصبح تجربة مشتركة بين فئات الجمهور المختلفة. كما تطور تقنيًا من الأنظمة الميكانيكية المبكرة إلى البث الإلكتروني الحديث ومنصات البث الرقمي، مع استمرار تغيّر أنماط المشاهدة حتى اليوم."
+      ]
+    },
+    "focus": {
+      "en": "The history of television in Saudi Arabia and how Saudi viewers engage with foreign series, from medical dramas to Game of Thrones and Attack on Titan.",
+      "ar": "تاريخ التلفزيون في المملكة العربية السعودية، وتفاعل المشاهدين السعوديين مع المسلسلات الأجنبية، من الدراما الطبية إلى Game of Thrones وAttack on Titan."
+    },
+    "reference": [
+      "Alardawi, M. (2020) ‘The impact of exposure to the <em>Game of Thrones</em> on Saudi male identity’, <em>Asian Social Science</em>, 16(11), pp. 56–65.",
+      "Alardawi, M. (2025) ‘A historical analysis of the genesis of television in Saudi Arabia’, <em>Asian Social Science</em>, 21(2), pp. 10–19.",
+      "Kraidy, M.M. (2010) <em>Reality Television and Arab Politics: Contention in Public Life</em>. Cambridge: Cambridge University Press.",
+      "Lotz, A.D. (2014) <em>The Television Will Be Revolutionized</em>. 2<sup>nd</sup> edn. New York: New York University Press.",
+      "Williams, R. (1974) <em>Television: Technology and Cultural Form</em>. London: Fontana."
     ],
-    "ar": [
-      "التلفزيون هو نظام لنقل الصور المرئية والصوتية إلى الشاشات بهدف الترفيه والإعلام والتعليم. أصبح التلفزيون جزءًا أساسيًا من الحياة اليومية في المنازل والمؤسسات، كما يُعد وسيلة رئيسية للإعلان والتواصل الثقافي.",
-      "ومنذ منتصف القرن العشرين، شهد التلفزيون انتشارًا واسعًا وأثرًا اجتماعيًا كبيرًا، حيث أصبح تجربة مشتركة بين مختلف الفئات الاجتماعية. وقد تطور تقنيًا من الأنظمة الميكانيكية المبكرة إلى البث الإلكتروني الحديث، مع استمرار تطور طرق المشاهدة اليوم."
-    ]
-  },
-
-  "focus": {
-    "en": "Television as a cultural and industrial medium shaping contemporary media consumption.",
-    "ar": "التلفزيون كوسيط ثقافي وصناعي يشكل استهلاك الإعلام المعاصر."
-  },
-
-  "reference": [
-    "Biagi, S. (2005) <em>Media/Impact: An Introduction to Mass Media</em>. Belmont, CA: Thomson Wadsworth.",
-    "Campbell, R., Martin, C.R. and Fabos, B. (2012) <em>Media Essentials: A Brief Introduction</em>. Boston: Bedford/St. Martin’s."
-  ],
-
-  "themes": {
-    "en": [
-      "Television history and evolution",
-      "Broadcasting and media industries",
-      "Representation and ideology",
-      "Television and everyday life"
-    ],
-    "ar": [
-      "تاريخ وتطور التلفزيون",
-      "صناعة البث الإعلامي",
-      "التمثيل والأيديولوجيا",
-      "التلفزيون والحياة اليومية"
-    ]
-  },
-
-  "lens": {
-    "en": "Media sociology and communication studies.",
-    "ar": "علم اجتماع الإعلام ودراسات الاتصال."
-  }
+    "themes": {
+      "en": [
+        "Television history and evolution",
+        "Broadcasting and media industries",
+        "Representation and ideology",
+        "Saudi audiences and foreign series"
+      ],
+      "ar": [
+        "تاريخ التلفزيون وتطوره",
+        "صناعات البث والإعلام",
+        "التمثيل والأيديولوجيا",
+        "الجمهور السعودي والمسلسلات الأجنبية"
+      ]
+    },
+    "lens": {
+      "en": "Media sociology, communication studies, and audience research.",
+      "ar": "علم اجتماع الإعلام ودراسات الاتصال وبحوث الجمهور."
+    }
   },
 
   {
@@ -162,48 +156,45 @@
     "icon": "fa-heart",
     "image": "/assets/cards-images/soap-opera.webp",
     "categories": ["serialized-drama", "audience-studies"],
-
     "title": {
       "en": "Soap Opera",
       "ar": "مسلسلات ميلودرامية"
     },
-
     "paragraphs": {
       "en": [
-        "A soap opera is a serial dramatic genre broadcast on television or radio, focusing on the lives of multiple characters, with emphasis on emotional relationships and domestic themes in a melodramatic style. It is characterized by continuous storytelling with no fixed ending, allowing it to run for many years and reach thousands of episodes.",
-        "The genre originated in the United States in the early 1930s within radio broadcasting. Early examples include Painted Dreams (1930) and Clara, Lu, 'n Em (1931). The term “soap opera” comes from soap and detergent advertising that sponsored these programs, which targeted daytime audiences, particularly housewives."
+        "A soap opera is a serial dramatic genre broadcast on television or radio, focusing on the lives of multiple characters, with emphasis on emotional relationships and domestic themes in a melodramatic style. It is characterised by continuous storytelling with no fixed ending, allowing it to run for many years and reach thousands of episodes.",
+        "The genre originated in the United States in the early 1930s within radio broadcasting. Early examples include Painted Dreams (1930) and Clara, Lu, 'n Em (1931). The term “soap opera” comes from the soap and detergent manufacturers that sponsored these programmes, which targeted daytime audiences, particularly housewives."
       ],
       "ar": [
-        "المسلسل الميلودرامي الطويل (Soap opera) هو نوع من المسلسلات الدرامية التي تُبث عبر التلفزيون أو الراديو، وتتناول حياة مجموعة من الشخصيات مع التركيز على العلاقات العاطفية والحياة الأسرية ضمن إطار ميلودرامي. يتميز هذا النوع باستمرارية السرد وغياب نهاية محددة، مما يسمح بامتداده لسنوات طويلة قد تصل إلى آلاف الحلقات.",
-        "نشأ هذا النوع في الولايات المتحدة خلال أوائل ثلاثينيات القرن العشرين ضمن الدراما الإذاعية، ومن أقدم أمثلته مسلسل Painted Dreams (1930) يليه Clara, Lu, 'n Em (1931). وقد ارتبط مصطلح “Soap opera” بإعلانات الصابون والمنظفات التي كانت تُبث خلال فواصل هذه البرامج، واستُهدف بها جمهور النهار، خاصة ربات البيوت."
+        "المسلسل الميلودرامي الطويل (Soap opera) نوع من المسلسلات الدرامية التي تُبث عبر التلفزيون أو الإذاعة، ويتناول حياة مجموعة من الشخصيات مع التركيز على العلاقات العاطفية والحياة الأسرية في إطار ميلودرامي. ويتميز هذا النوع باستمرارية السرد وغياب نهاية محددة، مما يسمح بامتداده لسنوات طويلة قد تصل إلى آلاف الحلقات.",
+        "نشأ هذا النوع في الولايات المتحدة في أوائل ثلاثينيات القرن العشرين ضمن الدراما الإذاعية، ومن أقدم أمثلته Painted Dreams (1930) وClara, Lu, 'n Em (1931). ويعود مصطلح «Soap opera» إلى شركات الصابون والمنظفات التي رعت هذه البرامج، وكانت تستهدف جمهور الفترة النهارية، ولا سيما ربات البيوت."
       ]
     },
-
     "focus": {
-      "en": "Long-form serial television drama and its role in shaping emotional engagement and everyday storytelling.",
-      "ar": "الدراما التسلسلية الطويلة ودورها في تشكيل التفاعل العاطفي والسرد اليومي."
+      "en": "Long-running serial drama and Saudi audiences, especially women's viewing of Turkish and Korean serials and its links to identity and socio-cultural values.",
+      "ar": "المسلسلات الطويلة والجمهور السعودي، ولا سيما مشاهدة المرأة السعودية للمسلسلات التركية والكورية وعلاقتها بالهوية والقيم الاجتماعية والثقافية."
     },
-
     "reference": [
-      "Cantor, M.G. and Pingree, S. (1983) <em>The Soap Opera</em>. Beverly Hills: Sage Publications.",
-      "Allen, R.C. (1985) <em>Speaking of Soap Operas</em>. Chapel Hill: University of North Carolina Press."
+      "Alardawi, M. and Brereton, P. (2025) ‘<em>Squid Game</em>: Pleasure and consumption of Korean drama by young Saudi audiences’, <em>Mediatization Studies</em>, 8, pp. 69–89.",
+      "Alardawi, M., Bajnaid, A. and Brereton, P. (2021) ‘The influence of Turkish drama on socio-cultural values of Saudi women’, <em>Modern Applied Science</em>, 15(4), pp. 47–59.",
+      "Allen, R.C. (1985) <em>Speaking of Soap Operas</em>. Chapel Hill: University of North Carolina Press.",
+      "Ang, I. (1985) <em>Watching Dallas: Soap Opera and the Melodramatic Imagination</em>. London: Methuen.",
+      "Ford, S., De Kosnik, A. and Harrington, C.L. (eds) (2011) <em>The Survival of Soap Opera: Transformations for a New Media Era</em>. Jackson: University Press of Mississippi."
     ],
-
     "themes": {
       "en": [
         "Serial narrative and long-term storytelling",
         "Gender and domestic representation",
         "Emotional engagement and viewer loyalty",
-        "Evolution of the genre"
+        "Women audiences and cultural values"
       ],
       "ar": [
         "السرد التسلسلي طويل المدى",
-        "التمثيل الجندري والعائلي",
+        "تمثيل النوع الاجتماعي والأسرة",
         "التفاعل العاطفي وولاء الجمهور",
-        "تطور النوع"
+        "الجمهور النسائي والقيم الثقافية"
       ]
     },
-
     "lens": {
       "en": "Audience studies and melodrama theory.",
       "ar": "دراسات الجمهور ونظرية الميلودراما."
@@ -215,104 +206,99 @@
     "icon": "fa-earth-americas",
     "image": "/assets/cards-images/telenovela.webp",
     "categories": ["serialized-drama", "audience-studies"],
-
     "title": {
       "en": "Telenovela",
-      "ar": "تيلينوفيلا"
+      "ar": "التيلينوفيلا"
     },
-
     "paragraphs": {
       "en": [
         "A telenovela is a Latin American melodramatic television serial and one of the most popular formats in the region, often dominating prime-time schedules and generating high advertising revenues. It has also been widely exported to international markets.",
-        "Although telenovelas share certain features with soap operas, they are considered a distinct genre with a defined narrative structure and a specific cultural identity."
+        "Although telenovelas share certain features with soap operas, they are considered a distinct genre: each story is planned with a clear ending, usually after several months of episodes, and carries a specific cultural identity."
       ],
       "ar": [
-        "التيلينوفيلا هي نوع من المسلسلات الميلودرامية في أمريكا اللاتينية، تُعد من أكثر البرامج التلفزيونية شعبية، حيث تهيمن على أوقات الذروة وتحقق نسب مشاهدة وإعلانات مرتفعة. وقد انتشر هذا النوع عالميًا ليُعرض في مختلف القارات.",
-        "وعلى الرغم من تشابهها مع المسلسلات الطويلة (Soap operas)، فإن التيلينوفيلا تُعد نوعًا دراميًا مستقلًا يتميز ببنية سردية وهوية ثقافية خاصة."
+        "التيلينوفيلا نوع من المسلسلات الميلودرامية في أمريكا اللاتينية، وتُعد من أكثر البرامج التلفزيونية شعبية في المنطقة، إذ تهيمن على أوقات الذروة وتحقق نسب مشاهدة وعائدات إعلانية مرتفعة. وقد انتشر هذا النوع عالميًا ليُعرض في مختلف القارات.",
+        "ومع تشابهها مع المسلسلات الطويلة (Soap operas)، تُعد التيلينوفيلا نوعًا دراميًا مستقلًا؛ إذ تُبنى قصتها على نهاية محددة سلفًا تأتي عادةً بعد عدة أشهر من العرض، وتحمل هوية ثقافية خاصة."
       ]
     },
-
     "focus": {
-      "en": "Latin American serial television and its global circulation as a cultural export.",
-      "ar": "الدراما التلفزيونية اللاتينية وانتشارها العالمي."
+      "en": "A comparative reference point for my research on Turkish and Korean serials and their transnational audiences.",
+      "ar": "إطار مقارن لأبحاثي حول المسلسلات التركية والكورية وجمهورها العابر للحدود."
     },
-
     "reference": [
-      "La Pastina, A.C. and Straubhaar, J.D. (2005) 'The Centrality of Telenovelas in Latin American Culture', <em>Media, Culture & Society</em>.",
-      "Allen, R.C. (1995) <em>To Be Continued… Soap Operas Around the World</em>. London: Routledge."
+      "Berg, M., Alardawi, M. and Al Obeidli, N. (2025) ‘Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE’, <em>Critical Studies in Television: The International Journal of Television Studies</em>, pp. 1–21.",
+      "Allen, R.C. (ed.) (1995) <em>To Be Continued… Soap Operas Around the World</em>. London: Routledge.",
+      "La Pastina, A.C. and Straubhaar, J.D. (2005) ‘Multiple proximities between television genres and audiences: The schism between telenovelas’ global distribution and local consumption’, <em>Gazette</em>, 67(3), pp. 271–288.",
+      "Straubhaar, J.D. (2007) <em>World Television: From Global to Local</em>. Thousand Oaks: Sage."
     ],
-
     "themes": {
       "en": [
-        "Melodrama and serialized storytelling",
-        "Global distribution and adaptation",
+        "Melodrama and serialised storytelling",
+        "Global distribution and format adaptation",
         "Cultural identity and representation",
         "Media globalization"
       ],
       "ar": [
-        "السرد الميلودرامي",
-        "التوزيع العالمي والتكيّف",
-        "الهوية الثقافية",
+        "السرد الميلودرامي والمسلسل",
+        "التوزيع العالمي وإعادة الإنتاج",
+        "الهوية الثقافية والتمثيل",
         "العولمة الإعلامية"
       ]
     },
-
     "lens": {
       "en": "Transnational media studies.",
-      "ar": "دراسات الإعلام عبر الوطنية."
+      "ar": "دراسات الإعلام العابر للحدود."
     }
   },
-
+  
   {
     "id": "dizi",
     "icon": "fa-earth-americas",
     "image": "/assets/cards-images/dizi.webp",
     "categories": ["serialized-drama", "audience-studies"],
-
     "title": {
       "en": "Dizi",
       "ar": "الدراما التركية"
     },
-
     "paragraphs": {
       "en": [
-        "Dizi refers to Turkish television drama series, including both comedy and drama formats. Since the early 2000s, Turkish television dramas have experienced rapid growth and have become significant cultural and economic exports.",
-        "Turkey is now one of the fastest-growing exporters of television series, with its productions widely distributed across Asia, Europe, Latin America, and North Africa, contributing to its global cultural influence."
+        "Dizi refers to Turkish television drama series, including both comedy and drama formats. Since the early 2000s, Turkish television dramas have grown rapidly and have become significant cultural and economic exports.",
+        "Turkey has become one of the fastest-growing exporters of television series, with its productions widely distributed across Asia, Europe, Latin America, and North Africa, contributing to its global cultural influence."
       ],
       "ar": [
-        "الديزي (Dizi) هو مصطلح يُستخدم للإشارة إلى المسلسلات التلفزيونية التركية، سواء كانت كوميدية أو درامية. وقد شهدت الدراما التركية نموًا كبيرًا منذ أوائل العقد الأول من القرن الحادي والعشرين، وأصبحت من أبرز الصادرات الثقافية والاقتصادية لتركيا.",
-        "وتُعد تركيا من أسرع الدول نموًا في تصدير المسلسلات التلفزيونية، حيث انتشرت أعمالها في آسيا وأوروبا وأمريكا اللاتينية وشمال إفريقيا، وأسهمت في تعزيز حضورها الثقافي عالميًا."
+        "الديزي (Dizi) مصطلح يُستخدم للإشارة إلى المسلسلات التلفزيونية التركية، سواء كانت كوميدية أو درامية. وقد شهدت الدراما التركية نموًا كبيرًا منذ أوائل العقد الأول من القرن الحادي والعشرين، وأصبحت من أبرز الصادرات الثقافية والاقتصادية لتركيا.",
+        "وأصبحت تركيا من أسرع الدول نموًا في تصدير المسلسلات التلفزيونية، إذ انتشرت أعمالها في آسيا وأوروبا وأمريكا اللاتينية وشمال إفريقيا، وأسهمت في تعزيز حضورها الثقافي عالميًا."
       ]
     },
-
     "focus": {
-      "en": "Turkish television drama as a global media export and cultural form.",
-      "ar": "الدراما التركية كمنتج إعلامي عالمي."
+      "en": "Saudi women's viewing of Turkish dizi, the subject of my PhD (Dublin City University, 2023) and of later studies on identity, values and young Gulf audiences.",
+      "ar": "مشاهدة المرأة السعودية للدراما التركية، وهي موضوع أطروحتي للدكتوراه (جامعة دبلن سيتي، ٢٠٢٣) ودراسات لاحقة عن الهوية والقيم وجمهور الشباب الخليجي."
     },
-
     "reference": [
-      "Özçetin, B. (2019) 'The Making of a Cultural Export: Turkish TV Dramas', <em>Journal of Communication Inquiry</em>.",
-      "Buccianti, A. (2010) 'Turkish Television Series and Their Global Impact', <em>Middle East Journal of Culture and Communication</em>."
+      "Alardawi, M. (2023) <em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em>. PhD thesis. Dublin City University.",
+      "Alardawi, M., Bajnaid, A. and Brereton, P. (2021) ‘The influence of Turkish drama on socio-cultural values of Saudi women’, <em>Modern Applied Science</em>, 15(4), pp. 47–59.",
+      "Berg, M., Alardawi, M. and Al Obeidli, N. (2025) ‘Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE’, <em>Critical Studies in Television: The International Journal of Television Studies</em>, pp. 1–21.",
+      "Buccianti, A. (2010) ‘Turkish soap operas in the Arab world: Social liberation or cultural alienation?’, <em>Arab Media & Society</em>, 10.",
+      "Kraidy, M.M. and Al-Ghazzi, O. (2013) ‘Neo-Ottoman cool: Turkish popular culture in the Arab public sphere’, <em>Popular Communication</em>, 11(1), pp. 17–29.",
+      "Straubhaar, J.D. (1991) ‘Beyond media imperialism: Asymmetrical interdependence and cultural proximity’, <em>Critical Studies in Mass Communication</em>, 8(1), pp. 39–59.",
+      "Yesil, B. (2015) ‘Transnationalization of Turkish dramas: Exploring the convergence of local and global market imperatives’, <em>Global Media and Communication</em>, 11(1), pp. 43–60."
     ],
-
     "themes": {
       "en": [
         "Transnational media circulation",
         "Cultural export and soft power",
-        "Regional storytelling traditions",
-        "Audience reception across cultures"
+        "Cultural proximity",
+        "Saudi women’s reception and socio-cultural values"
       ],
       "ar": [
         "التداول الإعلامي العابر للحدود",
-        "القوة الناعمة",
-        "السرد الإقليمي",
-        "استقبال الجمهور"
+        "التصدير الثقافي والقوة الناعمة",
+        "القرب الثقافي",
+        "تلقّي المرأة السعودية والقيم الاجتماعية والثقافية"
       ]
     },
-
     "lens": {
-      "en": "Global media studies and cultural circulation theory.",
-      "ar": "دراسات الإعلام العالمي وتداول الثقافة."
+      "en": "Global media studies, cultural proximity theory, and audience reception studies.",
+      "ar": "دراسات الإعلام العالمي ونظرية القرب الثقافي ودراسات التلقي."
     }
   },
 
@@ -321,49 +307,47 @@
     "icon": "fa-microphone",
     "image": "/assets/cards-images/podcast.webp",
     "categories": ["screen-media", "audience-studies"],
-
     "title": {
       "en": "Podcast",
       "ar": "البودكاست"
     },
-
     "paragraphs": {
       "en": [
-        "Podcasting is an emerging digital audio medium based on on-demand audio storytelling distributed via online platforms. It enables creators to produce both serialized and standalone content that enhances audience engagement through spoken narrative and conversational formats. Podcasts are primarily accessed through platforms such as Spotify and Apple Podcasts and have become an integral component of contemporary digital media consumption, particularly within participatory and independent media production contexts."
+        "Podcasting is an emerging digital audio medium based on on-demand audio storytelling distributed via online platforms. It enables creators to produce both serialised and standalone content that enhances audience engagement through spoken narrative and conversational formats. Podcasts are primarily accessed through platforms such as Spotify and Apple Podcasts and have become an integral part of contemporary digital media consumption, particularly within participatory and independent media production."
       ],
       "ar": [
-        "يُعدّ البودكاست وسيطًا صوتيًا رقميًا ناشئًا يعتمد على السرد الصوتي حسب الطلب عبر المنصات الرقمية. ويتيح هذا الوسيط للمبدعين إنتاج محتوى متسلسل أو مستقل، يسهم في تعزيز التفاعل مع الجمهور من خلال أنماط الحوار والسرد الصوتي. ويُستهلك البودكاست عبر منصات رقمية مثل Spotify و Apple Podcasts، وقد أصبح جزءًا مهمًا من أنماط استهلاك الإعلام الرقمي المعاصر، ولا سيما في سياقات الإعلام التفاعلي والإنتاج المستقل."
+        "يُعدّ البودكاست وسيطًا صوتيًا رقميًا ناشئًا يعتمد على السرد الصوتي حسب الطلب عبر المنصات الرقمية. ويتيح هذا الوسيط للمبدعين إنتاج محتوى متسلسل أو مستقل، يسهم في تعزيز التفاعل مع الجمهور من خلال أنماط الحوار والسرد الصوتي. ويُستمع إلى البودكاست عبر منصات رقمية مثل Spotify وApple Podcasts، وقد أصبح جزءًا مهمًا من أنماط استهلاك الإعلام الرقمي المعاصر، ولا سيما في سياقات الإعلام التشاركي والإنتاج المستقل."
       ]
     },
-
     "focus": {
-      "en": "Study of podcasting as an emerging audio-visual and cultural medium.",
-      "ar": "دراسة البودكاست كوسيط ثقافي وصوتي ناشئ."
+      "en": "Saudi podcasting: the challenges and opportunities facing podcasters, and the socio-cultural content of leading podcasts such as Fingan.",
+      "ar": "البودكاست السعودي: تحديات صنّاعه وفرصهم، والمضامين الاجتماعية والثقافية في أبرز البرامج مثل بودكاست فنجان."
     },
-
     "reference": [
-      "Berry, R. (2016) 'Podcasting: Considering the Evolution of the Medium', In Llinares, D., Fox, N. and Berry, R. (eds.) <em>Podcasting: New Aural Cultures and Digital Media</em>. Palgrave Macmillan.",
-      "Llinares, D., Fox, N. and Berry, R. (eds.) (2018) <em>Podcasting: New Aural Cultures and Digital Media</em>. Cham: Springer."
+      "Alardawi, M. (2024) ‘Exploring challenges and opportunities for Saudi podcasters: A qualitative study’, <em>Management and Marketing</em>, 22(2), pp. 164–178.",
+      "Al-Qurashi, D. and Alardawi, M. (2025) ‘The social-cultural frameworks embedded in Saudi podcasts: A case study of “Fingan” podcast’, <em>King Abdulaziz University: Journal of Communication and Media Studies</em>, 2(1), pp. 106–142.",
+      "Berry, R. (2006) ‘Will the iPod kill the radio star? Profiling podcasting as radio’, <em>Convergence</em>, 12(2), pp. 143–162.",
+      "Berry, R. (2016) ‘Podcasting: Considering the evolution of the medium and its association with the word “radio”’, <em>The Radio Journal: International Studies in Broadcast and Audio Media</em>, 14(1), pp. 7–22.",
+      "Llinares, D., Fox, N. and Berry, R. (eds) (2018) <em>Podcasting: New Aural Cultures and Digital Media</em>. Cham: Palgrave Macmillan.",
+      "Spinelli, M. and Dann, L. (2019) <em>Podcasting: The Audio Media Revolution</em>. New York: Bloomsbury Academic."
     ],
-
     "themes": {
       "en": [
         "Audio storytelling",
         "Digital intimacy and voice culture",
-        "Audience engagement",
-        "Platform distribution (Spotify, Apple Podcasts)"
+        "Podcasters and the podcast industry",
+        "Socio-cultural content of Saudi podcasts"
       ],
       "ar": [
         "السرد الصوتي",
-        "الحميمية الرقمية",
-        "تفاعل الجمهور",
-        "منصات التوزيع"
+        "الحميمية الرقمية وثقافة الصوت",
+        "صنّاع البودكاست وصناعته",
+        "المضامين الاجتماعية والثقافية في البودكاست السعودي"
       ]
     },
-
     "lens": {
       "en": "Media studies, sound studies, and audience reception theory.",
-      "ar": "دراسات الإعلام والصوت واستقبال الجمهور."
+      "ar": "دراسات الإعلام ودراسات الصوت ونظرية تلقّي الجمهور."
     }
   },
 
@@ -372,50 +356,47 @@
     "icon": "fa-robot",
     "image": "/assets/cards-images/ai.webp",
     "categories": ["screen-media", "film"],
-
     "title": {
       "en": "AI",
       "ar": "الذكاء الاصطناعي"
     },
-
     "paragraphs": {
       "en": [
-        "Artificial intelligence (AI) in media refers to the use of computational systems and algorithms in film production, storytelling, and media analysis. It enables the creation of AI-generated content and the emergence of algorithmic forms of storytelling that reshape traditional narrative structures. AI also raises issues related to digital and intellectual authorship, as creative processes become distributed between humans and machines. In addition, it introduces ethical concerns regarding originality and creative control within contemporary media production."
+        "Artificial intelligence (AI) in media refers to the use of computational systems and algorithms in film production, storytelling, and media analysis. It enables AI-generated content and new algorithmic forms of storytelling that reshape traditional narrative structures. AI also raises questions of authorship and intellectual property, as creative processes become shared between humans and machines, and ethical concerns about originality and creative control in contemporary media production."
       ],
       "ar": [
-        "يشير الذكاء الاصطناعي في وسائل الإعلام إلى استخدام الأنظمة الحاسوبية والخوارزميات في إنتاج الأفلام والسرد وتحليل الوسائط الرقمية. ويسهم ذلك في إنتاج محتوى مُولَّد آليًا وظهور أنماط جديدة من السرد القائم على الخوارزميات، مما يعيد تشكيل البنى السردية التقليدية. كما يثير الذكاء الاصطناعي قضايا تتعلق بالملكية الرقمية والملكية الفكرية، إضافة إلى إشكالات أخلاقيات الإبداع في السياقات الإعلامية الحديثة."
+        "يشير الذكاء الاصطناعي في وسائل الإعلام إلى استخدام الأنظمة الحاسوبية والخوارزميات في إنتاج الأفلام والسرد وتحليل الوسائط الرقمية. ويسهم ذلك في إنتاج محتوى مولَّد آليًا وظهور أنماط جديدة من السرد القائم على الخوارزميات، مما يعيد تشكيل البنى السردية التقليدية. كما يثير الذكاء الاصطناعي قضايا تتعلق بالتأليف والملكية الفكرية مع توزّع العملية الإبداعية بين الإنسان والآلة، إضافة إلى إشكالات أخلاقية تتصل بالأصالة والتحكم الإبداعي في الإنتاج الإعلامي المعاصر."
       ]
     },
-
     "focus": {
-      "en": "Exploration of artificial intelligence in film production, storytelling, and media analysis.",
-      "ar": "تطبيق الذكاء الاصطناعي في الإنتاج والتحليل الإعلامي."
+      "en": "How exposure to AI-themed films shapes young Saudi adults' perceptions of artificial intelligence.",
+      "ar": "أثر مشاهدة أفلام الذكاء الاصطناعي في تصورات الشباب السعودي عن الذكاء الاصطناعي."
     },
-
     "reference": [
-      "Floridi, L. (2014) <em>The Fourth Revolution: How the Infosphere is Reshaping Human Reality</em>. Oxford: Oxford University Press.",
+      "Alardawi, M. (2026) ‘Exposure to AI-themed films and perceptions of artificial intelligence: a survey of Saudi young adults in Saudi Arabia’, <em>Online Media and Global Communication</em>, pp. 1–30.",
+      "Cave, S., Coughlan, K. and Dihal, K. (2019) ‘“Scary robots”: Examining public responses to AI’, in <em>Proceedings of the 2019 AAAI/ACM Conference on AI, Ethics, and Society (AIES ’19)</em>. New York: ACM. doi:10.1145/3306618.3314232.",
+      "Cave, S., Dihal, K. and Dillon, S. (eds) (2020) <em>AI Narratives: A History of Imaginative Thinking about Intelligent Machines</em>. Oxford: Oxford University Press.",
+      "Floridi, L. (2014) <em>The Fourth Revolution: How the Infosphere Is Reshaping Human Reality</em>. Oxford: Oxford University Press.",
       "Jenkins, H. (2006) <em>Convergence Culture: Where Old and New Media Collide</em>. New York: New York University Press.",
-      "Cave, S., Craig, C., & Dihal, K. (2019) <em>Scary Robots: AI in Popular Culture</em>. Oxford University Press."
+      "Turing, A.M. (1950) ‘Computing machinery and intelligence’, <em>Mind</em>, 59(236), pp. 433–460."
     ],
-
     "themes": {
       "en": [
-        "AI-generated content",
+        "Audience perceptions of AI in film",
         "Algorithmic storytelling",
         "Digital authorship",
         "Ethics of AI in media"
       ],
       "ar": [
-        "المحتوى المولد بالذكاء الاصطناعي",
+        "تصورات الجمهور عن الذكاء الاصطناعي في الأفلام",
         "السرد الخوارزمي",
-        "الملكية الرقمية",
-        "أخلاقيات الإعلام"
+        "التأليف الرقمي",
+        "أخلاقيات الذكاء الاصطناعي في الإعلام"
       ]
     },
-
     "lens": {
       "en": "Media theory, digital humanities, and film studies.",
-      "ar": "نظرية الإعلام، الإنسانيات الرقمية، ودراسات السينما."
+      "ar": "نظرية الإعلام والإنسانيات الرقمية ودراسات السينما."
     }
   }
 

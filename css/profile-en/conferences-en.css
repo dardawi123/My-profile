@@ -530,6 +530,14 @@ section:last-of-type {
   transform: translateY(0);
 }
 
+sup {
+  font-size: 0.7em;
+  line-height: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.5em;
+}
+
 /* ===========================
 Academic Hero
 =========================== */
@@ -805,7 +813,7 @@ table td:first-child {
 table th:nth-child(2),
 table td:nth-child(2) {
   width: auto;
-  text-align: justify;
+  text-align: start;
 }
 
 /* Header Sticky */
@@ -863,7 +871,6 @@ tbody tr:last-child td:last-child::after {
   background: radial-gradient(circle at 0% 0%, transparent 12px, var(--card-bg-color) 12px);
 }
 
-
 /* ===========================================================================
    NOTE: do not add overflow:hidden / border-radius to .table-body-wrapper.
    Any ancestor with overflow other than visible becomes a new "scroll
@@ -918,7 +925,7 @@ th {
 /* Cells */
 td {
   padding: 0.9rem 1rem;
-  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.25rem);;
+  font-size: clamp(0.9rem, 0.85rem + 0.3vw, 1.25rem);
   line-height: 1.6;
   text-align: center;
   color: var(--td-text-color);
@@ -944,6 +951,13 @@ tr:nth-child(even) {
 .activity-table tbody tr:hover {
   background-color: color-mix(in srgb, var(--main-color) 12%, white);
   transition: background-color 0.2s ease;
+}
+
+table td,
+table th {
+  hyphens: manual;
+  -webkit-hyphens: manual;
+  vertical-align: top;
 }
 
 /*------------------------------ Footer section design CSS ---------------------------- */
@@ -1278,6 +1292,22 @@ tr:nth-child(even) {
     -webkit-hyphenate-limit-before: 3;
     -webkit-hyphenate-limit-after: 3;
     -webkit-hyphenate-limit-lines: 2;
+  }
+  /* Phones: compact header on subpages (Biography keeps the full version) */
+  .academic-highlights {
+    display: none;
+  }
+  .profile-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .profile-image img {
+    width: 96px;
+    height: 96px;
+  }
+  .profile-info p.department,
+  .profile-info p.faculty {
+    display: none;
   }
 }
 

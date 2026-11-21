@@ -1385,6 +1385,22 @@ Academic Highlights
     -webkit-hyphenate-limit-after: 3;
     -webkit-hyphenate-limit-lines: 2;
   }
+  /* Phones: compact header on subpages (Biography keeps the full version) */
+  .academic-highlights {
+    display: none;
+  }
+  .profile-card {
+    padding: 1.25rem;
+    gap: 1rem;
+  }
+  .profile-image img {
+    width: 96px;
+    height: 96px;
+  }
+  .profile-info p.department,
+  .profile-info p.faculty {
+    display: none;
+  }
 }
 
 /* Phones: compact horizontal card (thumbnail beside the title) */

@@ -779,6 +779,10 @@ Academic Highlights
   position: relative;
 }
 
+.courses-list + h3 {
+  margin-top: 2rem;
+}
+
 .courses-list::before {
   content: "";
   position: absolute;

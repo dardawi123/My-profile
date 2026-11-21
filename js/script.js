@@ -629,7 +629,7 @@ function initActivitiesFilter() {
             seminar: "Seminars",
             workshop: "Workshops",
             forum: "Forums",
-            program: "Programs",
+            program: "Programmes",
             festival: "Festivals",
         },
 

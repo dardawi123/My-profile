@@ -18,32 +18,44 @@ const projects = [
   { img: "/assets/film-posters/17.webp", title: "Documentary Film", alt: "Documentary film poster - Museum of the Future project", arabic: "متحف المستقبل" },
   { img: "/assets/film-posters/18.webp", title: "Film", alt: "Film poster - Barwaz project", arabic: "برواز" },
   { img: "/assets/film-posters/19.webp", title: "Film", alt: "Film poster - One Breath project", arabic: "One Breath" },
-  { img: "/assets/film-posters/20.webp", title: "Film", alt: "Film poster - iPad Child project", arabic: "طفل الايباد" },
-  { img: "/assets/film-posters/21.webp", title: "Film", alt: "Film poster - Silent Disorder project", arabic: "إضطراب صامت" },
+  { img: "/assets/film-posters/20.webp", title: "Film", alt: "Film poster - iPad Child project", arabic: "طفل الآيباد" },
+  { img: "/assets/film-posters/21.webp", title: "Film", alt: "Film poster - Silent Disorder project", arabic: "اضطراب صامت" },
   { img: "/assets/film-posters/22.webp", title: "Film", alt: "Film poster - Story of Ambition project", arabic: "قصة طموح" }
 ];
 
+/* Arabic captions for each type of work (used on the Arabic homepage only) */
+const typeAr = {
+  "Documentary Film": "فيلم وثائقي",
+  "Film": "فيلم روائي",
+  "Animation Film": "فيلم رسوم متحركة",
+  "Podcast": "بودكاست"
+};
+
+/* The page language decides which caption and alt text to show */
+const isArabic = document.documentElement.lang === "ar";
+
 const wrapper = document.getElementById("swiperWrapper");
 
-projects.forEach((p, index) => {
+projects.forEach((p) => {
   const slide = document.createElement("article");
   slide.className = "new-card card-article swiper-slide";
 
-  const loading = "lazy";
-  const fetchPriority = "";
-  
+  const caption = isArabic ? (typeAr[p.title] || p.title) : p.title;
+  const altText = isArabic
+    ? `ملصق ${typeAr[p.title] || p.title} – ${p.arabic}`
+    : p.alt;
+
   slide.innerHTML = `
     <div class="card-link">
       <img src="${p.img}"
-           loading="${loading}"
-           ${fetchPriority}
-           alt="${p.alt}"
+           loading="lazy"
+           alt="${altText}"
            class="card-img">
 
       <div class="card-shadow"></div>
 
       <div class="new-data card-data">
-        <h3 class="card-name">${p.title}</h3>
+        <h3 class="card-name">${caption}</h3>
       </div>
     </div>
   `;

@@ -60,7 +60,7 @@
     {
       "id": "reviewer",
       "icon": "fas fa-file-signature",
-      "value": "محكّم",
+      "value": "محكّمة",
       "label": "المجلات الأكاديمية"
     },
     {
@@ -72,8 +72,8 @@
     {
       "id": "founder",
       "icon": "fas fa-film",
-      "value": "مؤسس",
-      "label": "مهرجان الأفلام الطلابية"
+      "value": "مؤسسة",
+      "label": "المهرجان السينمائي الطلابي"
     }
   ]
 }

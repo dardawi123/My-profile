@@ -479,7 +479,7 @@
       "ar": "بعيونهم نحلم: المهرجان السينمائي الطلابي الأول لقسم الإنتاج المرئي والمسموع"
     },
     "description": {
-      "en": "Presented and organized the initiative to hold a festival entitled",
+      "en": "Presented and organised the initiative to hold a festival entitled",
       "ar": "قدمت ونظمت مبادرة إقامة مهرجان بعنوان"
     },
     "roles": ["Presenter", "Organizer"],
@@ -521,7 +521,7 @@
     },
     "host": {
       "name": {
-        "en": "College of Communication and Media",
+        "en": "Faculty of Communication and Media",
         "ar": "كلية الاتصال والإعلام"
       },
       "institution": {
@@ -539,12 +539,12 @@
     "id": "evt-2024-05-19-018",
     "type": "forum",
     "title": {
-      "en": "Postgraduate Student Forum Events",
-      "ar": "فعاليات ملتقى طلبة الدراسات العليا"
+      "en": "Postgraduate Student Forum",
+      "ar": "ملتقى طلبة الدراسات العليا"
     },
     "description": {
-      "en": "Attended the Postgraduate Student Forum events held by the",
-      "ar": "حضور فعاليات ملتقى طلبة الدراسات العليا التي أقامتها"
+      "en": "Attended the",
+      "ar": "حضور"
     },
     "roles": ["Attendee"],
     "dates": {
@@ -553,7 +553,7 @@
     },
     "host": {
       "name": {
-        "en": "Seminars and Conferences Unit, College of Arts and Humanities",
+        "en": "Seminars and Conferences Unit, Faculty of Arts and Humanities",
         "ar": "وحدة الندوات والمؤتمرات بكلية الآداب والعلوم الإنسانية"
       },
       "institution": {
@@ -571,13 +571,13 @@
     "id": "evt-2024-07-21-019",
     "type": "workshop",
     "title": {
-      "en": "Cinematic Films and Practical Applications (Compass Program - Bosala)",
-      "ar": "الأفلام السينمائية والتطبيقات العملية (برنامج بوصلة)"
+      "en": "Cinematic Films and Practical Applications",
+      "ar": "الأفلام السينمائية والتطبيقات العملية"
     },
     "description": {
-      "en": "Participated in a workshop on cinematic films and practical applications, in addition to judging the shows participating in the activities of the Compass Program (Bosala), organized by the Red Sea and the West of Saudi Arabia History Centre",
-      "ar": "المشاركة في ورشة عمل في الأفلام السينمائية والتطبيقات العملية، إلى جانب تحكيم العروض المشاركة في فعاليات برنامج بوصلة الذي نظمه مركز تاريخ البحر الأحمر وغرب المملكة العربية السعودية"
-    },
+      "en": "Judged the screenings of the Compass Program (Bosala), organised by the Red Sea and Western Saudi Arabia History Centre, and participated in the workshop titled",
+      "ar": "تحكيم العروض المشاركة في برنامج بوصلة الذي نظّمه مركز تاريخ البحر الأحمر وغرب المملكة العربية السعودية، والمشاركة في ورشة عمل بعنوان"
+    },    
     "roles": ["Participant", "Judge"],
     "dates": {
       "start": "2024-07-21",
@@ -635,7 +635,7 @@
       "ar": "النقد السينمائي: أدوات وتقنيات التحليل"
     },
     "description": {
-      "en": "Presented and organized the 3<sup>rd</sup> Student Seminar on Film Criticism, titled",
+      "en": "Presented and organised the 3<sup>rd</sup> Student Seminar on Film Criticism, titled",
       "ar": "قدمت ونظمت الندوة الطلابية الثالثة للنقد السينمائي بعنوان"
     },
     "roles": ["Presenter", "Organizer"],
@@ -677,12 +677,12 @@
     },
     "host": {
       "name": {
-        "en": "as part of the Career Fair events sponsored by ",
-        "ar": "ضمن فعاليات الملتقى المهني برعاية"
+        "en": "as part of the Career Fair events sponsored by King Abdulaziz University",
+        "ar": "ضمن فعاليات الملتقى المهني برعاية جامعة الملك عبدالعزيز"
       },
       "institution": {
-        "en": " King Abdulaziz University, Superdome",
-        "ar": "جامعة الملك عبدالعزيز، سوبر دوم"
+        "en": "Superdome",
+        "ar": "سوبر دوم"
       }
     },
     "city": {
@@ -709,7 +709,7 @@
     },
     "host": {
       "name": {
-        "en": "organized by the Research Committee, Visual and Audio Production Department",
+        "en": "organised by the Research Committee, Visual and Audio Production Department",
         "ar": "ضمن اللجنة البحثية بقسم الإنتاج المرئي والمسموع"
       },
       "institution": {

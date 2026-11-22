@@ -780,7 +780,7 @@ Academic Highlights
 }
 
 .courses-list + h3 {
-  margin-top: clamp(1rem, 0.85rem + 0.6vw, 1.5rem);
+  margin-top: clamp(1.125rem, 0.98rem + 0.65vw, 1.5rem);
 }
 
 .courses-list::before {

@@ -1116,7 +1116,7 @@ a:focus, .btn:focus {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.75rem;
-  margin: 1.75rem 0 clamp(0.6rem, 0.35rem + 1.13vw, 1.25rem);
+  margin: 1.75rem 0 clamp(1rem, 0.61rem + 1.74vw, 2rem);
 }
 
 .research-filter button {
@@ -1161,7 +1161,7 @@ a:focus, .btn:focus {
 
 /* Less space between the count line and the cards */
 .research-count + .team_list {
-  margin-top: clamp(0.5rem, 0.2rem + 1.2vw, 1.25rem);
+  margin-top: clamp(1.25rem, 0.86rem + 1.74vw, 2.25rem);
 }
 
 /* Only apply hover animation on devices that support hover */

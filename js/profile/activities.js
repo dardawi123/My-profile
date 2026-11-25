@@ -172,7 +172,7 @@ async function initActivities() {
                         );
 
                     const yearDate =
-                        new Date(activity.dates.start);
+                        new Date(activity.dates.start + "T00:00:00");
 
                     const year =
                         lang === "ar"
@@ -301,11 +301,7 @@ function buildDescription(
     const parts = [
 
         description
-            ? `${description} <strong>${
-                lang === "ar"
-                    ? `"${title}"`
-                    : `"${title}"`
-              }</strong>`
+            ? `${description} <strong>"${title}"</strong>`
             : "",
 
         host,
@@ -335,14 +331,14 @@ function formatActivityDate(
 ) {
 
     const start =
-        new Date(dates.start);
+        new Date(dates.start + "T00:00:00");
 
     const end =
-        new Date(dates.end);
+        new Date(dates.end + "T00:00:00");
 
     const locale =
         lang === "ar"
-            ? "ar-SA"
+            ? "ar-SA-u-ca-gregory"
             : "en-GB";
 
     const formatter =
@@ -400,7 +396,7 @@ function formatActivityDate(
                 start.getFullYear()
             );
 
-        return `${startDay}-${endDay} ${monthName} ${year}`;
+        return `${startDay}–${endDay} ${monthName} ${year}`;
 
     }
 
@@ -412,7 +408,7 @@ function formatActivityDate(
             month: "long",
             year: "numeric"
         }
-    )} - ${end.toLocaleDateString(
+    )} – ${end.toLocaleDateString(
         locale,
         {
             day: "numeric",

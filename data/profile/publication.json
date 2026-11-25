@@ -1,11 +1,11 @@
 [
 
-    {
+  {
     "id": "pub-2026-001",
     "year": 2026,
     "type": "journal-article",
     "authors": "Alardawi, M.",
-    "title": "Exploring Saudi Women's Consumption of Turkish Dramas",
+    "title": "Exploring Saudi women’s consumption of Turkish dramas",
     "journal": "Journal of Humanities and Social Sciences Studies",
     "volume": "8",
     "issue": "7",
@@ -56,8 +56,8 @@
     "id": "pub-2025-003",
     "year": 2025,
     "type": "journal-article",
-    "authors": "Al–Qurashi, D. and Alardawi, M.",
-    "title": "The social–cultural frameworks embedded in Saudi podcasts: A case study of “Fingan” podcast",
+    "authors": "Al-Qurashi, D. and Alardawi, M.",
+    "title": "The social-cultural frameworks embedded in Saudi podcasts: A case study of “Fingan” podcast",
     "journal": "King Abdulaziz University: Journal of Communication and Media Studies",
     "volume": "2",
     "issue": "1",
@@ -173,7 +173,7 @@
     "year": 2023,
     "type": "phd-thesis",
     "authors": "Alardawi, M.",
-    "title": "The impact of watching Turkish Drama on Saudi women's attitudes and perception patterns: An audience study",
+    "title": "The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study",
     "status": "Unpublished PhD",
     "university": "Dublin City University",
     "link": "https://doras.dcu.ie/28008/"
@@ -185,7 +185,7 @@
     "type": "journal-article",
     "authors": "Alardawi, M.",
     "title": "Cinema and audience culture",
-    "journal": "Saudi Society for Comparative Literature: Syag Journal",
+    "journal": "Saudi Society for Comparative Literature: Syaq Journal",
     "volume": "0",
     "issue": "5",
     "pages": "1–5",
@@ -204,12 +204,12 @@
     "link": "https://www.alriyadh.com/1959582"
   },
 
-    {
-   "id": "pub-2022-001",
+  {
+   "id": "pub-2022-002",
     "year": 2022,
     "type": "journal-article",
     "authors": "Qutub, A. and Alardawi, M.",
-    "title": "Saudi viewers' perceptions of Attack on Titan Japanese animation online series",
+    "title": "Saudi viewers’ perceptions of Attack on Titan Japanese animation online series",
     "journal": "Asian Social Science",
     "volume": "18",
     "issue": "1",
@@ -222,7 +222,7 @@
     "year": 2021,
     "type": "journal-article",
     "authors": "Alardawi, M., Bajnaid, A. and Brereton, P.",
-    "title": "The influence of Turkish drama on socio–cultural values of Saudi women",
+    "title": "The influence of Turkish drama on socio-cultural values of Saudi women",
     "journal": "Modern Applied Science",
     "volume": "15",
     "issue": "4",
@@ -283,6 +283,3 @@
   }
 
 ]
-
-
-

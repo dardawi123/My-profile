@@ -1,7 +1,7 @@
 {
-    
+
   "title": {
-    "en": "Training & Relevant Skills",
+    "en": "Training Courses and Skills",
     "ar": "الدورات التدريبية والمهارات"
   },
   "items": [
@@ -23,7 +23,7 @@
     },
     {
       "en": "CITI Program: Human Subjects Research Certification.",
-      "ar": "برنامج CITI: شهادة في أخلاقيات أبحاث العلوم الإنسانية."
+      "ar": "برنامج CITI: شهادة في أخلاقيات البحث على المشاركين من البشر."
     },
     {
       "en": "Artificial Intelligence in Education and Scientific Research: An Applied Model of ChatGPT.",
@@ -39,10 +39,10 @@
     },
     {
       "en": "Completion of 100 training hours in the Professional Teacher Diploma.",
-      "ar": "حضور ١٠٠ ساعة تدريبية في دبلوم المعلم المحترف."
+      "ar": "إتمام ١٠٠ ساعة تدريبية في دبلوم المعلم المحترف."
     },
     {
-      "en": "International Computer Driving License (ICDL).",
+      "en": "International Computer Driving Licence (ICDL).",
       "ar": "الرخصة الدولية لقيادة الكمبيوتر (ICDL)."
     },
     {
@@ -58,7 +58,7 @@
       "ar": "تنسيق المهام الإدارية العامة."
     },
     {
-      "en": "Scholarship Preparation Program.",
+      "en": "Scholarship Preparation Programme.",
       "ar": "برنامج التحضير للابتعاث."
     },
     {
@@ -71,7 +71,7 @@
     },
     {
       "en": "Professional Writing in Public Relations.",
-      "ar": "تدريب عملي في العلاقات العامة."
+      "ar": "تدريب عملي في الكتابة الاحترافية للعلاقات العامة."
     },
     {
       "en": "Fundamentals of Public Relations.",
@@ -90,7 +90,7 @@
       "ar": "تدريب عملي في التحرير الصحفي."
     },
     {
-      "en": "Academic Accreditation.",
+      "en": "Coordination of Academic Accreditation Processes.",
       "ar": "تنسيق عمليات الاعتماد الأكاديمي."
     },
     {
@@ -98,15 +98,15 @@
       "ar": "مقدمة في رواية القصص الرقمية."
     },
     {
-      "en": "Basic Statistical Analysis using MegaStat.",
-      "ar": "التحليل الإحصائي الأساسي باستخدام ميغا ستات."
+      "en": "Basic Statistical Analysis Using MegaStat.",
+      "ar": "التحليل الإحصائي الأساسي باستخدام MegaStat."
     },
     {
-      "en": "Training Course in Research Methods using Sage.",
+      "en": "Training Course in Research Methods Using Sage.",
       "ar": "دورة تدريبية في منهجيات البحث باستخدام Sage."
     },
     {
-      "en": "Training Course in Information Management using Zotero.",
+      "en": "Training Course in Information Management Using Zotero.",
       "ar": "دورة تدريبية في إدارة المعلومات باستخدام Zotero."
     },
     {

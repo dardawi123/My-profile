@@ -1,4 +1,3 @@
-
 [
 
   {
@@ -69,7 +68,7 @@
     "id": "evt-2011-06-10-003",
     "type": "workshop",
     "title": {
-      "en": "The mechanism of electronic tests to faculty members",
+      "en": "The Mechanism of Electronic Tests for Faculty Members",
       "ar": "آلية الاختبارات الإلكترونية لأعضاء هيئة التدريس"
     },
     "description": {
@@ -162,14 +161,14 @@
   },
 
   {
-    "id": "evt-2017-03-012-006",
+    "id": "evt-2017-03-12-006",
     "type": "program",
     "title": {
-      "en": "The Joint Supervision Program",
+      "en": "The Joint Supervision Programme",
       "ar": "برنامج الإشراف المشترك"
     },
     "description": {
-      "en": "Attended a doctoral qualification program for",
+      "en": "Attended a doctoral qualification programme entitled",
       "ar": "حضور البرنامج التأهيلي للدكتوراه"
     },
     "roles": ["Attendee"],
@@ -230,7 +229,7 @@
     "type": "workshop",
     "title": {
       "en": "Creating a Research Video – Introduction to Digital Storytelling",
-      "ar": "إنشاء فيديو بحثي - مقدمة في رواية القصص الرقمية"
+      "ar": "إنشاء فيديو بحثي – مقدمة في رواية القصص الرقمية"
     },
     "description": {
       "en": "Attended a workshop titled",
@@ -242,10 +241,7 @@
       "end": "2020-07-01"
     },
     "host": {
-      "name": {
-        "en": "",
-        "ar": ""
-      },
+      "name": null,
       "institution": {
         "en": "Dublin City University",
         "ar": "جامعة دبلن سيتي"
@@ -277,7 +273,8 @@
       "name": {
         "en": "IAFOR Research Centre",
         "ar": "IAFOR Research Centre"
-      }
+      },
+      "institution": null
     },
     "city": {
       "en": "Kyoto, Japan",
@@ -293,7 +290,7 @@
       "ar": "الدراما التركية وتصورات المرأة السعودية للقيم الاجتماعية والثقافية"
     },
     "description": {
-      "en": "Participated in the 12<sup>th</sup> Asian Conference on Arts and Humanities (ACAH2021) and presented a paper entitled",
+      "en": "Participated in the 12<sup>th</sup> Asian Conference on Arts and Humanities (ACAH 2021) and presented a paper entitled",
       "ar": "المشاركة في المؤتمر الآسيوي الثاني عشر للفنون والعلوم الإنسانية (ACAH 2021) بورقة علمية بعنوان"
     },
     "roles": ["Presenter"],
@@ -318,11 +315,11 @@
     "id": "evt-2022-10-17-011",
     "type": "workshop",
     "title": {
-      "en": "quality management system according to ISO 9001:2015 specifications",
+      "en": "Internal Audit of the Quality Management System According to ISO 9001:2015",
       "ar": "التدقيق الداخلي على نظام إدارة الجودة وفق مواصفة ISO 9001:2015"
     },
     "description": {
-      "en": "Attended the internal audit workshop on the",
+      "en": "Attended a workshop on",
       "ar": "حضور ورشة عمل حول"
     },
     "roles": ["Attendee"],
@@ -350,7 +347,7 @@
     "id": "evt-2022-12-12-012",
     "type": "workshop",
     "title": {
-      "en": "How to Criticize a Cinematic Film",
+      "en": "How to Criticise a Cinematic Film",
       "ar": "كيف تنتقد فيلمًا سينمائيًا"
     },
     "description": {
@@ -379,7 +376,7 @@
     "id": "evt-2023-01-29-013",
     "type": "workshop",
     "title": {
-      "en": "A Critical Vision with Saudi Eyes About the Culture of Film Hybridization",
+      "en": "A Critical Vision with Saudi Eyes About the Culture of Film Hybridisation",
       "ar": "رؤية نقدية بعيون سعودية حول ثقافة تهجين الأفلام"
     },
     "description": {
@@ -457,7 +454,7 @@
     },
     "host": {
       "name": {
-        "en": "Film Commission (Ministry of Culture) & Saudi Universities",
+        "en": "Film Commission (Ministry of Culture)",
         "ar": "هيئة الأفلام (وزارة الثقافة)"
       },
       "institution": {
@@ -482,7 +479,7 @@
       "en": "Presented and organised the initiative to hold a festival entitled",
       "ar": "قدمت ونظمت مبادرة إقامة مهرجان بعنوان"
     },
-    "roles": ["Presenter", "Organizer"],
+    "roles": ["Presenter", "Organiser"],
     "dates": {
       "start": "2023-11-14",
       "end": "2023-11-14"
@@ -575,7 +572,7 @@
       "ar": "الأفلام السينمائية والتطبيقات العملية"
     },
     "description": {
-      "en": "Judged the screenings of the Compass Program (Bosala), organised by the Red Sea and Western Saudi Arabia History Centre, and participated in the workshop titled",
+      "en": "Judged the screenings of the Compass Programme (Bosala), organised by the Red Sea and Western Saudi Arabia History Centre, and participated in the workshop titled",
       "ar": "تحكيم العروض المشاركة في برنامج بوصلة الذي نظّمه مركز تاريخ البحر الأحمر وغرب المملكة العربية السعودية، والمشاركة في ورشة عمل بعنوان"
     },    
     "roles": ["Participant", "Judge"],
@@ -619,7 +616,8 @@
       "name": {
         "en": "Majallat Al-Ghurfah 19",
         "ar": "مجلة غرفة ١٩"
-      }
+      },
+      "institution": null
     },
     "city": {
       "en": "San Diego, California, USA",
@@ -638,7 +636,7 @@
       "en": "Presented and organised the 3<sup>rd</sup> Student Seminar on Film Criticism, titled",
       "ar": "قدمت ونظمت الندوة الطلابية الثالثة للنقد السينمائي بعنوان"
     },
-    "roles": ["Presenter", "Organizer"],
+    "roles": ["Presenter", "Organiser"],
     "dates": {
       "start": "2025-04-15",
       "end": "2025-04-15"
@@ -670,7 +668,7 @@
       "en": "Participated in the 13<sup>th</sup> Career Fair in a panel session titled",
       "ar": "المشاركة في الملتقى المهني الثالث عشر في جلسة حوارية بعنوان"
     },
-    "roles": ["Panelist"],
+    "roles": ["Panellist"],
     "dates": {
       "start": "2026-04-06",
       "end": "2026-04-08"
@@ -732,7 +730,7 @@
     },
     "description": {
       "en": "Delivered a workshop titled",
-      "ar": "تقديم ورشة عمل بعنوان."
+      "ar": "تقديم ورشة عمل بعنوان"
     },
     "roles": ["Presenter"],
     "dates": {

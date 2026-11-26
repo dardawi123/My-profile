@@ -200,6 +200,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://countapi.mileshilliard.com">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
@@ -343,11 +344,145 @@
             <h1 class="sub-title">Biography</h1>
         </div>
 
-        <!--
-        Biography content is generated dynamically from:
-        data/profile/biography.json - Rendered by: js/profile/biography.js -->
-        <div id="biographyContent"></div>
-        <!-- To update biography information, edit the JSON file instead of modifying the HTML. -->
+        <!-- ===== BIOGRAPHY CONTENT (static HTML) =====
+             To add an item: copy one complete <li>...</li> or <tr>...</tr>
+             block, paste it where you want it, then change the text. -->
+        <div id="biographyContent">
+          <!-- Biography paragraphs -->
+          <div class="container2">
+            <h2>Academic Profile</h2>
+            <p>I am an Assistant Professor of Drama and Film Studies in the Faculty of Communication and Media at King Abdulaziz University, as well as a film critic and academic researcher. I previously served as Supervisor of the Communication Department. I earned my PhD from Dublin City University, Ireland, in 2023, with a doctoral thesis entitled <a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em></a>. I also hold a master’s degree in Communication and a bachelor’s degree in Food and Nutrition from King Abdulaziz University.</p>
+            <p>My research centres on drama and film studies, content analysis, and audience studies, with a particular focus on the representation of women in the media. I examine the content and complexities of foreign drama through critical analysis and a range of research methodologies, including audience surveys and mixed-methods content analysis, to explore the cultural and social contexts of dramatic works and their influence on audiences. I serve as a peer reviewer for several journals in drama and film studies, including journals indexed in Web of Science and Scopus.</p>
+            <p>Alongside my research, I run specialised workshops in screenwriting, film criticism, and podcast production. I teach courses that approach television drama and film from a critical perspective, helping students understand the aesthetics, techniques, and cultural significance of visual storytelling while developing their own skills in filmmaking and screenwriting.</p>
+            <p>I founded the Student Film Festival at King Abdulaziz University to foster a community of filmmakers and storytellers and to encourage applied artistic production in media studies. My interests also include adaptation and hybridity in dramatic and cinematic writing, particularly in relation to the representation of women in television series and films. Throughout my career, I have sought to bridge academic research and practice, advance film and media studies, and support a new generation of filmmakers and media professionals.</p>
+          </div>
+
+          <!-- Professional Experience -->
+          <div class="container3">
+            <h3 class="title">Professional Experience</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">2025 – Present:</span>
+                <span class="description">Part-time Consultant, Center of Research Excellence in Renewable Energy and Power Systems, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2024 – 2026:</span>
+                <span class="description">Supervisor, Communication Department, Faculty of Communication and Media, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2023 – Present:</span>
+                <span class="description">Assistant Professor, Visual and Audio Production Department, Faculty of Communication and Media, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2018 – 2023:</span>
+                <span class="description">Lecturer, Visual and Audio Production Department, Faculty of Communication and Media, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2011 – 2018:</span>
+                <span class="description">Lecturer, Communication Department, Faculty of Communication and Media, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2006 – 2011:</span>
+                <span class="description">Director of the Vice Dean’s Office, Faculty of Arts and Humanities, King Abdulaziz University.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Professional Memberships -->
+          <div class="container3">
+            <h3 class="title">Professional Memberships</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">2024 – Present:</span>
+                <span class="description">Member of the General Assembly and Representative for the Western Region, Animation Society, Film Commission, Ministry of Culture, Riyadh, Saudi Arabia.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Academic Initiatives -->
+          <div class="container3">
+            <h3 class="title">Academic Initiatives</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">2025 – Present:</span>
+                <span class="description">Founder of the Filmmaking Diploma Programme, Visual and Audio Production Department, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2025 – Present:</span>
+                <span class="description">Founder of the Student Scientific Seminar on Film Criticism, Visual and Audio Production Department, King Abdulaziz University.</span>
+              </li>
+              <li>
+                <span class="year">2023 – Present:</span>
+                <span class="description">Founder of the Student Film Festival, King Abdulaziz University.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Prospective Students -->
+          <div class="container3">
+            <h3 class="title">Prospective Students</h3>
+            <p>I welcome enquiries from prospective students interested in pursuing a Master's by Research or PhD in a range of fields, including television, film, and radio studies; media, drama, and soap opera studies; audience studies; gender studies; comparative cultural studies; and cultural analysis. My research encompasses both quantitative and qualitative methodologies, including ethnographic approaches. Additional areas of focus include mass communication, the role of artificial intelligence in the film industry, and the study of podcasts.</p>
+          </div>
+
+          <!-- Research Supervision -->
+          <div class="container3">
+            <h3 class="title">Research Supervision</h3>
+            <table class="supervision-table">
+              <thead>
+                <tr>
+                  <th scope="col">Year</th>
+                  <th scope="col">Topic</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2026</td>
+                  <td>Internal Examiner for a Master's student, <strong>Ms. Aisha Ali Abu Aqeel</strong>, and her thesis entitled: <em>The Role of Content Published on TikTok in Shaping the Mental Image of Tourism in the Kingdom of Saudi Arabia</em>.</td>
+                </tr>
+                <tr>
+                  <td>2025</td>
+                  <td>Supervisor of a Master's student, <strong>Ms. Dhelal Al-Qurashi</strong>, and her thesis entitled: <em>The Media Elite Perspective Towards the Socio-Cultural Content of the Saudi Podcast: A Case Study of the Fingan Podcast</em>.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Peer Review Activities -->
+          <div class="container3">
+            <h3 class="title">Peer Review Activities</h3>
+            <table class="reviews-table" dir="ltr">
+              <thead>
+                <tr>
+                  <th>Role</th>
+                  <th>Journal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Reviewer</td>
+                  <td>Culture, Health & Sexuality – Taylor & Francis <a href="https://www.tandfonline.com/journals/tchs20" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Culture, Health & Sexuality – Taylor & Francis (opens in a new tab)</span></a></td>
+                </tr>
+                <tr>
+                  <td>Reviewer</td>
+                  <td>Contemporary Islam – Springer Nature <a href="https://link.springer.com/journal/11562" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Contemporary Islam – Springer Nature (opens in a new tab)</span></a></td>
+                </tr>
+                <tr>
+                  <td>Reviewer</td>
+                  <td>Cogent Arts & Humanities – Taylor & Francis <a href="https://www.tandfonline.com/journals/oaah20" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Cogent Arts & Humanities – Taylor & Francis (opens in a new tab)</span></a></td>
+                </tr>
+                <tr>
+                  <td>Editorial Board</td>
+                  <td>Print, Radio, TV & Film Studies – Human Nature Research Publisher <a href="https://hnpublisher.com/ojs/index.php/PRTFS/Home" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Print, Radio, TV & Film Studies – Human Nature Research Publisher (opens in a new tab)</span></a></td>
+                </tr>
+                <tr>
+                  <td>Reviewer</td>
+                  <td>Arab Journal of Media and Communication – King Saud University <a href="https://samc.ksu.edu.sa/en/journal/publish_English" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Arab Journal of Media and Communication – King Saud University (opens in a new tab)</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- ===== END BIOGRAPHY CONTENT ===== -->
       </section>
     </main>
 
@@ -389,7 +524,6 @@
 
       <!-- Custom Script -->
       <script src="/js/profile/highlights.js" defer></script>
-      <script src="/js/profile/biography.js" defer></script>
       <script src="/js/script.js" defer></script>
 
   </body>

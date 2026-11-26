@@ -200,6 +200,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://countapi.mileshilliard.com">
 
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
@@ -343,11 +344,145 @@
             <h1 class="sub-title">السيرة الذاتية</h1>
         </div>
         
-        <!--
-        Biography content is generated dynamically from:
-        data/profile/biography.json - Rendered by: js/profile/biography.js -->
-        <div id="biographyContent"></div>
-        <!-- To update biography information, edit the JSON file instead of modifying the HTML. -->
+        <!-- ===== BIOGRAPHY CONTENT (static HTML) =====
+             To add an item: copy one complete <li>...</li> or <tr>...</tr>
+             block, paste it where you want it, then change the text. -->
+        <div id="biographyContent">
+          <!-- Biography paragraphs -->
+          <div class="container2">
+            <h2>نبذة أكاديمية</h2>
+            <p>أعمل أستاذًا مساعدًا في الدراما ودراسات الأفلام بكلية الاتصال والإعلام في جامعة الملك عبدالعزيز، كما أعمل ناقدةً سينمائية وباحثةً أكاديمية. وقد شغلتُ سابقًا منصب مشرفة قسم الاتصال. حصلتُ على درجة الدكتوراه من جامعة دبلن سيتي في أيرلندا عام ٢٠٢٣، وكانت رسالتي بعنوان "<a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer">أثر مشاهدة الدراما التركية على قيم وتصورات المرأة السعودية وأنماط إدراكها: دراسة جمهور</a>". كما أحمل درجة الماجستير في الاتصال، ودرجة البكالوريوس في الغذاء والتغذية من جامعة الملك عبدالعزيز.</p>
+            <p>تتركز اهتماماتي البحثية في الدراما ودراسات الأفلام، وتحليل المحتوى، ودراسات الجمهور، مع اهتمام خاص بتمثيل المرأة في وسائل الإعلام. وأتناول مضامين الدراما الأجنبية وتعقيداتها من خلال التحليل النقدي ومجموعة من المناهج البحثية، منها استبانات الجمهور وتحليل المحتوى باستخدام المنهج المختلط، بهدف استكشاف السياقات الثقافية والاجتماعية للأعمال الدرامية وتأثيرها في الجمهور. كما أعمل محكّمةً لعدد من المجلات العلمية في دراسات الدراما والأفلام، بما فيها مجلات مصنّفة ضمن قاعدتي البيانات العالميتين Web of Science وScopus.</p>
+            <p>إلى جانب البحث العلمي، أقدّم ورشًا متخصصة في كتابة السيناريو والنقد السينمائي وإنتاج البودكاست. وأدرّس مقررات تتناول الدراما التلفزيونية والسينما من منظور نقدي، تساعد الطلبة على فهم الجماليات والتقنيات والأبعاد الثقافية للسرد البصري، وتنمّي في الوقت نفسه مهاراتهم في صناعة الأفلام وكتابة السيناريو.</p>
+            <p>أسّستُ المهرجان السينمائي الطلابي في جامعة الملك عبدالعزيز بهدف بناء مجتمع من صنّاع الأفلام ورواة القصص، وتشجيع الإنتاج الفني التطبيقي في دراسات الإعلام. وتمتد اهتماماتي كذلك إلى الاقتباس والتهجين في الكتابة الدرامية والسينمائية، ولا سيما علاقتهما بتمثيل المرأة في المسلسلات التلفزيونية والأفلام. وقد حرصتُ طوال مسيرتي على ربط البحث الأكاديمي بالممارسة العملية، والإسهام في تطوير دراسات السينما والإعلام، ودعم جيل جديد من صنّاع الأفلام والمحترفين في مجال الإعلام.</p>
+          </div>
+
+          <!-- Professional Experience -->
+          <div class="container3">
+            <h3 class="title">الخبرات المهنية</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">٢٠٢٥ – حاليًا:</span>
+                <span class="description">مستشارة غير متفرغة، مركز التميز البحثي في الطاقة المتجددة ونظم القوى الكهربائية، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠٢٤ – ٢٠٢٦:</span>
+                <span class="description">مشرفة قسم الاتصال، كلية الاتصال والإعلام، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠٢٣ – حاليًا:</span>
+                <span class="description">أستاذ مساعد، قسم الإنتاج المرئي والمسموع، كلية الاتصال والإعلام، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠١٨ – ٢٠٢٣:</span>
+                <span class="description">محاضرة، قسم الإنتاج المرئي والمسموع، كلية الاتصال والإعلام، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠١١ – ٢٠١٨:</span>
+                <span class="description">محاضرة، قسم الاتصال، كلية الاتصال والإعلام، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠٠٦ – ٢٠١١:</span>
+                <span class="description">مديرة مكتب وكيلة الكلية، كلية الآداب والعلوم الإنسانية، جامعة الملك عبدالعزيز.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Professional Memberships -->
+          <div class="container3">
+            <h3 class="title">العضويات العلمية والمهنية</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">٢٠٢٤ – حاليًا:</span>
+                <span class="description">عضوة الجمعية العمومية ومُمثلة الجمعية في المنطقة الغربية، جمعية الرسوم المتحركة، هيئة الأفلام، وزارة الثقافة، الرياض، المملكة العربية السعودية.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Academic Initiatives -->
+          <div class="container3">
+            <h3 class="title">المبادرات الأكاديمية</h3>
+            <ul class="timeline-list">
+              <li>
+                <span class="year">٢٠٢٥ – حاليًا:</span>
+                <span class="description">تأسيس وتصميم برنامج الدبلوم المتوسط في صناعة الأفلام، قسم الإنتاج المرئي والمسموع، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠٢٥ – حاليًا:</span>
+                <span class="description">صاحبة مبادرة إقامة السيمنار العلمي للنقد السينمائي الطلابي، قسم الإنتاج المرئي والمسموع، جامعة الملك عبدالعزيز.</span>
+              </li>
+              <li>
+                <span class="year">٢٠٢٣ – حاليًا:</span>
+                <span class="description">صاحبة مبادرة إقامة المهرجان السينمائي الطلابي، جامعة الملك عبدالعزيز.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Prospective Students -->
+          <div class="container3">
+            <h3 class="title">الراغبون في الدراسات العليا</h3>
+            <p>أرحّب باستفسارات الطلبة الراغبين في الالتحاق ببرامج الماجستير البحثي والدكتوراه في دراسات التلفزيون والسينما والإذاعة، ودراسات الإعلام والدراما والمسلسلات الميلودرامية، ودراسات الجمهور، ودراسات النوع الاجتماعي، والدراسات الثقافية المقارنة، والتحليل الثقافي. وأعتمد في أبحاثي مناهج كمية ونوعية، منها المنهج الإثنوغرافي. كما تشمل اهتماماتي البحثية الاتصال الجماهيري، ودور الذكاء الاصطناعي في صناعة السينما، ودراسات البودكاست.</p>
+          </div>
+
+          <!-- Research Supervision -->
+          <div class="container3">
+            <h3 class="title">الإشراف على الرسائل العلمية</h3>
+            <table class="supervision-table">
+              <thead>
+                <tr>
+                  <th scope="col">السنة</th>
+                  <th scope="col">الموضوع</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>٢٠٢٦</td>
+                  <td>مناقشة داخلية لطالبة الماجستير <strong>الأستاذة/ عائشة علي أبو عقيل</strong>، ورسالتها بعنوان: <em>دور المحتوى المنشور على برنامج التيك توك في تشكيل الصورة الذهنية للسياحة في المملكة العربية السعودية</em>.</td>
+                </tr>
+                <tr>
+                  <td>٢٠٢٥</td>
+                  <td>مشرفة على طالبة الماجستير <strong>الأستاذة/ ظلال القرشي</strong>، ورسالتها بعنوان: <em>المضامين الثقافية الاجتماعية في البودكاست السعودي ورأي النخبة الإعلامية تجاهها: دراسة حالة لبودكاست فنجان</em>.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Peer Review Activities -->
+          <div class="container3">
+            <h3 class="title">التحكيم العلمي</h3>
+            <table class="reviews-table" dir="ltr">
+              <thead>
+                <tr>
+                  <th>الدور</th>
+                  <th>المجلة</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>محكّمة</td>
+                  <td>Culture, Health & Sexuality – Taylor & Francis <a href="https://www.tandfonline.com/journals/tchs20" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Culture, Health & Sexuality – Taylor & Francis (يُفتح في نافذة جديدة)</span></a></td>
+                </tr>
+                <tr>
+                  <td>محكّمة</td>
+                  <td>Contemporary Islam – Springer Nature <a href="https://link.springer.com/journal/11562" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Contemporary Islam – Springer Nature (يُفتح في نافذة جديدة)</span></a></td>
+                </tr>
+                <tr>
+                  <td>محكّمة</td>
+                  <td>Cogent Arts & Humanities – Taylor & Francis <a href="https://www.tandfonline.com/journals/oaah20" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Cogent Arts & Humanities – Taylor & Francis (يُفتح في نافذة جديدة)</span></a></td>
+                </tr>
+                <tr>
+                  <td>عضوة هيئة التحرير</td>
+                  <td>Print, Radio, TV & Film Studies – Human Nature Research Publisher <a href="https://hnpublisher.com/ojs/index.php/PRTFS/Home" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Print, Radio, TV & Film Studies – Human Nature Research Publisher (يُفتح في نافذة جديدة)</span></a></td>
+                </tr>
+                <tr>
+                  <td>محكّمة</td>
+                  <td>Arab Journal of Media and Communication – King Saud University <a href="https://samc.ksu.edu.sa/en/journal/publish_English" target="_blank" rel="noopener noreferrer">[Link]<span class="sr-only"> – Arab Journal of Media and Communication – King Saud University (يُفتح في نافذة جديدة)</span></a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <!-- ===== END BIOGRAPHY CONTENT ===== -->
       </section>
     </main>
 
@@ -373,7 +508,6 @@
           </div>
           <span class="footer-separator">|</span>
           <p class="footer-copyright">
-            <!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
             <img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo" width="20" height="20">
             © <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
           </p>
@@ -389,7 +523,6 @@
 
     <!-- Custom Script -->
     <script src="/js/profile/highlights.js" defer></script>
-    <script src="/js/profile/biography.js" defer></script>
     <script src="/js/script.js" defer></script>
 
 	</body>

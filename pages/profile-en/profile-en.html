@@ -209,7 +209,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&display=swap">
 
     <!-- Font Awesome (icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
 
     <!-- Page stylesheet -->
     <link rel="stylesheet" href="/css/profile-en/profile-en.css">
@@ -349,36 +351,38 @@
 
         <!-- Footer -->
         <footer class="footer1">
-        <div class="footer-text">
-            <div class="footer-meta">
-            <div class="footer-visitors" aria-label="Website visitor counter">
-                <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-                <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
-                <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
-                <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
-                <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
-                    stroke-width="2" />
-                </svg>
-                <span class="footer-visitors__label">Site Visitors</span>
-                <span class="footer-visitors__count">
-                <span class="footer-visitors__bracket">[</span>
-                <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
-                <span class="footer-visitors__bracket">]</span>
-                </span>
-                <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
-            </div>
-            <span class="footer-separator">|</span>
-            <p class="footer-copyright">
-              <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo">
-              © <span id="currentYear"></span> Dr. Merfat Alardawi. All Rights Reserved.
-            </p>
-            </div>
-        </div>
-        <div class="footer-iconTop">
-            <a href="javascript:void(0)" aria-label="Scroll to top">
-            <i class="fas fa-arrow-up"></i>
+          <div class="footer-text">
+              <div class="footer-meta">
+              <div class="footer-visitors" aria-label="Website visitor counter">
+                  <svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+                  <circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+                  <path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
+                      stroke-width="2" />
+                  </svg>
+                  <span class="footer-visitors__label">Site Visitors</span>
+                  <span class="footer-visitors__count">
+                  <span class="footer-visitors__bracket">[</span>
+                  <span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+                  <span class="footer-visitors__bracket">]</span>
+                  </span>
+                  <span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+              </div>
+              <span class="footer-separator">|</span>
+              <p class="footer-copyright">
+                <!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
+                <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo" width="20" height="20">
+                © <span id="currentYear"></span> Dr. Merfat Alardawi. All Rights Reserved.
+              </p>
+              </div>
+          </div>
+          <div class="footer-iconTop">
+            <!-- <a href="#top" aria-label="Scroll to top"> -->
+            <a href="#top" aria-label="Scroll to top">
+              <i class="fas fa-arrow-up"></i>
             </a>
-        </div>
+          </div>
         </footer>
 
         <!-- Custom Script -->

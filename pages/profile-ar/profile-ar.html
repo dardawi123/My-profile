@@ -206,10 +206,12 @@
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
     <!-- Fonts (Arabic) -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap">
 
     <!-- Font Awesome (icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
 
     <!-- Page stylesheet -->
     <link rel="stylesheet" href="/css/profile-ar/profile-ar.css">
@@ -369,13 +371,15 @@
           </div>
           <span class="footer-separator">|</span>
           <p class="footer-copyright">
-           <img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo">
+            <!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
+            <img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo" width="20" height="20">
             © <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
           </p>
         </div>
       </div>
       <div class="footer-iconTop">
-        <a href="javascript:void(0)" aria-label="العودة إلى أعلى الصفحة">
+        <!-- <a href="#top" aria-label="العودة إلى أعلى الصفحة">-->
+        <a href="#top" aria-label="العودة إلى أعلى الصفحة">
           <i class="fas fa-arrow-up"></i>
         </a>
       </div>

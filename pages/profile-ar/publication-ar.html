@@ -206,10 +206,12 @@
 		<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
 		<!-- Fonts (Arabic) -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;500;600;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap">
 
 		<!-- Font Awesome (icons) -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+		<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" media="print" onload="this.media='all'">
+		<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"></noscript>
 
 		<!-- Page stylesheet -->
 		<link rel="stylesheet" href="/css/profile-ar/publication-ar.css">
@@ -377,8 +379,7 @@
 					</li>
 
 					<li>
-					<a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer">The impact of watching Turkish drama on Saudi women's attitudes and perception patterns: An audience study<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
-					<span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
+						<a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em><span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>					<span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
 					</li>
 
 					<li>
@@ -421,36 +422,38 @@
 		
 		<!-- Footer -->
 		<footer class="footer1">
-		<div class="footer-text">
-			<div class="footer-meta">
-			<div class="footer-visitors" aria-label="عداد زوار الموقع">
-				<svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-				<path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
-				<circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
-				<path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
-				<path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
-					stroke-width="2" />
-				</svg>
-				<span class="footer-visitors__label">زوار الموقع</span>
-				<span class="footer-visitors__count">
-				<span class="footer-visitors__bracket">[</span>
-				<span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
-				<span class="footer-visitors__bracket">]</span>
-				</span>
-				<span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+			<div class="footer-text">
+				<div class="footer-meta">
+				<div class="footer-visitors" aria-label="عداد زوار الموقع">
+					<svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+					<path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+					<circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+					<path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+					<path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
+						stroke-width="2" />
+					</svg>
+					<span class="footer-visitors__label">زوار الموقع</span>
+					<span class="footer-visitors__count">
+					<span class="footer-visitors__bracket">[</span>
+					<span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+					<span class="footer-visitors__bracket">]</span>
+					</span>
+					<span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+				</div>
+				<span class="footer-separator">|</span>
+				<p class="footer-copyright">
+					<!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
+					<img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo" width="20" height="20">
+					© <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
+				</p>
+				</div>
 			</div>
-			<span class="footer-separator">|</span>
-			<p class="footer-copyright">
-				<img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo">
-				© <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
-			</p>
+			<div class="footer-iconTop">
+				<!-- <a href="#top" aria-label="العودة إلى أعلى الصفحة">-->
+				<a href="#top" aria-label="العودة إلى أعلى الصفحة">
+					<i class="fas fa-arrow-up"></i>
+				</a>
 			</div>
-		</div>
-		<div class="footer-iconTop">
-			<a href="javascript:void(0)" aria-label="العودة إلى أعلى الصفحة">
-			<i class="fas fa-arrow-up"></i>
-			</a>
-		</div>
 		</footer>
 
 		<!-- Custom Script -->

@@ -220,246 +220,248 @@
 
 	<body>
 
-    <div id="loader">
-      <div class="loader-content">
-          <div class="loader-title">جارِ التحميل...</div>
-          <div class="loader-bar"></div>
-          <div class="loader-subtitle">يرجى الانتظار...</div>
-      </div>
-    </div>
-			
+		<div id="loader">
+			<div class="loader-content">
+				<div class="loader-title">جارِ التحميل...</div>
+				<div class="loader-bar"></div>
+				<div class="loader-subtitle">يرجى الانتظار...</div>
+			</div>
+		</div>
+					
 		<!-- Header Section Design -->
 		<header>
-      <nav aria-label="القائمة الرئيسية">
-        <div class="right-section">
-          <!-- language switcher from Arabic to English -->
-          <nav class="lang-switcher" aria-label="اختيار اللغة">
-            <span class="lang-option is-current" lang="ar" aria-current="page">العربية</span>
-            <span class="lang-divider" aria-hidden="true"></span>
-            <a href="/pages/profile-en/publication-en.html" class="lang-option" id="langSwitch" lang="en" aria-label="التبديل إلى الإنجليزية (Switch to English)">EN</a>
-          </nav>
+			<nav aria-label="القائمة الرئيسية">
+			<div class="right-section">
+				<!-- language switcher from Arabic to English -->
+				<nav class="lang-switcher" aria-label="اختيار اللغة">
+				<span class="lang-option is-current" lang="ar" aria-current="page">العربية</span>
+				<span class="lang-divider" aria-hidden="true"></span>
+				<a href="/pages/profile-en/publication-en.html" class="lang-option" id="langSwitch" lang="en" aria-label="التبديل إلى الإنجليزية (Switch to English)">EN</a>
+				</nav>
 
-					<!-- Day/Night Mode Toggle -->
-					<div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="تبديل الوضع الليلي/النهاري">
-						<span class="fas fa-moon"></span>
-					</div>
-
-					<!-- Gear and Switcher -->
-					<div class="style-switcher-wrapper">
-						<div class="style-switcher-toggler" id="gearToggle">
-							<span class="fas fa-cog fa-spin"></span>
+						<!-- Day/Night Mode Toggle -->
+						<div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="تبديل الوضع الليلي/النهاري">
+							<span class="fas fa-moon"></span>
 						</div>
 
-						<div class="style-switcher" id="styleSwitcher">
-              				<p class="switcher-title">ألوان النمط</p>
-							<div class="colors">
-								<span class="color-1" onclick="setActiveStyle('theme-1')"></span>
-								<span class="color-2" onclick="setActiveStyle('theme-2')"></span>
-								<span class="color-3" onclick="setActiveStyle('theme-3')"></span>
-								<span class="color-4" onclick="setActiveStyle('theme-4')"></span>
-								<span class="color-5" onclick="setActiveStyle('theme-5')"></span>
-								<span class="color-6" onclick="setActiveStyle('theme-6')"></span>
+						<!-- Gear and Switcher -->
+						<div class="style-switcher-wrapper">
+							<div class="style-switcher-toggler" id="gearToggle">
+								<span class="fas fa-cog fa-spin"></span>
+							</div>
+
+							<div class="style-switcher" id="styleSwitcher">
+								<p class="switcher-title">ألوان النمط</p>
+								<div class="colors">
+									<span class="color-1" onclick="setActiveStyle('theme-1')"></span>
+									<span class="color-2" onclick="setActiveStyle('theme-2')"></span>
+									<span class="color-3" onclick="setActiveStyle('theme-3')"></span>
+									<span class="color-4" onclick="setActiveStyle('theme-4')"></span>
+									<span class="color-5" onclick="setActiveStyle('theme-5')"></span>
+									<span class="color-6" onclick="setActiveStyle('theme-6')"></span>
+								</div>
 							</div>
 						</div>
+
+				<div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
+				<span class="menu-icon__bar"></span>
+				<span class="menu-icon__bar"></span>
+				<span class="menu-icon__bar"></span>
+				</div>
+			</div>
+
+					<div class="left-section">
+						<div class="logo">
+						<a href="/ar/" aria-label="الصفحة الرئيسية">
+							<img src="/assets/site-logo/logo.webp" alt="شعار د. مرفت العرضاوي" width="120" height="120" loading="eager" decoding="async">
+						</a>
+						</div> 
+						<div class="menu-overlay" id="menuOverlay"></div>
+						<div class="nav-links" id="navLinks">
+							<a href="/ar/">
+								<i class="fa-solid fa-house nav-icon"></i>
+								<span>الرئيسية</span>
+							</a>
+							<a href="profile-ar.html">
+								<i class="fa-solid fa-user nav-icon"></i>
+								<span>السيرة الذاتية</span>
+							</a>
+							<a href="publication-ar.html">
+								<i class="fa-solid fa-book-open nav-icon"></i>
+								<span>النشر العلمي</span>
+							</a>
+							<a href="conferences-ar.html">
+								<i class="fa-solid fa-briefcase nav-icon"></i>
+								<span>الأنشطة الأكاديمية</span>
+							</a>
+							<a href="teaching-ar.html">
+							<i class="fa-solid fa-graduation-cap nav-icon"></i>
+							<span>الخبرة التدريسية</span>
+							</a>
+							<a href="training-ar.html">
+								<i class="fa-solid fa-chalkboard-user nav-icon"></i>
+								<span>التدريب</span>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</header>
+
+			<main>
+				<section>	
+					<div class="academic-hero">
+						<div class="profile-card" data-language="ar">
+						<div class="profile-image">
+						<img src="/assets/profile-image/profile-640.webp" alt="د. مرفت العرضاوي" width="512" height="640" loading="eager" fetchpriority="high" decoding="async">       
+						</div>
+						<div class="profile-info">
+							<p class="profile-name">د. مرفت العرضاوي</p>              
+							<p class="position">أستاذ مساعد في الدراما ودراسات الأفلام</p>
+							<p class="department">قسم الإنتاج المرئي والمسموع</p>
+							<p class="faculty">كلية الاتصال والإعلام</p>
+							<p class="university">جامعة الملك عبدالعزيز</p>
+							<div class="hero-actions">
+								<a href="mailto:malaradawe@kau.edu.sa" class="btn btn-primary">البريد الإلكتروني</a>
+								<a href="/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf" class="btn btn-secondary" target="_blank" rel="noopener"
+								aria-label="تحميل السيرة الذاتية (PDF)">
+								تحميل السيرة
+								</a>
+							</div>
+						</div>
+						</div>
+
+						<div
+							id="subpage-highlights"
+							class="academic-highlights"
+							data-language="ar"
+							data-type="subpage">
+						</div>
+
 					</div>
 
-          <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="فتح القائمة" aria-expanded="false" aria-controls="navLinks">
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
-          </div>
-        </div>
+					<div class="main-title">
+						<h1 class="sub-title">النشر العلمي</h1>
+					</div>
 
-				<div class="left-section">
-					<div class="logo">
-					<a href="/ar/" aria-label="الصفحة الرئيسية">
-						<img src="/assets/site-logo/logo.webp" alt="شعار د. مرفت العرضاوي" width="120" height="120" loading="eager" decoding="async">
+					<div class="research-overview">
+						<h2>نظرة عامة على البحث العلمي</h2>
+						<p>تتناول أبحاثي العلاقة بين المحتوى الإعلامي والجمهور والتمثيل الثقافي في سياقات متنوعة، وأُولي اهتمامًا خاصًا بالتلفزيون والسينما والدراما المتسلسلة، بما فيها المسلسلات الطويلة (السوب أوبرا)، والدراما اللاتينية (التيلينوفيلا)، والدراما التركية (الديزي)، إلى جانب تمثيل النوع الاجتماعي وصورة المرأة في وسائل الإعلام. وتمتد أعمالي الحديثة إلى البودكاست والإعلام الناشئ ودور الذكاء الاصطناعي في صناعة السينما.</p>
+						<h3>الاهتمامات البحثية</h3>
+						<ul class="research-interests">
+							<li>دراسات التلفزيون والدراما والسينما</li>
+							<li>دراسات الجمهور والتلقي الإعلامي</li>
+							<li>تمثيل النوع الاجتماعي وصورة المرأة في وسائل الإعلام</li>
+							<li>الدراسات الثقافية المقارنة</li>
+							<li>تحليل المحتوى ومناهج البحث الإعلامي</li>
+							<li>البودكاست ووسائل الإعلام الناشئة</li>
+							<li>الإعلام والمجتمع والتغير الثقافي</li>
+							<li>الذكاء الاصطناعي وصناعة السينما</li>
+						</ul>
+					</div>
+
+					<!-- Selected Publication -->
+					<div class="research-overview selected-publications">
+						<h2>أبرز المنشورات</h2>
+						<p class="selected-intro">خمسة أعمال تمثّل أبحاثي على أفضل وجه.</p>
+						<ol class="selected-list" role="list" lang="en" dir="ltr">
+							<li>
+							<a href="https://doi.org/10.1515/omgc-2025-0083" target="_blank" rel="noopener noreferrer">Exposure to AI-themed films and perceptions of artificial intelligence: A survey of Saudi young adults in Saudi Arabia<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
+							<span class="selected-meta"><cite>Online Media and Global Communication</cite> · 2026</span>
+							</li>
+
+							<li>
+							<a href="https://journals.sagepub.com/doi/10.1177/17496020251404332" target="_blank" rel="noopener noreferrer">Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
+							<span class="selected-meta"><cite>Critical Studies in Television</cite> · 2025 · with M. Berg and N. Al Obeidli</span>
+							</li>
+
+							<li>
+							<a href="https://doi.org/10.17951/ms.2024.8.69-89" target="_blank" rel="noopener noreferrer"><em>Squid Game</em>: Pleasure and consumption of Korean drama by young Saudi audiences<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
+							<span class="selected-meta"><cite>Mediatization Studies</cite> · 2024 · with P. Brereton</span>
+							</li>
+
+							<li>
+								<a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em><span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>					<span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
+							</li>
+
+							<li>
+							<a href="https://doi.org/10.5539/mas.v15n4p47" target="_blank" rel="noopener noreferrer">The influence of Turkish drama on socio-cultural values of Saudi women<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
+							<span class="selected-meta"><cite>Modern Applied Science</cite> · 2021 · with A. Bajnaid and P. Brereton</span>
+							</li>
+						</ol>
+					</div>
+
+					<div class="container2">
+						<div class="header-sticky">
+							<div class="publication-filter">
+								<button class="active" data-filter="all">جميع المنشورات</button>
+								<button data-filter="journal-article">المقالات العلمية</button>
+								<button data-filter="conference-proceeding">وقائع المؤتمرات</button>
+								<button data-filter="online-publication">المنشورات الإلكترونية</button>
+								<button data-filter="book-chapter">فصول الكتب</button>
+								<button data-filter="book">الكتب</button>
+								<button data-filter="phd-thesis">رسالة الدكتوراه</button>
+							</div>
+
+							<h3 id="publication-heading">جميع المنشورات</h3>
+						</div>
+							
+						<table class="publication-table" dir="rtl">
+							<thead>
+								<tr>
+									<th>السنة</th>
+									<th>النشر العلمي</th>
+								</tr>
+							</thead>
+
+							<tbody id="publicationTableBody">
+								<!-- JS will inject rows here -->
+							</tbody>
+						</table>
+						<p class="no-data-filter" id="publication-no-results" style="display:none;">لا توجد نتائج مطابقة.</p>
+					</div>
+				</section>
+			</main>
+				
+			<!-- Footer -->
+			<footer class="footer1">
+				<div class="footer-text">
+					<div class="footer-meta">
+					<div class="footer-visitors" aria-label="عداد زوار الموقع">
+						<svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+						<path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
+						<circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
+						<path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
+						<path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
+							stroke-width="2" />
+						</svg>
+						<span class="footer-visitors__label">زوار الموقع</span>
+						<span class="footer-visitors__count">
+						<span class="footer-visitors__bracket">[</span>
+						<span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
+						<span class="footer-visitors__bracket">]</span>
+						</span>
+						<span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
+					</div>
+					<span class="footer-separator">|</span>
+					<p class="footer-copyright">
+						<!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
+						<img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo" width="20" height="20">
+						© <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
+					</p>
+					</div>
+				</div>
+				<div class="footer-iconTop">
+					<!-- <a href="#top" aria-label="العودة إلى أعلى الصفحة">-->
+					<a href="#top" aria-label="العودة إلى أعلى الصفحة">
+						<i class="fas fa-arrow-up"></i>
 					</a>
-					</div> 
-					<div class="menu-overlay" id="menuOverlay"></div>
-					<div class="nav-links" id="navLinks">
-						<a href="/ar/">
-							<i class="fa-solid fa-house nav-icon"></i>
-							<span>الرئيسية</span>
-						</a>
-						<a href="profile-ar.html">
-							<i class="fa-solid fa-user nav-icon"></i>
-							<span>السيرة الذاتية</span>
-						</a>
-						<a href="publication-ar.html">
-							<i class="fa-solid fa-book-open nav-icon"></i>
-							<span>النشر العلمي</span>
-						</a>
-						<a href="conferences-ar.html">
-							<i class="fa-solid fa-briefcase nav-icon"></i>
-							<span>الأنشطة الأكاديمية</span>
-						</a>
-						<a href="teaching-ar.html">
-						<i class="fa-solid fa-graduation-cap nav-icon"></i>
-						<span>الخبرة التدريسية</span>
-						</a>
-						<a href="training-ar.html">
-							<i class="fa-solid fa-chalkboard-user nav-icon"></i>
-							<span>التدريب</span>
-						</a>
-					</div>
 				</div>
-			</nav>
-		</header>
+			</footer>
 
-		<section>	
-			<div class="academic-hero">
-				<div class="profile-card" data-language="ar">
-				<div class="profile-image">
-        		<img src="/assets/profile-image/profile-640.webp" alt="د. مرفت العرضاوي" width="512" height="640" loading="eager" fetchpriority="high" decoding="async">       
-				</div>
-				<div class="profile-info">
-              		<p class="profile-name">د. مرفت العرضاوي</p>              
-              		<p class="position">أستاذ مساعد في الدراما ودراسات الأفلام</p>
-					<p class="department">قسم الإنتاج المرئي والمسموع</p>
-					<p class="faculty">كلية الاتصال والإعلام</p>
-					<p class="university">جامعة الملك عبدالعزيز</p>
-					<div class="hero-actions">
-						<a href="mailto:malaradawe@kau.edu.sa" class="btn btn-primary">البريد الإلكتروني</a>
-						<a href="/assets/cv/Dr-Merfat-Alardawi-Resume-ar.pdf" class="btn btn-secondary" target="_blank" rel="noopener"
-						aria-label="تحميل السيرة الذاتية (PDF)">
-						تحميل السيرة
-						</a>
-					</div>
-				</div>
-				</div>
-
-				<div
-					id="subpage-highlights"
-					class="academic-highlights"
-					data-language="ar"
-					data-type="subpage">
-				</div>
-
-			</div>
-
-			<div class="main-title">
-    			<h1 class="sub-title">النشر العلمي</h1>
-			</div>
-
-			<div class="research-overview">
-				<h2>نظرة عامة على البحث العلمي</h2>
-        		<p>تتناول أبحاثي العلاقة بين المحتوى الإعلامي والجمهور والتمثيل الثقافي في سياقات متنوعة، وأُولي اهتمامًا خاصًا بالتلفزيون والسينما والدراما المتسلسلة، بما فيها المسلسلات الطويلة (السوب أوبرا)، والدراما اللاتينية (التيلينوفيلا)، والدراما التركية (الديزي)، إلى جانب تمثيل النوع الاجتماعي وصورة المرأة في وسائل الإعلام. وتمتد أعمالي الحديثة إلى البودكاست والإعلام الناشئ ودور الذكاء الاصطناعي في صناعة السينما.</p>
-				<h3>الاهتمامات البحثية</h3>
-				<ul class="research-interests">
-					<li>دراسات التلفزيون والدراما والسينما</li>
-					<li>دراسات الجمهور والتلقي الإعلامي</li>
-					<li>تمثيل النوع الاجتماعي وصورة المرأة في وسائل الإعلام</li>
-					<li>الدراسات الثقافية المقارنة</li>
-					<li>تحليل المحتوى ومناهج البحث الإعلامي</li>
-					<li>البودكاست ووسائل الإعلام الناشئة</li>
-					<li>الإعلام والمجتمع والتغير الثقافي</li>
-					<li>الذكاء الاصطناعي وصناعة السينما</li>
-				</ul>
-			</div>
-
-			<!-- Selected Publication -->
-			<div class="research-overview selected-publications">
-				<h2>أبرز المنشورات</h2>
-				<p class="selected-intro">خمسة أعمال تمثّل أبحاثي على أفضل وجه.</p>
-				<ol class="selected-list" role="list" lang="en" dir="ltr">
-					<li>
-					<a href="https://doi.org/10.1515/omgc-2025-0083" target="_blank" rel="noopener noreferrer">Exposure to AI-themed films and perceptions of artificial intelligence: A survey of Saudi young adults in Saudi Arabia<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
-					<span class="selected-meta"><cite>Online Media and Global Communication</cite> · 2026</span>
-					</li>
-
-					<li>
-					<a href="https://journals.sagepub.com/doi/10.1177/17496020251404332" target="_blank" rel="noopener noreferrer">Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
-					<span class="selected-meta"><cite>Critical Studies in Television</cite> · 2025 · with M. Berg and N. Al Obeidli</span>
-					</li>
-
-					<li>
-					<a href="https://doi.org/10.17951/ms.2024.8.69-89" target="_blank" rel="noopener noreferrer"><em>Squid Game</em>: Pleasure and consumption of Korean drama by young Saudi audiences<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
-					<span class="selected-meta"><cite>Mediatization Studies</cite> · 2024 · with P. Brereton</span>
-					</li>
-
-					<li>
-						<a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener noreferrer"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em><span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>					<span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
-					</li>
-
-					<li>
-					<a href="https://doi.org/10.5539/mas.v15n4p47" target="_blank" rel="noopener noreferrer">The influence of Turkish drama on socio-cultural values of Saudi women<span class="sr-only" lang="ar" dir="rtl"> (باللغة الإنجليزية، يفتح في نافذة جديدة)</span></a>
-					<span class="selected-meta"><cite>Modern Applied Science</cite> · 2021 · with A. Bajnaid and P. Brereton</span>
-					</li>
-				</ol>
-			</div>
-
-			<div class="container2">
-				<div class="header-sticky">
-					<div class="publication-filter">
-						<button class="active" data-filter="all">جميع المنشورات</button>
-						<button data-filter="journal-article">المقالات العلمية</button>
-						<button data-filter="conference-proceeding">وقائع المؤتمرات</button>
-						<button data-filter="online-publication">المنشورات الإلكترونية</button>
-						<button data-filter="book-chapter">فصول الكتب</button>
-						<button data-filter="book">الكتب</button>
-						<button data-filter="phd-thesis">رسالة الدكتوراه</button>
-					</div>
-
-					<h3 id="publication-heading">جميع المنشورات</h3>
-				</div>
-					
-				<table class="publication-table" dir="rtl">
-					<thead>
-						<tr>
-							<th>السنة</th>
-							<th>النشر العلمي</th>
-						</tr>
-					</thead>
-
-					<tbody id="publicationTableBody">
-						<!-- JS will inject rows here -->
-					</tbody>
-				</table>
-				<p class="no-data-filter" id="publication-no-results" style="display:none;">لا توجد نتائج مطابقة.</p>
-			</div>
-		</section>
-		
-		<!-- Footer -->
-		<footer class="footer1">
-			<div class="footer-text">
-				<div class="footer-meta">
-				<div class="footer-visitors" aria-label="عداد زوار الموقع">
-					<svg class="footer-visitors__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
-					<path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="2" />
-					<circle cx="10" cy="7" r="4" stroke="currentColor" stroke-width="2" />
-					<path d="M20 21v-2a4 4 0 0 0-3-3.87" stroke="currentColor" stroke-width="2" />
-					<path d="M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor"
-						stroke-width="2" />
-					</svg>
-					<span class="footer-visitors__label">زوار الموقع</span>
-					<span class="footer-visitors__count">
-					<span class="footer-visitors__bracket">[</span>
-					<span class="footer-visitors__value" id="visitorCount" aria-hidden="true">&mdash;</span>
-					<span class="footer-visitors__bracket">]</span>
-					</span>
-					<span class="sr-only" id="visitorCountLive" aria-live="polite"></span>
-				</div>
-				<span class="footer-separator">|</span>
-				<p class="footer-copyright">
-					<!-- <img src="/assets/favicon.png" alt="Alardawi logo" class="footer-logo"> -->
-					<img src="/assets/favicon.png" alt="شعار د. مرفت العرضاوي" class="footer-logo" width="20" height="20">
-					© <span id="currentYear"></span> د. مرفت العرضاوي. جميع الحقوق محفوظة.
-				</p>
-				</div>
-			</div>
-			<div class="footer-iconTop">
-				<!-- <a href="#top" aria-label="العودة إلى أعلى الصفحة">-->
-				<a href="#top" aria-label="العودة إلى أعلى الصفحة">
-					<i class="fas fa-arrow-up"></i>
-				</a>
-			</div>
-		</footer>
-
-		<!-- Custom Script -->
-    	<script src="/js/profile/highlights.js" defer></script>
-		<script src="/js/profile/publication.js" defer></script>
-		<script src="/js/script.js" defer></script>
+			<!-- Custom Script -->
+			<script src="/js/profile/highlights.js" defer></script>
+			<script src="/js/profile/publication.js" defer></script>
+			<script src="/js/script.js" defer></script>
 
 	</body>
 </html>

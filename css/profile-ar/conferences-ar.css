@@ -902,7 +902,8 @@ td {
 }
 
 /* SUBTITLE */
-.container2 h3 {
+.container2 h3,
+.container2 h2 {
   font-family: var(--font-display);
   margin: 0;
   padding: 0 10px;
@@ -1091,7 +1092,7 @@ table th {
   left: 0;
   width: 100%;
   height: 100%;
-  background: color-mix(in srgb, var(--main-color) 55%, white);
+  background: color-mix(in srgb, var(--main-color) 70%, black);
   transition: top 0.4s ease;
   z-index: -1; 
 }

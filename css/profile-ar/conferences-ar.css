@@ -4,6 +4,7 @@
   --bg-nav-menu-color: #F5F5F5;
   --bg-nav-menu-hover-color: #E5E7EB;
   --bg-style-switcher-color: #F5F5F5;
+  --scroll-arrow-color: #504e70;
   --bg-color: #F5F5F5;
   --bg-white-color: #F5F5F5;
   --card-bg-color: #FCFCFC;
@@ -29,9 +30,15 @@
   box-sizing: border-box;
   text-decoration: none;
   border: none;
-  outline: none;
-  scroll-behavior: smooth;
+  /*outline: none;*/
+  /*scroll-behavior: smooth;*/
   font-family: var(--font-body);
+}
+
+/* Visible focus for keyboard users only (not on mouse click or tap) */
+:focus-visible {
+  outline: 2px solid var(--scroll-arrow-color);
+  outline-offset: 3px;
 }
 
 /* Visible focus for keyboard users only (mouse clicks show nothing) */
@@ -56,6 +63,13 @@ html {
   /* Prevent unexpected text enlargement on iPhone */
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
+  scroll-behavior: smooth; /* Smooth scrolling for #top and other in-page links - Delete this line if does not work */
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 html::-webkit-scrollbar {
@@ -522,18 +536,22 @@ nav {
 /* GLOBAL LAYOUT */
 section {
   padding: 2.5rem max(1rem, 2.2%) 5rem;
-  opacity: 0;
-  transform: translateY(10px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: sectionIn 0.3s ease both;
 }
 
 section:last-of-type {
   padding-bottom: clamp(4rem, 6vw, 5rem);
 }
 
-.page-loaded section {
-  opacity: 1;
-  transform: translateY(0);
+@keyframes sectionIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  section {
+    animation: none;
+  }
 }
 
 sup {
@@ -1058,7 +1076,7 @@ table th {
   border: 2px solid var(--main-color);
   border-radius: .5rem;
   transition: .5s ease;
-  animation: scalePulse 1.5s infinite;
+  /*animation: scalePulse 1.5s infinite;*/
   position: relative;
   overflow: hidden; /* Ensure the pseudo-element stays within bounds */
   z-index: 1; 

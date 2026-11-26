@@ -772,7 +772,7 @@ background: color-mix(in srgb, var(--main-color) 35%, transparent);
   position: relative;
   flex: 0 1 auto;
   min-width: 0;
-  animation: floatImage 5.5s ease-in-out infinite;
+  /*animation: floatImage 5.5s ease-in-out infinite;*/
 }
 
 .home-img img {

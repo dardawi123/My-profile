@@ -220,213 +220,214 @@
 
   <body>
 
-    <div id="loader">
-      <div class="loader-content">
-          <div class="loader-title">Loading...</div>
-          <div class="loader-bar"></div>
-          <div class="loader-subtitle">Please wait...</div>
+      <div id="loader">
+        <div class="loader-content">
+            <div class="loader-title">Loading...</div>
+            <div class="loader-bar"></div>
+            <div class="loader-subtitle">Please wait...</div>
+        </div>
       </div>
-    </div>
 
-    <!-- Header Section Design -->
-    <header>
-      <nav aria-label="Primary Navigation">
-        <div class="right-section">
-          <!-- language switcher from English to Arabic -->
-          <nav class="lang-switcher" aria-label="Language selector">
-            <span class="lang-option is-current" lang="en" aria-current="page">EN</span>
-            <span class="lang-divider" aria-hidden="true"></span>
-            <a href="/pages/profile-ar/publication-ar.html" class="lang-option" id="langSwitch" lang="ar" aria-label="التبديل إلى العربية (Switch to Arabic)">العربية</a>
-          </nav>
+      <!-- Header Section Design -->
+      <header>
+        <nav aria-label="Primary Navigation">
+          <div class="right-section">
+            <!-- language switcher from English to Arabic -->
+            <nav class="lang-switcher" aria-label="Language selector">
+              <span class="lang-option is-current" lang="en" aria-current="page">EN</span>
+              <span class="lang-divider" aria-hidden="true"></span>
+              <a href="/pages/profile-ar/publication-ar.html" class="lang-option" id="langSwitch" lang="ar" aria-label="التبديل إلى العربية (Switch to Arabic)">العربية</a>
+            </nav>
 
-          <!-- Day/Night Mode Toggle -->
-          <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
-            <span class="fas fa-moon"></span>
-          </div>
-
-          <!-- Gear and Switcher -->
-          <div class="style-switcher-wrapper">
-            <div class="style-switcher-toggler" id="gearToggle">
-              <span class="fas fa-cog fa-spin"></span>
+            <!-- Day/Night Mode Toggle -->
+            <div class="day-night" id="dayNightToggle" role="button" tabindex="0" aria-pressed="false" aria-label="Toggle day/night mode">
+              <span class="fas fa-moon"></span>
             </div>
 
-            <div class="style-switcher" id="styleSwitcher">
-              <p class="switcher-title">Theme Colours</p>
-              <div class="colors">
-                <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
-                <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
-                <span class="color-3" onclick="setActiveStyle('theme-3')"></span>
-                <span class="color-4" onclick="setActiveStyle('theme-4')"></span>
-                <span class="color-5" onclick="setActiveStyle('theme-5')"></span>
-                <span class="color-6" onclick="setActiveStyle('theme-6')"></span>
+            <!-- Gear and Switcher -->
+            <div class="style-switcher-wrapper">
+              <div class="style-switcher-toggler" id="gearToggle">
+                <span class="fas fa-cog fa-spin"></span>
+              </div>
+
+              <div class="style-switcher" id="styleSwitcher">
+                <p class="switcher-title">Theme Colours</p>
+                <div class="colors">
+                  <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
+                  <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
+                  <span class="color-3" onclick="setActiveStyle('theme-3')"></span>
+                  <span class="color-4" onclick="setActiveStyle('theme-4')"></span>
+                  <span class="color-5" onclick="setActiveStyle('theme-5')"></span>
+                  <span class="color-6" onclick="setActiveStyle('theme-6')"></span>
+                </div>
               </div>
             </div>
+
+            <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+              <span class="menu-icon__bar"></span>
+              <span class="menu-icon__bar"></span>
+              <span class="menu-icon__bar"></span>
+            </div>
           </div>
 
-          <div class="menu-icon" id="menuToggle" role="button" tabindex="0" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
-            <span class="menu-icon__bar"></span>
+          <div class="left-section">
+            <div class="logo">
+              <a href="/" aria-label="Home page">
+                <img src="/assets/site-logo/logo.webp" alt="Dr. Merfat Alardawi logo" width="120" height="120" loading="eager" decoding="async">
+              </a>
+            </div>
+            <div class="menu-overlay" id="menuOverlay"></div>
+            <div class="nav-links" id="navLinks">
+              <a href="/">
+                <i class="fa-solid fa-house nav-icon"></i>
+                <span>Home</span>
+              </a>
+              <a href="profile-en.html">
+                <i class="fa-solid fa-user nav-icon"></i>
+                <span>Biography</span>
+              </a>
+              <a href="publication-en.html">
+                <i class="fa-solid fa-book-open nav-icon"></i>
+                <span>Publications</span>
+              </a>
+              <a href="conferences-en.html">
+                <i class="fa-solid fa-briefcase nav-icon"></i>
+                        <span>Academic Activities</span>
+              </a>
+              <a href="teaching-en.html">
+                <i class="fa-solid fa-graduation-cap nav-icon"></i>
+                <span>Teaching</span>
+              </a>
+              <a href="training-en.html">
+                <i class="fa-solid fa-chalkboard-user nav-icon"></i>
+                <span>Training</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main>
+      <section>
+        <div class="academic-hero">
+          <div class="profile-card" data-language="en">
+            <div class="profile-image">
+            <img src="/assets/profile-image/profile-640.webp" alt="Dr. Merfat Alardawi" width="512" height="640" loading="eager" fetchpriority="high" decoding="async">       
+            </div>
+            <div class="profile-info">
+                <p class="profile-name">Dr. Merfat Alardawi</p>
+                <p class="position full">Assistant Professor of Drama and Film Studies</p>
+                <p class="position short">Asst. Prof. of Drama and Film Studies</p>
+                <p class="department full">Visual and Audio Production Department</p>
+                <p class="department short">Visual and Audio Production Dept.</p>
+                <p class="faculty">Faculty of Communication and Media</p>
+                <p class="university">King Abdulaziz University</p>
+                <div class="hero-actions">
+                  <a href="mailto:malaradawe@kau.edu.sa" class="btn btn-primary">Email</a>
+                  <a href="/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
+                  Download CV
+                  </a>
+                </div>
+            </div>
+          </div>
+
+          <div
+            id="subpage-highlights"
+            class="academic-highlights"
+            data-language="en"
+            data-type="subpage">
           </div>
         </div>
 
-        <div class="left-section">
-          <div class="logo">
-            <a href="/" aria-label="Home page">
-              <img src="/assets/site-logo/logo.webp" alt="Dr. Merfat Alardawi logo" width="120" height="120" loading="eager" decoding="async">
-            </a>
-          </div>
-          <div class="menu-overlay" id="menuOverlay"></div>
-          <div class="nav-links" id="navLinks">
-            <a href="/">
-              <i class="fa-solid fa-house nav-icon"></i>
-              <span>Home</span>
-            </a>
-            <a href="profile-en.html">
-              <i class="fa-solid fa-user nav-icon"></i>
-              <span>Biography</span>
-            </a>
-            <a href="publication-en.html">
-              <i class="fa-solid fa-book-open nav-icon"></i>
-              <span>Publications</span>
-            </a>
-            <a href="conferences-en.html">
-              <i class="fa-solid fa-briefcase nav-icon"></i>
-                      <span>Academic Activities</span>
-            </a>
-            <a href="teaching-en.html">
-              <i class="fa-solid fa-graduation-cap nav-icon"></i>
-              <span>Teaching</span>
-            </a>
-            <a href="training-en.html">
-              <i class="fa-solid fa-chalkboard-user nav-icon"></i>
-              <span>Training</span>
-            </a>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <section>
-			<div class="academic-hero">
-				<div class="profile-card" data-language="en">
-          <div class="profile-image">
-          <img src="/assets/profile-image/profile-640.webp" alt="Dr. Merfat Alardawi" width="512" height="640" loading="eager" fetchpriority="high" decoding="async">       
-          </div>
-					<div class="profile-info">
-              <p class="profile-name">Dr. Merfat Alardawi</p>
-						  <p class="position full">Assistant Professor of Drama and Film Studies</p>
-              <p class="position short">Asst. Prof. of Drama and Film Studies</p>
-              <p class="department full">Visual and Audio Production Department</p>
-							<p class="department short">Visual and Audio Production Dept.</p>
-              <p class="faculty">Faculty of Communication and Media</p>
-							<p class="university">King Abdulaziz University</p>
-							<div class="hero-actions">
-                <a href="mailto:malaradawe@kau.edu.sa" class="btn btn-primary">Email</a>
-                <a href="/assets/cv/Dr-Merfat-Alardawi-Resume-en.pdf" class="btn btn-secondary" target="_blank" rel="noopener">
-                Download CV
-                </a>
-							</div>
-					</div>
-				</div>
-
-				<div
-					id="subpage-highlights"
-					class="academic-highlights"
-					data-language="en"
-					data-type="subpage">
-				</div>
-			</div>
-
-			<div class="main-title">
-    			<h1 class="sub-title">Publications</h1>
-			</div>
-
-      <div class="research-overview">
-        <h2>Research Overview</h2>
-        <p>
-          My research examines the relationship between media content, audiences,
-          and cultural representation across diverse contexts. I focus on television,
-          film, and serial drama, including soap operas, Latin American telenovelas,
-          and Turkish <em>dizi</em>, as well as gender representation and the portrayal
-          of women in media. My recent work extends to podcasts, emerging media, and
-          the role of artificial intelligence in the film industry.
-        </p>
-        <h3>Research Interests</h3>
-        <ul class="research-interests">
-          <li>Television, Drama, and Film Studies</li>
-          <li>Audience Reception Studies</li>
-          <li>Gender Representation and Women in Media</li>
-          <li>Comparative Cultural Studies</li>
-          <li>Content Analysis and Media Research Methods</li>
-          <li>Podcasts and Emerging Media</li>
-          <li>Media, Society, and Cultural Change</li>
-          <li>Artificial Intelligence and the Film Industry</li>
-        </ul>
-      </div>
-
-			<!-- Selected Publication -->
-      <div class="research-overview selected-publications">
-        <h2>Selected Publications</h2>
-        <p class="selected-intro">Five works that best represent my research.</p>
-        <ol class="selected-list" role="list">
-          <li>
-            <a href="https://doi.org/10.1515/omgc-2025-0083" target="_blank" rel="noopener">Exposure to AI-themed films and perceptions of artificial intelligence: A survey of Saudi young adults in Saudi Arabia<span class="sr-only"> (opens in a new tab)</span></a>
-            <span class="selected-meta"><em>Online Media and Global Communication</em> · 2026</span>
-          </li>
-          <li>
-            <a href="https://journals.sagepub.com/doi/10.1177/17496020251404332" target="_blank" rel="noopener">Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE<span class="sr-only"> (opens in a new tab)</span></a>
-            <span class="selected-meta"><em>Critical Studies in Television</em> · 2025 · with M. Berg and N. Al Obeidli</span>
-          </li>
-          <li>
-            <a href="https://doi.org/10.17951/ms.2024.8.69-89" target="_blank" rel="noopener"><em>Squid Game</em>: Pleasure and consumption of Korean drama by young Saudi audiences<span class="sr-only"> (opens in a new tab)</span></a>
-            <span class="selected-meta"><em>Mediatization Studies</em> · 2024 · with P. Brereton</span>
-          </li>
-          <li>
-            <a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em><span class="sr-only"> (opens in a new tab)</span></a>
-            <span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
-          </li>
-          <li>
-            <a href="https://doi.org/10.5539/mas.v15n4p47" target="_blank" rel="noopener">The influence of Turkish drama on socio-cultural values of Saudi women<span class="sr-only"> (opens in a new tab)</span></a>
-            <span class="selected-meta"><em>Modern Applied Science</em> · 2021 · with A. Bajnaid and P. Brereton</span>
-          </li>
-        </ol>
-      </div>
-
-      <div class="container2">
-        <div class="header-sticky">
-
-          <div class="publication-filter">
-            <button class="active" data-filter="all">All</button>
-            <button data-filter="journal-article">Journal Articles</button>
-            <button data-filter="conference-proceeding">Conference Proceedings</button>
-            <button data-filter="online-publication">Online Publications</button>
-            <button data-filter="book-chapter">Book Chapters</button>
-            <button data-filter="book">Books</button>
-            <button data-filter="phd-thesis">PhD Thesis</button>
-          </div>
-
-          <h3 id="publication-heading">All Publications</h3>
-        </div>    
-
-        <div class="table-body-wrapper">
-          <table class="publication-table">
-            <thead>
-              <tr>
-                <th>Year</th>
-                <th>Publication</th>
-              </tr>
-            </thead>
-
-            <tbody id="publicationTableBody">
-              <!-- JS will inject rows here -->
-            </tbody>
-          </table>
+        <div class="main-title">
+            <h1 class="sub-title">Publications</h1>
         </div>
 
-        <p class="no-data-filter" id="publication-no-results" style="display:none;">No results found.</p>
-      </div>
-    </section>
+        <div class="research-overview">
+          <h2>Research Overview</h2>
+          <p>
+            My research examines the relationship between media content, audiences,
+            and cultural representation across diverse contexts. I focus on television,
+            film, and serial drama, including soap operas, Latin American telenovelas,
+            and Turkish <em>dizi</em>, as well as gender representation and the portrayal
+            of women in media. My recent work extends to podcasts, emerging media, and
+            the role of artificial intelligence in the film industry.
+          </p>
+          <h3>Research Interests</h3>
+          <ul class="research-interests">
+            <li>Television, Drama, and Film Studies</li>
+            <li>Audience Reception Studies</li>
+            <li>Gender Representation and Women in Media</li>
+            <li>Comparative Cultural Studies</li>
+            <li>Content Analysis and Media Research Methods</li>
+            <li>Podcasts and Emerging Media</li>
+            <li>Media, Society, and Cultural Change</li>
+            <li>Artificial Intelligence and the Film Industry</li>
+          </ul>
+        </div>
+
+        <!-- Selected Publication -->
+        <div class="research-overview selected-publications">
+          <h2>Selected Publications</h2>
+          <p class="selected-intro">Five works that best represent my research.</p>
+          <ol class="selected-list" role="list">
+            <li>
+              <a href="https://doi.org/10.1515/omgc-2025-0083" target="_blank" rel="noopener">Exposure to AI-themed films and perceptions of artificial intelligence: A survey of Saudi young adults in Saudi Arabia<span class="sr-only"> (opens in a new tab)</span></a>
+              <span class="selected-meta"><em>Online Media and Global Communication</em> · 2026</span>
+            </li>
+            <li>
+              <a href="https://journals.sagepub.com/doi/10.1177/17496020251404332" target="_blank" rel="noopener">Cultural skimming, authenticity, and streaming preferences: Turkish serials (<em>Dizi</em>) among young audiences in Qatar, Saudi Arabia, and the UAE<span class="sr-only"> (opens in a new tab)</span></a>
+              <span class="selected-meta"><em>Critical Studies in Television</em> · 2025 · with M. Berg and N. Al Obeidli</span>
+            </li>
+            <li>
+              <a href="https://doi.org/10.17951/ms.2024.8.69-89" target="_blank" rel="noopener"><em>Squid Game</em>: Pleasure and consumption of Korean drama by young Saudi audiences<span class="sr-only"> (opens in a new tab)</span></a>
+              <span class="selected-meta"><em>Mediatization Studies</em> · 2024 · with P. Brereton</span>
+            </li>
+            <li>
+              <a href="https://doras.dcu.ie/28008/" target="_blank" rel="noopener"><em>The impact of watching Turkish drama on Saudi women’s attitudes and perception patterns: An audience study</em><span class="sr-only"> (opens in a new tab)</span></a>
+              <span class="selected-meta">PhD thesis · Dublin City University · 2023</span>
+            </li>
+            <li>
+              <a href="https://doi.org/10.5539/mas.v15n4p47" target="_blank" rel="noopener">The influence of Turkish drama on socio-cultural values of Saudi women<span class="sr-only"> (opens in a new tab)</span></a>
+              <span class="selected-meta"><em>Modern Applied Science</em> · 2021 · with A. Bajnaid and P. Brereton</span>
+            </li>
+          </ol>
+        </div>
+
+        <div class="container2">
+          <div class="header-sticky">
+
+            <div class="publication-filter">
+              <button class="active" data-filter="all">All</button>
+              <button data-filter="journal-article">Journal Articles</button>
+              <button data-filter="conference-proceeding">Conference Proceedings</button>
+              <button data-filter="online-publication">Online Publications</button>
+              <button data-filter="book-chapter">Book Chapters</button>
+              <button data-filter="book">Books</button>
+              <button data-filter="phd-thesis">PhD Thesis</button>
+            </div>
+
+            <h3 id="publication-heading">All Publications</h3>
+          </div>    
+
+          <div class="table-body-wrapper">
+            <table class="publication-table">
+              <thead>
+                <tr>
+                  <th>Year</th>
+                  <th>Publication</th>
+                </tr>
+              </thead>
+
+              <tbody id="publicationTableBody">
+                <!-- JS will inject rows here -->
+              </tbody>
+            </table>
+          </div>
+
+          <p class="no-data-filter" id="publication-no-results" style="display:none;">No results found.</p>
+        </div>
+      </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer1">

@@ -37,7 +37,7 @@ const isArabic = document.documentElement.lang === "ar";
 const wrapper = document.getElementById("swiperWrapper");
 
 projects.forEach((p) => {
-  const slide = document.createElement("article");
+  const slide = document.createElement("div");
   slide.className = "new-card card-article swiper-slide";
 
   const caption = isArabic ? (typeAr[p.title] || p.title) : p.title;
@@ -48,10 +48,11 @@ projects.forEach((p) => {
   slide.innerHTML = `
     <div class="card-link">
       <img src="${p.img}"
+           width="600" height="848"
            loading="lazy"
            alt="${altText}"
            class="card-img">
-
+           
       <div class="card-shadow"></div>
 
       <div class="new-data card-data">

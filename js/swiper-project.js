@@ -63,3 +63,54 @@ projects.forEach((p) => {
 
   wrapper.appendChild(slide);
 });
+
+/* ======================================================
+   Load the Swiper library only when the visitor gets close
+   to the "Students' Works" slider (about one screen before).
+   This keeps the start of the homepage light and fast.
+   The slider itself is started by initSwiperNew() in script.js.
+   ====================================================== */
+(function () {
+  const SWIPER_SRC = "/js/vendor/swiper-bundle.min.js";
+  const slider = document.querySelector(".new-swiper");
+  if (!slider) return;
+
+  let requested = false;
+
+  function startSlider() {
+    // Run after script.js has finished its own start-up, then start once
+    setTimeout(function () {
+      if (!window.swiperNew && typeof initSwiperNew === "function") {
+        initSwiperNew();
+      }
+    }, 0);
+  }
+
+  function loadSwiper() {
+    if (requested) return;
+    requested = true;
+
+    const s = document.createElement("script");
+    s.src = SWIPER_SRC;
+    s.onload = function () {
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", startSlider);
+      } else {
+        startSlider();
+      }
+    };
+    document.head.appendChild(s);
+  }
+
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(function (entries) {
+      if (entries.some(function (e) { return e.isIntersecting; })) {
+        observer.disconnect();
+        loadSwiper();
+      }
+    }, { rootMargin: "800px 0px" });
+    observer.observe(slider);
+  } else {
+    loadSwiper(); // very old browsers: load straight away
+  }
+})();

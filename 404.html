@@ -11,17 +11,22 @@
     <!-- An error page must not appear in search results -->
     <meta name="robots" content="noindex, follow">
 
-    <!-- Fonts (English + Arabic) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
     <!-- Favicon -->
     <link rel="icon" href="/assets/favicon-48.png" type="image/png" sizes="48x48">
     <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
 
-    <!-- Font Awesome CSS -->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=Amiri:wght@700&family=Cairo:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <!-- Fonts (self-hosted in /assets/fonts/) -->
+    <style>
+      @font-face{font-family:"Source Serif 4";font-style:normal;font-weight:600;font-display:swap;src:url("/assets/fonts/source-serif-4-v15-latin-600.woff2") format("woff2");}
+      @font-face{font-family:"Source Serif 4";font-style:normal;font-weight:700;font-display:swap;src:url("/assets/fonts/source-serif-4-v15-latin-700.woff2") format("woff2");}
+      @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("/assets/fonts/inter-v20-latin-regular.woff2") format("woff2");}
+      @font-face{font-family:"Inter";font-style:normal;font-weight:500;font-display:swap;src:url("/assets/fonts/inter-v20-latin-500.woff2") format("woff2");}
+      @font-face{font-family:"Inter";font-style:normal;font-weight:600;font-display:swap;src:url("/assets/fonts/inter-v20-latin-600.woff2") format("woff2");}
+      @font-face{font-family:"Amiri";font-style:normal;font-weight:700;font-display:swap;src:url("/assets/fonts/amiri-v30-arabic_latin-700.woff2") format("woff2");}
+    </style>
+
+    <!-- Font Awesome (icons, self-hosted) -->
+    <link rel="stylesheet" href="/assets/fontawesome/css/fa-subset.min.css">
 
     <!-- Site stylesheet (full path: this page can appear at any address) -->
     <link rel="stylesheet" href="/css/styles-en.css">
@@ -86,7 +91,7 @@
         color: var(--heading-color);
         margin: 0 0 0.5rem;
       }
-      .notfound__ar .notfound__text { font-family: "Cairo", var(--font-body); }
+      .notfound__ar .notfound__text { font-family: "IBM Plex Sans Arabic", system-ui, sans-serif; }
       .notfound__actions {
         display: flex;
         flex-wrap: wrap;
@@ -114,7 +119,7 @@
       }
       .notfound__btn:hover { background: color-mix(in srgb, var(--main-color) 85%, black); color: #fff; }
       .notfound__btn--ghost:hover { background: var(--main-color); color: #fff; }
-      .notfound__btn[lang="ar"] { font-family: "Cairo", var(--font-body); }
+      .notfound__btn[lang="ar"] { font-family: "IBM Plex Sans Arabic", system-ui, sans-serif; }
       .notfound__links {
         display: flex;
         flex-wrap: wrap;
@@ -123,7 +128,6 @@
         margin-top: 1.25rem;
         font-size: 0.95rem;
         color: var(--text-black-color);
-        opacity: 0.85;
       }
       .notfound__links a { color: var(--link-color); text-decoration: underline; text-underline-offset: 3px; }
       .notfound__links span[aria-hidden] { margin: 0 0.6rem; opacity: 0.6; }
@@ -157,7 +161,7 @@
               <span class="fas fa-cog fa-spin"></span>
             </div>
             <div class="style-switcher" id="styleSwitcher">
-              <p class="switcher-title">Theme Colors</p>
+              <p class="switcher-title">Theme Colours</p>
               <div class="colors">
                 <span class="color-1" onclick="setActiveStyle('theme-1')"></span>
                 <span class="color-2" onclick="setActiveStyle('theme-2')"></span>
@@ -265,7 +269,7 @@
         </div>
       </div>
       <div class="footer-iconTop">
-        <a href="javascript:void(0)" aria-label="Scroll to top">
+        <a href="#top" aria-label="Scroll to top">
           <i class="fas fa-arrow-up"></i>
         </a>
       </div>
